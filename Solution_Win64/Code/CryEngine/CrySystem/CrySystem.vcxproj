@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C6C00F71-C594-3DD7-8639-67C474736444}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>CrySystem</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CrySystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">CrySystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CrySystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CrySystem;..\..\..\..\Code\SDKs\zlib-1.2.8;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\lz4\lib;..\..\..\..\Code\SDKs\LibTomMath;..\..\..\..\Code\SDKs\LibTomCrypt\src\headers;..\..\..\..\Code\SDKs\jsmn;..\..\..\..\Code\Libs\jsmn\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;XML_STATIC;LTC_NO_ROLC;LTM_DESC;ARGTYPE=2;JSMN_PARENT_LINKS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;XML_STATIC;LTC_NO_ROLC;LTM_DESC;ARGTYPE=2;JSMN_PARENT_LINKS;CMAKE_INTDIR=\"Debug\";CrySystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CrySystem;..\..\..\..\Code\SDKs\zlib-1.2.8;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\lz4\lib;..\..\..\..\Code\SDKs\LibTomMath;..\..\..\..\Code\SDKs\LibTomCrypt\src\headers;..\..\..\..\Code\SDKs\jsmn;..\..\..\..\Code\Libs\jsmn\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CrySystem;..\..\..\..\Code\SDKs\zlib-1.2.8;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\lz4\lib;..\..\..\..\Code\SDKs\LibTomMath;..\..\..\..\Code\SDKs\LibTomCrypt\src\headers;..\..\..\..\Code\SDKs\jsmn;..\..\..\..\Code\Libs\jsmn\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>WS2_32.lib;ProfilerCore64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <AdditionalLibraryDirectories>../../../../Code/SDKs/Brofiler;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CrySystem;..\..\..\..\Code\SDKs\zlib-1.2.8;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\lz4\lib;..\..\..\..\Code\SDKs\LibTomMath;..\..\..\..\Code\SDKs\LibTomCrypt\src\headers;..\..\..\..\Code\SDKs\jsmn;..\..\..\..\Code\Libs\jsmn\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;XML_STATIC;LTC_NO_ROLC;LTM_DESC;ARGTYPE=2;JSMN_PARENT_LINKS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;XML_STATIC;LTC_NO_ROLC;LTM_DESC;ARGTYPE=2;JSMN_PARENT_LINKS;CMAKE_INTDIR=\"Profile\";CrySystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CrySystem;..\..\..\..\Code\SDKs\zlib-1.2.8;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\lz4\lib;..\..\..\..\Code\SDKs\LibTomMath;..\..\..\..\Code\SDKs\LibTomCrypt\src\headers;..\..\..\..\Code\SDKs\jsmn;..\..\..\..\Code\Libs\jsmn\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CrySystem;..\..\..\..\Code\SDKs\zlib-1.2.8;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\lz4\lib;..\..\..\..\Code\SDKs\LibTomMath;..\..\..\..\Code\SDKs\LibTomCrypt\src\headers;..\..\..\..\Code\SDKs\jsmn;..\..\..\..\Code\Libs\jsmn\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>WS2_32.lib;ProfilerCore64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <AdditionalLibraryDirectories>../../../../Code/SDKs/Brofiler;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CrySystem;..\..\..\..\Code\SDKs\zlib-1.2.8;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\lz4\lib;..\..\..\..\Code\SDKs\LibTomMath;..\..\..\..\Code\SDKs\LibTomCrypt\src\headers;..\..\..\..\Code\SDKs\jsmn;..\..\..\..\Code\Libs\jsmn\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;_PROFILE;USE_BROFILER;XML_STATIC;LTC_NO_ROLC;LTM_DESC;ARGTYPE=3;JSMN_PARENT_LINKS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";_PROFILE;USE_BROFILER;XML_STATIC;LTC_NO_ROLC;LTM_DESC;ARGTYPE=3;JSMN_PARENT_LINKS;CMAKE_INTDIR=\"Release\";CrySystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CrySystem;..\..\..\..\Code\SDKs\zlib-1.2.8;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\lz4\lib;..\..\..\..\Code\SDKs\LibTomMath;..\..\..\..\Code\SDKs\LibTomCrypt\src\headers;..\..\..\..\Code\SDKs\jsmn;..\..\..\..\Code\Libs\jsmn\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CrySystem;..\..\..\..\Code\SDKs\zlib-1.2.8;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\lz4\lib;..\..\..\..\Code\SDKs\LibTomMath;..\..\..\..\Code\SDKs\LibTomCrypt\src\headers;..\..\..\..\Code\SDKs\jsmn;..\..\..\..\Code\Libs\jsmn\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>WS2_32.lib;ProfilerCore64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <AdditionalLibraryDirectories>../../../../Code/SDKs/Brofiler;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryThreadUtil_win32.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryThreadUtil_posix.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SystemInit.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Statistics\LocalMemoryUsage.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MemoryFragmentationProfiler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\ReadWriteXMLSink.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\ArchiveHost.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\PatternMatcher.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\BudgetingSystem.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CmdLine.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CmdLineArg.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ConsoleBatchFile.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ConsoleHelpGen.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CPUDetect.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryPak.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryPakHandleCache.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CrySizerImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CrySizerStats.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryWaterMark.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\DebugCallStack.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\GeneralMemoryHeap.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HardwareMouse.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HotUpdate.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\IDebugCallStack.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Log.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NotificationNetwork.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PakVars.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\resource.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SimpleStringPool.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\System.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SystemCFG.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SystemEventDispatcher.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Timer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Validator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XConsole.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XConsoleVariable.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\BootProfiler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\AutoDetectCPUTestSuit.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\AutoDetectSpec.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\AVI_Reader.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ClientHandler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryArchive.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\DxDiag.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\FileIOWrapper.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HandlerBase.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JiraClient.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\AsyncPakManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PhysRenderer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ResourceManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ServerHandler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ServerThrottle.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SyncLock.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SystemScheduler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\UnixConsole.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\WindowsConsole.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CustomMemoryHeap.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\DefragAllocator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MemoryAddressRange.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PageMappingHeap.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MemoryManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MemReplay.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MTSafeAllocator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamAsyncFileRequest.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamEngine.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamIOThread.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamReadStream.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\SerializeXMLReader.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\SerializeXMLWriter.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\xml.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLPatcher.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\xml_string.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryReader.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryWriter.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XmlUtils.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipEncrypt.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDir.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCache.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCacheFactory.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCacheRW.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirFind.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirFindRW.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirList.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirStructures.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirTree.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipFileFormat.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipFileFormat_info.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\DownloadManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HTTPDownloader.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\LocalizedStringManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\DiskProfiler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\FrameProfileSystem.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\LoadingProfiler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PerfHUD.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ProfileLogSystem.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Sampler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ImeManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ExcelExport.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Statistics.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\TestSystemLegacy.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\UnitTestExcelReporter.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\UnitTestSystem.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\VisRegTest.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\CryPluginManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\CryFactoryRegistryImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\TestCases\TestExtensions.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\DrawContext.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniButton.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniGUI.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniInfoBox.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniMenu.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniTable.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NULLAudioSystems.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NullLiveCreate.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NullInput.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NullResponseSystem.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NULLRenderAuxGeom.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadInfo.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadSampler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadProfiler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadConfigManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CodeCoverage\CodeCheckpointMgr.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_CryPak.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_Memory.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StatoscopeStreamingIntervalGroup.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StatoscopeTextureStreamingIntervalGroup.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Statoscope.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZLibCompressor.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Huffman.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\JobManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\JobStructs.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\BlockingBackend\BlockingBackEnd.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\FallbackBackend\FallBackBackend.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\PCBackEnd\ThreadBackEnd.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\OverloadSceneManager\OverloadSceneManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\LZ4Decompressor.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteConsole\RemoteConsole.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\Token.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\XmlIArchive.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\XmlOArchive.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ServiceNetwork.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommand.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommandHelpers.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Stroboscope\Stroboscope.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HMDManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HMDCVars.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusConfig.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusDevice.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusResources.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusTouchController.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRConfig.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRDevice.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRResources.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRController.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Osvr\OsvrDevice.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Osvr\OsvrResources.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZLibDecompressor.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SystemUtilsApple.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StdAfx.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\PlatformOS_PC.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_Steam.h" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\AutoDetectCPUTestSuit.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\AutoDetectSpec.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\AVI_Reader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\BudgetingSystem.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ClientHandler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CmdLine.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CmdLineArg.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CompressedFile.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ConsoleBatchFile.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ConsoleHelpGen.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CPUDetect.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CryArchive.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CryAsyncMemcpy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CryPak.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CrySizerImpl.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CrySizerStats.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\DebugCallStack.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\DllMain.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\FileIOWrapper.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\GeneralMemoryHeap.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\HandlerBase.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\HardwareMouse.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\IDebugCallStack.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\JiraClient.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\AsyncPakManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Log.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MemReplay.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\BootProfiler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemRender.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\NotificationNetwork.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PhysRenderer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ResourceManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ServerHandler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ServerThrottle.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SyncLock.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\System.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemCFG.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemEventDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemInit.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemScheduler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemWin32.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Timer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\UnixConsole.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\WindowsConsole.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XConsole.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XConsoleVariable.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\DefragAllocator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MemoryAddressRange.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PageMappingHeap.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CryMemoryManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CustomMemoryHeap.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MemoryManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MTSafeAllocator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamAsyncFileRequest.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamAsyncFileRequest_Jobs.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamEngine.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamIOThread.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamReadStream.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\SerializeXMLReader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\SerializeXMLWriter.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\xml.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryReader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryWriter.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLPatcher.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XmlUtils.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\ReadXMLSink.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\WriteXMLSource.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipEncrypt.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCache.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCacheFactory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCacheRW.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirFind.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirFindRW.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirList.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirStructures.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirTree.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\DownloadManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\HTTPDownloader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\LocalizedStringManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\DiskProfiler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\FrameProfileRender.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\FrameProfileSystem.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\LoadingProfiler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PerfHUD.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ProfileLogSystem.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Sampler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\WindowsErrorReporting.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ImeManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ExcelExport.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Statistics.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\TestSystemLegacy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\UnitTestExcelReporter.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\UnitTestSystem.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\VisRegTest.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\CryPluginManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\CryFactoryRegistryImpl.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\TestCases\TestExtensions.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\DrawContext.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniButton.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniGUI.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniInfoBox.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniMenu.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniTable.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NULLRenderAuxGeom.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadInfo.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadProfiler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadSampler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadConfigManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemThreading.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CodeCoverage\CodeCheckpointMgr.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_CryPak.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_Memory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Statistics\LocalMemoryUsage.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Statoscope.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StatoscopeStreamingIntervalGroup.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StatoscopeTextureStreamingIntervalGroup.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZLibCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Huffman.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\JobManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\BlockingBackend\BlockingBackEnd.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\FallbackBackend\FallbackBackend.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\PCBackEnd\ThreadBackEnd.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\OverloadSceneManager\OverloadSceneManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\LZ4Decompressor.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteConsole\RemoteConsole.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\ArchiveHost.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\Test_ArchiveHost.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\XmlIArchive.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\XmlOArchive.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ServiceNetwork.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommand.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommandHelpers.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommandServer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommandClient.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Stroboscope\Stroboscope.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\HMDManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\HMDCVars.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusDevice.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusResources.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusTouchController.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRDevice.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRResources.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRController.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Osvr\OsvrDevice.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Osvr\OsvrResources.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZLibDecompressor.cpp" />
+    <ResourceCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CrashHandler.rc" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StdAfx.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CryDLMalloc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\PlatformOS_PC.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_Steam.cpp" />
+    <None Include="..\..\..\..\Code\CryEngine\CrySystem\crash_face.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/expat/expat.vcxproj">
+      <Project>8C53EC39-4B27-3DE3-998F-C9D0442EB9FF</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/jsmn/jsmn.vcxproj">
+      <Project>2F5A2AA2-13CC-31F1-8572-EE9994BD3B15</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/lz4/lz4.vcxproj">
+      <Project>46764FD3-872E-3E3D-9174-E4358BC7C58B</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/md5/md5.vcxproj">
+      <Project>194F892D-84D3-3989-AFC9-39B9FE3213D3</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/tomcrypt/tomcrypt.vcxproj">
+      <Project>E28642A7-234C-363A-8C0B-1C1379085A32</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/yasli/yasli.vcxproj">
+      <Project>D8279431-B88C-3730-8EB6-D2B4BABD184E</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/zlib/zlib.vcxproj">
+      <Project>20A4944F-A785-35D8-9CF9-FB527E04AC4C</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

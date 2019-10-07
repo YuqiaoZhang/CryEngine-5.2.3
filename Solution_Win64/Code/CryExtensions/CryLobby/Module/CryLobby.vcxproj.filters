@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamFriends.cpp">
+      <Filter>Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamFriendsManagement.cpp">
+      <Filter>Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamLobby.cpp">
+      <Filter>Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamMatchMaking.cpp">
+      <Filter>Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamStats.cpp">
+      <Filter>Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamReward.cpp">
+      <Filter>Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LAN\CryLANLobby.cpp">
+      <Filter>LAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LAN\CryLANMatchMaking.cpp">
+      <Filter>LAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryDedicatedServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryDedicatedServerArbitrator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryFriends.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryFriendsManagement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryHostMigration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryLobby.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryLobbyDLL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryLobbyUI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryMatchMaking.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryReward.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CrySignIn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryStats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryTCPService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryTCPServiceFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryVoice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LobbyCVars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamVoice.h">
+      <Filter>Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamFriends.h">
+      <Filter>Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamFriendsManagement.h">
+      <Filter>Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamLobby.h">
+      <Filter>Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamMatchMaking.h">
+      <Filter>Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamStats.h">
+      <Filter>Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamReward.h">
+      <Filter>Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryLobby.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryLobbyEvent.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryLobbyPrivate.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\CryLobbyPacket.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryLobbyUI.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryFriends.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryFriendsManagement.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryReward.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICrySignIn.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryTCPService.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryVoice.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryMatchMaking.h">
+      <Filter>Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LAN\CryLANLobby.h">
+      <Filter>LAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LAN\CryLANMatchMaking.h">
+      <Filter>LAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryDedicatedServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryDedicatedServerArbitrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryFriends.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryFriendsManagement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryHostMigration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryLobby.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryLobbyUI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryMatchMaking.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryReward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CrySharedLobbyPacket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CrySignIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryStats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryTCPService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryTCPServiceFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryVoice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LobbyCVars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Steam">
+      <UniqueIdentifier>{C9779615-DE03-39B0-8B81-08936A90F46D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interface">
+      <UniqueIdentifier>{0E03043E-2D9B-3A84-8338-54814CBA2C74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LAN">
+      <UniqueIdentifier>{F40EC84E-DB05-35C6-8843-DDDB85265801}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

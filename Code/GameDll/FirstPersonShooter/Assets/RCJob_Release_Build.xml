@@ -1,0 +1,167 @@
+<RCJobs>
+
+	<!-- 
+		DefaultProperties can be override from command line
+	-->
+	<DefaultProperties
+		game="TemplateFirstPersonShooter"
+		launcher="TemplateFirstPersonShooter"
+		dedicated_server="TemplateFirstPersonShooter_Server"
+		engine="Engine"
+		src="."
+		trg="Build_${p}"
+		vertex_index="u16"
+		streaming="auto"
+	/>
+
+	<Properties
+		xml_types="*.animevents;*.animsettings;*.adb;*.bspace;*.cdf;*.chrparams;*.comb;*.dlg;*.ent;*.fsq;*.fxl;*.ik;*.json;*.lmg;*.mtl;*.setup;*.xml;*.node;*.veg"
+		non_xml_types="*.ag;*.gfx;*.png;*.usm;*.fev;*.fsb;*.sfk;*.ogg;*.txt;*.anm;*.cal;*.i_caf;*.skel;*.skin;*.grd;*.grp;*.cfg;*.csv;*.lua;*.dat;*.ini;*.xls;*.as;*.lut;*.mp2;*.mp3;*.xma"
+		
+		object_types="*.cgf;*.mtl;;*.skin;*.chr;*.cga;*.cdf;*.chrparams"
+		object_types_ext="${object_types};*.dds;*.mtl"
+		
+		level_types="*.tif;*.xml;*.dat;*.lyr;*.pak;"
+		
+		src_game="${src}\${game}"
+		src_engine="${src}\${engine}"
+
+		trg_game="${trg}\${game}"
+		trg_engine="${trg}\${engine}"
+		
+		pak_root="${trg}_pak"
+		
+		pak_game="${pak_root}\${game}"
+		pak_engine="${pak_root}\${engine}"
+		
+		vtx_idx="${vertex_index}"
+		/>
+
+	<Properties plat="${p}" />
+	
+	<if p="PC">
+		<Properties dds_splitting="0"/>
+		<Properties do_streaming="0"/>
+	</if>
+	<if p="Orbis">
+		<Properties dds_splitting="1"/>
+		<Properties do_streaming="0"/>
+	</if>
+	<if p="Durango">
+		<Properties dds_splitting="1"/>
+		<Properties do_streaming="0"/>
+	</if>
+	
+	<CopyJob>
+		<Job sourceroot="${src_engine}" targetroot="${trg_engine}" input="*.pak" copyonly="1"/>		
+		
+		<Job sourceroot="${src}" targetroot="${trg}\" input="system.cfg" copyonly="1"/>
+		<Job sourceroot="${src}" targetroot="${trg}\" input="server.cfg" copyonly="1"/>
+
+		<Job sourceroot="${src_game}" targetroot="${trg_game}" input="game.cfg" copyonly="1"/>
+		<Job sourceroot="${src_game}" targetroot="${trg_game}" input="_newpreview_.mtl" copyonly="1"/>
+		
+		<Job sourceroot="${src_game}\_FastLoad" targetroot="${trg_game}\_FastLoad" input="*.pak" copyonly="1"/>
+
+		<!-- Levels -->
+		<Job sourceroot="${src_game}\Levels\example" targetroot="${trg_game}\Levels\example" input="${level_types}" copyonly="1"/>
+		
+		<!-- Localization -->
+		<Job sourceroot="${src_game}\Localization"  input="*.pak" targetroot="${trg_game}\Localization"  copyonly="1" />
+		
+		<!-- Existing paks -->
+		<Job sourceroot="${src_game}" targetroot="${trg_game}" input="*.pak" copyonly="1" recursive="0"/>
+		
+		<if p="PC">
+			<Job sourceroot="${src}\bin\win_x86" targetroot="${trg}\bin\win_x86" input="*.dll;${launcher}.exe;${dedicated_server}.exe" copyonly="1" recursive="0"/>
+			<Job sourceroot="${src}\bin\win_x64" targetroot="${trg}\bin\win_x64" input="*.dll;${launcher}.exe;${dedicated_server}.exe" copyonly="1" recursive="0"/>
+		</if>
+		
+		<if p="PS4">
+			<Job sourceroot="${src_engine}\EngineAssets\DXOrbis" targetroot="${trg_engine}\EngineAssets\DXOrbis" input="*.*" copyonly="1"/>
+			<Job sourceroot="${src}\BinOrbis" targetroot="${trg}" input="*.*" copyonly="1"/>
+		</if>
+		
+		<!-- SSL Certificiate group -->
+		<Job sourceroot="${src_game}\Scripts" targetroot="${trg_game}\Scripts" input="*.pem" copyonly="1"/>
+	</CopyJob>
+	
+	<ConvertJob>
+		<!-- Animation compression -->
+		<Job input="*.i_caf" animConfigFolder="Animations" sourceroot="${src_game}" targetroot="${pak_game}" cafAlignTracks="1" dbaStreamPrepare="1" />
+		
+		<!-- Object conversion -->
+		<Job sourceroot="${src_game}\Objects"	targetroot="${pak_game}\Objects"   input="*.cgf" VertexPositionFormat="exporter" vertexindexformat="${vtx_idx}" SplitLODs="1" />
+		<Job sourceroot="${src_game}\Objects"	targetroot="${pak_game}\Objects"   input="*.cga" VertexPositionFormat="exporter" vertexindexformat="${vtx_idx}" SplitLODs="1" />
+		
+		<!-- Alembic files -->
+		<Job sourceroot="${src_game}\Objects" targetroot="${pak_game}\Objects" input="*.abc" SkipFilesWithoutBuildConfig="1" />		
+		
+		<!-- DDS generation -->
+		<Job sourceroot="${src_game}\Textures"	targetroot="${pak_game}\Textures" input="*.tif" />
+		<Job sourceroot="${src_game}\Objects"	targetroot="${pak_game}\Objects" input="*.tif" />
+		
+		<ifnot p="PC">
+			<Job sourceroot="${src_game}\Objects"	targetroot="${pak_game}\Objects"   input="*.chr"  stripmesh="4"	   compactvertexstreams="1" computesubsettexeldensity="1" vertexpositionformat="f16" qtangents="1" />
+			<Job sourceroot="${src_game}\Objects"	targetroot="${pak_game}\Objects"   input="*.chr"  stripnonmesh="1" compactvertexstreams="1" computesubsettexeldensity="1" vertexpositionformat="f16" qtangents="1" />
+			<Job sourceroot="${src_game}\Objects"	targetroot="${pak_game}\Objects"   input="*.skin" stripmesh="3"	   compactvertexstreams="1" computesubsettexeldensity="1" vertexpositionformat="f16" qtangents="1" overwriteextension="chr" />
+			<Job sourceroot="${src_game}\Objects"	targetroot="${pak_game}\Objects"   input="*.skin" stripnonmesh="1" compactvertexstreams="1" computesubsettexeldensity="1" vertexpositionformat="f16" qtangents="1" overwriteextension="chr" />
+		</ifnot>
+		
+		<Job sourceroot="${src_game}\!XmlStorage\"   targetroot="${pak_game}\"   input="${xml_types}" overwriteextension="xml" xmlfilterfile="xmlfilter.txt" />
+	</ConvertJob>
+
+	<CopyToPakDirectoryJob>
+		<!-- Move engine asssets -->
+		<Job sourceroot="${src_engine}" targetroot="${pak_engine}" input="*.cfg;*.dat;*.xml;*.txt;*.dds;*.abc;*.cax;*.cbc;*.mtl;*.cgf;*.ttf;" copyonly="1"/>
+		
+		<!-- Convert engine assets, output into the pak directory -->
+		<Job sourceroot="${src_engine}" targetroot="${pak_engine}" input="*.cgf" VertexPositionFormat="exporter" vertexindexformat="${vtx_idx}" SplitLODs="1" />
+		<Job sourceroot="${src_engine}" targetroot="${pak_engine}" input="*.abc" />
+		<Job sourceroot="${src_engine}" targetroot="${pak_engine}" input="*.tif" />
+		
+		<!-- Character Attachments -->
+		<Job sourceroot="${src_game}\CharacterAttachments" targetroot="${pak_game}\CharacterAttachments" input="${object_types_ext}" copyonly="1"/>
+		<Job sourceroot="${src_game}\CharacterAttachments" targetroot="${pak_game}\CharacterAttachments" input="*.tif" />
+		
+		<!-- Objects -->
+		<Job sourceroot="${src_game}\Objects" targetroot="${pak_game}\Objects" input="${object_types}" copyonly="1"/>
+		
+		<!-- Animations -->
+		<Job sourceroot="${src_game}\Animations" targetroot="${pak_game}\Animations" input="*.dba;*.bspace;*.comb;*.img;*.xml;*.animsettings;*.animevents;*.adb;*.chrparams" copyonly="1"/>
+		
+		<!-- GameData -->
+		<Job sourceroot="${src_game}\Libs" targetroot="${pak_game}\Libs" input="*.xml;*.swf;*.gfx;*.tif;*.png;*.txt;*.css" copyonly="1"/>
+		<Job sourceroot="${src_game}\Materials" targetroot="${pak_game}\Materials" input="*.tif;*.mtl" copyonly="1"/>
+		<Job sourceroot="${src_game}\Prefabs" targetroot="${pak_game}\Prefabs" input="*.xml" copyonly="1"/>
+		
+		<!-- Scripts -->
+		<Job sourceroot="${src_game}\Scripts" targetroot="${pak_game}\Scripts" input="*.xml;*.lua;*.cdf;*.txt" copyonly="1"/>
+		<Job sourceroot="${src_game}\Entities" targetroot="${pak_game}\Entities" input="*.ent" copyonly="1"/>
+	</CopyToPakDirectoryJob>
+	
+	<PakJob>
+		<Job sourceroot="${pak_engine}" input="*.*"  zip="${trg_engine}\Engine.pak"/>
+		
+		<Job sourceroot="${src_engine}" input="Shaders\*.ext" zip="${trg_engine}\Shaders.pak"/>
+		
+		<Job sourceroot="${pak_game}" input="CharacterAttachments/*"  zip="${trg_game}\CharacterAttachments.pak" Zip_SizeSplit="1" Zip_MaxSize="1900000"/>
+		<Job sourceroot="${pak_game}" input="Objects/*"  zip="${trg_game}\Objects.pak" Zip_SizeSplit="1" Zip_MaxSize="1900000"/>
+		<Job sourceroot="${pak_game}" input="Textures/*"  zip="${trg_game}\Textures.pak" Zip_SizeSplit="1" Zip_MaxSize="1900000"/>
+		<Job sourceroot="${pak_game}" input="Animations/*"  zip="${trg_game}\Animations.pak" Zip_SizeSplit="1" Zip_MaxSize="1900000"/>
+		
+		<Job sourceroot="${pak_game}" input="Libs/*;Materials/*;Prefabs/*"  zip="${trg_game}\GameData.pak" Zip_SizeSplit="1" Zip_MaxSize="1900000"/>
+		
+		<Job sourceroot="${pak_game}" input="Scripts/*;Entities/*"  zip="${trg_game}\Scripts.pak" Zip_SizeSplit="1" Zip_MaxSize="1900000"/>
+		
+		<Job sourceroot="${src_game}" input="Audio/*"  zip="${trg_game}\Audio.pak" Zip_SizeSplit="1" Zip_MaxSize="1900000"/>
+	</PakJob>
+	
+	<Run Job="CopyJob"/>
+	<Run Job="CopyToPakDirectoryJob"/>
+	
+	<!-- Convert after copying to pak directory -->
+	<Run Job="ConvertJob"/>
+	
+	<Run Job="PakJob"/>
+</RCJobs>

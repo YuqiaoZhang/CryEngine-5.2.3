@@ -1,0 +1,213 @@
+global proc shelf_Crytek ()
+{
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 34
+        -height 34
+        -manage 1
+        -visible 1
+        -label "Validate"
+        -image "cryValidate.bmp"
+        -image1 "cryValidate.bmp"
+        -style "iconOnly"
+        -marginWidth 1
+        -marginHeight 1
+        -command "source cryExport.mel;\r\ncryValidatePlugin complete;"
+        -actionIsSubstitute 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 34
+        -height 34
+        -manage 1
+        -visible 1
+        -label "Export"
+        -image "cryExport.bmp"
+        -image1 "cryExport.bmp"
+        -style "iconOnly"
+        -marginWidth 1
+        -marginHeight 1
+        -command "source cryExport.mel;\r\ncryExportWin;"
+        -actionIsSubstitute 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 34
+        -height 34
+        -manage 1
+        -visible 1
+        -label "Load Plugin"
+        -image "cryLoad.bmp"
+        -image1 "cryLoad.bmp"
+        -style "iconOnly"
+        -marginWidth 1
+        -marginHeight 1
+        -command "source cryExport.mel;\r\ncryLoadPlugin;"
+        -actionIsSubstitute 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 34
+        -height 34
+        -manage 1
+        -visible 1
+        -label "Unload Plugin"
+        -image "cryUnload.bmp"
+        -image1 "cryUnload.bmp"
+        -style "iconOnly"
+        -marginWidth 1
+        -marginHeight 1
+        -command "source cryExport.mel;\r\ncryUnloadPlugin;"
+        -actionIsSubstitute 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 34
+        -height 34
+        -manage 1
+        -visible 1
+        -label "Material Editor"
+        -image "cryMaterial.bmp"
+        -image1 "cryMaterial.bmp"
+        -style "iconOnly"
+        -marginWidth 1
+        -marginHeight 1
+        -command "source cryMaterial.mel;\r\ncryMaterialWin;"
+        -actionIsSubstitute 0
+    ;
+	shelfButton
+		-enableCommandRepeat 1
+		-enable 1
+		-width 34
+		-height 34
+		-manage 1
+		-visible 1
+		-label "UDP Editing Window"
+		-image "cryUdp.bmp"
+		-image1 "cryUdp.bmp"
+		-style "iconOnly"
+		-marginWidth 1
+		-marginHeight 1
+		-command "source cryUDP.mel;\r\ncryUDPWindow;"
+		-actionIsSubstitute 0
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-enable 1
+		-width 34
+		-height 34
+		-manage 1
+		-visible 1
+		-label "Fix Pivots"
+		-image "cryPivot.bmp"
+		-image1 "cryPivot.bmp"
+		-style "iconOnly"
+		-marginWidth 1
+		-marginHeight 1
+		-command "source cryPivot.mel;\r\ncryPivot;"
+		-actionIsSubstitute 0
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-enable 1
+		-width 34
+		-height 34
+		-manage 1
+		-visible 1
+		-label "Cry FBX"
+		-image "cryFBX.bmp"
+		-image1 "cryFBX.bmp"
+		-style "iconOnly"
+		-marginWidth 1
+		-marginHeight 1
+		-command "source cryFBX.mel;\r\ncryFBX;"
+		-actionIsSubstitute 0
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-enable 1
+		-width 34
+		-height 34
+		-manage 1
+		-visible 1
+		-label "Cry Tools"
+		-image "cryTools.bmp"
+		-image1 "cryTools.bmp"
+		-style "iconOnly"
+		-marginWidth 1
+		-marginHeight 1
+		-command "source cryTools.mel;\r\ncryToolsWin;"
+		-actionIsSubstitute 0
+	;
+	shelfButton
+		-enableCommandRepeat 1
+		-enable 1
+		-width 34
+		-height 34
+		-manage 1
+		-visible 1
+		-label "Check Faces"
+		-image "cryCheck.bmp"
+		-image1 "cryCheck.bmp"
+		-style "iconOnly"
+		-marginWidth 1
+		-marginHeight 1
+		-command "source degraded_faces_check.mel;\r\ncryCheckFaces;"
+		-actionIsSubstitute 0
+	;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "User Script" 
+        -enableBackground 0
+        -align "center" 
+        -label "Prepare Materials for Alembic Export" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "abc_material_preparation.png" 
+        -image1 "abc_material_preparation.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "source cryAlembic.mel;\r\ncryAlembic_prepareMaterials;"
+        -sourceType "mel" 
+        -commandRepeatable 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -enable 1
+        -width 35
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "User Script" 
+        -enableBackground 0
+        -align "center" 
+        -label "Export Alembic for CryEngine" 
+        -labelOffset 0
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.2 
+        -image "abc_geomcache_export.png" 
+        -image1 "abc_geomcache_export.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "source cryAlembic.mel;\r\ncryAlembic_export;"
+        -sourceType "mel" 
+        -commandRepeatable 1
+    ;
+}

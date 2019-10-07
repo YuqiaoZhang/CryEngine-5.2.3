@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Dll">
+      <UniqueIdentifier>{7b455a35-1e5a-4d40-9293-56de3f55e182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditorSpecific">
+      <UniqueIdentifier>{59d8fd65-51a1-43bb-8bec-b8d1fc2f66de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{efdb182b-984f-4233-afe5-fcd4940934f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Gameplay">
+      <UniqueIdentifier>{74901744-54dd-4052-8ad7-a30f43d29df6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Gameplay\Weapons">
+      <UniqueIdentifier>{d1e721d8-4760-4fc8-b018-c63aa80f62ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Helpers">
+      <UniqueIdentifier>{fe7bc33b-7329-4b38-be05-455a357128fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Lights">
+      <UniqueIdentifier>{30897f16-ce1d-43d4-b1c5-c0f8b885a8f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Physics">
+      <UniqueIdentifier>{071db8f2-32f9-448e-b891-d315b8e3afa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Flownodes">
+      <UniqueIdentifier>{4c36a11b-3d2f-4f56-b85f-b3b869497323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{8ee3226f-2cac-49af-b86c-ba363e940d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{48b9c38b-755b-46ac-9732-2ff09cd44700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Animations">
+      <UniqueIdentifier>{4edb7a5b-417a-4515-9300-bcd0f62e9d93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Input">
+      <UniqueIdentifier>{fff4f54e-fea9-4f0b-9967-621e088318e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Movement">
+      <UniqueIdentifier>{143f072d-9095-4ca3-a522-2c56f6730c39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\View">
+      <UniqueIdentifier>{f2628990-bcbb-4557-b317-63a46db13908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Startup">
+      <UniqueIdentifier>{96d5411d-dbd6-41b2-8c02-3abb5d836084}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\StdAfx.cpp">
+      <Filter>Dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\EditorSpecific\EditorGame.cpp">
+      <Filter>EditorSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Gameplay\SpawnPoint.cpp">
+      <Filter>Entities\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Gameplay\Weapons\Bullet.cpp">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Gameplay\Weapons\Rifle.cpp">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Helpers\NativeEntityBase.cpp">
+      <Filter>Entities\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Helpers\NativeEntityPropertyHandling.cpp">
+      <Filter>Entities\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Lights\LightEntity.cpp">
+      <Filter>Entities\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Lights\EnvironmentProbe.cpp">
+      <Filter>Entities\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Physics\RigidBody.cpp">
+      <Filter>Entities\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\FlowNodes\Helpers\FlowGameEntityNode.cpp">
+      <Filter>Flownodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Game\GameRules.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Game\GameFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\Animations\PlayerAnimations.cpp">
+      <Filter>Player\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\Input\PlayerInput.cpp">
+      <Filter>Player\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\Movement\PlayerMovement.cpp">
+      <Filter>Player\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\View\PlayerView.cpp">
+      <Filter>Player\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Startup\GameStartup.cpp">
+      <Filter>Startup</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Gameplay\Weapons\Bullet.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Gameplay\Weapons\Rifle.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Gameplay\Weapons\ISimpleWeapon.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Gameplay\SpawnPoint.h">
+      <Filter>Entities\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Helpers\NativeEntityPropertyHandling.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Helpers\NativeEntityBase.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Helpers\ISimpleExtension.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Lights\EnvironmentProbe.h">
+      <Filter>Entities\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Lights\LightEntity.h">
+      <Filter>Entities\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Entities\Physics\RigidBody.h">
+      <Filter>Entities\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\FlowNodes\Helpers\FlowBaseNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\FlowNodes\Helpers\FlowGameEntityNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Game\GameRules.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Game\GameFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\StdAfx.h">
+      <Filter>Dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\EditorSpecific\EditorGame.h">
+      <Filter>EditorSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\Animations\PlayerAnimations.h">
+      <Filter>Player\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\Input\PlayerInput.h">
+      <Filter>Player\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\Movement\PlayerMovement.h">
+      <Filter>Player\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\View\PlayerView.h">
+      <Filter>Player\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\ISimpleActor.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Player\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\TopDownShooter\Code\Startup\GameStartup.h">
+      <Filter>Startup</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{82D22322-BBB8-3F22-8E2C-781BB1B753E5}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>tiff</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\lib\Libs\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\obj\Libs\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tiff</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\lib\Libs\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\obj\Libs\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">tiff</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\lib\Libs\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\obj\Libs\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tiff</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\tiff;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CODE_BASE_FOLDER="../../../../Code/";USE_BROFILER;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CODE_BASE_FOLDER=\"../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\tiff;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\tiff;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\tiff;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Profile/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_PROFILE;CODE_BASE_FOLDER="../../../../Code/";USE_BROFILER;CMAKE_INTDIR="Profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_PROFILE;CODE_BASE_FOLDER=\"../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Profile\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\tiff;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\tiff;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\tiff;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CODE_BASE_FOLDER="../../../../Code/";_PROFILE;USE_BROFILER;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CODE_BASE_FOLDER=\"../../../../Code/\";_PROFILE;USE_BROFILER;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\tiff;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\tiff;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\Libs\tiff\tif_config.h" />
+    <ClInclude Include="..\..\..\..\Code\Libs\tiff\tiffconf.h" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_aux.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_close.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_codec.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_color.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_compress.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_dir.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_dirinfo.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_dirread.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_dirwrite.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_dumpmode.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_error.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_extension.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_fax3.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_fax3sm.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_flush.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_getimage.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_jbig.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_jpeg.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_jpeg_12.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_luv.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_lzma.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_lzw.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_next.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_ojpeg.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_open.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_packbits.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_pixarlog.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_predict.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_print.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_read.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_strip.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_swab.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_thunder.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_tile.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_unix.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_version.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_warning.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_write.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff\tif_zip.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../../Solution_Win64/Code/Libs/zlib/zlib.vcxproj">
+      <Project>20A4944F-A785-35D8-9CF9-FB527E04AC4C</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

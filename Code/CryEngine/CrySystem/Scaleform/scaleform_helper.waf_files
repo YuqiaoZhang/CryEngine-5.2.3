@@ -1,0 +1,35 @@
+{
+  "ScaleformHelper_uber.cpp":{
+    "Scaleform":[
+      "FlashPlayerInstance.cpp",
+      "GAllocatorCryMem.cpp",
+      "GFileCryPak.cpp",
+      "GFxVideoSoundCrySound.cpp",
+      "GFxVideoWrapper.cpp",
+      "SharedResources.cpp",
+      "SharedStates.cpp",
+      "FlashPlayerInstance.h",
+      "GAllocatorCryMem.h",
+      "GFileCryPak.h",
+      "GFxVideoSoundCrySound.h",
+      "GFxVideoWrapper.h",
+      "SharedResources.h",
+      "SharedStates.h",
+      "GImeHelper.h",
+      "GImeHelper.cpp",
+      "GTexture_Impl.h",
+      "GTexture_Impl.cpp",
+      "GImageInfo_Impl.h",
+      "GImageInfo_Impl.cpp"
+    ]
+  },
+  "NoUberFile":{
+    "Scaleform":[
+      "ScaleformHelper.cpp",
+      "ScaleformHelper.h",
+      "ScaleformRecording.h",
+      "ScaleformRecording.cpp",
+      "StdAfx.h"
+    ]
+  }
+}

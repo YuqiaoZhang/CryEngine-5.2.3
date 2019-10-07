@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\EyeTrackerInput.cpp">
+      <Filter>EyeTracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\CryInput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\InputCVars.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\BaseInput.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\InputDevice.cpp">
+      <Filter>Shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\XInputDevice.cpp">
+      <Filter>DX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\DXInput.cpp">
+      <Filter>DX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\DXInputDevice.cpp">
+      <Filter>DX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\Keyboard.cpp">
+      <Filter>DX</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryInput\Mouse.cpp">
+      <Filter>DX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\EyeTrackerInput.h">
+      <Filter>EyeTracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\CryInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\InputCVars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\BaseInput.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\InputDevice.h">
+      <Filter>Shared</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\NaturalPointInputNULL.h">
+      <Filter>TrackIR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\XInputDevice.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\DXInput.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\DXInputDevice.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\Keyboard.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryInput\Mouse.h">
+      <Filter>DX</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EyeTracker">
+      <UniqueIdentifier>{817D5D23-C344-3DF3-9557-94DDBE3D9F4C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{6B96BD64-EAFC-34C4-ACFE-EFC8555D6213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TrackIR">
+      <UniqueIdentifier>{177B5D35-9284-3994-A4D8-14EA5AA32F3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DX">
+      <UniqueIdentifier>{536AEFFB-33ED-3EAE-A9B7-C1CB70ACD7C5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

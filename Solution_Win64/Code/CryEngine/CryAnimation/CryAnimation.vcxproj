@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{1A54CB65-DF3B-3CFB-9327-E6ECB329FC7C}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>CryAnimation</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CryAnimation</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">CryAnimation</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CryAnimation</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryAnimation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Debug\";CryAnimation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryAnimation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryAnimation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryAnimation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Profile\";CryAnimation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryAnimation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryAnimation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryAnimation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;_PROFILE;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";_PROFILE;USE_BROFILER;CMAKE_INTDIR=\"Release\";CryAnimation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryAnimation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryAnimation;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterInstance.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonEffectManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\TransitionQueue.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterInstanceProcessing.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentBase.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentBone.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentFace.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentProxy.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentSkin.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\SocketSimulation.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentPRow.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentVCloth.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentVClothPreProcess.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentMerger.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentMerged.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ParametricSampler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPose.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PathExpansion.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\CryModEffMorph.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\EyeMovementFaceAnim.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceAnimation.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceAnimSequence.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceChannelKeyCleanup.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceChannelSmoothing.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceEffector.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceEffectorLibrary.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceJoystick.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceState.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FacialInstance.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FacialModel.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\LipSync.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\DirectionalBlender.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\OperatorQueue.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseAlignerChain.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseMatching.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\FeetLock.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\LimbIk.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseBlenderAim.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseBlenderLook.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifierHelper.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifier.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifierDesc.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\Recoil.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Command_Buffer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Command_Commands.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Skeleton.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPhysics.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimEventList.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimEventLoader.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderCGA.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderCHR.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderDBA.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderTCB.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ParamLoader.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimationManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Controller.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerOpt.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerPQ.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerPQLog.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerTCB.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeader.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderAIM.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderCAF.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderLMG.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\QuatQuantization.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelSkin.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Model.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelAnimationSet.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelMesh.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\DrawHelper.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimationBase.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\cvars.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Helper.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\resource.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerDefragHeap.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\AlignedAllocator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\IAllocator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\Memory.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\MultiBuffer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\PolymorphicAllocator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\Pool.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\PoolAllocator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexAnimation.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexCommand.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexCommandBuffer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexData.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\stdafx.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Serialization\SerializationCommon.h" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\TransitionQueue.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterInstance.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterInstance_Render.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonEffectManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterInstanceProcessing.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentBase.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentBone.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentFace.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentProxy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentSkin.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SocketSimulation.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentPRow.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentVCloth.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentVClothPreProcess.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentMerger.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentMerged.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ParametricSampler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim_Locator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim_BlendMan.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim_Commands.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim_Params.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim_Queue.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPose.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPose_Debug.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPose_Process.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PathExpansion.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\CryModEffMorph.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\EyeMovementFaceAnim.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceAnimation.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceAnimSequence.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceChannelKeyCleanup.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceChannelSmoothing.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceEffector.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceEffectorLibrary.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceJoystick.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceState.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FacialInstance.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FacialModel.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\LipSync.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\DirectionalBlender.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\FeetLock.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\LimbIk.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\OperatorQueue.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseAlignerChain.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseBlenderAim.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseBlenderLook.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseMatching.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifierHelper.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifier.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifierDesc.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\Recoil.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Command_Buffer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Command_Commands.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Skeleton.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPhysics.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPhysics_Jobs.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimEventList.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderSKIN.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimEventLoader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderCGA.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderCHR.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderDBA.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderTCB.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ParamLoader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimationManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerPQ.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerPQLog.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerTCB.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderAIM.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderCAF.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderLMG.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelMesh_DebugPC.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelSkin.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Model.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelAnimationSet.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelMesh.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\DrawHelper.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimationBase.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\cvars.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerDefragHeap.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\Memory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\PolymorphicAllocator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\Pool.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\PoolAllocator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexAnimation.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexCommand.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexCommandBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexData.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\stdafx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\TransitionQueue.cpp">
+      <Filter>CharacterInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentManager.cpp">
+      <Filter>CharacterInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterInstance.cpp">
+      <Filter>CharacterInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterInstance_Render.cpp">
+      <Filter>CharacterInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonEffectManager.cpp">
+      <Filter>CharacterInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterInstanceProcessing.cpp">
+      <Filter>CharacterInstance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentBase.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentBone.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentFace.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentProxy.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentSkin.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SocketSimulation.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentPRow.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentVCloth.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentVClothPreProcess.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentMerger.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentMerged.cpp">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ParametricSampler.cpp">
+      <Filter>CharacterInstance\SkeletonAnim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim_Locator.cpp">
+      <Filter>CharacterInstance\SkeletonAnim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim.cpp">
+      <Filter>CharacterInstance\SkeletonAnim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim_BlendMan.cpp">
+      <Filter>CharacterInstance\SkeletonAnim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim_Commands.cpp">
+      <Filter>CharacterInstance\SkeletonAnim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim_Params.cpp">
+      <Filter>CharacterInstance\SkeletonAnim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim_Queue.cpp">
+      <Filter>CharacterInstance\SkeletonAnim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPose.cpp">
+      <Filter>CharacterInstance\SkeletonPose</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPose_Debug.cpp">
+      <Filter>CharacterInstance\SkeletonPose</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPose_Process.cpp">
+      <Filter>CharacterInstance\SkeletonPose</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PathExpansion.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\CryModEffMorph.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\EyeMovementFaceAnim.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceAnimation.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceAnimSequence.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceChannelKeyCleanup.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceChannelSmoothing.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceEffector.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceEffectorLibrary.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceJoystick.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceState.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FacialInstance.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FacialModel.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\LipSync.cpp">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\DirectionalBlender.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\FeetLock.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\LimbIk.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\OperatorQueue.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseAlignerChain.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseBlenderAim.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseBlenderLook.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseMatching.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifierHelper.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifier.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifierDesc.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\Recoil.cpp">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Command_Buffer.cpp">
+      <Filter>CharacterInstance\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Command_Commands.cpp">
+      <Filter>CharacterInstance\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Skeleton.cpp">
+      <Filter>CharacterInstance\Skeleton</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPhysics.cpp">
+      <Filter>CharacterInstance\SkeletonPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPhysics_Jobs.cpp">
+      <Filter>CharacterInstance\SkeletonPhysics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimEventList.cpp">
+      <Filter>CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderSKIN.cpp">
+      <Filter>CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimEventLoader.cpp">
+      <Filter>CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterManager.cpp">
+      <Filter>CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderCGA.cpp">
+      <Filter>CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderCHR.cpp">
+      <Filter>CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderDBA.cpp">
+      <Filter>CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderTCB.cpp">
+      <Filter>CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ParamLoader.cpp">
+      <Filter>CharacterManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimationManager.cpp">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerPQ.cpp">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerPQLog.cpp">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerTCB.cpp">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderAIM.cpp">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderCAF.cpp">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderLMG.cpp">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelMesh_DebugPC.cpp">
+      <Filter>CharacterManager\ModelRig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelSkin.cpp">
+      <Filter>CharacterManager\ModelRig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Model.cpp">
+      <Filter>CharacterManager\ModelRig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelAnimationSet.cpp">
+      <Filter>CharacterManager\ModelRig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelMesh.cpp">
+      <Filter>CharacterManager\ModelRig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\DrawHelper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimationBase.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\cvars.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerDefragHeap.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\Memory.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\PolymorphicAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\Pool.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\PoolAllocator.cpp">
+      <Filter>Memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexAnimation.cpp">
+      <Filter>Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexCommand.cpp">
+      <Filter>Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexCommandBuffer.cpp">
+      <Filter>Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexData.cpp">
+      <Filter>Vertex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryAnimation\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentManager.h">
+      <Filter>CharacterInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterInstance.h">
+      <Filter>CharacterInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonEffectManager.h">
+      <Filter>CharacterInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\TransitionQueue.h">
+      <Filter>CharacterInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterInstanceProcessing.h">
+      <Filter>CharacterInstance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentBase.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentBone.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentFace.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentProxy.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentSkin.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\SocketSimulation.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentPRow.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentVCloth.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentVClothPreProcess.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentMerger.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AttachmentMerged.h">
+      <Filter>CharacterInstance\Attachment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ParametricSampler.h">
+      <Filter>CharacterInstance\SkeletonAnim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonAnim.h">
+      <Filter>CharacterInstance\SkeletonAnim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPose.h">
+      <Filter>CharacterInstance\SkeletonPose</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PathExpansion.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\CryModEffMorph.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\EyeMovementFaceAnim.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceAnimation.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceAnimSequence.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceChannelKeyCleanup.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceChannelSmoothing.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceEffector.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceEffectorLibrary.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceJoystick.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FaceState.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FacialInstance.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\FacialModel.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\FacialAnimation\LipSync.h">
+      <Filter>CharacterInstance\FacialAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\DirectionalBlender.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\OperatorQueue.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseAlignerChain.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseMatching.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\FeetLock.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\LimbIk.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseBlenderAim.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseBlenderLook.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifierHelper.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifier.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\PoseModifierDesc.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\PoseModifier\Recoil.h">
+      <Filter>CharacterInstance\PoseModifier</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Command_Buffer.h">
+      <Filter>CharacterInstance\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Command_Commands.h">
+      <Filter>CharacterInstance\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Skeleton.h">
+      <Filter>CharacterInstance\Skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\SkeletonPhysics.h">
+      <Filter>CharacterInstance\SkeletonPhysics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimEventList.h">
+      <Filter>CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimEventLoader.h">
+      <Filter>CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\CharacterManager.h">
+      <Filter>CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderCGA.h">
+      <Filter>CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderCHR.h">
+      <Filter>CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderDBA.h">
+      <Filter>CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\LoaderTCB.h">
+      <Filter>CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ParamLoader.h">
+      <Filter>CharacterManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimationManager.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Controller.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerOpt.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerPQ.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerPQLog.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerTCB.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeader.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderAIM.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderCAF.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\GlobalAnimationHeaderLMG.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\QuatQuantization.h">
+      <Filter>CharacterManager\AnimLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelSkin.h">
+      <Filter>CharacterManager\ModelRig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Model.h">
+      <Filter>CharacterManager\ModelRig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelAnimationSet.h">
+      <Filter>CharacterManager\ModelRig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ModelMesh.h">
+      <Filter>CharacterManager\ModelRig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\DrawHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\AnimationBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\cvars.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Helper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\resource.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\ControllerDefragHeap.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\AlignedAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\IAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\Memory.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\MultiBuffer.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\PolymorphicAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\Pool.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Memory\PoolAllocator.h">
+      <Filter>Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexAnimation.h">
+      <Filter>Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexCommand.h">
+      <Filter>Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexCommandBuffer.h">
+      <Filter>Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Vertex\VertexData.h">
+      <Filter>Vertex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryAnimation\Serialization\SerializationCommon.h">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CharacterManager\AnimLoader">
+      <UniqueIdentifier>{8486E252-9019-3ED6-B112-036CD112843B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterManager\ModelRig">
+      <UniqueIdentifier>{D3EE859B-A028-388D-80EF-D52E605225B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterInstance\Attachment">
+      <UniqueIdentifier>{6873D676-E1C8-3C95-8759-1428C64DE54F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterInstance\SkeletonAnim">
+      <UniqueIdentifier>{F1E6082D-1118-37FC-9DFC-5DA525825D8C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterInstance\SkeletonPose">
+      <UniqueIdentifier>{A11533A5-EBB8-3B45-ACA6-E30C6955E362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterInstance\FacialAnimation">
+      <UniqueIdentifier>{861B6A26-45F0-3581-B4D6-E637CAF63986}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterInstance\PoseModifier">
+      <UniqueIdentifier>{2C251EBE-41A9-3231-B637-373EFAD6A72A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterInstance\Command">
+      <UniqueIdentifier>{28B4BDFA-6E93-3D9D-BEFB-38F23A9B1A21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterInstance\Skeleton">
+      <UniqueIdentifier>{5C83B5FF-BD4B-3E23-B292-1811F3226C2F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterInstance\SkeletonPhysics">
+      <UniqueIdentifier>{BAF0018D-D9DF-30E6-9EBD-24CF82424A90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterInstance">
+      <UniqueIdentifier>{9BC61F8D-528C-395A-981A-2B01CAE6A8A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CharacterManager">
+      <UniqueIdentifier>{A114727E-778D-3AD4-9910-54145A1CB64F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{F58EAFC1-F577-3387-8EE4-7D3245DD8712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memory">
+      <UniqueIdentifier>{EF2CC1EA-F55D-387C-8F7E-327228D6D46F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vertex">
+      <UniqueIdentifier>{DEC05EEC-E154-369A-A7F7-D0F4730EF021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serialization">
+      <UniqueIdentifier>{D1A9487A-F20A-3F9A-AF41-6AC20E5571D4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{DD4D982E-813D-3E86-A5B0-FC743B76D68B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>python27</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\obj\Libs\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">python27</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\obj\Libs\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">python27</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\obj\Libs\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">python27</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\python;..\..\..\..\Code\SDKs\Python27\Include;..\..\..\..\Code\SDKs\Python27\PC;..\..\..\..\Code\SDKs\Python27\Python;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;Py_BUILD_CORE;USE_BROFILER;XML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CODE_BASE_FOLDER=\"../../../../\";Py_BUILD_CORE;USE_BROFILER;XML_STATIC;CMAKE_INTDIR=\"Debug\";python27_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\python;..\..\..\..\Code\SDKs\Python27\Include;..\..\..\..\Code\SDKs\Python27\PC;..\..\..\..\Code\SDKs\Python27\Python;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\python;..\..\..\..\Code\SDKs\Python27\Include;..\..\..\..\Code\SDKs\Python27\PC;..\..\..\..\Code\SDKs\Python27\Python;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>../../../../Code/SDKs/Brofiler/ProfilerCore64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\Libs\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\python;..\..\..\..\Code\SDKs\Python27\Include;..\..\..\..\Code\SDKs\Python27\PC;..\..\..\..\Code\SDKs\Python27\Python;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_PROFILE;Py_BUILD_CORE;USE_BROFILER;XML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_PROFILE;CODE_BASE_FOLDER=\"../../../../\";Py_BUILD_CORE;USE_BROFILER;XML_STATIC;CMAKE_INTDIR=\"Profile\";python27_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\python;..\..\..\..\Code\SDKs\Python27\Include;..\..\..\..\Code\SDKs\Python27\PC;..\..\..\..\Code\SDKs\Python27\Python;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\python;..\..\..\..\Code\SDKs\Python27\Include;..\..\..\..\Code\SDKs\Python27\PC;..\..\..\..\Code\SDKs\Python27\Python;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>../../../../Code/SDKs/Brofiler/ProfilerCore64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\Libs\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\python;..\..\..\..\Code\SDKs\Python27\Include;..\..\..\..\Code\SDKs\Python27\PC;..\..\..\..\Code\SDKs\Python27\Python;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;Py_BUILD_CORE;_PROFILE;USE_BROFILER;XML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CODE_BASE_FOLDER=\"../../../../\";Py_BUILD_CORE;_PROFILE;USE_BROFILER;XML_STATIC;CMAKE_INTDIR=\"Release\";python27_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\python;..\..\..\..\Code\SDKs\Python27\Include;..\..\..\..\Code\SDKs\Python27\PC;..\..\..\..\Code\SDKs\Python27\Python;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\python;..\..\..\..\Code\SDKs\Python27\Include;..\..\..\..\Code\SDKs\Python27\PC;..\..\..\..\Code\SDKs\Python27\Python;..\..\..\..\Code\SDKs\expat-2.1.0\lib;..\..\..\..\Code\SDKs\zlib-1.2.8;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>../../../../Code/SDKs/Brofiler/ProfilerCore64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\Libs\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\Libs\python\pyconfig.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\PC\pyconfig.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\token.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\grammar.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\graminit.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\_iomodule.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\Python-ast.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\Python.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\abstract.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\asdl.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\ast.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\bitset.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\boolobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\bytearrayobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\bytes_methods.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\bytesobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\bufferobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\cellobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\ceval.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\classobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\cobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\code.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\codecs.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\compile.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\complexobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\descrobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\dictobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\dtoa.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\enumobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\errcode.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\eval.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\fileobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\floatobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\frameobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\funcobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\genobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\import.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\intobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\intrcheck.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\iterobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\listobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\longintrepr.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\longobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\marshal.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\memoryobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\metagrammar.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\methodobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\modsupport.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\moduleobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\node.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\object.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\objimpl.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\opcode.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\osdefs.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\parsetok.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\patchlevel.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pgen.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pgenheaders.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pyarena.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pycapsule.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pyctype.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pydebug.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pyerrors.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pyfpe.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pymath.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pygetopt.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pymem.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pyport.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pystate.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pystrcmp.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pystrtod.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pythonrun.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pythread.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\rangeobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\setobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\sliceobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\stringobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\structmember.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\structseq.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\symtable.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\sysmodule.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\traceback.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\tupleobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\ucnhash.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\unicodeobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\warnings.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\weakrefobject.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\_math.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\md5.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\rotatingtree.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\sre.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\sre_constants.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\unicodedata_db.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\unicodename_db.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\yuv.h" />
+    <ClInclude Include="..\..\..\..\Code\Libs\python\pythonnt_rc.h" />
+    <ClInclude Include="..\..\..\..\Code\Libs\python\pythonnt_rc_d.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\count.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\ctype.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\fastsearch.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\find.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\formatter.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\partition.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\split.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\stringdefs.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\string_format.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\transmogrify.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\localeutil.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\unicodedefs.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\unicodetype_db.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\alg_jisx0201.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\cjkcodecs.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\emu_jisx0213_2000.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_cn.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_hk.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_jisx0213_pair.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_jp.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_kr.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_tw.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\multibytecodec.h" />
+    <ClCompile Include="..\..\..\..\Code\Libs\python\CheckValidConfiguration.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\graminit.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\_iomodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\bufferedio.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\bytesio.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\fileio.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\iobase.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\stringio.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\textio.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_bisectmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_codecsmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_collectionsmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_csv.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_elementtree.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_functoolsmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_heapqmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_hotshot.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_json.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_localemodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_lsprof.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_math.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_randommodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_sre.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_struct.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_weakref.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\arraymodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\audioop.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\binascii.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cmathmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cPickle.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cStringIO.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\datetimemodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\errnomodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\future_builtins.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\gcmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\getbuildinfo.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\getpath.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\imageop.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\itertoolsmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\main.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\mathmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\md5.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\md5module.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\mmapmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\operator.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\parsermodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\posixmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\pyexpat.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\rotatingtree.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\sha256module.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\sha512module.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\shamodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\signalmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\stropmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\symtablemodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\threadmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\timemodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\unicodedata.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\xxmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\xxsubtype.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\yuvconvert.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\zipimport.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\zlibmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\abstract.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\boolobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\bufferobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\bytes_methods.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\bytearrayobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\capsule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\cellobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\classobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\cobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\codeobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\complexobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\descrobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\enumobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\exceptions.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\genobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\fileobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\floatobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\frameobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\funcobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\intobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\iterobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\listobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\longobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\dictobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\memoryobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\methodobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\moduleobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\object.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\obmalloc.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\rangeobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\setobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\sliceobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\stringobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\structseq.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\tupleobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\typeobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\weakrefobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\_subprocess.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\_winreg.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\dl_nt.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\import_nt.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\msvcrtmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\config.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\acceler.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\grammar1.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\listnode.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\node.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\parser.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\parsetok.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\bitset.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\metagrammar.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\firstsets.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\grammar.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\pgen.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\myreadline.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\tokenizer.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\_warnings.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\Python-ast.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\asdl.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\ast.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\bltinmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\ceval.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\compile.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\codecs.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\errors.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\formatter_string.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\formatter_unicode.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\frozen.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\future.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getargs.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getcompiler.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getcopyright.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getplatform.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getversion.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\import.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\importdl.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\marshal.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\modsupport.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\mystrtoul.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\mysnprintf.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\peephole.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pyarena.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pyctype.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pyfpe.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pymath.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pystate.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pythonrun.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\random.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\structmember.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\symtable.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\sysmodule.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\traceback.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getopt.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pystrcmp.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pystrtod.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\dtoa.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\dynload_win.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\thread.c" />
+    <ResourceCompile Include="..\..\..\..\Code\SDKs\Python27\PC\python_nt.rc" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\unicodectype.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\unicodeobject.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_cn.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_hk.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_iso2022.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_jp.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_kr.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_tw.c" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\multibytecodec.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/expat/expat.vcxproj">
+      <Project>{8c53ec39-4b27-3de3-998f-c9d0442eb9ff}</Project>
+    </ProjectReference>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/zlib/zlib.vcxproj">
+      <Project>{20a4944f-a785-35d8-9cf9-fb527e04ac4c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

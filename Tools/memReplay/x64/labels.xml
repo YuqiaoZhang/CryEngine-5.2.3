@@ -1,0 +1,63 @@
+<labels>
+	<patterns>
+		<pattern name="loadstart">loadStart\d+_(.*)</pattern>
+		<pattern name="loadend">loadEnd\d+_(.*)</pattern>
+		<pattern name="precacheend">precacheEnd\d+_(.*)</pattern>
+		<pattern name="unloadstart">unloadStart\d+_(.*)</pattern>
+		<pattern name="unloadend">unloadEnd\d+_(.*)</pattern>
+    <pattern name="loadgamestart">Loadgame_start</pattern>
+    <pattern name="loadgameend">Loadgame_end</pattern>
+    <pattern name="savegamestart">Savegame_start.*</pattern>
+    <pattern name="savegameend">Savegame_end</pattern>
+    <pattern name="layeractivatestart">Layer (.*) Activating</pattern>
+    <pattern name="layeractivateend">Layer (.*) Activated</pattern>
+    <pattern name="layerdeactivatestart">Layer (.*) Deactivating</pattern>
+    <pattern name="layerdeactivateend">Layer (.*) Deactivated</pattern>
+		<pattern name="catchall">.*</pattern>
+	</patterns>
+	<layers>
+		<layer name="Warnings" platform="ps3">
+			<region when="$2 &gt;= 210*1024*1024" color="255,38,38,127" name="Out of memory" />
+			<region when="($2 &gt;= 205*1024*1024) * ($2 &lt; 210*1024*1024)" color="255,127,39,127" name="Nearly out of memory" />)
+		</layer>
+		<layer name="Warnings" platform="x360">
+			<region when="$2 &gt;= 507*1024*1024" color="255,38,38,127" name="Out of memory" />
+			<region when="($2 &gt;= 502*1024*1024) * ($2 &lt; 507*1024*1024)" color="255,127,39,127" name="Nearly out of memory" />)
+		</layer>
+    <layer name="Save/Load">
+      <region from="loadgamestart" to="loadgameend" color="221,214,174,255" />
+      <region from="savegamestart" to="savegameend" color="175,175,220,255" />
+      
+      <label def="loadgamestart" />
+      <label def="loadgameend" />
+      <label def="savegamestart" />
+      <label def="savegameend" />
+    </layer>
+    <layer name="Layers">
+      <region from="layeractivatestart" to="layeractivateend" color="221,214,174,255" />
+      <region from="layerdeactivatestart" to="layerdeactivateend" color="175,175,220,255" />
+      <region from="layeractivatestart" to="layerdeactivateend" color="0,0,0,0" name="Layer \1 enabled" />
+
+      <label def="layeractivatestart" />
+      <label def="layeractivateend" />
+      <label def="layerdeactivatestart" />
+      <label def="layerdeactivateend" />
+    </layer>
+		<layer name="Level Events">
+			<region from="loadstart" to="loadend" color="221,174,174,255" name="Loading \1" />
+			<region from="loadend" to="precacheend" color="221,211,174,255" name="Precaching \1" />
+			<region from="precacheend" to="unloadstart" color="192,222,173,255" name="Playing \1" />
+			<region from="unloadstart" to="unloadend" color="173,222,207,255" name="Unloading \1" />
+
+			<label def="loadstart" />
+			<label def="loadend" />
+			<label def="precacheend" />
+			<label def="unloadstart" />
+			<label def="unloadend" />
+		</layer>
+		<layer name="Misc">
+			<label def="catchall" />
+		</layer>
+	</layers>
+</labels>
+

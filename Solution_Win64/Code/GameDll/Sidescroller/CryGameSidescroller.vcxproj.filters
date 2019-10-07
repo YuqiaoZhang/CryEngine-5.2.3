@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Dll">
+      <UniqueIdentifier>{e79cbfa9-1322-4592-ba0e-8b74e0e914b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditorSpecific">
+      <UniqueIdentifier>{7c9b40c3-ef69-49e8-8759-123812efcb1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{1792dcca-1d42-40d6-8d92-3ab7606d0ee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Gameplay">
+      <UniqueIdentifier>{e53e5cbc-f782-4220-ac11-7b6d78986867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Gameplay\Weapons">
+      <UniqueIdentifier>{ee1233f7-70ed-4c57-92a6-c47d96860198}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Helpers">
+      <UniqueIdentifier>{89c4f7e4-bb53-469d-845e-e0a85c013186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Lights">
+      <UniqueIdentifier>{fe14c9fc-007c-4213-8097-ebcbceba25e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Physics">
+      <UniqueIdentifier>{6e9ff372-c140-4c9d-9b78-660218a8c402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Flownodes">
+      <UniqueIdentifier>{a0ead62b-c4a6-42d1-a99d-1a8d2749d781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{b6611778-01d0-442e-bdd9-6f9e561c66da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{619af079-6486-4831-9e29-4acf91ccb9a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Animations">
+      <UniqueIdentifier>{0f3eb60f-d7d1-4c93-8886-174af6f36786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Input">
+      <UniqueIdentifier>{5e34fa8f-1797-47e4-bac7-068cb3eb8f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Movement">
+      <UniqueIdentifier>{aa6fe6b5-fd8c-4f94-b4fa-eb179efa0a77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\View">
+      <UniqueIdentifier>{feef32f8-6f94-4ffa-b028-ad0cb57bbbe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Startup">
+      <UniqueIdentifier>{244037f9-4bb0-48e5-8f28-11ce6ec1dcc0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\StdAfx.cpp">
+      <Filter>Dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\EditorSpecific\EditorGame.cpp">
+      <Filter>EditorSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Gameplay\SpawnPoint.cpp">
+      <Filter>Entities\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Gameplay\Weapons\Bullet.cpp">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Gameplay\Weapons\Rifle.cpp">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Helpers\NativeEntityBase.cpp">
+      <Filter>Entities\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Helpers\NativeEntityPropertyHandling.cpp">
+      <Filter>Entities\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Lights\LightEntity.cpp">
+      <Filter>Entities\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Lights\EnvironmentProbe.cpp">
+      <Filter>Entities\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Physics\RigidBody.cpp">
+      <Filter>Entities\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\FlowNodes\Helpers\FlowGameEntityNode.cpp">
+      <Filter>Flownodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Game\GameRules.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Game\GameFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\Animations\PlayerAnimations.cpp">
+      <Filter>Player\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\Input\PlayerInput.cpp">
+      <Filter>Player\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\Movement\PlayerMovement.cpp">
+      <Filter>Player\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\View\PlayerView.cpp">
+      <Filter>Player\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Startup\GameStartup.cpp">
+      <Filter>Startup</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Startup\GameStartup.h">
+      <Filter>Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\Animations\PlayerAnimations.h">
+      <Filter>Player\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\Input\PlayerInput.h">
+      <Filter>Player\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\Movement\PlayerMovement.h">
+      <Filter>Player\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\View\PlayerView.h">
+      <Filter>Player\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Player\ISimpleActor.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Game\GameFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Game\GameRules.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\FlowNodes\Helpers\FlowBaseNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\FlowNodes\Helpers\FlowGameEntityNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Gameplay\SpawnPoint.h">
+      <Filter>Entities\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Gameplay\Weapons\Bullet.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Gameplay\Weapons\Rifle.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Gameplay\Weapons\ISimpleWeapon.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Helpers\NativeEntityBase.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Helpers\ISimpleExtension.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Helpers\NativeEntityPropertyHandling.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Lights\EnvironmentProbe.h">
+      <Filter>Entities\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\Entities\Lights\LightEntity.h">
+      <Filter>Entities\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\EditorSpecific\EditorGame.h">
+      <Filter>EditorSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Sidescroller\Code\StdAfx.h">
+      <Filter>Dll</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

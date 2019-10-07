@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\editor\EditorGame.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\entities\GeomEntity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\flownodes\FlowGameEntityNode.cpp">
+      <Filter>Flownodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\game\GameRules.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\game\GameFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\startup\GameStartup.cpp">
+      <Filter>Startup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\player\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\player\extensions\ViewExtension.cpp">
+      <Filter>Player\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\player\extensions\InputExtension.cpp">
+      <Filter>Player\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\player\extensions\MovementExtension.cpp">
+      <Filter>Player\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\StdAfx.cpp">
+      <Filter>DLL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\GameZero.cpp">
+      <Filter>DLL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\editor\EditorGame.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\entities\GeomEntity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\flownodes\FlowGameEntityNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\game\GameRules.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\game\GameFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\startup\GameStartup.h">
+      <Filter>Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\player\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\player\extensions\ISimpleExtension.h">
+      <Filter>Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\player\extensions\ViewExtension.h">
+      <Filter>Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\player\extensions\InputExtension.h">
+      <Filter>Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\player\extensions\MovementExtension.h">
+      <Filter>Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\StdAfx.h">
+      <Filter>DLL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="DLL">
+      <UniqueIdentifier>{24E58898-0634-36C5-9024-CE408523470B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{F366F935-E579-30DC-ACB5-995DB2AEFD47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{8F642C32-C9BF-3F24-B8A7-AC1C288924D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Flownodes">
+      <UniqueIdentifier>{011C32BA-FC97-3984-B00B-907EC40E0E14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{2B67E69D-CE15-3012-BE3D-25DE2CB365E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{FC45671E-9C05-3912-B61F-CC22E9C0A667}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Extensions">
+      <UniqueIdentifier>{755F8291-B2D7-3E04-AEB8-40C911151D19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Startup">
+      <UniqueIdentifier>{2005A7BE-D13F-316C-88A5-C84B13AEB2CC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

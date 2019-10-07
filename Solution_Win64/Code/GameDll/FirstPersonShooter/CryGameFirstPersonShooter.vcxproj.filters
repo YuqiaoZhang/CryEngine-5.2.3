@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Dll">
+      <UniqueIdentifier>{3280882b-8133-4057-8526-75f04659571b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditorSpecific">
+      <UniqueIdentifier>{9be631ad-4f7e-47ee-8a7c-1151cb172d2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{39f11908-170f-434a-8527-9aaa7d8adae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Gameplay">
+      <UniqueIdentifier>{d229b434-b539-4ec8-bf95-4009f8532909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Gameplay\Weapons">
+      <UniqueIdentifier>{e464e78b-3fd2-437f-9a66-861a18fbbb23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Helpers">
+      <UniqueIdentifier>{5d36d326-19ad-4634-81f0-79d8289d0e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Lights">
+      <UniqueIdentifier>{47418ae4-1955-42ee-bbac-760f74cc21f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Physics">
+      <UniqueIdentifier>{10c75c83-60bf-489a-9ad2-53cf5d447f9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Flownodes">
+      <UniqueIdentifier>{04dd45ec-6059-4478-8f33-21ae17d93f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{2c147931-1ad4-49d5-9679-414e96cd168b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{75b7d289-170f-47ed-937e-cbaf40e0cd39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Animations">
+      <UniqueIdentifier>{e9bb43b9-a6aa-4657-92a1-cc7f2d20e8e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Input">
+      <UniqueIdentifier>{1a537663-c9c4-484d-854e-cf26204646e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Movement">
+      <UniqueIdentifier>{c2e50fc1-3a26-423c-ade8-841c44ac2f6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\View">
+      <UniqueIdentifier>{6fdf05a0-3639-4318-8130-31a6cd23bc95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Startup">
+      <UniqueIdentifier>{b53ad159-d000-4d0e-9b7a-efbd5a37599e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\StdAfx.cpp">
+      <Filter>Dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\EditorSpecific\EditorGame.cpp">
+      <Filter>EditorSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Gameplay\SpawnPoint.cpp">
+      <Filter>Entities\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Gameplay\Weapons\Bullet.cpp">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Gameplay\Weapons\Rifle.cpp">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Helpers\NativeEntityBase.cpp">
+      <Filter>Entities\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Helpers\NativeEntityPropertyHandling.cpp">
+      <Filter>Entities\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Lights\LightEntity.cpp">
+      <Filter>Entities\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Lights\EnvironmentProbe.cpp">
+      <Filter>Entities\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Physics\RigidBody.cpp">
+      <Filter>Entities\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\FlowNodes\Helpers\FlowGameEntityNode.cpp">
+      <Filter>Flownodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Game\GameRules.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Game\GameFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Player\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Player\Animations\PlayerAnimations.cpp">
+      <Filter>Player\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Player\Input\PlayerInput.cpp">
+      <Filter>Player\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Player\Movement\PlayerMovement.cpp">
+      <Filter>Player\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Player\View\PlayerView.cpp">
+      <Filter>Player\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Startup\GameStartup.cpp">
+      <Filter>Startup</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Helpers\ISimpleExtension.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Helpers\NativeEntityBase.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Helpers\NativeEntityPropertyHandling.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Gameplay\SpawnPoint.h">
+      <Filter>Entities\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Gameplay\Weapons\Bullet.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Gameplay\Weapons\ISimpleWeapon.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Gameplay\Weapons\Rifle.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Lights\EnvironmentProbe.h">
+      <Filter>Entities\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Lights\LightEntity.h">
+      <Filter>Entities\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Entities\Physics\RigidBody.h">
+      <Filter>Entities\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\EditorSpecific\EditorGame.h">
+      <Filter>EditorSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\StdAfx.h">
+      <Filter>Dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\FlowNodes\Helpers\FlowGameEntityNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\FlowNodes\Helpers\FlowBaseNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Game\GameFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Game\GameRules.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Player\Animations\PlayerAnimations.h">
+      <Filter>Player\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Player\Input\PlayerInput.h">
+      <Filter>Player\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Player\Movement\PlayerMovement.h">
+      <Filter>Player\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Player\View\PlayerView.h">
+      <Filter>Player\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Player\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\FirstPersonShooter\Code\Startup\GameStartup.h">
+      <Filter>Startup</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

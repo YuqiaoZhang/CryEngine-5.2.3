@@ -1,0 +1,14 @@
+<Environment>
+ <Fog ViewDistance="10000" ViewDistanceLowSpec="1000" LDRGlobalDensMult="1"/>
+ <Terrain DetailLayersViewDistRatio="1"/>
+ <EnvState WindVector="1,0,0" BreezeGeneration="0" BreezeStrength="1" BreezeMovementSpeed="8" BreezeVariation="1" BreezeLifeTime="15" BreezeCount="4" BreezeSpawnRadius="25" BreezeSpread="0.f" BreezeRadius="5" ConsoleMergedMeshesPool="2750" ShowTerrainSurface="1" SunShadowsMinSpec="1" SunShadowsAdditionalCascadeMinSpec="0" SunShadowsClipPlaneRange="256" SunShadowsClipPlaneRangeShift="0.0f" UseLayersActivation="0" SunLinkedToTOD="1"/>
+ <VolFogShadows Enable="0" EnableForClouds="0"/>
+ <CloudShadows CloudShadowTexture="" CloudShadowSpeed="0,0,0" CloudShadowTiling="1" CloudShadowBrightness="1" CloudShadowInvert="0"/>
+ <ParticleLighting AmbientMul="0.5" LightsMul="0.5"/>
+ <SkyBox Material="EngineAssets/Materials/Sky/Sky" MaterialLowSpec="EngineAssets/Materials/Sky/Sky" Angle="0" Stretching="0.5"/>
+ <Ocean Material="EngineAssets/Materials/Water/Ocean_default" CausticDepth="8" CausticIntensity="1" CausticsTilling="1"/>
+ <OceanAnimation WindDirection="1" WindSpeed="4" WavesSpeed="1" WavesAmount="1.5" WavesSize="0.75"/>
+ <Moon Latitude="240" Longitude="45" Size="0.5" Texture="EngineAssets/Textures/Skys/Night/half_moon.dds"/>
+ <DynTexSource Width="256" Height="256"/>
+ <Total_Illumination_v1 Active="0" IntegrationMode="0" InjectionMultiplier="0.4" PointLightsAlbedo="0.4" AlbedoMultiplier="1" SkyColorMultiplier="0.8" DiffuseAmplifier="1.5" SpecularAmplifier="0" NumberOfBounces="1" Saturation="0.6" PropagationBooster="1.5" DiffuseBias="0.04" DiffuseConeWidth="24" ConeMaxLength="12.0" UpdateLighting="0" UpdateGeometry="0" MinNodeSize="8.0" SkipNonGILights="0" LowSpecMode="0" HalfresKernel="0" UseLightProbes="0" VoxelizaionLODRatio="1.8" VoxelPoolResolution="128" SSAOAmount="0.7" SSAORadius="0.5" BackLightScale="0.5" ObjectsMaxViewDistance="64"/>
+</Environment>

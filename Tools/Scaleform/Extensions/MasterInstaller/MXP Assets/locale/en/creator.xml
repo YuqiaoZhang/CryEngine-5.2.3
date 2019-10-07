@@ -1,0 +1,307 @@
+<components>
+	<component label="Button" className="gfx.controls.Button" states="up|over|down|release|out|disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for Button.
+
+----------------	
+Button States                                                           
+----------------                                                      
+up - Appears when the Button is not selected and the mouse is not over the component.
+over - Appears when the Button is not selected and the mouse is over the component.
+down - Appears when mouse is down over the Button.
+release - Appears when the Button has been released.
+out - Appears when mouse is out the Button.
+disabled - Appears when Button enabled property is set to false.
+
+----------------                                                           
+Required Items                                                             
+----------------                                                       
+textField:TextField                                                 
+A dynamic textfield with the instance name 'textField' displays the Button.label property 
+			]]>
+		</instructions>
+	</component>
+	<component label="CheckBox" className="gfx.controls.CheckBox" states="up|over|down|release|out|disabled|selected_up|selected_over|selected_down|selected_release|selected_out|selected_disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for CheckBox.
+
+----------------                                                          
+CheckBox States                                                           
+----------------                                                         
+up - Appears when the CheckBox is not selected and the mouse is not over the component.
+over - Appears when the CheckBox is not selected and the mouse is over the component.
+down - Appears when mouse is down over the CheckBox.
+release - Appears when the Button has been released.
+out - Appears when mouse is out the CheckBox.
+disabled - Appears when CheckBox enabled property is set to false.
+selected_up - Appears when a CheckBox is selected and the mouse is not over the component.
+selected_over - Appears when CheckBox is not selected and the mouse is not over the component.
+selected_down - Appears when CheckBox is not selected and the mouse is not over the component.
+selected_out - Appears when CheckBox is not selected and the mouse is not over the component.
+selected_disabled - Appears when a CheckBox is selected and disabled.
+
+----------------                                                          
+Required Items                                                             
+----------------                                                          
+textField:TextField                                                        
+A dynamic textfield with the instance name 'textField' displays the CheckBox.label property
+Icon:Graphic 
+A graphic indicator for the selection ex: a checkmark graphic
+			]]>
+		</instructions>
+	</component>
+	<component label="DropdownMenu" className="gfx.controls.DropdownMenu" states="up|over|down|release|out|disabled|selected_up|selected_over|selected_down|selected_release|selected_out|selected_disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for DropdownMenu.
+
+----------------      
+DropdownMenu States is a compsite component (it requires additional components to work) 
+----------------                                                          
+up - Appears when the DropdownMenu is not selected and the mouse is not over the component.
+over - Appears when the DropdownMenu is not selected and the mouse is over the component.
+down - Appears when mouse is down over the ComboBox.
+release - Appears when the Button has been released.
+out - Appears when mouse is out the ComboBox.
+disabled - Appears when DropdownMenu enabled property is set to false.
+selected_up - Appears when a DropdownMenu is selected and the mouse is not over the component.
+selected_over - Appears when DropdownMenu is not selected and the mouse is not over the component.
+selected_down - Appears when button is not selected and the mouse is not over the component.
+selected_out - Appears when button is not selected and the mouse is not over the component.
+selected_disabled - Appears when a DropdownMenu is selected and disabled.
+
+----------------                                                           
+Required Items                                                            
+----------------                                                           
+textField:TextField                                                        
+A dynamic textfield with the instance name 'textField' displays the label property from ItemRenderer
+A graphic indicator for the selection ex: a checkmark graphic                           
+**** Must have inside library components with Linkages for ScrollingList| ListItemRenderer| ScrollBar
+			]]>
+		</instructions>
+	</component>
+	<component label="Label" className="gfx.controls.Label" states="default|disabled|enabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for Label.
+
+----------------                                                          
+Label States                                                            	 
+----------------                                                           
+default - Appears when the Label is not selected and the mouse is not over the component.
+disabled - Appears when Label is set to enabled.
+enabled - Appears when a Label is set to disabled.
+
+----------------                                                           
+Required Items                                                             
+----------------                                                           
+textField:TextField                                                        
+A dynamic textfield with the instance name 'textField' displays the Button.label property
+			]]>
+		</instructions>
+	</component>
+	<component label="List" className="gfx.controls.ScrollingList" states="default|focused|disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for ScrollingList.
+
+----------------                                                          
+ScrollingList States is a compsite component (it requires additional components to work)     	 
+----------------                                                           
+default - Appears when the ScrollingList is not selected and the mouse is not over the component.
+focused - Appears when ScrollingList is focused.
+disabled - Appears when ScrollingList is set to enabled.
+
+----------------                                                          
+Required Items                                                             
+----------------                                                           
+textField:TextField                                                        
+A dynamic textfield with the instance name 'textField' displays the Button.label property
+			]]>
+		</instructions>
+	</component>
+	<component label="List Renderer" className="gfx.controls.ListItemRenderer" states="up|over|down|release|out|disabled|selected_up|selected_over|selected_down|selected_release|selected_out|selected_disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for ListItemRenderer.
+
+----------------                                                          
+ListItemRenderer States                                                            
+----------------                                                        
+up - Appears when the ListItemRenderer is not selected and the mouse is not over the component.
+over - Appears when the ListItemRenderer is not selected and the mouse is over the component.
+down - Appears when mouse is down over the ListItemRenderer.
+release - Appears when the Button has been released.
+out - Appears when mouse is out the ListItemRenderer.
+disabled - Appears when ListItemRenderer enabled property is set to false.
+selected_up - Appears when a ListItemRenderer is selected and the mouse is not over the component.
+selected_over - Appears when ListItemRenderer is not selected and the mouse is not over the component.
+selected_down - Appears when ListItemRenderer is not selected and the mouse is not over the component.
+selected_out - Appears when ListItemRenderer is not selected and the mouse is not over the component.
+selected_disabled - Appears when a ListItemRenderer is selected and disabled.
+
+----------------                                                          
+Required Items                                                             
+----------------                                                          
+textField:TextField                                                        
+A dynamic textfield with the instance name 'textField' displays the Button.label property
+			]]>
+		</instructions>
+	</component>
+	<component label="OptionStepper" className="gfx.controls.OptionStepper" states="default|focused|disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for OptionStepper.
+
+----------------                                                          
+OptionStepper States is a compsite component (it requires additional **components to work)  
+----------------                                                           
+default - Appears when the ScrollingList is not selected and the mouse is not over the component.
+focused - Appears when ScrollingList is focused.
+disabled - Appears when ScrollingList is set to enabled.
+
+----------------                                                          
+Required Items                                                            
+----------------                                                           
+textField:TextField                                                       
+A dynamic textfield with the instance name 'textField' displays the Button.label property
+**Button Component Linkage
+			]]>
+		</instructions>
+	</component>
+	<component label="RadioButton" className="gfx.controls.RadioButton" states="up|over|down|release|out|disabled|selected_up|selected_over|selected_down|selected_release|selected_out|selected_disabled" >
+		<instructions>	
+			<![CDATA[ 
+Instructions for RadioButton.
+
+----------------                                                          
+RadioButton States                                                           
+----------------                                                          
+up - Appears when the RadioButton is not selected and the mouse is not over the component.
+over - Appears when the RadioButton is not selected and the mouse is over the component.
+down - Appears when mouse is down over the RadioButton.
+release - Appears when the Button has been released.
+out - Appears when mouse is out the RadioButton.
+disabled - Appears when RadioButton enabled property is set to false.
+selected_up - Appears when a RadioButton is selected and the mouse is not over the component.
+selected_over - Appears when RadioButton is not selected and the mouse is not over the component.
+selected_down - Appears when RadioButton is not selected and the mouse is not over the component.
+selected_out - Appears when RadioButton is not selected and the mouse is not over the component.
+selected_disabled - Appears when a RadioButton is selected and disabled.
+
+----------------                                                           
+Required Items                                                             
+----------------                                                           
+textField:TextField                                                       
+A dynamic textfield with the instance name 'textField' displays the Button.label property
+			]]>
+		</instructions>
+	</component>
+	<component label="Slider" className="gfx.controls.Slider" states="default|focused|disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for Slider.
+
+----------------                                                           
+Slider States is a compsite component (it requires additional components to work) 
+----------------
+default - Appears when the Slider is not selected and the mouse is not over the component.
+focused - Appears when Slider is focused.
+disabled - Appears when Slider is set to disabled.
+
+----------------                                                           
+Required Items                                                            
+----------------                                                           
+thumb:Button 
+(gfx.controls.Button)
+track to control sliding 
+track:Button 
+(gfx.controls.Button)
+track to control sliding
+**Button Component Linkage 
+			]]>
+		</instructions>
+	</component>
+	<component label="TextArea" className="gfx.controls.TextArea" states="default|focused|disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for TextArea.
+
+----------------                                                           
+TextArea States is a compsite component (it requires additional components to work)  
+----------------                                                           
+default - Appears when the TextArea is not selected and the mouse is not over the component.
+focused - Appears when TextArea is focused.
+disabled - Appears when TextArea is set to disabled.
+
+----------------                                                           
+Required Items                                                            
+----------------                                                           
+textField:TextField                                                       
+A dynamic textfield with the instance name 'textField' displays the Button.label property
+			]]>
+		</instructions>
+	</component>
+	<component label="TextInput" className="gfx.controls.TextInput" states="default|focused|disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for TextInput.
+
+----------------                                                           
+TextInput States                                                           
+----------------                                                           
+default - Appears when the TextInput is not selected and the mouse is not over the component.
+focused - Appears when TextInput is focused.
+disabled - Appears when TextInput is set to enabled.
+
+----------------                                                           
+Required Items                                                             
+----------------                                                          
+textField:TextField                                                        
+A dynamic textfield with the instance name 'textField' displays the Button.label property
+			]]>
+		</instructions>
+	</component>
+	<component label="TileList" className="gfx.controls.TileList" states="default|focused|disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for TileList.
+
+----------------                                                           
+TileList States  is a compsite component (it requires additional components to work)    
+----------------                                                           
+default - Appears when the TileList is not selected and the mouse is not over the component.
+focused - Appears when TileList is focused.
+disabled - Appears when TileList is set to enabled.
+
+----------------                                                           
+Required Items                                                             
+----------------                                                           
+textField:TextField                                                        
+A dynamic textfield with the instance name 'textField' displays the Button.label property|
+			]]>
+		</instructions>
+	</component>
+	<component label="ViewStack" className="gfx.controls.ViewStack" states="default|focused|disabled">
+		<instructions>
+			<![CDATA[ 
+Instructions for ViewStack.
+
+----------------                                                           
+ViewStack States                                                            
+----------------                                                           
+default - Appears when the ViewStack is not selected and the mouse is not over the component.
+focused - Appears when ViewStack is focused.
+disabled - Appears when ViewStack is set to enabled.
+
+----------------                                                           
+Required Items                                                             
+----------------                                                           
+textField:TextField                                                        
+A dynamic textfield with the instance name 'textField' displays the Button.label property
+			]]>
+		</instructions>
+	</component>
+</components>

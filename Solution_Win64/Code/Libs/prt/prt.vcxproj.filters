@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\AlphaTextureMaterial.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\BacklightingAlphaTextureMaterial.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\BaseTextureMaterial.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\CommonImageReader.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultAlphaMaterial.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultBacklightingMaterial.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultMaterial.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\FullVisCache.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\HDRImageReader.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\ImageFactory.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\ITransferConfigurator.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\MaterialFactory.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\PrintTransferObserver.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RayCaster.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SampleGenerator.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SHAllocator.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SHFramework.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SHLog.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SimpleIndexedMesh.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SimpleTriangleRasterizer.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\stdafx.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TIFImageReader.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\Transfer.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TransferConfiguratorFactory.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TransferParameters.cpp">
+      <Filter>PRT</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\CompressedLookupTable.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\IObserver.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\ISHLog.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\ISHMaterial.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\ITransferConfigurator.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\Legendre.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\MaterialFactory.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\MeshCoefficientStreams.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\PRTTypes.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\QuantizedSamplesHolder.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHAllocator.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHCompressor.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHFramework.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHFrameworkBasis.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHMath.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHRotate.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SimpleIndexedMesh.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SmartPtrAllocator.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\TransferParameters.h">
+      <Filter>API</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\AlphaTextureMaterial.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\BacklightingAlphaTextureMaterial.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\BaseTextureMaterial.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\BasicUtils.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\CommonImageReader.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultAlphaMaterial.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultBacklightingMaterial.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultMaterial.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultTransferConfigurator.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\FullVisCache.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\HDRImageReader.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\Icosahedron.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\IImageReader.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\ImageFactory.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\ISampleGenerator.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\ITransfer.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\PrintTransferObserver.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RandomSampleGen.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RasterCube.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RasterTable.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RayCache.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RayCaster.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SampleGenerator.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SampleRetrieval.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SHLog.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SimpleTriangleRasterizer.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\stdafx.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SubTriManager.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TangentSpaceCalculation.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TIFImageReader.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\Transfer.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TransferConfiguratorFactory.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\VegetationTransferConfigurator.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\VertexInterface.h">
+      <Filter>PRT</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="API">
+      <UniqueIdentifier>{C8988B00-6641-3E84-958A-DAFB5D697857}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PRT">
+      <UniqueIdentifier>{DA693158-9114-36A4-BED0-82E6DA47A00F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

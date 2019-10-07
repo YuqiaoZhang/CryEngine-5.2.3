@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" sapi:alphabet="x-microsoft-ups" xml:lang="en-AU" tag-format="semantics/1.0-literals" xmlns:sapi="http://schemas.microsoft.com/Speech/2002/06/SRGSExtensions" root="toplevel" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="toplevel" scope="public">
+    <one-of>
+      <item>
+        <one-of>
+          <item>cloak, engaged</item>
+          <item>cloak engaged</item>
+        </one-of>
+        <tag>0.4#VC_CLOAK</tag>
+      </item>
+    </one-of>
+  </rule>
+</grammar>

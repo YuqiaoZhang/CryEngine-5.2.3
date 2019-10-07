@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\Launcher\WindowsLauncher\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\Launcher\WindowsLauncher\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Launcher\WindowsLauncher\resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <XML Include="..\..\..\..\Code\Launcher\WindowsLauncher\DPIAware.xml">
+      <Filter>Manifest</Filter>
+    </XML>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{3F5939DA-C0B1-3C14-8871-9D22E54156DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manifest">
+      <UniqueIdentifier>{1B99FDD0-6DD7-3517-85F6-F13CF635CBDC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

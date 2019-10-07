@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{48D299B4-D68E-321C-B53B-66E7151E357E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>Cry3DEngine</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Cry3DEngine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">Cry3DEngine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Cry3DEngine</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\CryEngine\Cry3DEngine;..\..\..\..\Code\SDKs;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\SDKs\lz4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Debug\";Cry3DEngine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\Cry3DEngine;..\..\..\..\Code\SDKs\lz4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\Cry3DEngine;..\..\..\..\Code\SDKs\lz4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>../../../../Code/SDKs/Brofiler/ProfilerCore64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\CryEngine\Cry3DEngine;..\..\..\..\Code\SDKs;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\SDKs\lz4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Profile\";Cry3DEngine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\Cry3DEngine;..\..\..\..\Code\SDKs\lz4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\Cry3DEngine;..\..\..\..\Code\SDKs\lz4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>../../../../Code/SDKs/Brofiler/ProfilerCore64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\CryEngine\Cry3DEngine;..\..\..\..\Code\SDKs;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\SDKs\lz4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;_PROFILE;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../Code/\";_PROFILE;USE_BROFILER;CMAKE_INTDIR=\"Release\";Cry3DEngine_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\Cry3DEngine;..\..\..\..\Code\SDKs\lz4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\Cry3DEngine;..\..\..\..\Code\SDKs\lz4\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>../../../../Code/SDKs/Brofiler/ProfilerCore64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CCullRenderer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CCullThread.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PolygonClipContext.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VMath.hpp" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VMath_C.hpp" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VMath_Prototypes.hpp" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VMath_SSE.hpp" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SkyLightManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SkyLightNishita.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SkyLightNishita_info.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\TimeOfDay.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\EnvironmentPreset.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\LightEntity.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MaterialHelpers.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Material.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MatMan.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SurfaceTypeManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MergedMeshGeometry.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RenderMeshMerger.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RenderMeshUtils.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ShadowCache.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Vegetation.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BreezeGenerator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3dEngine.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PhysCallbacks.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisibleRenderNodeManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\LightVolumeManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ClipVolume.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ClipVolumeManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BreakableGlassRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCachePredictors.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3DEngineMemory.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Cry3DEngineBase.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DeferredCollisionEvent.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\resource.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Array2d.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BasicArea.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreaCompile_info.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreas.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Brush.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\CGFLoader.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\CGFSaver.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFile.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkData.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ReadOnlyChunkFile.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFileReaders.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFileWriters.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\VClothSaver.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\cvars.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudBlockerRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudsManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DistanceCloudRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\ForsythFaceReorderer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\MeshCompiler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\TangentSpaceCalculation.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\TransformHelpers.h" />
+    <ClInclude Include="..\..\..\..\Code\SDKs\TangentBasisComputation\mikkelsen\mikktspace.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DecalManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DecalRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\FogVolumeRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\OpticsManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCache.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheDecoder.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheMeshManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DeformableNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MergedMeshRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PrismRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RoadRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RopeRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\BlockPacker.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\SceneTree.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\SceneTreeManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\VoxelSegment.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\SceneTreeCVars.inl" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjMan.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManCullQueue.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjectsTree.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjectsTree_Serialize_info.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\IndexedMesh.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObj.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Particle.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleContainer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEffect.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEmitter.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEnviron.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleFixedSizeElementPool.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleList.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleMemory.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSubEmitter.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleUtils.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_compile_info.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\TerrainModifications.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector_info.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VolumeObjectDataCreate.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VolumeObjectRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_water.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterRippleManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterVolumeRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterWaveRenderNode.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StdAfx.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureColor.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureCollision.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureCommon.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureCommonImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureRenderGpuSprites.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\ParamMod.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\ParamModImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\ParamTraits.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\ParamTraitsImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\Target.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\TargetImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\TimeSource.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\TimeSourceImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleCommon.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleAttributes.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleDataTypes.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleDataTypesImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleDebug.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleComponent.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleComponentImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleComponentRuntime.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleContainer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleContainerImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleEffect.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleEmitter.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleFeature.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleJobManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleMath.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleMathImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleMathImplSSE.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleProfiler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleProfilerImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleRender.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleRenderImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSpline.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSplineImpl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSystem.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleUpdate.h" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CCullRenderer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CCullThread.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PolygonClipContext.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SkyLightManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SkyLightNishita.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\TimeOfDay.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\EnvironmentPreset.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\LightEntity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MaterialHelpers.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Material.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MatMan.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SurfaceTypeManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PostProcessEffects.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MergedMeshGeometry.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RenderMeshMerger.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RenderMeshUtils.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ShadowCache.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Vegetation.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BreezeGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3dEngine.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3DEngineLight.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3dEngineLoad.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3DEngineRender.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PhysCallbacks.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisibleRenderNodeManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\LightVolumeManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ClipVolume.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ClipVolumeManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BreakableGlassRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DeferredCollisionEvent.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3DEngineMemory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Cry3DEngine.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreaMan.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreaCompile.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreas.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreaManCompile.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BasicArea.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Brush.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\CGFLoader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\CGFSaver.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFile.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ReadOnlyChunkFile.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFileReaders.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFileWriters.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\VClothSaver.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\cvars.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudBlockerRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudsManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DistanceCloudRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\ForsythFaceReorderer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\MeshCompiler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\TangentSpaceCalculation.cpp" />
+    <ClCompile Include="..\..\..\..\Code\SDKs\TangentBasisComputation\mikkelsen\mikktspace.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Decal.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DecalManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DecalRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\FogVolumeRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\OpticsManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCache.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheDecoder.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheMeshManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MergedMeshRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PrismRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RoadRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RopeRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\BlockPacker.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\SceneTree.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\SceneTreeManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\VoxelSegment.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjMan.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManDraw.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManDrawEntity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManFar.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManShadows.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManStreaming.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManCullQueue.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjectsTree.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjectsTree_MT.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjectsTree_Serialize.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjPhys.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjRend.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjStream.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\IndexedMesh.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjConstr.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjFar.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjLoad.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Particle.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEffect.cpp">
+      <ObjectFileName>$(IntDir)/ParticleEffect.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEmitter.cpp">
+      <ObjectFileName>$(IntDir)/ParticleEmitter.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEnviron.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleMemory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleFixedSizeElementPool.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleContainer.cpp">
+      <ObjectFileName>$(IntDir)/ParticleContainer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSubEmitter.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleRender.cpp">
+      <ObjectFileName>$(IntDir)/ParticleRender.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_compile.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_damage.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_det_tex.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_hmap.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_hmap_occlusion.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_init.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_light.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_load.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_render.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terran_edit.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\TerrainModifications.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\TerrainTextureCache.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_node.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_node_compile.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector_beach.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector_render.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector_tex.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VolumeObjectDataCreate.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VolumeObjectRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_water_quad.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterRippleManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterVolumeRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterWaveRenderNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StdAfx.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureAudio.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureAngles.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureAppearance.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureColor.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureCollision.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureField.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureFluidDynamics.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureLife.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureLightSource.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureLocation.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\Featurekill.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureMotion.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureRenderGpuSprites.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureRenderMeshes.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureRenderRibbon.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureRenderSprites.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureSecondGen.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureSpawn.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureVelocity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\Modifiers.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\Target.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\TimeSource.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleAttributes.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleDebug.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleComponent.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleComponentRuntime.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleContainer.cpp">
+      <ObjectFileName>$(IntDir)/ParticleSystem/ParticleContainer.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleConvert.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleEffect.cpp">
+      <ObjectFileName>$(IntDir)/ParticleSystem/ParticleEffect.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleEmitter.cpp">
+      <ObjectFileName>$(IntDir)/ParticleSystem/ParticleEmitter.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleFeature.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleJobManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleProfiler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleRender.cpp">
+      <ObjectFileName>$(IntDir)/ParticleSystem/ParticleRender.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSpline.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSystem.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSystemUnit.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleUpdate.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/lz4/lz4.vcxproj">
+      <Project>46764FD3-872E-3E3D-9174-E4358BC7C58B</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

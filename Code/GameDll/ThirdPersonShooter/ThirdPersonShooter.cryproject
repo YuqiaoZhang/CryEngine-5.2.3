@@ -1,0 +1,24 @@
+{
+    "content": {
+        "assets": [
+            "Assets"
+        ],
+        "code": [
+            "Code"
+        ],
+        "libs": [
+            {
+                "name": "ThirdPersonShooterTemplate",
+                "shared": {
+                    "win_x64": "bin/win_x64/CryGameThirdPersonShooter.dll",
+                }
+            }
+        ]
+    },
+    "info": {
+        "name": "Third Person Game Template"
+    },
+    "require": {
+        "engine": "engine-5.2"
+    }
+}

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryFont\CryFont.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryFont\FFont.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryFont\FFontXML.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryFont\FontRenderer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryFont\FontTexture.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryFont\GlyphBitmap.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryFont\GlyphCache.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryFont\ICryFont.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryFont\NullFont.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryFont\StdAfx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryFont\CryFont.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryFont\FFont.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryFont\FontRenderer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryFont\FontTexture.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryFont\GlyphBitmap.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryFont\GlyphCache.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryFont\NullFont.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryFont\resource.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryFont\FBitmap.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryFont\StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A333E891-0260-3FCE-8A8A-943275BB629E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>CryLobby</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\..\Solution_Win64\obj\CryExtensions\$(ProjectName)\Module\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CryLobby</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\..\Solution_Win64\obj\CryExtensions\$(ProjectName)\Module\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">CryLobby</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\..\Solution_Win64\obj\CryExtensions\$(ProjectName)\Module\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CryLobby</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\..\Code\CryExtensions\CryLobby\Module;..\..\..\..\..\Code\CryExtensions\CryLobby\Interface;..\..\..\..\..\Code\CryEngine\CryCommon\CryLobby;..\..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\..\Code\SDKs;..\..\..\..\..\Code\SDKs\boost;..\..\..\..\..\Code\Libs\yasli;..\..\..\..\..\Code\SDKs\yasli;..\..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Debug\";CryLobby_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Code\SDKs;..\..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\..\Code\SDKs\boost;..\..\..\..\..\Code\Libs\yasli;..\..\..\..\..\Code\SDKs\yasli;..\..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\..\Code\CryExtensions\CryLobby\Module;..\..\..\..\..\Code\CryExtensions\CryLobby\Interface;..\..\..\..\..\Code\CryEngine\CryCommon\CryLobby;..\..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Code\SDKs;..\..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\..\Code\SDKs\boost;..\..\..\..\..\Code\Libs\yasli;..\..\..\..\..\Code\SDKs\yasli;..\..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\..\Code\CryExtensions\CryLobby\Module;..\..\..\..\..\Code\CryExtensions\CryLobby\Interface;..\..\..\..\..\Code\CryEngine\CryCommon\CryLobby;..\..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;..\..\..\..\..\Code\SDKs\speex-1.0.5\lib\x64\libspeex-1.0.5.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\..\Solution_Win64\lib\CryExtensions\$(ProjectName)\Module\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\..\Code\CryExtensions\CryLobby\Module;..\..\..\..\..\Code\CryExtensions\CryLobby\Interface;..\..\..\..\..\Code\CryEngine\CryCommon\CryLobby;..\..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\..\Code\SDKs;..\..\..\..\..\Code\SDKs\boost;..\..\..\..\..\Code\Libs\yasli;..\..\..\..\..\Code\SDKs\yasli;..\..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Profile/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Profile\";CryLobby_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Code\SDKs;..\..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\..\Code\SDKs\boost;..\..\..\..\..\Code\Libs\yasli;..\..\..\..\..\Code\SDKs\yasli;..\..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\..\Code\CryExtensions\CryLobby\Module;..\..\..\..\..\Code\CryExtensions\CryLobby\Interface;..\..\..\..\..\Code\CryEngine\CryCommon\CryLobby;..\..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Code\SDKs;..\..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\..\Code\SDKs\boost;..\..\..\..\..\Code\Libs\yasli;..\..\..\..\..\Code\SDKs\yasli;..\..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\..\Code\CryExtensions\CryLobby\Module;..\..\..\..\..\Code\CryExtensions\CryLobby\Interface;..\..\..\..\..\Code\CryEngine\CryCommon\CryLobby;..\..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;..\..\..\..\..\Code\SDKs\speex-1.0.5\lib\x64\libspeex-1.0.5.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\..\Solution_Win64\lib\CryExtensions\$(ProjectName)\Module\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\..\Code\CryExtensions\CryLobby\Module;..\..\..\..\..\Code\CryExtensions\CryLobby\Interface;..\..\..\..\..\Code\CryEngine\CryCommon\CryLobby;..\..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\..\Code\SDKs;..\..\..\..\..\Code\SDKs\boost;..\..\..\..\..\Code\Libs\yasli;..\..\..\..\..\Code\SDKs\yasli;..\..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;_PROFILE;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";_PROFILE;USE_BROFILER;CMAKE_INTDIR=\"Release\";CryLobby_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Code\SDKs;..\..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\..\Code\SDKs\boost;..\..\..\..\..\Code\Libs\yasli;..\..\..\..\..\Code\SDKs\yasli;..\..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\..\Code\CryExtensions\CryLobby\Module;..\..\..\..\..\Code\CryExtensions\CryLobby\Interface;..\..\..\..\..\Code\CryEngine\CryCommon\CryLobby;..\..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Code\SDKs;..\..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\..\Code\SDKs\boost;..\..\..\..\..\Code\Libs\yasli;..\..\..\..\..\Code\SDKs\yasli;..\..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\..\Code\CryExtensions\CryLobby\Module;..\..\..\..\..\Code\CryExtensions\CryLobby\Interface;..\..\..\..\..\Code\CryEngine\CryCommon\CryLobby;..\..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>Ws2_32.lib;..\..\..\..\..\Code\SDKs\speex-1.0.5\lib\x64\libspeex-1.0.5.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\..\Solution_Win64\lib\CryExtensions\$(ProjectName)\Module\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamVoice.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamFriends.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamFriendsManagement.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamLobby.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamMatchMaking.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamStats.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamReward.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryLobby.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryLobbyEvent.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryLobbyPrivate.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\CryLobbyPacket.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryLobbyUI.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryFriends.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryFriendsManagement.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryReward.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICrySignIn.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryTCPService.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryVoice.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Interface\CryLobby\ICryMatchMaking.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LAN\CryLANLobby.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LAN\CryLANMatchMaking.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryDedicatedServer.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryDedicatedServerArbitrator.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryFriends.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryFriendsManagement.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryHostMigration.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryLobby.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryLobbyUI.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryMatchMaking.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryReward.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CrySharedLobbyPacket.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CrySignIn.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryStats.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryTCPService.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryTCPServiceFactory.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryVoice.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LobbyCVars.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\resource.h" />
+    <ClInclude Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\StdAfx.h" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamFriends.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamFriendsManagement.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamLobby.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamMatchMaking.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamStats.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\Steam\CrySteamReward.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LAN\CryLANLobby.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LAN\CryLANMatchMaking.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryDedicatedServer.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryDedicatedServerArbitrator.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryFriends.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryFriendsManagement.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryHostMigration.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryLobby.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryLobbyDLL.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryLobbyUI.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryMatchMaking.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryReward.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CrySignIn.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryStats.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryTCPService.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryTCPServiceFactory.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\CryVoice.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\LobbyCVars.cpp" />
+    <ClCompile Include="..\..\..\..\..\Code\CryExtensions\CryLobby\Module\StdAfx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

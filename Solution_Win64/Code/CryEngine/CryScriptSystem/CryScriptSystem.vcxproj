@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{9BC27798-C83F-3515-92F0-5E796989EA2A}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>CryScriptSystem</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CryScriptSystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">CryScriptSystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CryScriptSystem</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryScriptSystem;..\..\..\..\Code\SDKs\Lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Debug\";CryScriptSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryScriptSystem;..\..\..\..\Code\SDKs\Lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryScriptSystem;..\..\..\..\Code\SDKs\Lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryScriptSystem;..\..\..\..\Code\SDKs\Lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Profile\";CryScriptSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryScriptSystem;..\..\..\..\Code\SDKs\Lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryScriptSystem;..\..\..\..\Code\SDKs\Lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryScriptSystem;..\..\..\..\Code\SDKs\Lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;_PROFILE;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";_PROFILE;USE_BROFILER;CMAKE_INTDIR=\"Release\";CryScriptSystem_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryScriptSystem;..\..\..\..\Code\SDKs\Lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryScriptSystem;..\..\..\..\Code\SDKs\Lua\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\FunctionHandler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebuggerResource.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\resource.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptSystem.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptTable.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\StackGuard.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\GoToFuncWnd.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinyBrowseFolder.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinyCaptionWindow.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinyCoolEdit.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinyFileEnum.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinyImageList.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinyMain.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinyRegistry.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinySplitter.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinyStatusBar.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinyTreeList.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\_TinyWindow.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\AboutWnd.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\Coverage.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\FileTree.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\GoToWnd.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\LUADBG.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaRemoteDebug\LuaRemoteDebug.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaRemoteDebug\SerializationHelper.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_Movie.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_Particle.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_Physics.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_Script.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_Sound.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_System.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBinding.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\SurfaceTypes.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\BucketAllocator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptTimerMgr.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryScriptSystem\StdAfx.h" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\Coverage.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\FileTree.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\LUADBG.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaRemoteDebug\LuaRemoteDebug.cpp" />
+    <ResourceCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger.rc" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBinding.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_Movie.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_Particle.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_Physics.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_Script.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_Sound.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\ScriptBind_System.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptBindings\SurfaceTypes.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\CryScriptSystem.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\FunctionHandler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptSystem.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptTable.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\ScriptTimerMgr.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\StdAfx.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryScriptSystem\vectorlib.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CompileAsC</CompileAs>
+    </ClCompile>
+    <None Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\LUADBG.ico" />
+    <None Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\small.ico" />
+    <None Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\res\toolbar1.bmp" />
+    <None Include="..\..\..\..\Code\CryEngine\CryScriptSystem\LuaDebugger\res\TreeView.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/lua/lua.vcxproj">
+      <Project>A497C785-3A16-33CF-BBA6-46C4B63F6F9D</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

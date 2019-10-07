@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>CLIK API Documentation</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" type="text/css" href="scaleformTemplate.css" /> 
+<noscript>
+<style type="text/css"><!--
+.dspcont{display:block;}
+//--></style>
+</noscript>
+<script type="text/javascript">
+if(!document.getElementById)
+   document.write('<style type="text/css"><!--\n'+
+      '.dspcont{display:block;}\n'+
+      '//--></style>');
+</script>
+
+
+<script src="jquery.js" type="text/javascript">//</script><script src="common.js" type="text/javascript">//</script><script src="doc.js" type="text/javascript">//</script></head>
+
+
+<body id="overview"><div class="VisDoc"><div class="content overviewTree">
+<div class="docNav"><br class="clear" /></div>
+
+
+
+<h1> Framework Architecture </h1>
+
+
+<p >
+&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+This section describes the framework and highlights each subsystem to provide a high-level understanding of the CLIK component architecture.&nbsp;</p>
+
+<p >
+&nbsp;</p>
+<p ><img src="Hierarchy.bmp" border="0" alt="" title="">&nbsp;</p>
+<p ><strong>Fig 1: CLIK Hierarchy</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> UIComponent</a></h2>
+   <div class="dspcont"> 
+
+
+<p >
+&nbsp;</p>
+<p >
+All of the prebuilt components  bundled with Scaleform CLIK inherit core functionality from the UIComponent class (gfx.core.UIComponent). This class is the foundation of all CLIK components, and it is recommended that custom components be subclassed from UIComponent.&nbsp;</p>
+<p >
+The UIComponent class itself derives from the Flash 8 MovieClip class, and thus inherits all properties and methods of a standard Flash movieclip. Several custom read/write properties are supported by the UIComponent class:&nbsp;</p>
+<p ><ul>
+<li> disabled&nbsp;</li>
+<li> visible&nbsp;</li>
+<li>focused&nbsp;</li>
+<li>width&nbsp;</li>
+<li> height&nbsp;</li>
+<li> displayFocus: Set this property to true if the component should display its focused state. For more information see the Focus Handling section.&nbsp;</li></ul></p>
+
+<p >
+UIComponent has several empty methods that are meant to be implemented by subclasses. These include:&nbsp;</p>
+<p ><ul>
+<li> configUI: Called to perform component configuration.&nbsp;</li>
+<li> draw: Called when the component is invalidated. For more information, see the Invalidation section.&nbsp;</li>
+<li> changeFocus: Called when the component receives or loses focus.&nbsp;</li>
+<li> scrollWheel: Called when the scroll wheel is used when the cursor is over the component.&nbsp;</li></ul></p>
+
+<p >
+The UIComponent mixes in the EventDispatcher class to support event subscribing and dispatching. Therefore, all subclasses support event subscribing and dispatching. For more information, see the Event Model section.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+<strong>Initialization</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+This class performs the following initialization steps inside an <code>onLoad() </code>event handler:&nbsp;</p>
+<p ><ul>
+<li> Sets the default size to the MovieClip dimensions.&nbsp;</li>
+<li> Perform component configuration. This steps calls the <code> configUI() </code> method.&nbsp;</li>
+<li>Draws contents. This step calls the <code> validateNow() </code> method, which performs a redraw immediately, i.e, calls <code>draw()</code>.</li></ul></p>
+<p >
+&nbsp;</p>
+</div>
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Component States</a></h2>
+   <div class="dspcont"> 
+
+<p >
+&nbsp;</p>
+
+
+<p >
+Almost all CLIK components support visual states. States are set up by navigating to a specific keyframe in the component timeline, or passing state information onto sub-elements. There are three common state setups:&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+1. <strong><i>Button components</i></strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+Any component that behaves like a button, which responds to mouse actions, and optionally be &quot;selected&quot; fall into this category. Examples of CLIK components that use this schema are Button and its variants, ListItemRenderer, RadioButton and CheckBox. Sub-elements of complex components such as ScrollBar are also Button components. CLIK components that fall into this category either directly use the <a href="gfx_controls_Button.html">Button</a> (gfx.controls.Button) class or use a class that is derived from the  Button class.&nbsp;</p>
+<p >
+The basic states supported by button components are:&nbsp;</p>
+<ul>
+<p ><li>
+ an <b>up</b> or default state.&nbsp; </li></p>
+<p >
+<li> an <b>over</b> state when the mouse cursor is over the component or, when it is focused.&nbsp;</li></p>
+<p >
+<li> a <b>down</b> state when the mouse has been pressed on the component.&nbsp;</li></p>
+<p >
+<li> a <b>disabled</b> state when the component has been disabled.&nbsp;</li></p></ul>
+<p >
+Button components also support prefixed states, which can be set depending on the value of other properties. By default, the core CLIK Button component only supports a &quot;selected_&quot; prefix, which is appended to the frame label when the component is in a selected state.&nbsp;</p>
+<p >
+The basic states supported by button components, including selected states, are:&nbsp;</p>
+<ul><p >
+<li> an <b>up</b> or default state;&nbsp;</li></p>
+<p >
+<li>an <b>over</b> state when the mouse cursor is over the component, or when it is focused;&nbsp;</li></p>
+<p >
+<li> a <b>down</b> state when the mouse has been pressed on the component;&nbsp;</li></p>
+<p >
+<li> a <b>disabled</b> state when the component has been disabled;&nbsp;</li></p>
+<p >
+<li>a <b>selected_up</b> or default state;&nbsp;</li></p>
+<p >
+<li> a <b>selected_over</b> state when the mouse cursor is over the component, or when it is focused;&nbsp;</li></p>
+<p >
+<li> a <b>selected_down</b> state when the button is pressed;&nbsp;</li></p>
+<p >
+<li> a <b>selected_disabled</b> state.&nbsp;</li></p></ul>
+<p >
+Note: The states mentioned in this section are only a handful of the full complement of states supported by CLIK Button components. Please refer to the <a href="https://developer.scaleform.com/developer/documents/gfx_3.2_getting_started_with_CLIK_Buttons.pdf">Getting Started with CLIK Buttons</a> document for the complete list of states.&nbsp;</p>
+<p >
+The CLIK Button class provides a <code>getStatePrefixes() </code>method, which allows developers to change the list of prefixes depending on the component&prime;s properties. This method is defined as follows: </p>
+<div ><div ><pre > <code>private function getStatePrefixes():Array
+ {
+       return (_selected) ? [&quot;selected_&quot;,&quot;&quot;] : [&quot;&quot;];
+ }</pre></code></div></div>
+<p >
+&nbsp;</p>
+<p >
+The CLIK Button by default only supports the &quot;selected_&quot; prefix. The <code>getStatePrefixes()</code> method returns a different array of prefixes depending on its selected property. This prefix array will be used internally in conjunction with the appropriate state label to determine the frame to play.&nbsp;</p>
+<p >
+When a state is set internally, for example on mouse rollover, a look-up table is queried for a list of frame labels. The <code>stateMap</code> property in the Button class defines the state to frame label mapping. The following is the state mapping defined in the CLIK Button class: </p>
+<div ><div ><pre ><code> private var stateMap:Object =
+ {
+        up:[&quot;up&quot;],
+        over:[&quot;over&quot;],
+        down:[&quot;down&quot;],
+        release: [&quot;release&quot;, &quot;over&quot;],
+        out:[&quot;out&quot;,&quot;up&quot;],
+        disabled:[&quot;disabled&quot;],
+        selecting: [&quot;selecting&quot;, &quot;over&quot;],
+        kb_selecting: [&quot;kb_selecting&quot;, &quot;up&quot;],
+        kb_release: [&quot;kb_release&quot;, &quot;out&quot;, &quot;up&quot;],
+        kb_down: [&quot;kb_down&quot;, &quot;down&quot;]
+ }
+</pre></code></div></div>
+<p >
+Each state may have more than one target label. The values returned from the state map is combined with the prefix returned by <code>getStatePrefixes()</code> to generate a list of target frames to be played. The following figure describes the complete process used to determine the correct frame to play:&nbsp; </p>
+
+<p ><img src="keyframe.bmp" border="0" alt="" title="">&nbsp;</p>
+<p ><strong>&nbsp;&nbsp;&nbsp;Figure 2: Process used to determine the correct keyframe to play.</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+
+
+<p>The playhead will always jump to the last available frame, so if a certain prefixed frame is not available, the component will default to the previously requested frame. Developers can override the state map to create custom behaviors.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+<strong><i>2. Non-button Interactive Components</i></strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+These refer to any components that are interactive, and can receive focus, but does not respond to mouse interaction. Examples of CLIK components that use this schema are List, OptionStepper, Slider and TextArea. These components may contain child elements that respond to mouse events. The states supported by the non-button interactive components are:&nbsp;</p>
+<ul><p >
+<li> a <b>default</b> state;&nbsp;</li></p>
+<p >
+<li> a <b>focused</b> state; &nbsp;</li></p>
+<p >
+<li> a <b>disabled</b> state. &nbsp;</li></p></ul>
+<p >
+&nbsp;</p>
+<p >
+<strong><i>3. Non-interactive Components</i></strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+These refer to any component that is not interactive, but can be disabled. The Label component is the only non-interactive component in the default component set that support states. The states supported by the non-interactive components are:&nbsp;</p>
+<ul><p >
+<li> a <b>default</b> state;&nbsp;</li></p>
+<p >
+<li> a <b>disabled</b> state.&nbsp;</li></p></ul>
+<p >
+&nbsp;</p>
+<p >
+<strong><i>4. Special Cases</i></strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+There are some components which do not abide by the state rules described above. StatusIndicator, and the extended ProgressBar component use the timeline animation to display the value of the component. The playhead will be set to the frame that represents the percentage value of the component. For instance, a 50-frame timeline in a StatusIndicator with a minimum value of 0, a maximum value of 10, and a value set to 5 (50%) will <code>gotoAndStop()</code> on frame 25 (50% of 50 frames). It is fairly simple to extend these components to manage the display programmatically. The <code>updateValue()</code> method can be modified or overridden to change this behavior.</p>
+
+
+<p>
+In some cases, components may have special modes in addition to their default behavior that provide support for additional component states. The TextInput and TextArea components enable the <strong><i>over</i></strong> and <strong><i>out</i></strong> states when their actAsButton property is set to support mouse cursor roll over and roll out events when not focused.&nbsp;</p>
+<p >
+&nbsp;</p>
+</div>
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Event Model</a></h2>
+   <div class="dspcont"> 
+
+
+
+<p >
+&nbsp;</p>
+<p >
+The CLIK component framework uses a communication paradigm known as the event model. Components &quot;dispatch&quot; events when they change or are interacted with, and container components can subscribe to the different events. This allows multiple objects to be notified of a change, instead of just one, which is how ActionScript 2 callbacks work.&nbsp;</p>
+<p>The EventDispatcher class (gfx.events.EventDispatcher) provides an easy to use API that supports the event model. A CLIK component can either extend this class or use the <code>EventDispatcher.initialize()</code> method to mix-in its behavior. However, if the CLIK component derives from UIComponent, then it only needs to call <code>super() </code> in its contructor since UIComponent already does a mix-in of EventDispatcher. An EventDispatcher subclass or mix-in provides support for subscribing and dispatching of events. &nbsp;</p>
+
+<p>
+&nbsp;</p>
+<p >
+<strong>Usage and Best Practices</strong>&nbsp;</p>
+<p>
+<strong><i>Subscribing to an Event</i></strong>&nbsp;</p>
+
+<p >
+&nbsp;</p>
+<p >
+To subscribe to an event, use the <code>addEventListener()</code> method, with a type parameter that specifies the type of interaction to listen for. Conversely, <code>removeEventListener()</code> will unsubscribe from an event. If multiple listeners are added with the exact same parameters, only one event will be fired. Each of these methods also requires a scope parameter, which is the listening object, and a callBack, which is the String name of the function that is called when the event is dispatched.&nbsp;</p>
+<p >The EventTypes class (gfx.events.EventTypes) contains an enumeration of commonly used events. They can be used instead of strings denoting the event type (<code>EventTypes.SHOW </code>instead of<code> &quot;show&quot;</code>).&nbsp;</p>
+<p >
+Example: </p><div ><div ><pre ><code>buttonInstance.addEventListener(&quot;itemClick&quot;, this, &quot;callBack&quot;);
+function callback(eventObj:Object):Void
+{
+      buttonInstance.removeEventListener(&quot;itemClick&quot;, this, &quot;callBack&quot;);
+}</pre></code></div></div>
+
+<p >
+In this example the buttonInstance is set to listen for &quot;itemClick&quot; events, and to execute the function &quot;callback&quot; when it receives the event. The callback function then removes the event listener.&nbsp;</p>
+<p>
+&nbsp;</p>
+<p >
+<strong><i>Dispatching an Event</i></strong>&nbsp;</p>
+<p> 
+&nbsp;</p>
+
+<p >
+CLIK components that wish to notify subscribed listeners of a change or interaction use the <code>dispatchEvent() </code>method. This method requires a single argument: an object containing relevant data, including a mandatory type property which specifies the type of event to be dispatched. The component framework automatically adds a target property, which is a reference to the object dispatching the event, but it can also be set manually to override it with a custom target.&nbsp;</p>
+<p >
+Example: </p><div ><div ><pre ><code>dispatchEvent({type:&quot;itemClick&quot;, item:selectedItem});</pre></code></div></div>
+<p >
+&nbsp;</p>
+
+
+</div> 
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Focus Handling</a></h2>
+   <div class="dspcont"> 
+
+
+<p >
+ &nbsp;</p>
+<p >
+The CLIK components use a custom focus handling framework, which is implemented in most components, and should work well with nonframework components and symbols. All focus changes happen at the GFx player level, either by mouse or keyboard (gamepad) focus changes, or by calling Selection.setFocus(instance) in ActionScript. The FocusHandler manager (gfx.managers.FocusHandler) is instantiated as soon as a single component class is created. There is no need to instantiate the FocusHandler directly.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+<strong>Usage and Best Practices</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+Currently focus is required to be set on a CLIK component instance; otherwise focus will default to the player. If not set, the focus management system will not behave correctly (such as the Tab key not switching focus, etc.). Focus can be applied by setting the focused property on any component to true. Another method that works to apply focus, which also works with non-component elements, is the following:&nbsp;</p>
+<p >
+Example: </p><div><div><pre><code>Selection.setFocus(firstComponentOrMovieClip); </code></pre></div></div>
+
+<p >
+MovieClips without mouse handlers (eg., onRelease, onRollOver,) cannot be focused by the GFx or Flash player, and will not generate focus change events. Button components automatically add mouse handlers. Other components will set a combination of the standard MovieClip focusEnabled and tabEnabled properties.&nbsp;</p>
+<p >
+Components with focusable subelements, such as ScrollBar, pass focus onto their owner component by setting the <code>focusTarget</code> property. When focus changes to a component, the FocusHandler will recursively search the component hierarchy for a focusTarget, and give focus to the last component that doesn&prime;t return a focusTarget.&nbsp;</p>
+<p >
+Sometimes a component needs to appear focused when it is not the actual focus of the player or application. The <code>displayFocus </code> property can be set to true to tell a component to behave as if it is focused. For example, when a Slider is focused, the track of a Slider needs to appear to also be focused. Note that the <code>changeFocus()</code> method is called on a component when the focused property changes.&nbsp;</p>
+<p >
+Example: </p><div><div><pre><code>function changeFocus():Void
+{
+    track.displayFocus = this.focused;
+}</code></pre></div></div>
+<p >
+&nbsp;</p>
+<p >
+Conversely, sometimes a component needs to be clickable, but not focusable, such as a draggable panel, or any other component that would benefit from mouse-only control. In this case, set the <code>tabEnabled </code>property false.&nbsp;</p>
+<p >
+Example:</p><div><code>
+background.tabEnabled = false;&nbsp;</code></div>
+<p >
+&nbsp;</p>
+<p >
+<strong>Capturing Focus in Composite Components</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+Composite components are components which are made up of other components, such as a ScrollingList, OptionStepper, or ButtonBar. The component itself will likely have mouse handlers on the sub-components and not have any mouse handlers of its own. This means that the Selection engine in Flash and GFx cannot focus the item and the built-in navigation support will have trouble identifying the component, and instead inspect its children in error.&nbsp;</p>
+<p >
+To make the component behave as a single entity despite its composition, the following steps can be taken:&nbsp;</p>
+<p >
+1) Set <code>tabEnabled=false</code> on all sub-components that have mouse-handlers (such as the arrow buttons in OptionStepper).&nbsp;</p>
+<p >
+2) Set the <code>focusTarget</code> property on all sub-components that have mouse-handlers to the container component. Make sure to set <code>focusEnabled=true</code> in the container component.&nbsp;</p>
+<p >
+3) If necessary set the <code>displayFocus</code> property in the sub-components to true inside the container component&prime;s changeFocus method.&nbsp;</p>
+<p >
+Now when the sub-component is focused, the focus will be transferred to the container component.&nbsp;</p>
+<p >
+&nbsp;</p>
+</div>
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Input Handling</a></h2>
+   <div class="dspcont"> 
+
+<p >
+ &nbsp;</p>
+
+<p>Since the CLIK components derive from the Flash 8 MovieClip class, they mostly behave the same as any other movieclip instance when receiving user input. Mouse events are caught by components if they install mouse handlers. However there is a major conceptual change in CLIK related to how keyboard or equivalent controller events are handled.&nbsp;</p>
+
+<p >
+&nbsp;</p>
+<p >
+<strong>Usage and Best Practices</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+
+
+<p >
+All non-mouse input is intercepted by the InputDelegate. The InputDelegate converts input commands into InputDetails objects either internally, or by requesting the value of an input command from the game engine. The latter involves modifying the <code>InputDelegate.readInput()</code> method to support the target application. Once InputDetails have been created, an input event is dispatched from the InputDelegate.&nbsp;</p>
+<p >
+InputDetails consist of the following properties:&nbsp;</p>
+<ul> <p >
+<li> A type, such as &quot;key&quot;.&nbsp;</li></p>
+<p >
+<li> A code, such as the key code of the pressed key.&nbsp;</li></p>
+<p >
+<li> A value, which is extra information about the input such as button vector, or key-press type. Key events are generated for both key up and key down actions, and the corresponding InputDetails' value parameter will be either &quot;keyUp&quot; or &quot;keyDown&quot; respectively.&nbsp;</li></p>
+<p >
+<li> A navEquivalent (navigation equivalent), which defines a human-readable navigation direction such as &quot;up&quot;, &quot;down&quot;, &quot;left&quot; or &quot;right&quot; if such a mapping is possible.  The NavigationCode class (gfx.ui.NavigationCode) provides a handy enumeration of common navigation equivalents.&nbsp;</li></p></ul>
+<p >
+The FocusHandler listens for input events from the InputDelegate and passes them to the components through the focus path. The focused components is used to determine the focus path, which are a top-down list of components in the display-list hierarchy that implement the <code>handleInput() </code> method.&nbsp;</p>
+<p >
+This method is called on the top-most component in the focus chain, and the InputDetails and pathToFocus array are passed as parameters. &nbsp;</p>
+
+
+<p ><img src="handleInput.bmp" border="0" alt="" title="">&nbsp;</p>
+<p ><strong>&nbsp;&nbsp;&nbsp;Figure 3: The handleInput() chain.</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+
+
+
+<p>The FocusHandler expects a Boolean response to the handleInput() call, which indicates if the component, or any components in the focus path, has handled the input. If it receives a false response, and the input has a navEquivalent that is not null, then the input is passed on to the GFx player.&nbsp;</p>
+<p >
+Example: </p><div ><div ><pre ><code>function handleInput(details:InputDetails, pathToFocus:Array):Boolean
+{
+       if (details.navEquivalent == &quot;left&quot;)
+       {
+              // or NavigationCode.LEFT
+	      doSomething();
+              return true;
+       }
+       return false;
+}</code></pre></div></div>
+<p >
+&nbsp;</p>
+<p >
+It is up to each component handling input to bubble the event to the next component in the pathToFocus array, and to return true or false if the input is handled. It is a good idea not to assume that the next component in the focusPath will implement the handleInput correctly, so the method should ensure that it passes a Boolean value back and not just the return value of the bubbled input.&nbsp;</p>
+<p >
+Example: </p><div ><div ><pre ><code>function handleInput(details:InputDetails, pathToFocus:Array):Boolean
+{
+      var nextItem:MovieClip = pathToFocus.shift();
+      var handled:Boolean = nextItem.handleInput(details, pathToFocus);
+      if (handled) { return true; }
+      // custom handling code
+      return false; // or true if handled
+}</code></pre></div></div>
+<p >
+&nbsp;</p>
+<p >
+Input can also be passed on to components not in the focus path. For instance, in DropdownMenu, the handleInput is passed on to the dropdown list component, even though it is not in the pathToFocus array. This enables the list to respond to key commands if it makes sense to do so.&nbsp;</p>
+<p >
+Example: </p><div ><div ><pre ><code>function handleInput(details:InputDetails, pathToFocus:Array):Boolean
+{
+       var handled:Boolean = dropdown.handleInput(details);
+       if (handled) { return true; }
+       // custom handling code
+       return false; // or true if handled
+}</code></pre></div></div>
+<p >
+&nbsp;</p>
+<p >
+It is also possible to listen for the input event manually by adding an event listener to the InputDelegate.instance, and handle the input that way. Note that the input will still be captured by the FocusHandler and passed down the focus hierarchy.&nbsp;</p>
+<p >
+Example: </p><div ><div ><pre ><code>InputDelegate.instance.addEventListener(&quot;input&quot;, this, &quot;handleInput&quot;);
+function handleInput(event:Object):Void
+{
+      var details:InputDetails = event.details;
+      if (details.value = Key.TAB) { doSomething(); }
+}</code></pre></div></div>
+<p >
+&nbsp;</p>
+<p >
+The InputDelegate should be tailored to the game to manage the expected input. The default InputDelegate handles keyboard control, and converts the arrow keys, as well as the common game navigation keys W, A, S, and D into directional navigation equivalents.&nbsp;</p>
+<p >
+&nbsp;</p>
+
+
+<p >
+<strong>Multiple Mouse Cursors</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+
+<p >
+Some systems, such as the Nintendo Wii, support multiple cursor devices. The CLIK component framework supports multiple cursors, but will not allow multiple component focus in a single SWF. If two user click on separate buttons, the last clicked item will be the focused item.&nbsp;</p>
+<p >
+All mouse events dispatched in the framework contain a <code>mouseIndex </code>property, which is the index of the input device that generated the event.</p>
+<p >
+Example</p>
+<div ><div ><pre><code>myButton.addEventListener(&quot;click&quot;, this, &quot;onCursorClick&quot;);
+function onCursorClick(event:Object):Void
+{
+      switch (event.mouseIndex)
+      {
+           ...
+      }
+}</code></pre></div></div>
+
+<p >
+&nbsp;</p>
+
+</div>
+
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Invalidation</a></h2>
+   <div class="dspcont"> 
+
+<p >
+ &nbsp;</p>
+<p >
+Invalidation is the mechanism used by the components to limit the number of times the component redraws when multiple properties are changed. When a component is invalidated, it will redraw itself on the next frame. This enables developers to throw as many changes at once to the components, and only have the component update once. There are some exceptions where the component needs to redraw immediately; however for most cases, invalidation is sufficient.&nbsp;</p>
+
+<p ><img src="invalidation.bmp" border="0" alt="" title="">&nbsp;</p>
+<p ><strong>&nbsp;&nbsp;&nbsp;Figure 4: Scaleform CLIK components automatically invalidate when certain properties are changed.</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+
+
+
+
+<p >
+<strong>Usage and Best Practices</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+After any internal component change (usually caused by setter functions), <code>UIComponent.invalidate()</code> should be called, which ultimately calls <code>UIComponent.draw()</code> in the component. The <code>invalidate() </code> method generates the <code>draw()</code> call using a timer based delay to avoid unnecessary updates. Developers using the existing components will likely not need to manage invalidation, but should at least by aware of it.</p>
+<p>For cases where an immediate redraw is required, developers can use the <code>UIComponent.validateNow()</code> method. </p>
+<p >
+&nbsp;</p></div>
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Component Scaling</a></h2>
+   <div class="dspcont"> 
+<p >
+ &nbsp;</p>
+<p >
+Components scale in two ways:&nbsp;</p>
+<p >
+1) Using a re-flowing layout, where the component&prime;s scale is reset, and then its elements resized to match the original size. Components with sub-elements and no background, such as ScrollBar take this approach.&nbsp;</p>
+<p >
+2) Counter-scaling the elements to maintain the aspect ratio. The component remains scaled, but its elements are counter-scaled to give the appearance of not scaling. This approach enables components with a graphics background, and a scale9grid to be stretched, and the context to scale inside instead of becoming distorted.&nbsp;</p>
+<p>
+Typically components use the reflow method due to Flash scale9Grid limitations. This forces developers to build &quot;skin&quot; symbols, similar to Flash/Flex components. Reflowing works best if components have sub-elements that may also scale, therefore it is intended for containers and similar entities.&nbsp;</p>
+<p>
+The counter-scaling method was created specifically for CLIK, mainly due to the extended scale9Grid functionality available in Scaleform GFx. This allowed for the creation of single-asset components using frame states instead of the more intensive layered approach used by other component sets. The base CLIK components are minimilastic in nature, usually containing a background, a label and an optional icon or sub-button, and therefore ideal for the counter-scaling method. However, counter-scaling is not intended for container-like setups (panel layout, etc). In such cases, the reflow method with a background that is constrained along with the rest of the sub-elements is the recommended approach.&nbsp;</p>
+<p >
+Components can be scaled on the stage in the Flash IDE, or dynamically scaled using the width and height properties, or the <code>setSize()</code> method. The appearance of scaled components may not look accurate in the Flash IDE. This is a limitation of delivering the components as un-compiled MovieClips without LivePreviews. Testing the movie in GFxPlayer is the only way to get an accurate representation of how the scaled component will appear in-game. The CLIK extension is bundled with a Launcher panel to improve this part of the workflow.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+<strong>Scale9Grid</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+Most components use the second scaling method. MovieClip assets inside of a Scale9Grid in the GFxPlayer will adhere to the scale9grid for the most part, whereas Flash will discard the grid if it contains MovieClips. This means that even though a scale9grid does not work in Flash Player, it may work perfectly in GFx.&nbsp;</p>
+<p >
+One thing to note is that when a MovieCLip has a scale9grid, subelements will also scale under that rule. Adding a scale9grid to the subelement will cause it to ignore the parent&prime;s grid, and draw normally.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+<strong>Constraints</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+The <a href="gfx_utils_Constraints.html">Constraints </a> utility class (gfx.utils.Constraints) assists in the scaling and positioning of assets inside a component that scales. It enables developers to position assets on stage, and for the assets to retain their distance from the edges of the parent component. For example, the ScrollBar component will position the track, up arrow, and down arrow buttons according to where they are dropped on stage. Constraints work with both scaling methods used in the components.&nbsp;</p>
+<p >
+The following code adds the ScrollBar assets to a constraints object in the <code>configUI() </code>method, aligning the buttons to the top and bottom, and scaling the track so it stretches with its parent. The <code>draw()</code> method contains code to update the constraints, and consequently any elements registered with it. This updating is done inside <code>draw()</code> because it is called after component invalidation, commonly after the component&prime;s dimensions have changed.  </p>
+<div><div ><pre ><code>private function configUI():Void
+{
+    ...
+    constraints = new Constraints(this);
+    // The upArrow already sticks to top left.
+    constraints.addElements(downArrow, Constraints.BOTTOM);
+    constraints.addElenent(track, Constraints.TOP|Constraints.BOTTOM);
+    ...
+}
+
+private function draw():Void
+{
+    ...
+    constraints.update(__width, __height);
+    ...
+}
+</code></pre></div></div>
+<p >
+&nbsp;</p>
+</div>
+
+
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Components and Data Sets</a></h2>
+   <div class="dspcont"> 
+<p >
+ &nbsp;</p>
+<p >
+Components that require a list of data use a dataProvider approach. A dataProvider is a data storage and retrieval object that exposes the appropriate API defined in the CLIK IDataProvider class (gfx.interfaces.IDataProvider).&nbsp;</p>
+<p >
+The dataProvider approach uses a request model with callbacks, instead of direct property access. This allows the dataProvider to reach out to the game engine for data as it is needed. This provides memory benefits, as well as the ability to chunk large data sets into small, manageable ones.&nbsp;</p>
+<p >
+Components that use a dataProvider include anything that extends CoreList (ScrollingList, TileList), as well as OptionStepper and DropdownMenu. None of the components in the CLIK framework require the use of the IDataProvider interface; only the inclusion of the methods in its API. The IDataProvider class is only provided for reference.&nbsp;</p>
+
+<p >
+&nbsp;</p>
+<p >
+<strong>Usage and Best Practices</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+The DataProvider class included in the framework (gfx.data.DataProvider) includes the static <code>initialize()</code> method to add the dataProvider methods to any ActionScript array. Components that use a dataProvider will automatically initialize arrays making them accessible using the dataProvider approach.This means the following syntax initializes a statically declared array as a fully operational dataProvider with the methods described in IDataProvider:&nbsp;</p>
+<div ><div><pre ><code>myComponent.dataProvider = [ &quot;data1&quot;, 4.3, {label:&quot;anObjectElement&quot;, value:6} ];</code></pre></div></div>
+
+<p >
+The methods that a dataProvider should implement are:&nbsp;</p>
+<ul>
+<p >
+<li> length: Either as a property or a getter function to return the length of the data set.&nbsp;</li></p>
+<p >
+<li> requestItemAt: Request a specific item from the dataProvider. Typcally used by list components that display a single item at any time, such as the OptionStepper.&nbsp;</li></p>
+<p >
+<li> requestItemRange: Request a range of items from the dataProvider with a start and end index. Typically used by list components that displays more than one item, such as the ScrollingList.&nbsp;</li></p>
+<p >
+<li> indexOf: Return the index of an item.&nbsp;</li></p>
+<p >
+<li> invalidate: Flag the dataProvider as changed, and provide a new length of the data. This method also should dispatch a &quot;dataChange&quot; event to notify the component that the data has been updated. The dataProvider should support a length property that is publically accessible and reflects the data size.&nbsp;</li></p>
+<p ></ul>
+Instances requiring short lists of data can use an array as a dataProvider. Developers should be aware that storing data in ActionScript 2 is much more expensive in terms of memory and performance that if stored natively in the application. For large data sets it is recommended to tie the dataProvider with the ExternalInterface.call to poll data from the game engine on a need basis.</p>
+
+&nbsp;</p>
+</div>
+
+
+
+
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Dynamic Animations</a></h2>
+   <div class="dspcont"> 
+
+<p >
+ &nbsp;</p>
+<p >
+Scaleform CLIK provides a custom Tween class (gfx.motion.Tween) that has similar behavior to the Flash 8 Tween class, but is fully compatible with GFx. Both Tween classes support the same types of easing functions, such as the ones under the mx.transitions.easing.* package.&nbsp;</p>
+<p >
+However, the Scaleform CLIK Tween class has significant differences to its counterpart. Firstly, it installs tween methods to the Flash 8 MovieClip class prototype. This exposes tween functionality to all MovieClips, not just Scaleform CLIK components. Secondly, the Scaleform CLIK Tween class uses <code>onEnterFrame</code> and therefore only one tween can be active per MovieClip at one time. If a new tween is created for a MovieClip that already has an active tween, then the new tween will stop the previous one. However the tween methods support multiple properties per MovieClip, allowing different properties of the same object to be changed at the same time. The examples in the following section show how to create tweens that affect multiple properties at the same time.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+<strong>Usage and Best Practices</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+The Tween class exposes two main methods in MovieClip: <code>tweenTo()</code> and <code>tweenFrom()</code>. The <code>tweenTo()</code> method tweens from the current property value of the MovieClip to one specified in the function parameter list. The <code>tweenFrom()</code> method tweens from a property value specified in the parameter list to the current value.&nbsp;</p>
+<p >
+Before using the tween methods, they must be installed with the MovieClip prototype. The Tween class provides a helper static function to perform this action: <code>Tween.init()</code>.&nbsp;</p>
+<p >
+Example: </p><div ><div ><pre ><code>import mx.transitions.easing.*;
+import gfx.motion.Tween;
+Tween.init();     // Install tween methods to MovieClip prototype
+// Perform a 1 second tween from the current horizontal position and
+  alpha values to the ones specified
+myMovieClip.tweenTo(1, {_x: 200, _alpha: 0}, Strong.easeIn);</code></pre></div></div>
+
+<p >
+To be notified when the tween has completed, simply create an <code>onTweenComplete()</code> function in the object being tweened.&nbsp;</p>
+<p >
+Example: </p><div ><div ><pre ><code>import mx.transitions.easing.*;
+import gfx.motion.Tween;
+Tween.init();
+mc.onTweenComplete = function()
+{
+            trace(&quot;Tween has finished!&quot;);
+}
+mc.tweenTo(5, {_rotation: 20},   Bounce.easeOut);</code></pre></div></div>
+<p >
+ &nbsp;</p>
+</div>
+
+
+
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> PopUp Support</a></h2>
+   <div class="dspcont"> 
+
+<p >
+ &nbsp;</p>
+<p >
+Scaleform CLIK includes the PopUpManager class (gfx.managers.PopUpManager) to provide support for popups such as dialogs and tooltips. The Dialog component uses the PopUpManager to display its content.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+<strong>Usage and Best Practices</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+The PopUpManager has several static methods to assist in the creation and maintenance of popups. The <code>createPopUp()</code> method can be used to create a popup using a linkage ID to any MovieClip symbol (including CLIK components). The context parameter is used to create an instance of the popup, and the relativeTo parameter is used to position the popup. Both parameters are expected to be MovieClips.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+Example </p><div ><div ><pre ><code>import gfx.managers.PopUpManager;
+PopUpManager.createPopUp(context, &quot;MyToolTipLinkageID&quot;, {_x: 200, _y:200}, relativeTo);</code></pre></div></div>
+
+<p >
+The GFx extension topmostLevel is used to guarantee that the popups are always displayed on top of all other elements on the Stage, This scheme was used instead of trying to create the popup at the root level because of problems related to library scopes. If a child SWF was loaded inside a parent, and it tried to create an instance of a symbol defined in its library in a path that existed in the parent context, then a symbol lookup error would occur because the parent is unable to access the child’s library. Unfortunately, there is no clean workaround for this problem and the topmostLevel scheme is the best alternative.&nbsp;</p>
+<p >
+Note that topmostLevel can be applied to non-popups as well, and the z-ordering of such elements in the Stage is maintained. Therefore, to draw a custom cursor on top of popups, the cursor can be created at the highest depth or level and set its topmostLevel property to true.&nbsp;</p>
+
+<p >
+&nbsp;</p>
+</div>
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Drag and Drop</a></h2>
+   <div class="dspcont"> 
+
+<p >
+ &nbsp;</p>
+<p >
+The DragManager class (gfx.managers.DragManager) provides support to initiate and manage drag operations. The class behaves like a singleton, and provides an instance property to access the one and only object. Using this object, developers can start and stop drag operations.&nbsp;</p>
+<p >
+The <code>startDrag()</code> method can be invoked to start the drag operation using either a MovieClip on the Stage or a symbol ID, which will create an instance of the symbol for dragging. The <code>stopDrag()</code> method ends the drag-operation and also notifies all listeners. The DragManager also registers itself with the InputDelegate to allow drag-operations to be cancelled using the keyboard or equivalent controller.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+<strong>Usage and Best Practices</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+
+
+<p ><img src="DragDemo.bmp" border="0" alt="" title="">&nbsp;</p>
+<p><strong> &nbsp;&nbsp;&nbsp;Figure 5: DragDemo in action</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+
+
+<p >
+DragManager only performs drag management. It is up to developers to create components that utilize the DragManager to provide true drag and drop support. Scaleform CLIK includes a sample drop target class called DragTarget (gfx.controls.DragTarget). The DragTarget extends UIComponent and thus is classified as a CLIK component. It has several unique features that complement the DragManager.&nbsp;</p>
+<p >
+The DragTarget has a concept of drag types. These drag types can be configured per DragTarget to enable the component to allow or disallow a drop operation. To complement these drag types, the DragTarget also installs event listeners for dragBegin and dragEnd with the DragManager. This enables the DragTarget to visually display whether or not it can accept a drop operation.&nbsp;</p>
+<p >
+The Inventory demo bundled with Scaleform CLIK uses two components that subclasses or composes the DragTarget to demonstrate drag and drop operations using the DragManager and the DragTarget. These two components are the InventorySlot and the ItemSlot. These component classes are provided as part of the CLIK framework; however, note that they are meant to be a sample of what can be accomplished and not an end-all solution to all use cases.&nbsp;</p>
+<p >
+The InventorySlot class (gfx.controls.InventorySlot) supports the display of a set of icons that denote inventory items, such as those commonly found in role playing games. It subclasses the DragTarget class to provide drop support, and contains code to generate drag operations using the DragManager. When the drag operation begins, a copy of the icon is created to follow the cursor. On a valid drop operation, the target InventorySlot will change its icon to be the one that was dragged.&nbsp;</p>
+<p >
+The ItemSlot class (gfx.controls.ItemSlot) is very similar to the InventorySlot, but contains extra functionality to support mouse events such as clicking. Instead of subclassing, the ItemSlot contains an instance of DragTarget. It also contains an instance of a CLIK Button. These two subelements provide the necessary functionality for ItemSlot to support both drag and drop and button operations.</p>
+<p >
+ &nbsp;</p>
+</div>
+
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Layout</a></h2>
+   <div class="dspcont"> 
+
+<p >
+ &nbsp;</p>
+<p >
+With GFx 3.3, a basic layout management system was introduced via two new classes: Panel and StagePanel. Note that it is not as comprehensive as other layout management systems and was primarily built to provide positional constraints for aspect-ratio independent UIs and split-screen support.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+<strong>Panel</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+The Panel class (gfx.layout.Panel) provides basic container functionality and exposes several inspectable properties to manipulate them. The class can be attached to a container movieclip symbol to integrate the new features.&nbsp;</p>
+<p >
+One of the major features of the Panel class is its ability to enumerate elements contained inside of it and infer their horizontal and vertical constraint settings. This allows the Panel to reflow the child elements based on those rules when it is resized. If a child element is a Panel, then its hconstrain and vconstrain properties are used. If not a Panel element, then the child is expected to resize with the Panel.&nbsp;</p>
+<p >
+For example, assume that a set of controls should always be anchored to the top-right of the screen regardless of the container Panel&prime;s size. To achieve this, the controls can be wrapped inside a Panel instance (e.g: symbol ComponentPanel1) and its vconstrain and hconstrain inspectable properties set appropriately. This wrapper now can be placed inside the &lsquo;container&rsquo; Panel (e.g: symbol HUDPanel) that will be resized. Since the Panel class automatically detects constrain rules, the HUDPanel will know to keep ComponentPanel1 constrained to the top-right whenever it is resized.&nbsp;</p>
+<p >
+In addition to supporting such positional constraints, the Panel class also supports focus mode configuration via inspectable properties. The focusModeVertical and focusModeHorizontal properties define the behavior of the system focus inside the Panel bounds. For example, if focusModeVertical is set to &lsquo;loop&rsquo;, and the focus is at the bottom-most element inside the Panel (regardless of hierarchical depth) and the down arrow key is pressed, then the focus will move to the top-most element instead of being assigned to the focusable element below the Panel.&nbsp;</p>
+<p >
+Another inspectable property of Panel is the controllerMask property. GFx 3.3 introduced the concept of focus groups, that can be assigned to specific controllers. The controllerMask can be set to a hex value that denotes which controllers can interact inside the Panel bounds. By default the value is FFFF (all 16 possible controllers can operate inside the Panel). For example, if the value is set to 0001, then only controller0 (default keyboard/controller) can operate. If the value is set to 0011, then only controller0 and controller4 can operate.&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+<strong>Stage Panel</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+The StagePanel class (gfx.layout.StagePanel) is a subclass of the Panel class and provides the same functionality. However it is intended to configure the Stage properties as well as listen to Stage resize events. The container symbol with StagePanel attached is expected to be the root element in the SWF scene, and wrap child Panels that contain the UI elements. The sole inspectable property of the StagePanel determines the scale mode of the Stage (it uses the default alignment: vertical and horizontal center).&nbsp;</p>
+<p >
+In general the following settings are recommended:&nbsp;</p>
+<p >
+1) If the SWF content is expected to maintain pixel dimensions regardless of resolution and aspect ratio, then &quot;noScale&quot; should be used.&nbsp;</p>
+<p >
+2) If the SWF content is expected to scale based on resolution, and was created at a widescreen resolution, then &quot;noBorder&quot; should be used.&nbsp;</p>
+<p >
+3) If the SWF content is expected to scale based on resolution, and was created at a standard definition resolution, then &quot;showAll&quot; should be used.</p>
+<p >
+ &nbsp;</p>
+</div>
+
+
+
+<h2><a href="javascript:void(0)" class="dsphead"
+   onclick="dsp(this)">
+   <span class="dspchar">+</span> Miscellaneous</a></h2>
+   <div class="dspcont"> 
+
+<p >
+ &nbsp;</p>
+<p >
+<strong>Delegate</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+The Delegate class (gfx.utils.Delegate) provides a static method to create a function delegate with the correct scope. It is not used by any Scaleform CLIK components, and is mainly used by the DragManager.&nbsp;</p>
+<p >
+Usage example: </p><div ><div ><pre ><code>eventProvider.onMouseMove = Delegate.create(this, doDrag);</code></pre></div></div>
+<p >
+&nbsp;</p>
+<p >
+<strong>Locale</strong>&nbsp;</p>
+<p >
+&nbsp;</p>
+<p >
+The Locale class (gfx.utils.Locale) provides an interface for custom localization schemes. The GFx localization scheme performs translation lookup internally and does not require an explicit lookup from ActionScript. However, custom translation providers may require this lookup. The Button, Label and TextInput components and their subclasses all query for a localized string via the <code>Locale.getTranslatedString()</code> static method. The default implementation simply returns the same value. It is up to the developer to modify the Locale class to support the custom localization scheme.&nbsp;</p>
+<p >
+ &nbsp;</p>
+</div>
+
+
+</div>
+
+
+
+
+<div class="footer"><ul class="docFooter"></ul></div></body></html>

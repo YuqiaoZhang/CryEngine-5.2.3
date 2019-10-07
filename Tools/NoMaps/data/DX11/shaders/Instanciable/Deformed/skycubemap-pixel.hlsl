@@ -1,0 +1,17 @@
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_Position;
+    uint   rtindex  : SV_RenderTargetArrayIndex;
+    uint   vpindex  : SV_ViewportArrayIndex;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 RenderScenePS(PixelInputType input) : SV_Target
+{
+    return 1.0f;
+}

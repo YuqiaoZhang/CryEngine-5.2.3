@@ -1,0 +1,4 @@
+$CryMenu = `menu -parent $gMainWindow -label "CryMayaTools" -tearOff true -allowOptionBoxes true`;
+menuItem -label "Control Panel" -annotation "Crytek Control Panel" -command "source crytekSetup.mel; ControlPanel;";
+source crytekSetup.mel; 
+crytekSetup;

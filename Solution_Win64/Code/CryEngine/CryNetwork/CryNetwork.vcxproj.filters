@@ -1,0 +1,918 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\BandwidthCalculator.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\CTPEndpoint.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\ExponentialKeyExchange.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\FrameTypes.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\MessageMapper.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\MessageQueue.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NetChannel.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NetNub.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NewMessageQueue.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NullSendable.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\PacketRateCalculator.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\PMTUDiscovery.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\Serialize.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\StatsCollector.cpp">
+      <Filter>Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\CompositeDatagramSocket.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\IDatagramSocket.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\InternetSimulatorSocket.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\ISocketIOManager.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\IStreamSocket.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\LocalDatagramSocket.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\NetResolver.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketError.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerIOCP.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerLobbyIDAddr.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerSelect.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\TCPStreamSocket.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\UDPDatagramSocket.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\WatchdogTimer.cpp">
+      <Filter>Socket Library</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveBoolPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveBoolPolicy2.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveFloat.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveFloatPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveOrientationPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveUnitVec3Policy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveVec3Policy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveVelocity.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveVelocityPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithAlphabet.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithModel.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithPrimitives.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\BiggerOrSmallerPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\BoolCompress.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\BoolCompress2.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\CompressionManager.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\DefaultPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\EntityIdPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ErrorDistributionEncoding.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\FloatAsIntPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\GaussianEncoding.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\Int64Policy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\IntegerValuePredictor.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\JumpyPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\NoSendPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\OwnChannelCompressionPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\PredictiveFloat.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\PredictiveFloatTracker.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\QuantizedVec3.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\Quantizer.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\RangedIntPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\RangedUnsignedIntPolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\SegmentedCompressionSpace.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\SerializationChunk.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StationaryInteger.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StationaryUnsignedInteger.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StringTable.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StringTablePolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\TimePolicy.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\TimePolicyWithDistribution.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\Vec3TableCompressor.cpp">
+      <Filter>Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\ByteStream.cpp">
+      <Filter>Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\CompressingStream.cpp">
+      <Filter>Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\SimpleInputStream.cpp">
+      <Filter>Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\SimpleOutputStream.cpp">
+      <Filter>Streams</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\rijndael.cpp">
+      <Filter>Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\StreamCipher.cpp">
+      <Filter>Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\Whirlpool.cpp">
+      <Filter>Cryptography</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\CryNetwork.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DistributedLogger.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\MementoMemoryManager.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetCVars.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetLog.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetTimer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Network.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Utils.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\WorkQueue.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\RemoteControl\RemoteControl.cpp">
+      <Filter>RCon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\Authentication.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\BreakagePlayback.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\CET_Server.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ClientContextView.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextEstablisher.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextView.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextViewStateManager.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\DemoPlaybackListener.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\DemoRecordListener.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\NetContext.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\NetContextState.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\PerformBreakage.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ServerContextView.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SessionID.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFile.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFilePak.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFileSet.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\UpdateAspectDataContext.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\UpdateMessage.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\AuthorityHistory.cpp">
+      <Filter>Context\History</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\ConfigurationHistory.cpp">
+      <Filter>Context\History</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\History.cpp">
+      <Filter>Context\History</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\MementoHistory.cpp">
+      <Filter>Context\History</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\ProfileHistory.cpp">
+      <Filter>Context\History</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\RegularlySyncedItem.cpp">
+      <Filter>Context\History</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\NetworkACL\NetProfileTokens.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\ServiceManager.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\CryLAN\LanQueryListener.cpp">
+      <Filter>Services\CryLAN</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\DebugKit.cpp">
+      <Filter>Debug Kit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\DebugOutput.cpp">
+      <Filter>Debug Kit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\Encoding.cpp">
+      <Filter>Debug Kit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\NetVis.cpp">
+      <Filter>Debug Kit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\NetworkInspector.cpp">
+      <Filter>Debug Kit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\ServerProfiler.cpp">
+      <Filter>Debug Kit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\AutoConfigDownloader.cpp">
+      <Filter>Http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\SimpleHttpServer.cpp">
+      <Filter>Http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\cry_sha1.cpp">
+      <Filter>Http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\IVoiceDecoder.cpp">
+      <Filter>VOIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\IVoiceEncoder.cpp">
+      <Filter>VOIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\SpeexCodec.cpp">
+      <Filter>VOIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\VoiceManager.cpp">
+      <Filter>VOIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\VoicePacket.cpp">
+      <Filter>VOIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\VoiceContext.cpp">
+      <Filter>VOIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugChannelViewer.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugInfo.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugInternetSimulator.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugProfileViewer.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugServerInfo.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugTrafficBandwidth.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetProfile.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\BandwidthCalculator.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NewMessageQueue.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\CTPEndpoint.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\ExponentialKeyExchange.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\FrameTypes.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\ICTPEndpointListener.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\INubMember.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\MessageMapper.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\MessageQueue.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NetChannel.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NetNub.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NullSendable.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\PacketRateCalculator.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\PMTUDiscovery.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\Serialize.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\StatsCollector.h">
+      <Filter>Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerLobbyIDAddr.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\CompositeDatagramSocket.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\IDatagramSocket.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\InternetSimulatorSocket.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\ISocketIOManager.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\IStreamSocket.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\LocalDatagramSocket.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\NetResolver.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketError.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerIOCP.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerNull.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerSelect.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\TCPStreamSocket.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\UDPDatagramSocket.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\WatchdogTimer.h">
+      <Filter>Socket Library</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\RangedUnsignedIntPolicy.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StationaryUnsignedInteger.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveFloat.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveVelocity.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithAlphabet.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithModel.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithPrimitives.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\BoolCompress.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\BoolCompress2.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\CompressionManager.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ErrorDistributionEncoding.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\GaussianEncoding.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\GaussianEncoding_SlotData.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ICompressionPolicy.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ICompressionPolicy2.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\CompressionPolicyTime.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\IntegerValuePredictor.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\OwnChannelCompressionPolicy.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\PredictiveBase.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\PredictiveFloat.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\PredictiveFloatTracker.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\Quantizer.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\RangedIntPolicy.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\SegmentedCompressionSpace.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\SerializationChunk.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StationaryInteger.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StringTable.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\TimePolicy.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\TimePolicyWithDistribution.h">
+      <Filter>Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\ArithStream.h">
+      <Filter>Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\ByteStream.h">
+      <Filter>Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\CommStream.h">
+      <Filter>Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\CompressingStream.h">
+      <Filter>Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\SimpleInputStream.h">
+      <Filter>Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\SimpleOutputStream.h">
+      <Filter>Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\SimpleStreamDefs.h">
+      <Filter>Streams</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\rijndael.h">
+      <Filter>Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\StreamCipher.h">
+      <Filter>Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\Whirlpool.h">
+      <Filter>Cryptography</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\INetworkPrivate.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\AutoFreeHandle.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Config.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DistributedLogger.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Errors.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\FixedSizeArena.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\INetworkMember.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\MementoMemoryManager.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetCVars.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetLog.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetTimer.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Network.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\objcnt.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\objcnt_defs.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\PolymorphicQueue.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\STLMementoAllocator.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Utils.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\WorkQueue.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\RemoteControl\Protocol.h">
+      <Filter>RCon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\RemoteControl\RemoteControl.h">
+      <Filter>RCon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\INetContextState.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\Authentication.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\BreakagePlayback.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\CET_Server.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ChangeList.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ClientContextView.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextEstablisher.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextView.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextViewStateManager.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\DemoDefinitions.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\DemoPlaybackListener.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\DemoRecordListener.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\IContextViewExtension.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\INetContextListener.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\NetContext.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\NetContextState.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\PerformBreakage.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\RMILogger.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ServerContextView.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SessionID.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncContext.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFile.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFilePak.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFileSet.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\UpdateAspectDataContext.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\UpdateMessage.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\AuthorityHistory.h">
+      <Filter>Context\History</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\ConfigurationHistory.h">
+      <Filter>Context\History</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\History.h">
+      <Filter>Context\History</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\MementoHistory.h">
+      <Filter>Context\History</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\ProfileHistory.h">
+      <Filter>Context\History</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\RegularlySyncedItem.h">
+      <Filter>Context\History</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\NetworkACL\NetProfileTokens.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\ServiceManager.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\CryLAN\LanQueryListener.h">
+      <Filter>Services\CryLAN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\DebugKit.h">
+      <Filter>Debug Kit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\DebugOutput.h">
+      <Filter>Debug Kit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\Encoding.h">
+      <Filter>Debug Kit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\NetVis.h">
+      <Filter>Debug Kit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\NetworkInspector.h">
+      <Filter>Debug Kit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\ServerProfiler.h">
+      <Filter>Debug Kit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\AutoConfigDownloader.h">
+      <Filter>Http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\SimpleHttpServer.h">
+      <Filter>Http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\cry_sha1.h">
+      <Filter>Http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\IVoiceDecoder.h">
+      <Filter>VOIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\IVoiceEncoder.h">
+      <Filter>VOIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\IVoicePacketListener.h">
+      <Filter>VOIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\VoiceContext.h">
+      <Filter>VOIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\VoiceManager.h">
+      <Filter>VOIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\VoicePacket.h">
+      <Filter>VOIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugChannelViewer.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugInfo.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugInternetSimulator.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugProfileViewer.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugServerInfo.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugTrafficBandwidth.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetProfile.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Protocol">
+      <UniqueIdentifier>{1C10AB08-02F6-3FFA-A175-1D56B2E96539}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Socket Library">
+      <UniqueIdentifier>{806B2807-E415-374E-A30D-A8E937628468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Compression">
+      <UniqueIdentifier>{7C107088-89AC-360C-B67E-9FC6A2022FC2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Streams">
+      <UniqueIdentifier>{7E4D9334-9A8A-3105-9B92-006ED275D42D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cryptography">
+      <UniqueIdentifier>{3C73F264-6681-3DE8-AF93-B8FCDC3F4B6F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{35658F97-F4AD-359C-AAAD-C3ADCC6D9BA9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RCon">
+      <UniqueIdentifier>{6D9A247A-1E7C-3EAC-BDB2-F20DB688CA3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Context">
+      <UniqueIdentifier>{BA6F26B7-B650-3EA6-9B38-47DE7BA9FD2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Services">
+      <UniqueIdentifier>{E25791D7-4D84-3A52-B5A6-F72040F8E041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug Kit">
+      <UniqueIdentifier>{D50DAF09-2D05-3033-859C-089090ECDFCF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Http">
+      <UniqueIdentifier>{3F642841-E4CF-3F4E-A9B4-D6790E1834E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VOIP">
+      <UniqueIdentifier>{EA501514-9552-38E3-8B0E-6992D25F7046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{68FF80C3-76C7-3325-837E-2A33871D4C6A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Services\CryLAN">
+      <UniqueIdentifier>{61FD25F7-D1F4-3FBC-A0DE-57C29507D647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Context\History">
+      <UniqueIdentifier>{38A77AD3-2938-3245-B530-7DDF06F73679}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

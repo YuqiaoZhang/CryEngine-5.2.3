@@ -1,0 +1,56 @@
+<book title="Scaleform Component API" directory="Scaleform Component API" language="en" version="1.0" sort="mm_6">
+    <level1 name="controls"/>
+    <level2 href="html/gfx_controls_Button.html" name="Button"/>
+    <level2 href="html/gfx_controls_ButtonBar.html" name="ButtonBar"/>
+    <level2 href="html/gfx_controls_ButtonGroup.html" name="ButtonGroup"/>
+    <level2 href="html/gfx_controls_CheckBox.html" name="CheckBox"/>
+    <level2 href="html/gfx_controls_CoreList.html" name="CoreList"/>
+    <level2 href="html/gfx_controls_Dialog.html" name="Dialog"/>
+	<level2 href="html/gfx_controls_DragTarget.html" name="DragTarget"/>
+	<level2 href="html/gfx_controls_DropdownMenu.html" name="DropdownMenu"/>
+	<level2 href="html/gfx_controls_InventorySlot.html" name="InventorySlot"/>
+	<level2 href="html/gfx_controls_ItemSlot.html" name="ItemSlot"/>
+    <level2 href="html/gfx_controls_Label.html" name="Label"/>
+    <level2 href="html/gfx_controls_ListItemRenderer.html" name="ListItemRenderer"/>
+	<level2 href="html/gfx_controls_NumericStepper.html" name="NumericStepper"/>
+    <level2 href="html/gfx_controls_OptionStepper.html" name="OptionStepper"/>
+    <level2 href="html/gfx_controls_ProgressBar.html" name="ProgressBar"/>
+    <level2 href="html/gfx_controls_RadioButton.html" name="RadioButton"/>
+    <level2 href="html/gfx_controls_ScrollBar.html" name="ScrollBar"/>
+    <level2 href="html/gfx_controls_ScrollingList.html" name="ScrollingList"/>
+    <level2 href="html/gfx_controls_ScrollIndicator.html" name="ScrollIndicator"/>
+    <level2 href="html/gfx_controls_Slider.html" name="Slider"/>
+    <level2 href="html/gfx_controls_StatusIndicator.html" name="StatusIndicator"/>
+    <level2 href="html/gfx_controls_TextArea.html" name="TextArea"/>
+    <level2 href="html/gfx_controls_TextInput.html" name="TextInput"/>
+    <level2 href="html/gfx_controls_TileList.html" name="TileList"/>
+    <level2 href="html/gfx_controls_UILoader.html" name="UILoader"/>
+    <level2 href="html/gfx_controls_ViewStack.html" name="ViewStack"/>
+    <level1 name="core"/>
+    <level2 href="html/gfx_core_UIComponent.html" name="UIComponent"/>
+    <level1 name="data"/>
+    <level2 href="html/gfx_data_DataProvider.html" name="DataProvider"/>
+    <level1 name="events"/>
+    <level2 href="html/gfx_events_EventDispatcher.html" name="EventDispatcher"/>
+    <level2 href="html/gfx_events_EventTypes.html" name="EventTypes"/>	
+    <level1 name="interfaces"/>
+    <level2 href="html/gfx_interfaces_IDataProvider.html" name="IDataProvider"/>
+    <level2 href="html/gfx_interfaces_IList.html" name="IList"/>
+    <level2 href="html/gfx_interfaces_IListItemRenderer.html" name="IListItemRenderer"/>
+	<level1 name="io"/>
+	<level2 href="html/gfx_io_GameDelegate.html" name="GameDelegate"/>
+    <level1 name="managers"/>
+    <level2 href="html/gfx_managers_FocusHandler.html" name="FocusHandler"/>
+    <level2 href="html/gfx_managers_InputDelegate.html" name="InputDelegate"/>
+    <level2 href="html/gfx_managers_PopUpManager.html" name="PopUpManager"/>
+    <level2 href="html/gfx_managers_DragManager.html" name="DragManager"/>
+    <level1 name="motion"/>
+    <level2 href="html/gfx_motion_Tween.html" name="Tween" />
+    <level1 name="ui"/>
+    <level2 href="html/gfx_ui_InputDetails.html" name="InputDetails"/> 
+    <level2 href="html/gfx_ui_NavigationCode.html" name="NavigationCode"/> 
+    <level1 name="utils"/>
+    <level2 href="html/gfx_utils_Constraints.html" name="Constraints"/>
+    <level2 href="html/gfx_utils_Delegate.html" name="Delegate"/>
+    <level2 href="html/gfx_utils_Locale.html" name="Locale"/>
+</book>

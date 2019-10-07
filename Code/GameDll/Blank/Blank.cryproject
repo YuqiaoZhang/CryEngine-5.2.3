@@ -1,0 +1,20 @@
+{
+	"content": {
+		"assets": ["Assets"],
+		"code": ["Code"],
+    "libs": [
+      {
+        "name": "GameBlank",
+        "shared": {
+          "win_x64": "bin/win_x64/CryGameBlank.dll"
+        }
+      }
+    ]
+	},
+	"info": {
+		"name": "CRYENGINE SDK Example"
+	},
+	"require": {
+		"engine": "engine-5.2"
+	}
+}

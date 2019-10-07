@@ -1,0 +1,1047 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CCullRenderer.cpp">
+      <Filter>CBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CCullThread.cpp">
+      <Filter>CBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PolygonClipContext.cpp">
+      <Filter>CBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SkyLightManager.cpp">
+      <Filter>Effects\SkyLight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SkyLightNishita.cpp">
+      <Filter>Effects\SkyLight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\TimeOfDay.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\EnvironmentPreset.cpp">
+      <Filter>Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\LightEntity.cpp">
+      <Filter>Light Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MaterialHelpers.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Material.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MatMan.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SurfaceTypeManager.cpp">
+      <Filter>Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PostProcessEffects.cpp">
+      <Filter>PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MergedMeshGeometry.cpp">
+      <Filter>RenderMeshUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RenderMeshMerger.cpp">
+      <Filter>RenderMeshUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RenderMeshUtils.cpp">
+      <Filter>RenderMeshUtils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ShadowCache.cpp">
+      <Filter>Shadows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Vegetation.cpp">
+      <Filter>Vegetation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BreezeGenerator.cpp">
+      <Filter>3DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3dEngine.cpp">
+      <Filter>3DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3DEngineLight.cpp">
+      <Filter>3DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3dEngineLoad.cpp">
+      <Filter>3DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3DEngineRender.cpp">
+      <Filter>3DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PhysCallbacks.cpp">
+      <Filter>3DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisibleRenderNodeManager.cpp">
+      <Filter>3DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\LightVolumeManager.cpp">
+      <Filter>3DEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ClipVolume.cpp">
+      <Filter>ClipVolumes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ClipVolumeManager.cpp">
+      <Filter>ClipVolumes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BreakableGlassRenderNode.cpp">
+      <Filter>RenderNodes\Breakables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DeferredCollisionEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3DEngineMemory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Cry3DEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreaMan.cpp">
+      <Filter>VisAreas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreaCompile.cpp">
+      <Filter>VisAreas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreas.cpp">
+      <Filter>VisAreas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreaManCompile.cpp">
+      <Filter>VisAreas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BasicArea.cpp">
+      <Filter>VisAreas</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Brush.cpp">
+      <Filter>Brush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\CGFLoader.cpp">
+      <Filter>CFG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\CGFSaver.cpp">
+      <Filter>CFG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFile.cpp">
+      <Filter>CFG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ReadOnlyChunkFile.cpp">
+      <Filter>CFG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFileReaders.cpp">
+      <Filter>CFG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFileWriters.cpp">
+      <Filter>CFG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\VClothSaver.cpp">
+      <Filter>CFG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\cvars.cpp">
+      <Filter>CVars</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudBlockerRenderNode.cpp">
+      <Filter>Effects\Clounds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudRenderNode.cpp">
+      <Filter>Effects\Clounds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudsManager.cpp">
+      <Filter>Effects\Clounds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DistanceCloudRenderNode.cpp">
+      <Filter>Effects\Clounds</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\ForsythFaceReorderer.cpp">
+      <Filter>Mesh Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\MeshCompiler.cpp">
+      <Filter>Mesh Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\TangentSpaceCalculation.cpp">
+      <Filter>Mesh Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\TangentBasisComputation\mikkelsen\mikktspace.cpp">
+      <Filter>Mesh Compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Decal.cpp">
+      <Filter>Effects\Decals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DecalManager.cpp">
+      <Filter>Effects\Decals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DecalRenderNode.cpp">
+      <Filter>Effects\Decals</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\FogVolumeRenderNode.cpp">
+      <Filter>Effects\FogVolumes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\OpticsManager.cpp">
+      <Filter>Effects\Optics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCache.cpp">
+      <Filter>GeomCache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheRenderNode.cpp">
+      <Filter>GeomCache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheManager.cpp">
+      <Filter>GeomCache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheDecoder.cpp">
+      <Filter>GeomCache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheMeshManager.cpp">
+      <Filter>GeomCache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MergedMeshRenderNode.cpp">
+      <Filter>RenderNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PrismRenderNode.cpp">
+      <Filter>RenderNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RoadRenderNode.cpp">
+      <Filter>RenderNodes\Roads</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RopeRenderNode.cpp">
+      <Filter>RenderNodes\Ropes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\BlockPacker.cpp">
+      <Filter>SVO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\SceneTree.cpp">
+      <Filter>SVO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\SceneTreeManager.cpp">
+      <Filter>SVO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\VoxelSegment.cpp">
+      <Filter>SVO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjMan.cpp">
+      <Filter>Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManDraw.cpp">
+      <Filter>Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManDrawEntity.cpp">
+      <Filter>Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManFar.cpp">
+      <Filter>Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManShadows.cpp">
+      <Filter>Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManStreaming.cpp">
+      <Filter>Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManCullQueue.cpp">
+      <Filter>Object Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjectsTree.cpp">
+      <Filter>Objects Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjectsTree_MT.cpp">
+      <Filter>Objects Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjectsTree_Serialize.cpp">
+      <Filter>Objects Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjPhys.cpp">
+      <Filter>StatObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjRend.cpp">
+      <Filter>StatObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjStream.cpp">
+      <Filter>StatObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\IndexedMesh.cpp">
+      <Filter>StatObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjConstr.cpp">
+      <Filter>StatObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjFar.cpp">
+      <Filter>StatObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObjLoad.cpp">
+      <Filter>StatObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Particle.cpp">
+      <Filter>Effects\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEffect.cpp">
+      <Filter>Effects\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEmitter.cpp">
+      <Filter>Effects\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEnviron.cpp">
+      <Filter>Effects\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleMemory.cpp">
+      <Filter>Effects\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleFixedSizeElementPool.cpp">
+      <Filter>Effects\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleContainer.cpp">
+      <Filter>Effects\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSubEmitter.cpp">
+      <Filter>Effects\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleManager.cpp">
+      <Filter>Effects\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleRender.cpp">
+      <Filter>Effects\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_compile.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_damage.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_det_tex.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_hmap.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_hmap_occlusion.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_init.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_light.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_load.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_render.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terran_edit.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\TerrainModifications.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\TerrainTextureCache.cpp">
+      <Filter>Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_node.cpp">
+      <Filter>Terrain\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_node_compile.cpp">
+      <Filter>Terrain\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector.cpp">
+      <Filter>Terrain\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector_beach.cpp">
+      <Filter>Terrain\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector_render.cpp">
+      <Filter>Terrain\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector_tex.cpp">
+      <Filter>Terrain\Sector</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VolumeObjectDataCreate.cpp">
+      <Filter>Effects\VolumeObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VolumeObjectRenderNode.cpp">
+      <Filter>Effects\VolumeObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_water_quad.cpp">
+      <Filter>Water</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterRippleManager.cpp">
+      <Filter>Water</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterVolumeRenderNode.cpp">
+      <Filter>Water</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterWaveRenderNode.cpp">
+      <Filter>Water</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureAudio.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureAngles.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureAppearance.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureColor.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureCollision.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureField.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureFluidDynamics.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureLife.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureLightSource.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureLocation.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\Featurekill.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureMotion.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureRenderGpuSprites.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureRenderMeshes.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureRenderRibbon.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureRenderSprites.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureSecondGen.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureSpawn.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureVelocity.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\Modifiers.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\Target.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\TimeSource.cpp">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleAttributes.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleDebug.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleComponent.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleComponentRuntime.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleContainer.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleConvert.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleEffect.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleEmitter.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleFeature.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleJobManager.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleProfiler.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleRender.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSpline.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSystem.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSystemUnit.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleUpdate.cpp">
+      <Filter>ParticleSystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CCullRenderer.h">
+      <Filter>CBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CCullThread.h">
+      <Filter>CBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PolygonClipContext.h">
+      <Filter>CBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VMath.hpp">
+      <Filter>CBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VMath_C.hpp">
+      <Filter>CBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VMath_Prototypes.hpp">
+      <Filter>CBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VMath_SSE.hpp">
+      <Filter>CBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SkyLightManager.h">
+      <Filter>Effects\SkyLight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SkyLightNishita.h">
+      <Filter>Effects\SkyLight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SkyLightNishita_info.h">
+      <Filter>Effects\SkyLight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\TimeOfDay.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\EnvironmentPreset.h">
+      <Filter>Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\LightEntity.h">
+      <Filter>Light Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MaterialHelpers.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Material.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MatMan.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SurfaceTypeManager.h">
+      <Filter>Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MergedMeshGeometry.h">
+      <Filter>RenderMeshUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RenderMeshMerger.h">
+      <Filter>RenderMeshUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RenderMeshUtils.h">
+      <Filter>RenderMeshUtils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ShadowCache.h">
+      <Filter>Shadows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Vegetation.h">
+      <Filter>Vegetation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BreezeGenerator.h">
+      <Filter>3DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3dEngine.h">
+      <Filter>3DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PhysCallbacks.h">
+      <Filter>3DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisibleRenderNodeManager.h">
+      <Filter>3DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\LightVolumeManager.h">
+      <Filter>3DEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ClipVolume.h">
+      <Filter>ClipVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ClipVolumeManager.h">
+      <Filter>ClipVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BreakableGlassRenderNode.h">
+      <Filter>RenderNodes\Breakables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCachePredictors.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\3DEngineMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Cry3DEngineBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DeferredCollisionEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Array2d.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\BasicArea.h">
+      <Filter>VisAreas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreaCompile_info.h">
+      <Filter>VisAreas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VisAreas.h">
+      <Filter>VisAreas</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Brush.h">
+      <Filter>Brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\CGFLoader.h">
+      <Filter>CFG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\CGFSaver.h">
+      <Filter>CFG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFile.h">
+      <Filter>CFG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkData.h">
+      <Filter>CFG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ReadOnlyChunkFile.h">
+      <Filter>CFG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFileReaders.h">
+      <Filter>CFG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\ChunkFileWriters.h">
+      <Filter>CFG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CGF\VClothSaver.h">
+      <Filter>CFG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\cvars.h">
+      <Filter>CVars</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudBlockerRenderNode.h">
+      <Filter>Effects\Clounds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudRenderNode.h">
+      <Filter>Effects\Clounds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\CloudsManager.h">
+      <Filter>Effects\Clounds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DistanceCloudRenderNode.h">
+      <Filter>Effects\Clounds</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\ForsythFaceReorderer.h">
+      <Filter>Mesh Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\MeshCompiler.h">
+      <Filter>Mesh Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\TangentSpaceCalculation.h">
+      <Filter>Mesh Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MeshCompiler\TransformHelpers.h">
+      <Filter>Mesh Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\TangentBasisComputation\mikkelsen\mikktspace.h">
+      <Filter>Mesh Compiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DecalManager.h">
+      <Filter>Effects\Decals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DecalRenderNode.h">
+      <Filter>Effects\Decals</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\FogVolumeRenderNode.h">
+      <Filter>Effects\FogVolumes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\OpticsManager.h">
+      <Filter>Effects\Optics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCache.h">
+      <Filter>GeomCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheRenderNode.h">
+      <Filter>GeomCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheManager.h">
+      <Filter>GeomCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheDecoder.h">
+      <Filter>GeomCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\GeomCacheMeshManager.h">
+      <Filter>GeomCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\DeformableNode.h">
+      <Filter>RenderNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\MergedMeshRenderNode.h">
+      <Filter>RenderNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\PrismRenderNode.h">
+      <Filter>RenderNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RoadRenderNode.h">
+      <Filter>RenderNodes\Roads</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\RopeRenderNode.h">
+      <Filter>RenderNodes\Ropes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\BlockPacker.h">
+      <Filter>SVO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\SceneTree.h">
+      <Filter>SVO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\SceneTreeManager.h">
+      <Filter>SVO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\VoxelSegment.h">
+      <Filter>SVO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\SVO\SceneTreeCVars.inl">
+      <Filter>SVO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjMan.h">
+      <Filter>Object Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjManCullQueue.h">
+      <Filter>Object Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjectsTree.h">
+      <Filter>Objects Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ObjectsTree_Serialize_info.h">
+      <Filter>Objects Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\IndexedMesh.h">
+      <Filter>StatObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StatObj.h">
+      <Filter>StatObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\Particle.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleContainer.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEffect.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEmitter.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleEnviron.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleFixedSizeElementPool.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleList.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleMemory.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSubEmitter.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleUtils.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleManager.h">
+      <Filter>Effects\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_compile_info.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\TerrainModifications.h">
+      <Filter>Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector.h">
+      <Filter>Terrain\Sector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_sector_info.h">
+      <Filter>Terrain\Sector</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VolumeObjectDataCreate.h">
+      <Filter>Effects\VolumeObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\VolumeObjectRenderNode.h">
+      <Filter>Effects\VolumeObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\terrain_water.h">
+      <Filter>Water</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterRippleManager.h">
+      <Filter>Water</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterVolumeRenderNode.h">
+      <Filter>Water</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\WaterWaveRenderNode.h">
+      <Filter>Water</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureColor.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureCollision.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureCommon.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureCommonImpl.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\FeatureRenderGpuSprites.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\ParamMod.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\ParamModImpl.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\ParamTraits.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\ParamTraitsImpl.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\Target.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\TargetImpl.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\TimeSource.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\Features\TimeSourceImpl.h">
+      <Filter>ParticleSystem\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleCommon.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleAttributes.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleDataTypes.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleDataTypesImpl.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleDebug.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleComponent.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleComponentImpl.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleComponentRuntime.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleContainer.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleContainerImpl.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleEffect.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleEmitter.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleFeature.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleJobManager.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleMath.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleMathImpl.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleMathImplSSE.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleProfiler.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleProfilerImpl.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleRender.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleRenderImpl.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSpline.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSplineImpl.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleSystem.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\Cry3DEngine\ParticleSystem\ParticleUpdate.h">
+      <Filter>ParticleSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="RenderNodes\Breakables">
+      <UniqueIdentifier>{2F74B645-A2FC-3E04-810B-3D9B0427619C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderNodes\Roads">
+      <UniqueIdentifier>{857DD316-4285-3033-9ADA-87E3E3ED04C7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderNodes\Ropes">
+      <UniqueIdentifier>{B7FDB1C5-D57E-3C9F-9A38-E16E14D1C05C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\SkyLight">
+      <UniqueIdentifier>{69CA226E-1D3F-3421-AAEE-CF46EEE19B72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Clounds">
+      <UniqueIdentifier>{AECB33E1-FA06-3389-AD2B-E42F61E0B730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Decals">
+      <UniqueIdentifier>{95A93FB4-5FB5-300A-B42D-BD0B8AD258B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\FogVolumes">
+      <UniqueIdentifier>{9267D2EF-D0F0-323F-B304-F678F9EBAA28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Optics">
+      <UniqueIdentifier>{65AF97E0-41E0-3C18-ABD8-19B7AD8BFCBE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\Particles">
+      <UniqueIdentifier>{357B6F32-1708-3419-A612-82550D12CB75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects\VolumeObject">
+      <UniqueIdentifier>{ED23C205-66F5-3361-8785-E566DACFC503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Terrain\Sector">
+      <UniqueIdentifier>{4FC73EAD-B895-3AEF-AFF7-5815628697A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ParticleSystem\Features">
+      <UniqueIdentifier>{C52FEB58-9D61-361A-B468-00ED9358BF48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CBuffer">
+      <UniqueIdentifier>{9D441062-A9B9-3B79-B8DF-26325FADEF78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effects">
+      <UniqueIdentifier>{B28C6834-A0B3-3F33-A4C1-FE919B3414E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Environment">
+      <UniqueIdentifier>{9759C638-1E87-33C9-A73F-8D65DC5B2FF2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Light Entity">
+      <UniqueIdentifier>{57371A7A-65C1-3947-9FC2-945D13B01FA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Material">
+      <UniqueIdentifier>{256FA5EE-0928-327E-9953-16681A3688FE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PostProcess">
+      <UniqueIdentifier>{A89CF27A-16F0-3D03-8F5A-F27CE0F5516E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderMeshUtils">
+      <UniqueIdentifier>{E99D45E2-D593-3CE6-B894-8E7FF7B99C06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shadows">
+      <UniqueIdentifier>{24511227-DED3-31CF-9907-944D59A39FA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vegetation">
+      <UniqueIdentifier>{80461461-E24E-3D5E-B51A-4B2BB5F9AD3C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3DEngine">
+      <UniqueIdentifier>{B8491230-5CFC-310A-833A-83645D463E96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClipVolumes">
+      <UniqueIdentifier>{0F74D850-DDCA-3F8A-939A-3D260F728768}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderNodes">
+      <UniqueIdentifier>{8DB4D403-80DE-3169-A542-978C535CB0C0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VisAreas">
+      <UniqueIdentifier>{62A4775F-9B76-36F3-B5DD-B7B6BD1C3CB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Brush">
+      <UniqueIdentifier>{7EA455C7-22CB-3015-8DD7-2F25ED52BB14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CFG">
+      <UniqueIdentifier>{FDF2DFAC-A601-3698-BAE9-3763D7526412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CVars">
+      <UniqueIdentifier>{4C6F04E9-C1D1-38D8-9CBC-AAC68CB20680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mesh Compiler">
+      <UniqueIdentifier>{D3317C34-C95D-38D5-A7BC-41BCEBBFEC72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GeomCache">
+      <UniqueIdentifier>{BEFBF701-71F8-3D31-8388-D7FE89047811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SVO">
+      <UniqueIdentifier>{278E380A-9B53-3586-B077-0BEBE4FE7FC3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object Manager">
+      <UniqueIdentifier>{1A65333E-35ED-3FFE-8786-A8CAE52C76B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects Tree">
+      <UniqueIdentifier>{066531B9-D403-3218-A237-9C5B0B1A4256}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StatObj">
+      <UniqueIdentifier>{1A3AFB2F-877D-39CD-9D6C-7C361063A83A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Terrain">
+      <UniqueIdentifier>{F98DCA2D-31C5-3FC3-AEDD-0714A70F0F2C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Water">
+      <UniqueIdentifier>{43B28D59-7E6E-3ADE-9AE0-30C9B4BE811E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ParticleSystem">
+      <UniqueIdentifier>{B8AC4B52-08AC-3235-A1DC-0EAC7BEA77DD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

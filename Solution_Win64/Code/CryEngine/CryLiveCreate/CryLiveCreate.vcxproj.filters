@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryLiveCreate\CryLiveCreate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryLiveCreate\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreateHost.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreateNativeFile.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreateManager.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreate_System.cpp">
+      <Filter>Source\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreate_Objects.cpp">
+      <Filter>Source\Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryLiveCreate\PlatformHandler_GamePC.cpp">
+      <Filter>Source\Platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryLiveCreate\PlatformHandler_Any.cpp">
+      <Filter>Source\Platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryLiveCreate\Platform_Common\PlatformHandlerBase.cpp">
+      <Filter>Source\Platforms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\CryLiveCreate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreateCommands.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreateHost.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreateNativeFile.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreateManager.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NullLiveCreate.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreate_System.h">
+      <Filter>Source\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\LiveCreate_Objects.h">
+      <Filter>Source\Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\PlatformHandler_GamePC.h">
+      <Filter>Source\Platforms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\PlatformHandler_Any.h">
+      <Filter>Source\Platforms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryLiveCreate\Platform_Common\PlatformHandlerBase.h">
+      <Filter>Source\Platforms</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source\Commands">
+      <UniqueIdentifier>{CF333E96-BA5C-3CB5-8638-089C67BE0A06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Platforms">
+      <UniqueIdentifier>{DA3CD5D9-7E1A-3B34-8602-F22305D5E5E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{0CC01442-9741-3AF6-B73A-92B98923E49E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

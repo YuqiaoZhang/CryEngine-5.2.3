@@ -1,0 +1,4 @@
+﻿/********************************************************************** Copyright (c) 2010 Scaleform Corporation. All Rights Reserved. Licensees may use this file in accordance with the valid Scaleform License Agreement provided with the software. This file is provided  AS IS with NO WARRANTY OF ANY KIND, INCLUDING THE WARRANTY  OF DESIGN, MERCHANTABILITY AND FITNESS FOR ANY PURPOSE.**********************************************************************//** * Architected by Grant Skinner (gskinner.com) */
+
+var path = fl.configURI + "Scaleform/jsfl/LaunchPanel.jsfl";
+fl.runScript(path, "runCommand", "publish");

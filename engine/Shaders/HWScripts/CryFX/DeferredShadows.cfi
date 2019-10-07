@@ -1,0 +1,53 @@
+// CRYENGINE Source Code File
+// Copyright 2001-2015 Crytek GmbH. All rights reserved.
+
+
+//--------------------------------------------------------------------------------------------------  		   
+// Common Deferred shadows functions
+//--------------------------------------------------------------------------------------------------
+
+void irregular_filter_smpl(Texture2D depthMap, ShadowSamplingContext samplingContext, float4 p, float2 randDirTC, float2 kernelRadius, out float shadowTest) //, float2 InvShadowMapWH
+{
+	#define SHADOW_SAMPLES_NUM GetShadowSamplesNum()
+
+  half kernelOffset = 0;
+	half kernelSize = SHADOW_SAMPLES_NUM/2;
+
+	half P_Z = p.z;
+
+  float4 p0 = float4(p.xyz,1.0f);
+
+	half2 rotScale = kernelRadius.y * 1000.0f;
+
+  shadowTest = 0;
+
+	#define KERNEL_STEP_SIZE 2
+
+	//hints the compiler to use the _bx2 modifier
+	half2 rotSample = GetTexture2D(samplingContext.noiseTex, samplingContext.pointSamplerWrap, randDirTC.xy * rotScale.xy).xy;
+
+  rotSample.xy *= (kernelRadius.xy * float2(1/512.0f, 1/512.0f));
+
+	//rotSample = 0.0f;
+
+	//rotation 2x2 matrix for SampleRotated
+	//float4 rot = float4(rotSample.x, rotSample.y, -rotSample.y, rotSample.x);
+	//rotation 2x2 matrix for DoubleSampleRotated
+	float4 rot = float4(rotSample.x, -rotSample.y, rotSample.y, rotSample.x);
+
+  [unroll]
+	for(int i=kernelOffset; i<kernelSize; i+=KERNEL_STEP_SIZE) // Loop over taps
+	{
+		half4 sampleDepth;
+
+		DoubleSampleRotated(depthMap, samplingContext.comparisonSampler, p0, rot, irreg_kernel_2d[i+0], sampleDepth.xy);
+		DoubleSampleRotated(depthMap, samplingContext.comparisonSampler, p0, rot, irreg_kernel_2d[i+1], sampleDepth.zw);
+
+	//was for _RT_HW_PCF_COMPARE
+		//FIX: flag to simulate InShadow
+		float4 InShadow	= sampleDepth;
+
+		half fInvSamplNum = (1.0 / SHADOW_SAMPLES_NUM);
+		shadowTest += dot(InShadow,fInvSamplNum.xxxx);
+	}
+}

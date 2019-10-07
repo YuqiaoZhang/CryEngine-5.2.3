@@ -1,0 +1,1322 @@
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+// General utils
+global proc int cryUtilOptionVarBool( string $optionVar )
+{
+	int $value = 0;
+	if(`optionVar -exists $optionVar` )
+	{
+		$value = `optionVar -q $optionVar`;
+	}
+	return $value;
+}
+
+proc cryExportAddEnumAttribute( string $node, string $plugName, string $inEnumList )
+{
+	// First, expand the enumList if it dosn't have `=` in it.   e.g. "one:two:tree" --> "one=0:two=1:three=2"
+	string $enumList = $inEnumList;
+	if( !`gmatch $inEnumList "*=*"` )
+	{
+		string $tempString = "";
+		string $tokens[];
+		$numTokens = `tokenize $inEnumList ":" $tokens`;
+		for( $i = 0;$i<$numTokens;$i++ )
+		{
+			if( $i > 0 ) $tempString += ":";
+			$tempString += ($tokens[$i] + "=" + $i);
+		}
+		$enumList = $tempString;
+	}
+
+	// Now add the enum
+	int $exists = eval("attributeExists " + $plugName + " " + $node);
+	string $currentString = "";
+
+	// We need to delete the attribute if it already exists in case the options have changed
+	if( $exists == true )
+	{
+	    $currentString = eval("getAttr -asString " + $node + "." + $plugName); 
+	    eval("deleteAttr -at " + $plugName + " " + $node);
+	}
+
+	string $cmd = ("addAttr -dv 0 -ln " + $plugName + " -at enum -enumName \"");
+	$cmd += $enumList;
+	$cmd += "\" " + $node;
+	eval( $cmd );
+
+	// If it existed before, reselect the entry
+	if( $exists == true )
+	{
+		string $enums = `addAttr -q -enumName ($node+"."+$plugName)`;
+		string $tokens[];
+		$numTokens = `tokenize $enums ":" $tokens`;
+		for( $i = 0;$i<$numTokens;$i++ )
+		{
+			if( $tokens[$i] == $currentString )
+			{
+				eval("setAttr "  + $node + "." + $plugName + " " + $i);
+				break;
+			}
+		}
+	}
+}
+
+proc cryExportAddShaderAttributes()
+{
+	string $shaderNodes[];
+	$shaderNodes = `ls -type lambert -type hwShader`;
+
+	for( $shader in $shaderNodes )
+	{
+		// Add the physics enum
+		cryExportAddEnumAttribute $shader "physicalise" "None=0:Default=1:ProxyNoDraw=2:NoCollide=3:Obstruct=4";
+	}
+}
+
+global proc string cryExportGetFileTypeEnumString()
+{
+	return "Geometry (.CGF):Character (.CHR):Animated Geometry (.CGA):Character Skin (.SKIN)";
+}
+
+proc cryExportAddJointAttributes()
+{
+	/////////////////////////////////////////
+	// Add attributes to joints
+	$nodes = `ls "_joint*"`;
+	for( $node in $nodes )
+	{
+		// NOTE:: Removed for now. Use the UDP window instead.
+
+		// Add the limit attribute
+		//if( !`attributeExists "limit" $node` )
+		//	addAttr -dv 100 -ln limit -at "long" $node;
+	}
+	
+	/////////////////////////////////////////
+	// Add group attributes
+	$nodes = `ls "*_group"`;
+	for( $node in $nodes )
+	{
+		// NOTE:: Removed for now. Use the UDP window instead.
+
+		// Add the Mass attribute
+		//if( !`attributeExists "mass" $node` )
+		//	addAttr -dv 10 -ln mass -at "long" $node;
+
+		// Add the entity attribute
+		//if( !`attributeExists "entity" $node` )
+		//	addAttr -ln entity -at "bool" $node;
+	}
+
+	/////////////////////////////////////////
+	// Add attribute to real joints
+	$nodes = `ls -type joint`;
+	for( $node in $nodes )
+	{
+		if( !`attributeExists "rotXLimited" $node` )
+			addAttr -ln "rotXLimited" -at bool $node;
+		if( !`attributeExists "rotYLimited" $node` )
+			addAttr -ln "rotYLimited" -at bool $node;
+		if( !`attributeExists "rotZLimited" $node` )
+			addAttr -ln "rotZLimited" -at bool $node;
+
+		if( !`attributeExists "rotLimitMin" $node` )
+		{
+			addAttr -ln "rotLimitMin" -at float3 $node;
+			addAttr -ln "rotLimitMinX" -at "float" -p "rotLimitMin" $node;
+			addAttr -ln "rotLimitMinY" -at "float" -p "rotLimitMin" $node;
+			addAttr -ln "rotLimitMinZ" -at "float" -p "rotLimitMin" $node;
+			setAttr -type float3 ($node+".rotLimitMin") 0 0 0;
+		}
+		if( !`attributeExists "rotLimitMax" $node` )
+		{
+			addAttr -ln "rotLimitMax" -at float3 $node;
+			addAttr -ln "rotLimitMaxX" -at "float" -p "rotLimitMax" $node;
+			addAttr -ln "rotLimitMaxY" -at "float" -p "rotLimitMax" $node;
+			addAttr -ln "rotLimitMaxZ" -at "float" -p "rotLimitMax" $node;
+			setAttr -type float3 ($node+".rotLimitMax") 0 0 0;
+		}
+
+		if( !`attributeExists "spring" $node` )
+		{
+			addAttr -ln "spring" -at float3 $node;
+			addAttr -ln "springX" -at "float" -p "spring" $node;
+			addAttr -ln "springY" -at "float" -p "spring" $node;
+			addAttr -ln "springZ" -at "float" -p "spring" $node;
+			setAttr -type float3 ($node+".spring") 0 0 0;
+		}
+		if( !`attributeExists "springTension" $node` )
+		{
+			addAttr -ln "springTension" -at float3 $node;
+			addAttr -ln "springTensionX" -at "float" -p "springTension" $node;
+			addAttr -ln "springTensionY" -at "float" -p "springTension" $node;
+			addAttr -ln "springTensionZ" -at "float" -p "springTension" $node;
+			setAttr -type float3 ($node+".springTension") 1 1 1;
+		}
+		if( !`attributeExists "damping" $node` )
+		{
+			addAttr -ln "damping" -at float3 $node;
+			addAttr -ln "dampingX" -at "float" -p "damping" $node;
+			addAttr -ln "dampingY" -at "float" -p "damping" $node;
+			addAttr -ln "dampingZ" -at "float" -p "damping" $node;
+			setAttr -type float3 ($node+".damping") 1 1 1;
+		}
+	}
+}
+
+proc cryExportAddNodeAttributes( string $selectedNodes[] )
+{
+	/////////////////////////////////////////
+	// Add attributes to cryexportnodes
+	for( $node in $selectedNodes )
+	{
+		// Add the export type combo.
+		cryExportAddEnumAttribute $node "fileType" `cryExportGetFileTypeEnumString`;
+
+		// Add the `Do not merge` option
+		if( !`attributeExists "DoNotMerge" $node` )
+			addAttr -dv 1 -ln DoNotMerge -at "bool" $node;
+		// Add the `Write Vertex Colours` option
+		if( !`attributeExists "WriteVertexColours" $node` )
+			addAttr -dv 1 -ln WriteVertexColours -at "bool" $node;
+		if ( !`attributeExists "EightWeightsPerVertex" $node` )
+			addAttr -dv 0 -ln EightWeightsPerVertex -at "bool" $node;
+		if( !`attributeExists "UseF32VertexFormat" $node` )
+			addAttr -dv 0 -ln UseF32VertexFormat -at "bool" $node;
+		if( !`attributeExists "VClothPreProcess" $node` )
+			addAttr -dv 0 -ln VClothPreProcess -at "bool" $node;
+		// Add the `Custom Export Path` option
+		if( !`attributeExists "NodeCustomExportPath" $node` )
+			addAttr -ln NodeCustomExportPath -dt "string" $node;
+	}
+}
+
+proc cryUtilMirrorChangeOnSelectedCore( string $nodeAttribute )
+{
+	string $selectedNodes[] = `textScrollList -q -selectItem CRYEXPORT_EXPORTNODES`;
+	cryExportAddNodeAttributes $selectedNodes;
+
+	string $tokens[];
+	$numTokens = `tokenize $nodeAttribute "." $tokens`;
+	
+	if( $numTokens == 2 )
+	{
+		$value = `getAttr $nodeAttribute`;
+		
+		for( $node in $selectedNodes )
+		{
+			setAttr ($node+"."+$tokens[1]) $value;
+		}
+	}
+}
+
+global proc cryUtilMirrorChangeOnSelected( string $nodeAttribute )
+{
+	if( catchQuiet( `cryUtilMirrorChangeOnSelectedCore $nodeAttribute` ) )
+	{
+		warning "Failed to copy change to all selected nodes.";
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+// Plugin loading and unloading
+global proc string cryGetPluginName()
+{
+	string $version = `about -version`;
+
+	string $pluginName = "MayaCryExport2";
+
+	int $use64 = 0;
+
+	if( `gmatch $version "*2009*"` == 1 )
+		$pluginName += "2009";
+	else if( `gmatch $version "*2010*"` == 1 )
+		$pluginName += "2010";
+	else if( `gmatch $version "*2011*"` == 1 )
+		$pluginName += "2011";
+	else if( `gmatch $version "*2012*"` == 1 )
+		$pluginName += "2012";
+	else if( `gmatch $version "*2013*"` == 1 )
+	{
+		if (int(`about -api`)<=201349)
+			$pluginName += "2013";
+		else
+			error "No current Plugin Compiled for Maya2013Ext build";
+	}
+	else if( `gmatch $version "*2014*"` == 1 )
+	{
+		$pluginName += "2014";
+		$use64 = 1;
+	}
+	else if( `gmatch $version "*2015*"` == 1 )
+	{
+		$pluginName += "2015";
+		$use64 = 1;
+	}
+	else if( `gmatch $version "*2016*"` == 1 )
+	{
+		$pluginName += "2016";
+		$use64 = 1;
+	}
+	else if( `gmatch $version "*2017*"` == 1 )
+	{
+		$pluginName += "2017";
+		$use64 = 1;
+	}
+
+	if( `gmatch $version "*x64*"` == 1 )
+		$use64 = 1;
+
+	if( $use64 == 1 )	
+		$pluginName += "_64";
+
+	$pluginName += ".mll";
+
+	return $pluginName;
+}
+
+global proc int cryLoadPluginQuiet()
+{
+	string $pluginName = `cryGetPluginName`;
+
+	string $pluginPathString = `getenv MAYA_PLUG_IN_PATH`;
+	string $pluginPathArray[];
+	$pluginPathArray = stringToStringArray($pluginPathString, ";");
+
+	int $pluginLoaded = 0;
+	for( $pluginPath in $pluginPathArray )
+	{
+		string $fullPluginName = ( $pluginPath + "/" + $pluginName );
+		if(	!catchQuiet( `loadPlugin -quiet $fullPluginName` ) )
+		{
+			$pluginLoaded = 1;
+			pluginInfo -edit -autoload true $pluginName;
+			loadPlugin -quiet $pluginName; // Load again to make sure the autoload take's effect.
+			print( "Loaded Crytek plugin from `" + $fullPluginName + "`." );
+			break;
+		}
+	}
+
+	return $pluginLoaded;
+}
+
+global proc cryLoadPlugin( )
+{
+	if( `cryLoadPluginQuiet` == 0 )
+	{
+		string $pluginName = `cryGetPluginName`;
+		confirmDialog -title "Cry Export" -message ("Plugin `"+$pluginName+"` could not be found.") -button "OK";
+	}
+}
+
+global proc cryUnloadPlugin()
+{
+	string $pluginName = `cryGetPluginName`;
+
+	if( catchQuiet(	`pluginInfo -edit -autoload false $pluginName` ) )
+	{
+		confirmDialog -title "Cry Export" -message ("Plugin `"+$pluginName+"` could not be found.") -button "OK";
+	}
+	else
+	{
+		evalDeferred( "unloadPlugin " + $pluginName );
+	}
+}
+
+global proc int cryPluginIsLoaded()
+{
+	string $pluginArray[];
+	$pluginArray = `pluginInfo -query -listPlugins`;
+	for( $pluginName in $pluginArray )
+	{
+		if( startsWith( $pluginName, "MayaCryExport" ) )
+			return 1;
+	}
+	return 0;
+}
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+proc int cryExportGetInstalledBuildCount( )
+{
+	string $rootList = `cryMayaSupportPlugin getEngineRootList`;
+	string $roots[];
+	$numRoots = `tokenize $rootList ";" $roots`;
+	return $numRoots;
+}
+
+proc string[] cryExportGetInstalledBuildInfo( int $index )
+{
+	string $return[];
+	string $rootList = `cryMayaSupportPlugin getEngineRootList`;
+	string $roots[];
+	$numRoots = `tokenize $rootList ";" $roots`;
+	if( $index < $numRoots )
+	{
+		string $tokens[];
+		$numTokens = `tokenize $roots[$index] "," $tokens`;
+
+		if( $numTokens == 2 )
+		{
+			$return[0] = $tokens[0];
+			$return[1] = $tokens[1];
+		}	
+	}
+	return $return;
+}
+
+proc string cryExportGetInstalledBuildEntry( int $index )
+{
+	string $buildInfo[] = `cryExportGetInstalledBuildInfo $index`;
+	string $entry = "";
+	if( size($buildInfo) == 2 && size($buildInfo[0]) > 0 && size($buildInfo[1]) > 0 )
+		$entry = ($buildInfo[0] + " - (" + $buildInfo[1] + ")");
+	return $entry;
+}
+
+proc string[] cryExportDecodeRCSelectionString( string $selectionString )
+{
+	string $return[];
+
+	if( `gmatch $selectionString "<*>"` == 0 )
+	{
+		// Extract the build path from the entry in the enum menu.
+		string $tokens[];
+		$numTokens = `tokenize $selectionString "(" $tokens`;
+		if( $numTokens == 2 )
+		{
+			string $rcName = $tokens[0];
+			if( size($rcName) > 3 )
+				$rcName = `substring $rcName 1 (size($rcName)-3)`;
+			$numTokens = `tokenize $tokens[1] ")" $tokens`;
+			if( $numTokens == 1 )
+			{
+				string $buildPath = $tokens[0];
+				$return[1] = $buildPath;
+				$return[0] = $rcName;
+			}
+		}
+	}
+	return $return;
+}
+
+proc int cryExportSceneHasValidName()
+{
+	string $sceneName;
+	$sceneName = `file -q -sceneName`;
+	if( size($sceneName) == 0 )
+		return 0;
+
+	return 1;
+}
+
+proc int cryExportGetExportNodeCount()
+{
+	string $exportNodes[];
+	$exportNodes = `cryMayaSupportPlugin gatherExportNodes`;
+	int $exportNodeCount = size($exportNodes);
+	
+	return $exportNodeCount;
+}
+
+global proc int cryExportCheckStatus()
+{
+	int $pluginLoaded = `cryPluginIsLoaded`;
+	if( !$pluginLoaded )
+		confirmDialog -title "Cry Export" -message "The MayaCryExport plugin is not loaded." -button "OK";
+
+	int $validSceneName = `cryExportSceneHasValidName`;
+	if( !$validSceneName )
+		confirmDialog -title "Cry Export" -message "The current scene needs to be saved before you can export." -button "OK";	
+
+	return $pluginLoaded && $validSceneName;
+}
+
+global proc string cryExportFixupPath( string $inPath )
+{
+	string $currentPath = `file -q -sceneName`;
+	$currentPath2 = `fromNativePath $currentPath`;
+	string $path = `fromNativePath $inPath`;
+	$currentPath = `dirname $currentPath`;
+
+	string $currentPathTokens[];
+	$currentNumTokens = `tokenize $currentPath "/" $currentPathTokens`;
+	string $pathTokens[];
+	$pathNumTokens = `tokenize $path "/" $pathTokens`;
+
+	string $outPath = "";
+	$minTokens = `min $currentNumTokens ($pathNumTokens-1)`;
+
+	for( $i=0;$i<$minTokens;$i++ )
+	{
+		if( `strcmp $pathTokens[$i] $currentPathTokens[$i]` != 0 )
+			break;
+	}
+	if( $i == 0 )
+	{
+		$outPath = $inPath;
+	}
+	else
+	{
+		for( $j=$i;$j<$currentNumTokens;$j++ )
+			$outPath += "../";
+		for( $j=$i;$j<$pathNumTokens;$j++ )
+			$outPath += ($pathTokens[$j] + "/");
+	}
+
+	{ // To remove the trailing `/` if there is one.
+		string $filename = `basename $outPath ""`;
+		$outPath = `dirname $outPath`;
+		$outPath += ("/" + $filename);
+	}
+
+	return $outPath;
+}
+
+global proc string[] cryExportDecodeRangeString( string $animRange )
+{
+	string $decode[];
+	$decode = `cryMayaSupportPlugin decodeAnimRangeString $animRange`;
+
+	// Do not remove whitespace from the last element, which is file path.
+	int $N = size($decode) - 1;
+
+	for( $i = 0;$i<$N;$i++ )
+	{
+		$decode[$i] = `substituteAllString $decode[$i] " " ""`;
+	}
+
+	return $decode;
+}
+
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+
+global proc cryExportCloseWindow()
+{
+	cryExportSaveSettings;
+    deleteUI -window CRYEXPORT_WINDOW;
+}
+
+global proc string cryExportAddExportOptions( string $inOptions )
+{
+	string $options = $inOptions;
+	if( `control -exists CRYEXPORT_REMOVENAMESPACES` )
+	{
+		int $removeNamespaces = `checkBox -q -value CRYEXPORT_REMOVENAMESPACES`;
+		$options += "cryExportRemoveNamespaces=" + $removeNamespaces + ";";
+	}
+
+	if( `control -exists CRYEXPORT_EXPORTANMS` )
+	{
+		int $exportANMs = `checkBox -q -value CRYEXPORT_EXPORTANMS`;
+		$options += "cryExportExportANMs=" + $exportANMs + ";";
+	}
+
+	if( `control -exists CRYEXPORT_ADDITIVEPOSEFRAMEOPTION` && `control -exists CRYEXPORT_ADDITIVEPOSEFRAMEINDEX` )
+	{
+		int $poseFrameIndex = `intField -q -value CRYEXPORT_ADDITIVEPOSEFRAMEINDEX`;
+		if( `checkBox -q -value CRYEXPORT_ADDITIVEPOSEFRAMEOPTION` )
+			$options += "addPoseFrame=1;poseFrameIndex=" + $poseFrameIndex + ";";
+	}	
+
+	if( `control -exists CRYEXPORT_RCSELECTIONMENU`)
+	{
+		string $selectedRC = `optionMenu -q -v CRYEXPORT_RCSELECTIONMENU`;
+		string $decode[] =  `cryExportDecodeRCSelectionString $selectedRC`;
+		if( size($decode[0]) > 0 && size($decode[1]) > 0)
+		{
+			$options += "customRCPath=" + $decode[1] + ";";
+		}
+	}
+
+	return $options;
+}
+
+// No checking in here. This function should only be called after the validate has passed.
+global proc cryExportExport()
+{
+	// The export name will be created from the Maya file name and the `cryexportnode` name
+	string $options = "";
+	$options += "cryExportType=geom" + ";";
+
+	string $customFilePath = `textFieldButtonGrp -q -text CRYEXPORT_CUSTOMFILEPATH`;
+	if( `gmatch $customFilePath "<*>"` == 0 )
+		$options += "cryExportCustomFilePath=" + $customFilePath + ";";
+
+	// Only export selected materials
+	$options += "crySelectedMaterialsOnly=1;";
+	
+	// Added the selected nodes option if needed.
+	{
+		string $selectedNodes[] = `textScrollList -q -selectItem CRYEXPORT_EXPORTNODES`;
+		if( size($selectedNodes) > 0 )
+		{
+			$options += "selectedExportNodes=";
+			for( $i = 0;$i<size($selectedNodes);$i++ )
+			{
+				if( $i > 0 ) $options += ",";
+				$options += ($selectedNodes[$i]);
+			}
+			$options += ";";
+		}
+	}
+
+	$options += cryExportAddExportOptions( $options );
+
+	print("Export Options : `"+$options+"`\n");
+	file -op $options -typ "MayaCryExport" -pr -ea "dummyExportName";
+}
+
+global proc cryExportValidateAndExport()
+{
+	if( `cryExportCheckStatus` )
+	{
+		cryExportExport;
+	}
+}
+
+global proc cryExportGenerateMaterialFile()
+{
+	if( `cryExportCheckStatus` )
+	{
+		string $options = "";
+		$options += "cryExportType=material" + ";";
+		
+		string $customFilePath = `textFieldButtonGrp -q -text CRYEXPORT_CUSTOMFILEPATH`;
+		if( `gmatch $customFilePath "<*>"` == 0 )
+			$options += "cryExportCustomFilePath=" + $customFilePath + ";";
+
+		// Only export selected materials
+		$options += "crySelectedMaterialsOnly=1;";
+
+		if( catchQuiet( `file -op $options -typ "MayaCryExport" -pr -ea "dummyExportName"` ) )
+		{
+			confirmDialog -title "Cry Export" -message ("Failed to write material file.") -button "OK";
+		}
+	}
+}
+
+global proc cryExportExportAnim()
+{
+	int $i;
+
+	if( `cryExportCheckStatus` )
+	{
+		string $animRanges[];
+		$animRanges = `cryAnimGetRanges`;
+		int $rangeCount = `cryAnimGetNumRanges`;
+
+		int $selectedIndices[] = `textScrollList -q -selectIndexedItem CRYEXPORT_ANIMRANGES`;
+		if( size($selectedIndices) == 0 )
+		{
+			for( $count = 0;$count<$rangeCount;$count++ )
+				$selectedIndices[$count] = ($count+1);
+		}
+
+		for( $selectionIndex = 0;$selectionIndex < size($selectedIndices);$selectionIndex++ )
+		{
+			int $animIndex = $selectedIndices[$selectionIndex]-1;
+			string $animRange = $animRanges[$animIndex];
+
+			print( "Exporting anim range :: `" + $animRange + "`\n");
+
+			string $decode[];
+			$decode = `cryExportDecodeRangeString $animRange`;
+			if( size($decode) == 5 )
+			{
+				string $animStart = $decode[0];
+				string $animEnd = $decode[1];
+				string $animName = $decode[2];
+				string $animRoot = $decode[3];
+				string $animPath = $decode[4];
+				
+				{
+					string $options = "";
+					$options += "cryExportType=anim" + ";";
+					$options += "cryExportCustomName=" + $animName + ";";
+					$options += "cryExportCustomFilePath=" + $animPath + ";";
+
+					$options += "cryExportAnimIndex=" + $animIndex +";";
+					
+					$options = cryExportAddExportOptions( $options );
+
+					file -op $options -typ "MayaCryExport" -pr -ea "dummyExportName";
+				}
+			}
+		}
+	}
+}
+
+global proc cryExportEngineSettings()
+{
+	cryEngineSettingsPlugin();
+}
+
+global proc cryExportRebuildControls( )
+{
+	string $selectedNodes[];
+	$selectedNodes = `ls -sl`;
+
+	if( !`layout -exists CRYEXPORT_NODEOPTIONSFRAME` )
+	{
+		return;
+	}
+
+	setParent CRYEXPORT_NODEOPTIONSFRAME;
+
+	// Delete all children
+	string $childArray[];
+	$childArray = `layout -q -childArray CRYEXPORT_NODEOPTIONSFRAME`;
+	for( $child in $childArray )
+	{
+		deleteUI $child;
+	}
+
+	columnLayout -adjustableColumn true;
+	{
+		if( size($selectedNodes) > 0 )
+		{
+			cryExportAddNodeAttributes $selectedNodes;
+
+			string $node = $selectedNodes[0];
+			string $lowerNode = tolower( $node );
+			if( startsWith( $lowerNode, "cryexportnode_" ) )
+			{
+				if( `attributeExists "fileType" $node` )
+				{
+					string $nodeAttribute = ($node+".fileType");
+					attrEnumOptionMenu -label "File Type" -attribute $nodeAttribute -changeCommand ("cryUtilMirrorChangeOnSelected "+$nodeAttribute);
+				}
+				if( `attributeExists "DoNotMerge" $node` )
+				{
+					string $control = `checkBox -label "Do Not Merge Nodes"`;
+					string $nodeAttribute = ($node+".DoNotMerge");
+					connectControl $control $nodeAttribute;
+					checkBox -e -changeCommand ("cryUtilMirrorChangeOnSelected "+$nodeAttribute) $control;
+				}
+				if( `attributeExists "WriteVertexColours" $node` )
+				{
+					string $control = `checkBox -label "Write Vertex Colours"`;
+					string $nodeAttribute = ($node+".WriteVertexColours");
+					connectControl $control $nodeAttribute;
+					checkBox -e -changeCommand ("cryUtilMirrorChangeOnSelected "+$nodeAttribute) $control;
+				}
+				if( `attributeExists "UseF32VertexFormat" $node` )
+				{
+					string $control = `checkBox -label "32 Bit Vertex Format"`;
+					string $nodeAttribute = ($node+".UseF32VertexFormat");
+					connectControl $control $nodeAttribute;
+					checkBox -e -changeCommand ("cryUtilMirrorChangeOnSelected "+$nodeAttribute) $control;
+				}				
+				if( `getAttr ($node+".fileType")` == 3)
+				{
+					{
+						string $control = `checkBox -label "Export with 8 weights"`;
+						string $nodeAttribute = ($node+".EightWeightsPerVertex");
+						connectControl $control $nodeAttribute;
+						checkBox -e -changeCommand ("cryUtilMirrorChangeOnSelected "+$nodeAttribute) $control;
+					}
+					{
+						string $control = `checkBox -label "VCloth Pre-Process"`;
+						string $nodeAttribute = ($node+".VClothPreProcess");
+						connectControl $control $nodeAttribute;
+						checkBox -e -changeCommand ("cryUtilMirrorChangeOnSelected "+$nodeAttribute) $control;
+					}
+				}
+				if( `attributeExists "NodeCustomExportPath" $node` )
+				{
+					rowLayout -numberOfColumns 3;
+					{
+						text -label "Custom Export Path";
+						textField -width 160 CRYEXPORT_NODECUSTOMEXPORTPATH;
+						button -label ".." -command ("fileBrowserDialog -m 4 -fc \"cryExportEditCustomNodeExportPath\" -ft \"\" -an \"\" -om \"Import\"");
+
+						string $plugName = "NodeCustomExportPath";
+						string $currentString = `getAttr -asString ($node + "." + $plugName)`;
+						textField -e -text $currentString CRYEXPORT_NODECUSTOMEXPORTPATH;
+						textField -e -annotation $currentString CRYEXPORT_NODECUSTOMEXPORTPATH;
+					}
+					setParent ..;
+				}
+			}
+		}
+	}
+	setParent ..;
+}
+
+global proc cryExportAddAttributes()
+{
+	string $nodes[];
+	$nodes = `cryMayaSupportPlugin gatherExportNodes`;
+	cryExportAddShaderAttributes;
+	cryExportAddJointAttributes;
+	cryExportAddNodeAttributes $nodes;
+	
+	cryExportRebuildControls;
+}
+
+global proc int cryExportEditCustomNodeExportPath( string $folderPath, string $fileType )
+{
+	if( `control -exists CRYEXPORT_NODECUSTOMEXPORTPATH` )
+	{
+		$folderPath = `cryExportFixupPath $folderPath`;
+		textField -e -text $folderPath CRYEXPORT_NODECUSTOMEXPORTPATH;
+	
+		$selectedNodes = `ls -sl`;
+		string $node = $selectedNodes[0];
+		string $nodeAttribute = ($node+".NodeCustomExportPath");
+		setAttr -type "string" $nodeAttribute $folderPath;
+
+		cryUtilMirrorChangeOnSelected $nodeAttribute;
+	}
+	return 1;
+}
+
+global proc int cryExportEditCustomFilepath( string $folderPath, string $fileType )
+{
+	if( `size($folderPath)` == 0 )
+		$folderPath = "<default>";
+	else
+		$folderPath = `cryExportFixupPath $folderPath`;
+	textFieldButtonGrp -e -text $folderPath CRYEXPORT_CUSTOMFILEPATH;
+    return 1;
+}
+
+global proc cryExportResetCustomString( string $controlName )
+{
+	textFieldButtonGrp -e -text "<default>" $controlName;
+}
+
+global proc cryExportShowInExplorer( string $folderName, string $fileName )
+{
+	if (!`filetest -d $folderName`)
+		error("location does not exist! :'" + $folderName + "'");
+
+	if ($fileName == "")
+	{
+		system( "explorer \"" + toNativePath($folderName) + "\"" );
+		return;
+	}
+
+	if ($fileName != "" && !`filetest -f ($folderName+"/"+$fileName)`)
+	{
+		warning("file: '" + $fileName + "' does not exist! Opening folder...");
+		system( "explorer \"" + toNativePath($folderName) + "\"" );
+		return;
+	}
+
+	system( "explorer /select,\"" + toNativePath($folderName+"/"+$fileName) + "\"" );
+}
+
+global proc cryExportGeomShowInExplorer( )
+{
+	int $validSceneName = `cryExportSceneHasValidName`;
+	if( !$validSceneName )
+	{
+		confirmDialog -title "Cry Export" -message "The scene needs to be saved first." -button "OK";
+	}
+	else
+	{
+		string $sceneFullName = `file -q -sceneName`;
+		string $scenePath = `dirname $sceneFullName `;
+		string $sceneName = `file -q -shortName -sceneName`;
+
+		string $exportExt = ".dae.zip";
+		string $ext = `fileExtension( $sceneName )`;
+		string $base = `basename $sceneName ("."+$ext)`;
+		string $fileName = ($base+$exportExt);
+
+		// Attempt to find the name of the game file so we can select that.
+		if( `control -exists CRYEXPORT_EXPORTNODES`)
+		{
+			string $exportNodes[] = `textScrollList -q -si CRYEXPORT_EXPORTNODES`;
+			if( size($exportNodes) )
+			{
+				string $exportNode = $exportNodes[0]; 
+				string $lNode = `tolower($exportNode)`;
+				if (gmatch($lNode, "cryexportnode_*"))
+				{
+					$objName = substring($exportNode, 15, size($exportNode));
+					$nodes = `ls -long $exportNode`;
+					if( size($nodes) == 0 ) error( "CryExport: Node `"+$exportNode+"` does not exist." );
+					if( size($nodes) > 1 ) warning( "CryExport: Multiple nodes named `" + $exportNode + "`.");
+
+					string $fileTypes[] = {"cgf","chr","cga","skin"};		
+					string $fileType = $fileTypes[0];
+					if (`attributeQuery -node $nodes[0] -exists "fileType"`)
+						$fileType = $fileTypes[ int(getAttr($nodes[0] + ".fileType")) ];
+		
+					$fileName = ($objName + "." + $fileType);
+				}
+			}
+		}
+
+		string $folderName = $scenePath;
+		string $customFilePath = `textFieldButtonGrp -q -text CRYEXPORT_CUSTOMFILEPATH`;
+		if( `gmatch $customFilePath "<*>"` == 0 )
+		{
+			$folderName = $customFilePath;
+		}
+
+		if( size($folderName) > 2 && `gmatch $folderName "?:*"` == 0 )
+		{
+			$folderName = ($scenePath + "/" + $folderName);
+		}
+	
+		cryExportShowInExplorer $folderName $fileName;
+	}
+}
+
+global proc cryExportAnimIndexShowInExplorer( int $animIndex )
+{
+	int $rangeCount = `cryAnimGetNumRanges`;
+
+	if( $animIndex < $rangeCount )
+	{
+		string $animRanges[];
+		$animRanges = `cryAnimGetRanges`;
+		string $animRange = $animRanges[$animIndex];
+
+		string $decode[];
+		$decode = `cryExportDecodeRangeString $animRange`;
+		if( size($decode) == 5 )
+		{
+			string $animName = $decode[2];
+			string $animPath = $decode[4];
+			
+			string $folderName = $animPath;
+			if( size($animPath) > 2 && `gmatch $animPath "?:*"` == 0 )
+			{
+				string $sceneFullName = `file -q -sceneName`;
+				string $scenePath = `dirname $sceneFullName `;
+				
+				$folderName = ($scenePath + "/" + $folderName);
+			}
+			
+			string $exportExt = ".dae.zip";
+			string $fileName = ($animName+$exportExt);
+			
+			cryExportShowInExplorer $folderName $fileName;
+		}
+	}
+}
+
+global proc cryExportAnimShowInExplorer()
+{
+	int $selected[] = `textScrollList -q -selectIndexedItem CRYEXPORT_ANIMRANGES`;
+	if( size($selected) == 0 )
+	{
+		error("Cry Export: You need to have an anim selected first!");
+	}
+	else
+	{
+		int $animIndex = $selected[0]-1;
+		cryExportAnimIndexShowInExplorer $animIndex;
+	}
+}
+
+global proc int cryExportAnimRangeIsSelected( int $rangeIndex )
+{
+	if( `control -exists CRYEXPORT_ANIMRANGES`)
+	{
+		int $selected[] = `textScrollList -q -selectIndexedItem CRYEXPORT_ANIMRANGES`;
+
+		if( size($selected) > 0 )
+		{
+			for( $i in $selected )
+			{
+				if( $rangeIndex == $i )
+					return 1;
+			}
+			return 0;
+		}
+		return 1; // If no ranges were selected, then all are for export 
+	}
+	return -1; // Not able to check.
+}
+
+global proc cryExportUpdateWidgets()
+{
+	// Update the state of the anim ranges list
+	int $selected[] = `textScrollList -q -selectIndexedItem CRYEXPORT_ANIMRANGES`;
+	if( size($selected) > 0 )
+	{
+		button -e -label "Export Selected Anims" CRYEXPORT_EXPORTANIMBUTTON;
+		button -e -en 1 CRYEXPORT_EXPORTANIMSHOWBUTTON;
+	}
+	else
+	{
+		button -e -label "Export All Anims" CRYEXPORT_EXPORTANIMBUTTON;
+		button -e -en 0 CRYEXPORT_EXPORTANIMSHOWBUTTON;
+	}
+
+	// Update the state of the export node list
+	int $selected[] = `textScrollList -q -selectIndexedItem CRYEXPORT_EXPORTNODES`;
+	if( size($selected) > 0 )
+		button -e -label "Export Selected" CRYEXPORT_EXPORTGEOMBUTTON;
+	else
+		button -e -label "Export All" CRYEXPORT_EXPORTGEOMBUTTON;
+
+	// Update the state of the other controls
+	if( `control -ex CRYEXPORT_ADDITIVEPOSEFRAMEOPTION` )
+	{
+		int $poseOption = `checkBox -q -value CRYEXPORT_ADDITIVEPOSEFRAMEOPTION`;
+		intField -e -enable $poseOption CRYEXPORT_ADDITIVEPOSEFRAMEINDEX;
+	}
+}
+
+proc createCryExportWindow()
+{
+	if(!`window -ex CRYEXPORT_WINDOW`) 
+	{
+		if(`windowPref -exists CRYEXPORT_WINDOW`) 
+		{
+			windowPref -tlc `windowPref -q -topEdge CRYEXPORT_WINDOW` `windowPref -q -leftEdge CRYEXPORT_WINDOW` CRYEXPORT_WINDOW;
+			//windowPref -remove CRYEXPORT_WINDOW;
+		}
+		print("\nGetting plugin info...\n");
+		string $pluginName = `cryGetPluginName`;
+		print("PluginName: " + $pluginName + "\n");
+		string $pluginVersionString = `pluginInfo -query -version $pluginName`;
+		print("PluginVersion: " + $pluginVersionString + "\n");
+		window -titleBar true -title ("Crytek Export - v"+$pluginVersionString) -sizeable false -mnb false -mxb false CRYEXPORT_WINDOW;
+
+		$layout1 = `formLayout -numberOfDivisions 100`;
+		$collayout = `columnLayout -adjustableColumn true -rowSpacing 15`;
+		button -label "Add Attributes" -command ("cryExportAddAttributes");
+
+		{
+			frameLayout -marginHeight 5 -marginWidth 5 -label "Geometry Export" CRYEXPORT_GEOMEXPORTFRAME;
+			columnLayout -adjustableColumn true;
+			{
+				textFieldButtonGrp -label "Export Path"  -buttonLabel ".." -cw3 70 50 15 -ct3 "right" "both" "both" -co3 2 2 0 -adj 2
+					-buttonCommand "fileBrowserDialog -m 4 -fc \"cryExportEditCustomFilepath\" -ft \"\" -an \"\" -om \"Import\"" CRYEXPORT_CUSTOMFILEPATH;
+				popupMenu;
+				{
+					menuItem -label "Reset" -c ("cryExportResetCustomString CRYEXPORT_CUSTOMFILEPATH");
+				}
+				textScrollList -height 80 -selectCommand ("cryExportUpdateWidgets") -allowMultiSelection true CRYEXPORT_EXPORTNODES;
+				popupMenu;
+				{
+					menuItem -label "Clear Selection" -c ("textScrollList -e -deselectAll CRYEXPORT_EXPORTNODES; cryExportUpdateWidgets;");
+					menuItem -label "Refresh List" -c ("cryExportUpdateExportLists;");
+				}
+				button -label "Export All" -command ("cryExportValidateAndExport") CRYEXPORT_EXPORTGEOMBUTTON;
+				button -label "Show in Explorer" -command ("cryExportGeomShowInExplorer");
+			}
+			setParent ..;
+			setParent ..;
+		}
+
+		{
+			frameLayout -marginHeight 5 -marginWidth 5 -label "Material Export" CRYEXPORT_MATERIALFRAME;
+			columnLayout -adjustableColumn true;
+			{
+				button -label "Generate Material Files" -command ("cryExportGenerateMaterialFile");
+			}
+			setParent ..;
+			setParent ..;
+		}
+
+		{
+			frameLayout -marginHeight 5 -marginWidth 5 -label "Anim Export" CRYEXPORT_ANIMEXPORTFRAME;
+			columnLayout -adjustableColumn true;
+			{
+				textScrollList -height 80 -selectCommand ("cryExportUpdateWidgets") -allowMultiSelection true CRYEXPORT_ANIMRANGES;
+				popupMenu;
+				{
+					menuItem -label "Clear Selection" -c ("textScrollList -e -deselectAll CRYEXPORT_ANIMRANGES; cryExportUpdateWidgets;");
+					menuItem -label "Refresh List" -c ("cryExportUpdateExportLists;");
+				}
+				button -label "Export Selected Anims" -command ("cryExportExportAnim") CRYEXPORT_EXPORTANIMBUTTON;
+				button -label "Show in Explorer" -command ("cryExportAnimShowInExplorer") -en 0 CRYEXPORT_EXPORTANIMSHOWBUTTON;
+				button -label "Anim Manager" -command ("cryAnimManagerWin") CRYEXPORT_EXPORTANIMMANAGERBUTTON;
+			}
+			setParent ..;
+			setParent ..;
+		}
+
+		{
+			frameLayout -marginHeight 5 -marginWidth 5 -label "Export Options" CRYEXPORT_EXPORTOPTIONSFRAME;
+			checkBox -value 1 -label "Remove Namespaces" -cc "cryExportSaveSettings" CRYEXPORT_REMOVENAMESPACES;
+			checkBox -value 1 -label "Export ANM's with CGA's." -cc "cryExportSaveSettings" CRYEXPORT_EXPORTANMS;
+			rowLayout -numberOfColumns 2 -columnWidth2 150 75 -columnOffset2 -1 0 -columnAttach2 "both" "both" -adjustableColumn 2;
+			{
+				checkBox -value 0 -label "Add pose frame" -annotation "Add the numbered frame to the start of all animations. Used for additive animations." -cc "cryExportUpdateWidgets" CRYEXPORT_ADDITIVEPOSEFRAMEOPTION;
+				intField CRYEXPORT_ADDITIVEPOSEFRAMEINDEX;
+			}
+			setParent ..;
+
+			// Enabled by default for now.
+			//if( `cryUtilOptionVarBool "cryExportAllowRCSlection"` == 1 )
+			{
+				optionMenu -width 240 -label "RC" CRYEXPORT_RCSELECTIONMENU;
+			}
+
+			setParent ..;
+		}
+
+		{
+			frameLayout -marginHeight 5 -marginWidth 5 -label "Node Options" CRYEXPORT_NODEOPTIONSFRAME;
+			cryExportRebuildControls;
+			setParent ..;
+		}
+
+		button -label "CryEngine Settings" -command ("cryExportEngineSettings");
+
+		setParent ..;
+		$closebutton = `button -label "Close" -command ("cryExportCloseWindow")`;
+		setParent ..;
+	
+		formLayout -edit
+			-attachForm $collayout "top" 5
+			-attachForm $collayout "left" 5
+			-attachForm $collayout "right" 5
+			-attachNone $collayout "bottom"
+		    	    
+			-attachForm $closebutton "bottom" 5 
+			-attachForm $closebutton "left" 5
+			-attachForm $closebutton "right" 5
+			-attachNone $closebutton "top"
+			$layout1;
+
+		cryExportUpdateExportLists;
+		cryExportLoadSettings;
+
+		scriptJob -event "SelectionChanged" "cryExportRebuildControls" -p "CRYEXPORT_WINDOW";
+		
+		string $events[] = `scriptJob -listEvents`;
+		
+		if( `stringArrayContains "NewSceneOpened" $events` == 1 )
+		{
+			scriptJob -event "NewSceneOpened" "cryExportUpdateExportLists" -p "CRYEXPORT_WINDOW";
+		}	
+		if( `stringArrayContains "PostSceneRead" $events` == 1 )
+		{
+			scriptJob -event "PostSceneRead" "cryExportUpdateExportLists" -p "CRYEXPORT_WINDOW";
+		}
+    }
+
+	// Update the export button text
+	cryExportUpdateWidgets;
+	showWindow CRYEXPORT_WINDOW;
+}
+
+global proc cryExportUpdateExportLists()
+{
+	cryAnimManagerUpgradeSettingsString;
+	// Update the anim ranges
+	if( `control -ex CRYEXPORT_ANIMRANGES` )
+	{
+		string $selected[] = `textScrollList -q -selectItem CRYEXPORT_ANIMRANGES`;
+		textScrollList -e -removeAll CRYEXPORT_ANIMRANGES;
+		int $numRanges = `cryAnimGetNumRanges`;
+		string $animRanges[] = `cryAnimGetRangeNames`;
+		for( $i = 0;$i<$numRanges;$i++ )
+			textScrollList -e -append $animRanges[$i] CRYEXPORT_ANIMRANGES;	
+		// Reselect
+		for( $item in $selected )
+			catchQuiet( `textScrollList -e -selectItem $item CRYEXPORT_ANIMRANGES` );
+	}
+	if( `control -ex CRYEXPORT_EXPORTNODES` )
+	{
+		string $selected[] = `textScrollList -q -selectItem CRYEXPORT_EXPORTNODES`;
+		textScrollList -e -removeAll CRYEXPORT_EXPORTNODES;
+		string $exportNodes[] = `cryMayaSupportPlugin gatherExportNodes`;
+		//string $exportNodes[] = `ls "cryExportNode_*"`;
+		for( $node in $exportNodes )
+			textScrollList -e -append $node CRYEXPORT_EXPORTNODES;	
+		// Reselect
+		for( $item in $selected )
+			catchQuiet( `textScrollList -e -selectItem $item CRYEXPORT_EXPORTNODES` );
+	}
+	// Update the RC selection list
+	if( `control -ex CRYEXPORT_RCSELECTIONMENU` )
+	{
+		int $selected = `optionMenu -q -select CRYEXPORT_RCSELECTIONMENU`;
+		string $children[] = `optionMenu -q -itemListLong CRYEXPORT_RCSELECTIONMENU`;
+		for( $child in $children )
+			deleteUI $child;
+
+		menuItem -p CRYEXPORT_RCSELECTIONMENU -label "<default>";
+		$numRoots = `cryExportGetInstalledBuildCount`;
+		for( $index = 0;$index<$numRoots;$index++ )
+		{
+			string $entry = `cryExportGetInstalledBuildEntry $index`;
+			menuItem -p CRYEXPORT_RCSELECTIONMENU -label $entry;
+		}
+		// Reselect
+		if( $selected > 0 )
+			optionMenu -e -select $selected CRYEXPORT_RCSELECTIONMENU;
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////
+// These Load and Save functions have far too many hard coded strings but
+// they will have to stay for now.
+// Settings string format is `<key>=<data>[;<key>=<data>]..`
+// Keys with multiply values have those values comma seperated.
+global proc string cryExportGetSettingNodeName()
+{
+	return "CRYEXPORTSETTINGS";
+}
+
+// Get the index of the named build in the menu items of the dropdown. 1 based.
+proc int cryExportInstalledBuildEntryFromBuildName( string $buildName )
+{
+	if( `control -exists CRYEXPORT_RCSELECTIONMENU`)
+	{
+		string $entries[] = `optionMenu -q -itemListLong CRYEXPORT_RCSELECTIONMENU`;
+
+		for( $index = 0;$index<size($entries);$index++ )
+		{
+			string $entryText = `menuItem -q -label $entries[$index]`;
+			if( `startsWith $entryText $buildName` )
+				return $index+1;
+		}
+	}
+	return 1;
+}
+
+global proc cryExportLoadSettings()
+{
+	textFieldButtonGrp -e -text "<default>" CRYEXPORT_CUSTOMFILEPATH;
+
+	string $exportSettingsNode = `cryExportGetSettingNodeName`;
+	if( `objExists $exportSettingsNode` )
+	{
+		if( `attributeExists "ExportSettings" $exportSettingsNode` )
+		{
+			string $settingsString = `getAttr ($exportSettingsNode+".ExportSettings")`;
+			string $settings[];
+			$numSettings = `tokenize $settingsString ";" $settings`;
+
+			for( $setting in $settings )
+			{
+				string $tokens[];
+				$numTokens = `tokenize $setting "=," $tokens`;
+				if( $numTokens >= 2 )
+				{
+					if( `strcmp $tokens[0] "customFilePath"` == 0 )
+					{
+						textFieldButtonGrp -e -text $tokens[1] CRYEXPORT_CUSTOMFILEPATH;
+					}
+					else if( `strcmp $tokens[0] "removeNamespaces"` == 0 )
+					{
+						int $value = $tokens[1];
+						checkBox -e -value $value CRYEXPORT_REMOVENAMESPACES;
+					}
+					else if( `strcmp $tokens[0] "exportANMs"` == 0 )
+					{
+						int $value = $tokens[1];
+						checkBox -e -value $value CRYEXPORT_EXPORTANMS;
+					}
+					else if( `strcmp $tokens[0] "addPoseFrame"` == 0 )
+					{
+						int $value = $tokens[1];
+						checkBox -e -value $value CRYEXPORT_ADDITIVEPOSEFRAMEOPTION;
+					}
+					else if( `strcmp $tokens[0] "poseFrameIndex"` == 0 )
+					{
+						int $value = $tokens[1];
+						intField -e -value $value CRYEXPORT_ADDITIVEPOSEFRAMEINDEX;
+					}
+					else if( `strcmp $tokens[0] "selectedRC"` == 0 )
+					{
+						string $value = $tokens[1];
+						int $entry = `cryExportInstalledBuildEntryFromBuildName $value`;
+						if( `control -exists CRYEXPORT_RCSELECTIONMENU`)
+						{
+							string $array[] = `optionMenu -q -itemListLong CRYEXPORT_RCSELECTIONMENU`;
+							optionMenu -e -select $entry CRYEXPORT_RCSELECTIONMENU;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+global proc cryExportSaveSettings()
+{
+	string $exportSettingsNode = `cryExportGetSettingNodeName`;
+	// Create the node if it dosen't exist
+	if( !`objExists $exportSettingsNode` )
+	{
+		select -clear;
+		string $settingsNode = `group -empty`;
+		rename $settingsNode $exportSettingsNode;
+	}
+
+	if( `objExists $exportSettingsNode` )
+	{
+		if( !`attributeExists "ExportSettings" $exportSettingsNode` )
+		{
+			addAttr -ln "ExportSettings" -dt "string" $exportSettingsNode;
+		}
+	
+		string $settings = "";
+
+		{ // Custom file path
+			string $customFilePath = `textFieldButtonGrp -q -text CRYEXPORT_CUSTOMFILEPATH`;
+			if( `gmatch $customFilePath "<*>"` == 0 )
+				$settings += "customFilePath=" + $customFilePath + ";";
+		}
+
+		{ // Remove name spaces
+			int $removeNamespaces = `checkBox -q -value CRYEXPORT_REMOVENAMESPACES`;
+			$settings += "removeNamespaces=" + $removeNamespaces + ";";
+		}
+
+		{ // Export ANM's with CGA's
+			int $exportANMs = `checkBox -q -value CRYEXPORT_EXPORTANMS`;
+			$settings += "exportANMs=" + $exportANMs + ";";
+		}
+
+		{ // Add pose frame
+			int $addPoseFrame = `checkBox -q -value CRYEXPORT_ADDITIVEPOSEFRAMEOPTION`;
+			$settings += "addPoseFrame=" + $addPoseFrame + ";";
+		}
+
+		{ // Add pose frame index
+			int $poseFrameIndex = `intField -q -value CRYEXPORT_ADDITIVEPOSEFRAMEINDEX`;
+			$settings += "poseFrameIndex=" + $poseFrameIndex + ";";
+		}
+
+		{ // RC selection
+			if( `control -exists CRYEXPORT_RCSELECTIONMENU`)
+			{
+				string $selectedRC = `optionMenu -q -v CRYEXPORT_RCSELECTIONMENU`;
+				string $decode[] =  `cryExportDecodeRCSelectionString $selectedRC`;
+				if( size($decode) == 2 && size($decode[0]) > 0 && size($decode[1]) > 0)
+					$settings += "selectedRC=" + $decode[0] + ";";
+			}
+		}
+
+		setAttr ($exportSettingsNode+".ExportSettings") -type "string" $settings;
+		
+	}
+}
+/////////////////////////////////////////////////////////////////////////
+
+global proc cryExportSourceDependencies()
+{
+    eval("source cryValidate.mel");
+    eval("source cryAnim.mel");
+	if( !`cryPluginIsLoaded` )
+		cryLoadPluginQuiet;
+}
+
+global proc cryExportWin()
+{
+	cryExportSourceDependencies;
+
+	string $pluginName = `cryGetPluginName`;
+	if( catchQuiet( `pluginInfo -query -version $pluginName` ))
+		error("Plugin `" + $pluginName + "` could not be found.");
+	
+	createCryExportWindow();
+}

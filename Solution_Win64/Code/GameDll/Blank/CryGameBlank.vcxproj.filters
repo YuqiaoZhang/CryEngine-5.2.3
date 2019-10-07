@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Dll">
+      <UniqueIdentifier>{fa67ae7a-51d7-47c7-896b-7119dd626aaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{a50840d3-d7e9-4da0-b9c0-8329a1658b3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{add28e09-a0fe-4eff-94f3-c72265bc9a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Flownodes">
+      <UniqueIdentifier>{73444db6-770e-468d-937a-3ed4c0220836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{d6b40629-a96d-4c6e-bcfa-13289ddc8610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{2a889bb6-fa77-4aab-b4ca-e64d2f3fff16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Extensions">
+      <UniqueIdentifier>{1bfb6687-5d84-42de-b6f5-9ad8cf8f6160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Startup">
+      <UniqueIdentifier>{62fecc96-d435-4fa4-9ebc-3d2914d2e6bd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\Main.cpp">
+      <Filter>Dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\StdAfx.cpp">
+      <Filter>Dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\editor\EditorGame.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\entities\GeomEntity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\flownodes\FlowGameEntityNode.cpp">
+      <Filter>Flownodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\game\GameFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\game\GameRules.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\player\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\player\extensions\InputExtension.cpp">
+      <Filter>Player\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\player\extensions\MovementExtension.cpp">
+      <Filter>Player\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\player\extensions\ViewExtension.cpp">
+      <Filter>Player\Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\startup\GameStartup.cpp">
+      <Filter>Startup</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\StdAfx.h">
+      <Filter>Dll</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\editor\EditorGame.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\entities\GeomEntity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\flownodes\FlowBaseNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\flownodes\FlowGameEntityNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\game\GameFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\game\GameRules.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\player\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\player\extensions\InputExtension.h">
+      <Filter>Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\player\extensions\ISimpleExtension.h">
+      <Filter>Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\player\extensions\MovementExtension.h">
+      <Filter>Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\player\extensions\ViewExtension.h">
+      <Filter>Player\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\startup\GameStartup.h">
+      <Filter>Startup</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

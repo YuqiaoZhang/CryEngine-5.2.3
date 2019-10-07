@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Dll">
+      <UniqueIdentifier>{2594369d-423d-4dae-9310-02453b5e9532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditorSpecific">
+      <UniqueIdentifier>{fe70c2d0-34c8-4ec6-b8f2-5e6095f197cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities">
+      <UniqueIdentifier>{0242eeb4-6652-4eb8-9b59-bbd1a82e8f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Gameplay">
+      <UniqueIdentifier>{d8dda3fc-6dc9-4379-9515-304eee6f9985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Gameplay\Weapons">
+      <UniqueIdentifier>{592624e7-c1ea-414d-968a-488484435111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Helpers">
+      <UniqueIdentifier>{8e54ab09-0ed1-4b1b-ba58-c7610ab57e56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Lights">
+      <UniqueIdentifier>{c3e1ede5-c5ac-4d71-910a-ffbd1c0aa8fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entities\Physics">
+      <UniqueIdentifier>{7d6b05d8-6e58-4e7f-afe1-c53dfe7f9c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Flownodes">
+      <UniqueIdentifier>{a76fe25e-bf4d-43fc-ab5b-2558735b1088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{d2a19ee7-6cc1-43a7-8f02-910a837ea2dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{002a1a78-e3d6-46a9-a8a6-0e41c0b902bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Animations">
+      <UniqueIdentifier>{d8f27c00-8687-41a9-ba7f-bda91dfc9538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Input">
+      <UniqueIdentifier>{b28cafe0-7386-4c29-885c-6ac87a745f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Movement">
+      <UniqueIdentifier>{ff2d0cb3-ddd1-4454-a0e4-2b86610855dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\Pathfinding">
+      <UniqueIdentifier>{8a7bb4df-72a2-4aff-a7de-a90b6579ed27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player\View">
+      <UniqueIdentifier>{fe4a7f84-ec2b-40f5-ac84-44cf6d20637a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Startup">
+      <UniqueIdentifier>{92eeb8d2-d6aa-482e-acb7-07ff05fa40c7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\StdAfx.cpp">
+      <Filter>Dll</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\EditorSpecific\EditorGame.cpp">
+      <Filter>EditorSpecific</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Gameplay\SpawnPoint.cpp">
+      <Filter>Entities\Gameplay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Gameplay\Weapons\Bullet.cpp">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Gameplay\Weapons\Rifle.cpp">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Helpers\NativeEntityBase.cpp">
+      <Filter>Entities\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Helpers\NativeEntityPropertyHandling.cpp">
+      <Filter>Entities\Helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Lights\LightEntity.cpp">
+      <Filter>Entities\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Lights\EnvironmentProbe.cpp">
+      <Filter>Entities\Lights</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Physics\RigidBody.cpp">
+      <Filter>Entities\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\FlowNodes\Helpers\FlowGameEntityNode.cpp">
+      <Filter>Flownodes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Game\Game.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Game\GameRules.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Game\GameFactory.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\Animations\PlayerAnimations.cpp">
+      <Filter>Player\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\Input\PlayerInput.cpp">
+      <Filter>Player\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\Movement\PlayerMovement.cpp">
+      <Filter>Player\Movement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\Pathfinding\PlayerPathfinding.cpp">
+      <Filter>Player\Pathfinding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\View\PlayerView.cpp">
+      <Filter>Player\View</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Startup\GameStartup.cpp">
+      <Filter>Startup</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\EditorSpecific\EditorGame.h">
+      <Filter>EditorSpecific</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Gameplay\SpawnPoint.h">
+      <Filter>Entities\Gameplay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Gameplay\Weapons\Bullet.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Gameplay\Weapons\ISimpleWeapon.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Gameplay\Weapons\Rifle.h">
+      <Filter>Entities\Gameplay\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Helpers\ISimpleExtension.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Helpers\NativeEntityBase.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Helpers\NativeEntityPropertyHandling.h">
+      <Filter>Entities\Helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Lights\EnvironmentProbe.h">
+      <Filter>Entities\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Lights\LightEntity.h">
+      <Filter>Entities\Lights</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Entities\Physics\RigidBody.h">
+      <Filter>Entities\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\FlowNodes\Helpers\FlowGameEntityNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\FlowNodes\Helpers\FlowBaseNode.h">
+      <Filter>Flownodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Game\GameRules.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Game\Game.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Game\GameFactory.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\Animations\PlayerAnimations.h">
+      <Filter>Player\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\Input\PlayerInput.h">
+      <Filter>Player\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\Movement\PlayerMovement.h">
+      <Filter>Player\Movement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\Pathfinding\PlayerPathfinding.h">
+      <Filter>Player\Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\View\PlayerView.h">
+      <Filter>Player\View</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Player\ISimpleActor.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\IsometricPathfinding\Code\Startup\GameStartup.h">
+      <Filter>Startup</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

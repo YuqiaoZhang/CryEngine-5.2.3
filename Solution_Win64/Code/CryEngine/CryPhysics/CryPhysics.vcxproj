@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{03030C41-AAC6-36C6-BFDC-54C8B413C5C2}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>CryPhysics</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CryPhysics</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">CryPhysics</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CryPhysics</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Debug\";CryPhysics_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Profile\";CryPhysics_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;_PROFILE;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";_PROFILE;USE_BROFILER;CMAKE_INTDIR=\"Release\";CryPhysics_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryPhysics;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\spheregeom.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\tetrlattice.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\trimesh.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\voxelbv.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\voxelgeom.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\aabbtree.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\aabbtree_info.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\boxgeom.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\bvtree.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\capsulegeom.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\cylindergeom.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\geoman.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\geoman_info.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\geometries.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\geometry.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\obbtree.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\obbtree_info.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\overlapchecks.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\raybv.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\raygeom.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\singleboxtree.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\heightfieldbv.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\heightfieldgeom.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\intersectionchecks.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\unprojectionchecks.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\waterman.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\wheeledvehicleentity.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\articulatedentity.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\livingentity.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\rigidbody.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\physicalworld.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\rigidentity.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\ropeentity.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\softentity.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\particleentity.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\physicalentity.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\physicalplaceholder.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\resource.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\StdAfx.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\matrixnm.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\quotient.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\utils.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryPhysics\vectorn.h" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\tetrlattice.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\trimesh.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\voxelbv.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\voxelgeom.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\aabbtree.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\boxgeom.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\capsulegeom.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\cylindergeom.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\geoman.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\geometry.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\obbtree.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\overlapchecks.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\raybv.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\raygeom.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\rwi.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\rotunprojectionchecks.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\singleboxtree.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\spheregeom.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\heightfieldbv.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\heightfieldgeom.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\intersectionchecks.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\linunprojectionchecks.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\waterman.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\wheeledvehicleentity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\articulatedentity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\livingentity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\rigidbody.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\physicalworld.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\rigidentity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\ropeentity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\softentity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\particleentity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\physicalentity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\physarea.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\physicalplaceholder.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\CryPhysics.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\StdAfx.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\boolean2d.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\boolean3d.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\matrixnm.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\qhull.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\utils.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryPhysics\worldump.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

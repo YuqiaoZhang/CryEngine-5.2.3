@@ -1,0 +1,1 @@
+c:\python27\python.exe pyinstaller-1.5.1\Build.py ParseBuild.spec

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<macromedia-extension
+	 name="Scaleform Extensions"
+	 version="1.0.3"
+	 type="other"
+	 requires-restart="true">
+
+	<author name="Scaleform Corp." />
+
+	<products>
+		<product name="Flash" version="8" primary="true" />
+	</products>
+
+	<description>
+	<![CDATA[
+	Scaleform Extensions: Includes Scaleform Launcher and Documentation for component set, as well as the Cut Bitmap into Scale9 Slices command.<br>
+	]]>
+	</description>
+
+	<ui-access>
+	<![CDATA[
+Scaleform Launcher<br>
+<br>
+The Scaleform Launcher will publish SWF files directly to Scaleform GFX players. Includes support for multiple players, and command-line arguments.<br>
+Window > Other Panels > Scaleform Launcher<br>
+Commands > Launch in GFX Player (can be bound to shortcut)<br>
+<br>
+Documentation<br>
+<br>
+Provides documentation for Scaleform component set.<br>
+Documentation for Scaleform API will be available in the Help Panel - Press F1 to open the Help Panel. (Only available in Flash 8 and Flash CS3; for CS4 and higher please refer to the online documentation at www.scaleform.com).<br>
+<br>
+Cut Bitmap into Scale9 Slices Command<br>
+<br>
+The Cut Bitmap into Scale9 Slices command prepares bitmaps for use with Scale9 by slicing a target bitmap into 9 slices.  It also preserves the original bitmap in a guide layer to make it easier the adjust and reapply the command.  Please note that this command will only work in Flash CS4 and CS5.
+<br>
+	]]>
+	</ui-access>
+
+	<license-agreement>
+	<![CDATA[
+	
+	]]>
+	</license-agreement>
+
+	<files>		
+		<file source="xml\help_toc.xml" destination="$flash/HelpPanel/Help/scaleform" />
+		<file source="html\scaleformTemplate.css" destination="$flash/HelpPanel/Help/scaleform/html" />		
+		<file source="html\gfx_utils_Locale.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_utils_Delegate.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_utils_Constraints.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_ui_NavigationCode.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_ui_InputDetails.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_motion_Tween.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_managers_DragManager.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_managers_PopUpManager.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_managers_InputDelegate.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_managers_FocusHandler.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_interfaces_IListItemRenderer.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_interfaces_IList.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_interfaces_IDataProvider.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_events_EventTypes.html" destination="$flash/HelpPanel/Help/scaleform/html" />		
+		<file source="html\gfx_events_EventDispatcher.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_data_DataProvider.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_core_UIComponent.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_ViewStack.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_UILoader.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_TileList.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_TextInput.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_TextArea.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_StatusIndicator.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_Slider.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_ScrollIndicator.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_ScrollingList.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_ScrollBar.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_RadioButton.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_ProgressBar.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_OptionStepper.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_NumericStepper.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_ListItemRenderer.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_Label.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_ItemSlot.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_InventorySlot.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_DropdownMenu.html" destination="$flash/HelpPanel/Help/scaleform/html" />		
+		<file source="html\gfx_controls_DragTarget.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_Dialog.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_CoreList.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_CheckBox.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_ButtonGroup.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_ButtonBar.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_controls_Button.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_ui_InputDetails.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\gfx_ui_NavigationCode.html" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\common.js" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\doc.js" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\index.js" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\jquery.js" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="html\toc.js" destination="$flash/HelpPanel/Help/scaleform/html" />
+		<file source="locale\en\strings.xml" destination="$flash/Scaleform/locale/en" />
+		<file source="locale\en\creator.xml" destination="$flash/Scaleform/locale/en" />
+		<file source="Commands\SF - Publish in GFX Player.jsfl" destination="$flash/Commands" />
+		<file source="Commands\SF - Cut Bitmap into Scale9 Slices.jsfl" destination="$flash/Commands" />
+		<file source="jsfl\LaunchPanel.jsfl" destination="$flash/Scaleform/jsfl" />
+		<file source="jsfl\UserPreferences.jsfl" destination="$flash/Scaleform/jsfl" />
+		<file source="xml\Publish.swf" destination="$flash/Scaleform/xml" />
+		<file source="xml\publish.xml" destination="$flash/Scaleform/xml" />
+		<file source="Scaleform Launcher.swf" destination="$flash/WindowSWF" />
+	</files>
+
+</macromedia-extension>

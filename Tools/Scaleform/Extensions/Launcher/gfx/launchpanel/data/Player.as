@@ -1,0 +1,1 @@
+﻿class gfx.launchpanel.data.Player extends Object {		public var path:String;	public var name:String;		public function Player(p_name:String, p_path:String) {		path = p_path;		name = p_name;	}	public function toString():String {		return 'Path: ' + path + ' , ' + 'Name: ' + name;		}}

@@ -1,0 +1,577 @@
+BackupNameAttachment=" Build(0) 07 Oct 19 (18 20 36)"  -- used by backup system
+Log Started at Mon Oct  7 18:20:36 2019
+Built on Oct  7 2019 13:14:19
+Running 64 bit Windows version
+Command Line: "D:\CryEngine\bin\win_x64\Sandbox.exe" 
+Executable: D:\CryEngine\bin\win_x64\Sandbox.exe
+FileVersion: 0.0.0.0
+ProductVersion: 0.0.0.0
+Added MOD directory <%engineroot%/engine> to CryPak
+
+Total number of logical processors: 12
+Number of available logical processors: 12
+Total number of system cores: 6
+Number of cores available to process: 6
+ 
+Processor 0:
+  CPU: Intel Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+  Family: 6, Model: 14, Stepping: 10
+  FPU: On-Chip
+  3DNow!: not present
+  MMX: not present
+  SSE: present
+  SSE2: present
+  SSE3: present
+  Serial number not present or disabled
+ 
+Processor 1:
+  CPU: Intel Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+  Family: 6, Model: 14, Stepping: 10
+  FPU: On-Chip
+  3DNow!: not present
+  MMX: not present
+  SSE: present
+  SSE2: present
+  SSE3: present
+  Serial number not present or disabled
+ 
+Processor 2:
+  CPU: Intel Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+  Family: 6, Model: 14, Stepping: 10
+  FPU: On-Chip
+  3DNow!: not present
+  MMX: not present
+  SSE: present
+  SSE2: present
+  SSE3: present
+  Serial number not present or disabled
+ 
+Processor 3:
+  CPU: Intel Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+  Family: 6, Model: 14, Stepping: 10
+  FPU: On-Chip
+  3DNow!: not present
+  MMX: not present
+  SSE: present
+  SSE2: present
+  SSE3: present
+  Serial number not present or disabled
+ 
+Processor 4:
+  CPU: Intel Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+  Family: 6, Model: 14, Stepping: 10
+  FPU: On-Chip
+  3DNow!: not present
+  MMX: not present
+  SSE: present
+  SSE2: present
+  SSE3: present
+  Serial number not present or disabled
+ 
+Processor 5:
+  CPU: Intel Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz
+  Family: 6, Model: 14, Stepping: 10
+  FPU: On-Chip
+  3DNow!: not present
+  MMX: not present
+  SSE: present
+  SSE2: present
+  SSE3: present
+  Serial number not present or disabled
+ 
+[Error] [CVARS]: [DUPLICATE] CXConsole::AddCommand(): console command [hmd_recenter_pose] is already registered
+Loading Config file system.cfg (system.cfg)
+<18:20:36> OnSysSpecChange(4)
+<18:20:36> Loading Config file VeryHighSpec.cfg (d:\cryengine\engine\config\veryhighspec.cfg)
+<18:20:36> Can't find cvar 'sys_spec_Full' value '4' group ''
+<18:20:36> Loading Config file %ENGINEROOT%/editor.cfg (d:\cryengine\editor.cfg)
+<18:20:36> [Warning] Config file game.cfg not found!
+<18:20:36> GameDir: GameZero
+<18:20:36> Loading Config file game.cfg (gamezero\game.cfg)
+<18:20:36> creating CVarGroups from directory 'gamezero/Config/CVarGroups' ...
+<18:20:36> creating CVarGroups from directory 'Engine/Config/CVarGroups' ...
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_Full.cfg (engine\config\cvargroups\sys_spec_full.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_GameEffects.cfg (engine\config\cvargroups\sys_spec_gameeffects.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_Light.cfg (engine\config\cvargroups\sys_spec_light.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_ObjectDetail.cfg (engine\config\cvargroups\sys_spec_objectdetail.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_Particles.cfg (engine\config\cvargroups\sys_spec_particles.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_Physics.cfg (engine\config\cvargroups\sys_spec_physics.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_PostProcessing.cfg (engine\config\cvargroups\sys_spec_postprocessing.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_Quality.cfg (engine\config\cvargroups\sys_spec_quality.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_Shading.cfg (engine\config\cvargroups\sys_spec_shading.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_Shadows.cfg (engine\config\cvargroups\sys_spec_shadows.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_Sound.cfg (engine\config\cvargroups\sys_spec_sound.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_Texture.cfg (engine\config\cvargroups\sys_spec_texture.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_TextureResolution.cfg (engine\config\cvargroups\sys_spec_textureresolution.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_VolumetricEffects.cfg (engine\config\cvargroups\sys_spec_volumetriceffects.cfg)
+<18:20:36> Loading Config file Engine/Config/CVarGroups/sys_spec_Water.cfg (engine\config\cvargroups\sys_spec_water.cfg)
+<18:20:36> [Warning] <ThreadConfigInfo>: (pc: 12 core) Unable to find platform config "pc_8". Next valid config found was pc_8.
+<18:20:36> <ThreadConfigInfo>: Thread profile loaded: "pc_8" (config/engine_core.thread_config)  
+<18:20:36> [Warning] <ThreadConfigInfo>: (pc: 12 core) Unable to find platform config "pc_8". Next valid config found was pc_8.
+<18:20:36> <ThreadConfigInfo>: Thread profile loaded: "pc_8" (config/engine_sandbox.thread_config)  
+<18:20:36> Windows 10 64 bit (build 10.0.17134)
+<18:20:36> User name: "YuqiaoZhang"
+<18:20:36> System language: English
+<18:20:36> Windows Directory: "C:\Windows"
+<18:20:36> Local time is 18:20:36 10/07/19, system running for 1502 minutes
+<18:20:36> 16234MB physical memory installed, 8832MB available, 134217727MB virtual memory installed, 45 percent of memory in use
+<18:20:36> PageFile usage: 31MB, Working Set: 40MB, Peak PageFile usage: 31MB,
+<18:20:36> Current display mode is 1920x1080x32, (Unknown graphics card)
+<18:20:36> Japanese keyboard and 8+ button mouse installed
+<18:20:36> --------------------------------------------------------------------------------
+<18:20:36> [Warning] Config file %USER%/game.cfg not found!
+<18:20:36> Loading Config file system.cfg (system.cfg)
+<18:20:36> OnSysSpecChange(4)
+<18:20:36> Loading Config file VeryHighSpec.cfg (d:\cryengine\engine\config\veryhighspec.cfg)
+<18:20:36> Loading Config file %ENGINEROOT%/editor.cfg (d:\cryengine\editor.cfg)
+<18:20:36> Loading Config file game.cfg (gamezero\game.cfg)
+<18:20:36> [Warning] Config file user.cfg not found!
+<18:20:36> Stream Engine Initialization
+<18:20:36> GameName: CRYENGINE SDK Example
+<18:20:36> BuildTime: Oct  7 2019 13:14:19
+<18:20:36> Physics initialization
+<18:20:36> Initializing CryPhysics...
+<18:20:36> Initializing CryPhysics done, MemUsage=820Kb
+<18:20:36> [Warning] Cannot open Pak file gamezero\localization\english_xml.pak
+<18:20:36> Localized language content(english) not available or modified from the original installation.
+<18:20:36> [Warning] Cannot open Pak file gamezero\localization\english.pak
+<18:20:36> Localized language content(english) not available or modified from the original installation.
+<18:20:36> [Warning] Cannot open Pak file gamezero\localization\english.pak
+<18:20:36> Localized language content(english) not available or modified from the original installation.
+<18:20:36> [Error] <Localization> No localization files found!
+<18:20:36> <Audio>: AudioSystem initialization
+<18:20:36> Initializing CryAudioSystem...
+<18:20:36> Initializing CryAudioImplWwise...
+<18:20:36> <Audio> <0.422>: CryAudioImplWwise loaded
+<18:20:36> Initializing CryAudioImplWwise done, MemUsage=5088Kb
+<18:20:36> Initializing CryAudioSystem done, MemUsage=5636Kb
+<18:20:36> Renderer initialization
+<18:20:36> Initializing CryRenderD3D11...
+<18:20:36> CRenderer sizeof(Vec2f16)=4 sizeof(Vec3f16)=8
+<18:20:36> Initializing CryRenderD3D11 done, MemUsage=5300Kb
+<18:20:36> Initializing Direct3D and creating game window:
+<18:20:36> D3DX_SDK_VERSION = <UNDEFINED>
+<18:20:36> Direct3D driver is creating...
+<18:20:36> Crytek Direct3D driver version 2.00 (Oct  7 2019 <13:10:11>)
+<18:20:36> Creating window called 'CRYENGINE SDK Example' (1280x720)
+<18:20:36> D3D Adapter: Description: NVIDIA GeForce GTX 1660 Ti
+<18:20:36> D3D Adapter: Driver version (UMD): 26.21.14.3648
+<18:20:36> D3D Adapter: VendorId = 0x10DE
+<18:20:36> D3D Adapter: DeviceId = 0x2191
+<18:20:36> D3D Adapter: SubSysId = 0x101F1043
+<18:20:36> D3D Adapter: Revision = 161
+<18:20:36> D3D Detected: NVIDIA video card
+<18:20:36> Active GPUs: 1
+<18:20:36> Using pixel texture formats:
+<18:20:36>   R8G8B8A8S, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R8G8B8A8, mips (autogen), sRGB, blend, RT (multi-sampled), gather
+<18:20:36>   A8, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R8, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R8S, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R16, mips (autogen), blend, RT (multi-sampled), gather (comparable)
+<18:20:36>   R16F, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R32F, mips (autogen), blend, RT (multi-sampled), gather (comparable)
+<18:20:36>   R8G8, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R8G8S, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R16G16, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R16G16S, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R16G16F, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R11G11B10F, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R10G10B10A2, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R16G16B16A16, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R16G16B16A16S, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R16G16B16A16F, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   R32G32B32A32F, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   BC1, mips, sRGB, gather
+<18:20:36>   BC2, mips, sRGB, gather
+<18:20:36>   BC3, mips, sRGB, gather
+<18:20:36>   BC4, mips, gather
+<18:20:36>   BC4S, mips, gather
+<18:20:36>   BC5, mips, gather
+<18:20:36>   BC5S, mips, gather
+<18:20:36>   BC6UH, mips, gather
+<18:20:36>   BC6SH, mips, gather
+<18:20:36>   BC7, mips, sRGB, gather
+<18:20:36>   R9G9B9E5, mips, gather
+<18:20:36>   R32FX8T, mips
+<18:20:36>   R32T, mips
+<18:20:36>   R24G8T, mips
+<18:20:36>   R16T, mips
+<18:20:36>   B5G6R5, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   B5G5R5, mips (autogen), blend, RT (multi-sampled), gather
+<18:20:36>   B8G8R8A8, mips (autogen), sRGB, blend, RT (multi-sampled), gather
+<18:20:36>   B8G8R8X8, mips (autogen), sRGB, blend, RT (multi-sampled), gather
+<18:20:36>  Renderer HDR_Scalar: R32F
+<18:20:36>  ****** D3D11 CryRender Stats ******
+<18:20:36>  Driver description: NVIDIA GeForce GTX 1660 Ti
+<18:20:36>  Feature level: DirectX 11.0
+<18:20:36>  Full stats: 
+<18:20:36>  Rasterizer: Hardware
+<18:20:36>  Current Resolution: 1280x720x32 Windowed
+<18:20:36>  HDR Rendering: FP16
+<18:20:36>  Occlusion queries: Supported
+<18:20:36>  Geometry instancing: Supported
+<18:20:36>  NormalMaps compression : Supported
+<18:20:36>  Gamma control: Hardware
+<18:20:36>  Vertex Shaders version 4.0
+<18:20:36>  Pixel Shaders version 4.0
+<18:20:36>  Used GeomInstancingThreshold is 8
+<18:20:36>  Shader model usage: 'SM.5.0'
+<18:20:36>  *****************************************
+<18:20:36>  
+<18:20:36> Init Shaders
+<18:20:36> Flushing pended shaders...
+<18:20:37> Finished flushing pended shaders...
+<18:20:37> Flushing pended shaders...
+<18:20:37> Finished flushing pended shaders...
+<18:20:37>  General shader quality: VeryHigh
+<18:20:37>  Metal shader quality: VeryHigh
+<18:20:37>  Glass shader quality: VeryHigh
+<18:20:37>  Vegetation shader quality: VeryHigh
+<18:20:37>  Ice shader quality: VeryHigh
+<18:20:37>  Terrain shader quality: VeryHigh
+<18:20:37>  Shadow shader quality: VeryHigh
+<18:20:37>  Water shader quality: High
+<18:20:37>  FX shader quality: VeryHigh
+<18:20:37>  PostProcess shader quality: VeryHigh
+<18:20:37>  HDR shader quality: VeryHigh
+<18:20:37>  Sky shader quality: VeryHigh
+<18:20:37> Render quality: VeryHigh
+<18:20:37> Allocate render buffer for particles (16384 verts, 49152 tris)...
+<18:20:37> Init textures management (5991 Mb of video memory is available)...
+<18:20:37>   Enabling of textures streaming...
+<18:20:37>   Using 1536 Mb of textures pool for streaming...
+<18:20:37>   Video textures: Atlas clouds max size: 32 Mb
+<18:20:37>   Video textures: Atlas sprites max size: 32 Mb
+<18:20:37>   Video textures: Dynamic managed max size: 80 Mb
+<18:20:37>   Reloading all textures...
+<18:20:37>   Finished reloading textures...
+<18:20:37>   Finished initializing textures streaming...
+<18:20:37> [Warning] Cannot open Pak file d:\cryengine\engine\shaders.pak
+<18:20:37> CParserBin::Preprocess: tokenBuffer has been exceeded (buffer=88000, count=90323). Adjust buffer size to remove unnecessary allocs.
+<18:20:37> CParserBin::Preprocess: tokenBuffer has been exceeded (buffer=88000, count=90323). Adjust buffer size to remove unnecessary allocs.
+<18:20:37> Initialized hardware mouse (game is allowed to confine mouse to window)
+<18:20:37> Initializing CryScaleformHelper...
+<18:20:37> Initializing CryScaleformHelper done, MemUsage=304Kb
+<18:20:37> Using Scaleform GFx 3.3.94
+<18:20:37>   Using dynamic pool
+<18:20:37> Font initialization
+<18:20:37> Initializing CryFont...
+<18:20:37> Using FreeType 2.5.5
+<18:20:37> Initializing CryFont done, MemUsage=128Kb
+<18:20:37> *** Init system render resources ***
+<18:20:37> Allocate render buffer for particles (16384 verts, 49152 tris)...
+<18:20:37> Allocating shadow map cache 4214 x 4214: 33.87 MB
+<18:20:37> Network initialization
+<18:20:37> Initializing CryNetwork...
+<18:20:37> [LagProfiles] Could not load "". 6 default profiles activated.
+<18:20:37> [net] Socket IO management: External [iocp], Internal [iocp]
+<18:20:37> network hostname: ROG-ZEPHYRUS
+<18:20:37>   ip:192.168.0.103
+<18:20:38> [Network Version]: PROFILE DEVELOPMENT BUILD
+<18:20:38> Initializing CryNetwork done, MemUsage=2180Kb
+<18:20:38> Online initialization
+<18:20:38> Initializing CryOnline...
+<18:20:38> DLL Failed to load, error code: 7E
+<18:20:38> MovieSystem initialization
+<18:20:38> Initializing CryMovie...
+<18:20:38> Initializing CryMovie done, MemUsage=464Kb
+<18:20:38> Console initialization
+<18:20:38> Time initialization
+<18:20:38> Input initialization
+<18:20:38> Initializing CryInput...
+<18:20:38> Initializing DirectInput
+<18:20:38> Initializing Keyboard
+<18:20:38> Initializing mouse
+<18:20:38> Initializing CryInput done, MemUsage=1100Kb
+<18:20:38> AI initialization
+<18:20:38> Initializing CryAISystem...
+<18:20:38> Initializing CryAISystem done, MemUsage=1008Kb
+<18:20:38>  
+<18:20:38> con_debug=0 [  ]
+<18:20:38> con_display_last_messages=0 [  ]
+<18:20:38> con_line_buffer_size=1000 [  ]
+<18:20:38> con_restricted=0 [ RESTRICTEDMODE ]
+<18:20:38> con_showonload=0 [  ]
+<18:20:38>  
+<18:20:38> con_debug=0 [  ]
+<18:20:38> con_display_last_messages=0 [  ]
+<18:20:38> con_line_buffer_size=1000 [  ]
+<18:20:38> con_restricted=0 [ RESTRICTEDMODE ]
+<18:20:38> con_showonload=0 [  ]
+<18:20:38>  
+<18:20:38> con_debug=0 [  ]
+<18:20:38>  
+<18:20:38> con_debug=0 [  ]
+<18:20:38> Initializing Animation System
+<18:20:38> Initializing CryAnimation...
+<18:20:38> Initializing CryAnimation done, MemUsage=2020Kb
+<18:20:38> Initializing 3D Engine
+<18:20:38> Initializing Cry3DEngine...
+<18:20:38> Sky light: Optical lookup tables loaded off disc.
+<18:20:38> Initializing Cry3DEngine done, MemUsage=3236Kb
+<18:20:38> Script System Initialization
+<18:20:38> Initializing CryScriptSystem...
+<18:20:38> [Warning] [Lua Error] Failed to load script file scripts/common.lua
+<18:20:38> Initializing CryScriptSystem done, MemUsage=568Kb
+<18:20:38> Entity system initialization
+<18:20:38> Initializing CryEntitySystem...
+<18:20:38> Initializing CryEntitySystem done, MemUsage=1620Kb
+<18:20:38> LiveCreate initialization
+<18:20:38> LiveCreateHost not created, using NULL implementation.
+<18:20:38> Initializing AI System
+<18:20:38> AI: [AISYSTEM] Initialization started.
+<18:20:38> [Warning] AI: [FactionMap] Failed to load factions from data source!
+<18:20:38> [Warning] XML reader: Can't open file (Scripts/AI/Communication/CommunicationSystemConfiguration.xml)
+<18:20:38> [Warning] AI: Failed to open XML file 'Scripts/AI/Communication/CommunicationSystemConfiguration.xml'...
+<18:20:38> [Warning] [Lua Error] Failed to load script file scripts/ai/aiconfig.lua
+<18:20:38> [Warning] XML reader: Can't open file (Scripts/AI/lookup.xml)
+<18:20:38> Registering CentralInterestManager with EntitySystem
+<18:20:38> [Warning] XML reader: Can't open file (Libs/AITargetStimulusConfig.xml)
+<18:20:38> [Warning] AI: CTargetTrackManager::Init() Warning: Failed to load configuration file 'Libs/AITargetStimulusConfig.xml'
+<18:20:38> AI: [AISYSTEM] Initialization finished.
+<18:20:38> [Warning] XML reader: Can't open file (Scripts/AI/Cover.xml)
+<18:20:38> [Warning] AI: Failed to open XML file 'Scripts/AI/Cover.xml'...
+<18:20:38> [Warning] XML reader: Can't open file (Scripts/AI/Navigation.xml)
+<18:20:38> [Warning] AI: Failed to open XML file 'Scripts/AI/Navigation.xml'...
+<18:20:38> Initializing additional systems
+<18:20:38> Dynamic Response System initialization
+<18:20:38> Initializing CryDynamicResponseSystem...
+<18:20:38> Initializing CryDynamicResponseSystem done, MemUsage=520Kb
+<18:20:38> [Warning] Could not load dialog file gamezero/libs/DynamicResponseSystem/DialogLines/dialoglines.dialog
+<18:20:38> failed to find CVar: r_ProfileShaders
+<18:20:38> failed to find CVar: r_showmt
+<18:20:38> OnSysSpecChange(4)
+<18:20:38> Loading Config file VeryHighSpec.cfg (d:\cryengine\engine\config\veryhighspec.cfg)
+<18:20:38> Loading Config file %ENGINEROOT%/editor.cfg (d:\cryengine\editor.cfg)
+<18:20:38> Loading Config file game.cfg (gamezero\game.cfg)
+<18:20:38> Flushing pended textures...
+<18:20:38> Finished flushing pended textures...
+<18:20:38> Current Language: English 
+<18:20:38> Windows 10 10.0 (C:\Windows)
+<18:20:38> Local time is 18:20:38 10/07/19, system running for 1502 minutes
+<18:20:38> 16234MB phys. memory installed, 166327MB paging available
+<18:20:38> Current display mode is 1920x1080x32, (Unknown graphics card)
+<18:20:38> Japanese keyboard and 8+ button mouse installed
+<18:20:38> --------------------------------------------------------------------------------
+<18:20:38> sys_dll_game = CryGameZero
+<18:20:38> sys_game_folder = GameZero
+<18:20:38> sys_localization_folder = Localization
+<18:20:38> [Warning] XML reader: Can't open file (Libs/Levels/leveltypes.xml)
+<18:20:38> [Warning] XML reader: Can't open file (Libs/FlowNodes/DialogFlowNodeBuffers.xml)
+<18:20:38> [Warning] [Lua Error] Failed to load script file Scripts/Entities/Vehicles/VehicleSystem.lua
+<18:20:38> [Warning] XML reader: Can't open file (Libs/Readability/Faces/Faces.xml)
+<18:20:38> [Warning] XML reader: Can't open file (Libs/Config/Profiles/default/attributes.xml)
+<18:20:38> [Warning] [PlayerProfiles] PlayerProfileImplFS: Cannot load XML file 'Libs/Config/Profiles/default/attributes.xml'
+<18:20:38> [Warning] XML reader: Can't open file (Libs/Config/Profiles/default/actionmaps.xml)
+<18:20:38> [Warning] [PlayerProfiles] PlayerProfileImplFS: Cannot load XML file 'Libs/Config/Profiles/default/actionmaps.xml'
+<18:20:38> [Warning] CPlayerProfile::SerializeXML: No attributes tag 'Attributes' found
+<18:20:38> [Warning] [PlayerProfiles] Cannot load factory default profile 'default'
+<18:20:38> [Warning] [PlayerProfiles] CCryAction::Init: Cannot initialize PlayerProfileManager
+<18:20:38> [Warning] XML reader: Can't open file (Scripts/Network/StatsConfig.xml)
+<18:20:38> Ending game context...
+<18:20:38> [Warning] [Lua Error] Failed to load script file Scripts/Entities/Default/GeomEntity.lua
+<18:20:38> [Warning] [Lua Error] Failed to load script file Scripts/Entities/Anim/MannequinObject.lua
+<18:20:38> [Warning] [Lua Error] Failed to load script file Scripts/Entities/Default/RopeEntity.lua
+<18:20:38> [Warning] [Lua Error] Failed to load script file Scripts/GameRules/SinglePlayer.lua
+<18:20:38> [Warning] [Lua Error] Failed to load script file Scripts/Entities/Vehicles/VehiclePartDetached.lua
+<18:20:38> [Warning] [Lua Error] Failed to load script file Scripts/Entities/Environment/WaterVolume.lua
+<18:20:38> [Warning] XML reader: Can't open file (Libs/GameForceFeedback/ForceFeedbackEffects.xml)
+<18:20:38> [Warning] [ForceFeedback System] Could not load force feedback system data. Invalid XML file 'Libs/GameForceFeedback/ForceFeedbackEffects.xml'! 
+<18:20:38> Initializing default materials...
+<18:20:38> [Warning] XML reader: Can't open file (materials/material_layers_default.mtl)
+<18:20:38> [Warning] XML reader: Can't open file (materials/material_layers_default.mtl)
+<18:20:38> [Warning] XML reader: Can't open file (Libs/UI//TexturePreload.xml)
+<18:20:38> [Warning] [Lua Error] Failed to load script file scripts/main.lua
+<18:20:38> [Warning] [CScriptSystem::BeginCall] Function OnInit not found(check for syntax errors or if the file wasn't loaded)
+<18:20:38> [Warning] 'mat_canopy' undefined surface type, using mat_default ()
+<18:20:38> [Warning] XML reader: Can't open file (libs/materialeffects/materialeffects.xml)
+<18:20:38> [Warning] [MFX] File not found or wrong file type: libs/materialeffects/materialeffects.xml
+<18:20:38> UnitTesting Finished Tests: 67 Succeeded: 67, Failed: 0, Time: 21.32 ms
+<18:20:38> Loading Config file singleplayer.cfg (d:\cryengine\engine\config\singleplayer.cfg)
+<18:20:38> [Warning] [Lua Error] Failed to load script file scripts/ai/pathfindProperties.lua
+<18:20:38> AI: [AISYSTEM] Initializing AI Actions.
+<18:20:38> AI: [AISYSTEM] Initializing Smart Objects.
+<18:20:38> [Warning] XML reader: Can't open file (Libs/SmartObjects.xml)
+<18:20:38> [Warning] XML reader: Can't open file (Libs/SmartObjects/Templates/SOTemplates.xml)
+<18:20:38> OnSysSpecChange(2)
+<18:20:38> Loading Config file MedSpec.cfg (d:\cryengine\engine\config\medspec.cfg)
+<18:20:38> Flushing pended shaders...
+<18:20:38> Finished flushing pended shaders...
+<18:20:39> CParserBin::Preprocess: tokenBuffer has been exceeded (buffer=88000, count=90323). Adjust buffer size to remove unnecessary allocs.
+<18:20:39> Flushing pended shaders...
+<18:20:39> Finished flushing pended shaders...
+<18:20:39> Allocating shadow map cache 2810 x 2810: 15.06 MB
+<18:20:39> Allocating shadow map cache 6324 x 6324: 76.28 MB
+<18:20:39> Allocating shadow map cache 4214 x 4214: 33.87 MB
+<18:20:39> Loading Config file %ENGINEROOT%/editor.cfg (d:\cryengine\editor.cfg)
+<18:20:39> Loading Config file game.cfg (gamezero\game.cfg)
+<18:20:39> Flushing pended textures...
+<18:20:39> Finished flushing pended textures...
+<18:20:39> Unloading all previous plugins
+<18:20:39> Loading plugins...
+<18:20:39> Successfully loaded plugin '3DConnexionDriver', version '1' (GUID: {AD109901-9128-4ffd-8E67-137CB2B1C41B})
+<18:20:39> Successfully loaded plugin 'CryDesigner', version '1' (GUID: )
+<18:20:39> Successfully loaded plugin 'EditorPhysics', version '1' (GUID: (null))
+<18:20:39> [Warning] XML reader: Can't open file (gamezero\audio\wwise\SoundbanksInfo.xml)
+<18:20:39> Successfully loaded plugin 'AudioControlsEditor', version '1' (GUID: {DFA4AFF7-2C70-4B29-B736-GRH00040314})
+<18:20:39> Successfully loaded plugin 'QtConsole', version '1' (GUID: {B0E9DE33-C2E3-4506-8B63-B023327156BB})
+<18:20:39> Cannot query plugin DLL 'D:\CryEngine\bin\win_x64/EditorPlugins\EditorCryAudioImplFmod.dll' factory pointer (is it a Sandbox plugin?)
+<18:20:39> Cannot query plugin DLL 'D:\CryEngine\bin\win_x64/EditorPlugins\EditorCryAudioImplSDLMixer.dll' factory pointer (is it a Sandbox plugin?)
+<18:20:39> Cannot query plugin DLL 'D:\CryEngine\bin\win_x64/EditorPlugins\EditorCryAudioImplWwise.dll' factory pointer (is it a Sandbox plugin?)
+<18:20:39> Cannot create instance of plugin DLL 'D:\CryEngine\bin\win_x64/EditorPlugins\EditorCryLink.dll'! Error code 0.
+<18:20:39> Successfully loaded plugin 'DynamicResponseSystemEditor', version '1' (GUID: {DFA4AFF7-2C70-4B29-B736-GRH00290515})
+<18:20:39> Successfully loaded plugin 'EditorEnvironment', version '1' (GUID: {800BBFA9-9895-4E81-AB02-7425FD4F5554})
+<18:20:39> Successfully loaded plugin 'ParticleLibrary', version '1' (GUID: (null))
+<18:20:39> Successfully loaded plugin 'TrackView', version '1' (GUID: {7C4EB160-30AC-44C1-92D6-6D4B74B2E96B})
+<18:20:39> FBX plugin: CreatePluginInstance
+<18:20:39> Successfully loaded plugin 'FBX Exporter', version '1' (GUID: {6CD02F95-362C-4ADF-8BAE-87C6342A8027})
+<18:20:39> Successfully loaded plugin 'MeshImporter', version '1' (GUID: {4F68F679-39AD-4BB4-B5E2-8A8DD3020DC1})
+<18:20:39> Loading editor preferences from: C:/Users/YuqiaoZhang/AppData/Roaming/Crytek/CRYENGINE/Settings.ini
+<18:20:39> Started game resource files indexing...
+<18:20:39> [CONSOLE] Executing console command 'exec autoexec.cfg'
+<18:20:39> Executing console batch file (try game,config,root): "autoexec.cfg" not found!
+<18:20:39> [CONSOLE] Executing console command 'exec editor.cfg'
+<18:20:39> Executing console batch file (try game,config,root): "editor.cfg" found in ./editor.cfg ...
+<18:20:39> ed_MissingAssetResolver=0 [  ]
+<18:20:39> ca_UseIMG_CAF=0 [  ]
+<18:20:39> drs_dialogSubtitles=1 [  ]
+<18:20:39> ed_useDevManager= [  ]
+<18:20:39> [CONSOLE] Executing console command 'exec user.cfg'
+<18:20:39> Executing console batch file (try game,config,root): "user.cfg" not found!
+<18:20:39> Adding for file change notifications: 'gamezero\'
+<18:20:39> Adding for file change notifications: './gamezero/'
+<18:20:39> Adding for file change notifications: './Editor/'
+<18:20:39> Adding for file change notifications: './Engine/Shaders/'
+<18:20:40> CAIManager: navigation world monitor state: Stopped -> Started
+<18:20:40> Flushing pended shaders...
+<18:20:40> Finished flushing pended shaders...
+<18:20:40> Flushing pended shaders...
+<18:20:40> Finished flushing pended shaders...
+<18:20:40> Flushing pended shaders...
+<18:20:40> Finished flushing pended shaders...
+<18:20:40> Flushing pended shaders...
+<18:20:40> Finished flushing pended shaders...
+<18:20:40> Remote console listening on: 4600
+<18:20:43> general.open
+<18:20:44> Opening document gamezero/levels/example/example.cry
+<18:20:44> CAIManager: navigation world monitor state: Started -> StartedAndPaused
+<18:20:44> Loading from gamezero/levels/example/example.cry...
+<18:20:44> Ending game context...
+<18:20:44> Destroying CActionGame instance 000001C888DDB130 (level="")
+<18:20:44> Loading Config file singleplayer.cfg (d:\cryengine\engine\config\singleplayer.cfg)
+<18:20:44> [Warning] [Lua Error] Failed to load script file Scripts/GameRules/SinglePlayer.lua
+<18:20:44> Loading missions...
+<18:20:44> ---- Start: Load Terrain
+<18:20:44> CRGBLayer::AllocateTiles 1x1 tiles 256 => 256x256 texture
+<18:20:44> allocating editor height map (256x256)*4
+<18:20:44> ---- Start: Loading Surface Types
+<18:20:44> ---- End: Loading Surface Types (0 seconds)
+<18:20:44> ---- Start: Loading Terrain Layers Info
+<18:20:44> Loading layer settings...
+<18:20:44> Loading layer texture (engineassets/textures/grey.dds)...
+<18:20:44>   loaded editor layer 0  name='Default' LayerID=0
+<18:20:44> ---- End: Loading Terrain Layers Info (0 seconds)
+<18:20:44> ---- Start: Load Terrain
+<18:20:44> Constructing 85 terrain nodes (0.0 MB) <18:20:44>  done in 0.01 sec
+<18:20:44> ===== Loading 0 vegetation models =====
+<18:20:44> ===== Loading 0 brush models ===== 
+<18:20:44> ===== Initializing terrain nodes ===== 
+<18:20:44> ===== Loading outdoor instances ===== 
+<18:20:44> ---- End: Load Terrain (0 seconds)
+<18:20:44> ---- Start: Process RGB Terrain Layers
+<18:20:44> ---- End: Process RGB Terrain Layers (0 seconds)
+<18:20:44> CRGBLayer::AllocateTiles 1x1 tiles 256 => 256x256 texture
+<18:20:44> Loading terrain layers for segment 0 ...
+<18:20:44> ---- End: Load Terrain (0 seconds)
+<18:20:44> ---- Start: Game Engine level load
+<18:20:44> Loading map 'gamezero/levels/example' into engine...
+<18:20:44> ===== Loading Particle Effects =====
+<18:20:44> [Warning] [Lua Error] Failed to load script file scripts/physics.lua
+<18:20:44> ---- End: Game Engine level load (0 seconds)
+<18:20:44> ---- Start: Load MaterialManager
+<18:20:44> ---- End: Load MaterialManager (0 seconds)
+<18:20:44> ---- Start: Load Particles
+<18:20:44> ---- End: Load Particles (0 seconds)
+<18:20:44> ---- Start: Load Flares
+<18:20:44> ---- End: Load Flares (0 seconds)
+<18:20:44> ---- Start: Load GameTokens
+<18:20:44> ---- End: Load GameTokens (0 seconds)
+<18:20:44> Loading View settings...
+<18:20:44> ---- Start: Load Vegetation
+<18:20:44> Loading Vegetation Map...
+<18:20:44> ---- End: Load Vegetation (0 seconds)
+<18:20:44> ---- Start: Reposition Vegetation
+<18:20:44> ---- End: Reposition Vegetation (0 seconds)
+<18:20:44> ---- Start: Updating Surface Types
+<18:20:44> Loading terrain layers for segment 0 ...
+<18:20:44> ---- End: Updating Surface Types (0 seconds)
+<18:20:44> Loading Fog settings...
+<18:20:44> ---- Start: Load Entity Archetypes Database
+<18:20:44> ---- End: Load Entity Archetypes Database (0 seconds)
+<18:20:44> ---- Start: Load Prefabs Database
+<18:20:44> ---- End: Load Prefabs Database (0 seconds)
+<18:20:44> ---- Start: Activating Mission Mission0
+<18:20:44> Loading AI data gamezero/levels/example, Mission0
+<18:20:44> --- AI: Navigation Data Loaded in  0.00 sec
+<18:20:44> Finished Loading AI data in  0.008 secs
+<18:20:44> [Warning] 'mat_metal' undefined surface type, using mat_default ()
+<18:20:44> [Warning] 'mat_metal' undefined surface type, using mat_default ()
+<18:20:44> [Warning] 'mat_metal' undefined surface type, using mat_default (editor/objects/helper_illum)
+<18:20:45> [Warning] 'mat_water' undefined surface type, using mat_default ()
+<18:20:45> [Warning] 'mat_water' undefined surface type, using mat_default ()
+<18:20:45> [Warning] 'mat_water' undefined surface type, using mat_default (EngineAssets/Materials/Water/Ocean_default)
+<18:20:45> ---- End: Activating Mission Mission0 (0 seconds)
+<18:20:45> ---- Start: Load Level Shader Cache
+<18:20:45> ---- End: Load Level Shader Cache (0 seconds)
+<18:20:45> ---- Start: Post Load
+<18:20:45> ---- End: Post Load (0 seconds)
+<18:20:45> [LevelLoadTime] Level gamezero/levels/example loaded in 0 seconds
+<18:20:45> [Warning] 'mat_water' undefined surface type, using mat_default ()
+<18:20:45> SetGlobalState 1->11 'INIT'->'LEVEL_LOAD_TEXTURES' 9.1 seconds
+<18:20:45> -- Presort shaders by states...
+<18:20:45> --- 19 Resources, 1 Resource groups.
+<18:20:45> Requesting textures precache ...
+<18:20:45> -- Precaching textures...
+<18:20:45> Precaching progress: 1
+<18:20:45> Precaching progress: 2
+<18:20:45> Precaching progress: 3
+<18:20:45> Precaching progress: 4
+<18:20:45> Precaching progress: 5
+<18:20:45> [Warning] Texture does not exist [File=engineassets/textures/skys/night/half_moon.dds]
+<18:20:45> Precaching progress: 6
+<18:20:45> [Warning] Texture does not exist [File=textures/defaults/16_12.dds]
+<18:20:45> [Warning] Texture does not exist [File=textures/defaults/16_12.dds]
+<18:20:45> Precaching progress: 7
+<18:20:45> [Warning] Texture does not exist [File=textures/defaults/16_34.dds]
+<18:20:45> [Warning] Texture does not exist [File=textures/defaults/16_34.dds]
+<18:20:45> Precaching progress: 8
+<18:20:45> [Warning] Texture does not exist [File=textures/defaults/16_5.dds]
+<18:20:45> [Warning] Texture does not exist [File=textures/defaults/16_5.dds]
+<18:20:45> [Warning] Texture does not exist [File=textures/defaults/16_grey.dds]
+<18:20:45> [Warning] Texture does not exist [File=textures/defaults/16_grey.dds]
+<18:20:45> Precaching progress: 9
+<18:20:45> Precaching textures done in 0.10 seconds
+<18:20:45> Textures precache done.
+<18:20:45> File access time during level loading: 0.16 seconds
+<18:20:45> [Warning] XML reader: Can't open file (Libs/UI//TexturePreload.xml)
+<18:20:45> CAIManager: navigation world monitor state: StartedAndPaused -> StartedPausedAndResumePending
+<18:20:45> -----------------------------------------------------------
+<18:20:45> Successfully opened document gamezero/levels/example/
+<18:20:45> Level loading time: 1.13 seconds
+<18:20:45> -----------------------------------------------------------
+<18:20:45> Returned: 
+<18:20:45> CAIManager: navigation world monitor state: StartedPausedAndResumePending -> Stopped
+<18:20:45> CAIManager: navigation world monitor state: Stopped -> Started
+<18:20:45> Opening terrain\cover.ctc ...
+<18:20:45>   TerrainLayer 0: TexFormat: BC3, SectorTextureSize: 256x256, SectorTextureDataSizeBytes: 65536
+<18:20:45>   TerrainLayer 1: TexFormat: BC3, SectorTextureSize: 256x256, SectorTextureDataSizeBytes: 65536
+<18:20:45>   RGB multiplier: 1, Texture indices: 5
+<18:20:50> CSystem::Quit invoked from thread 3196 (main is 3196)
+<18:20:50> BaseInput - Shutting down all force feedback
+<18:20:50> ActionGame - Shutting down all force feedback
+<18:20:50> Ending game context...
+<18:20:50> Destroying CActionGame instance 000001C8E239A790 (level="")
+<18:20:50> Flushing pended shaders...
+<18:20:50> Finished flushing pended shaders...
+<18:20:50> System:Quit

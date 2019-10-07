@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<grammar version="1.0" sapi:alphabet="x-microsoft-ups" xml:lang="en-GB" tag-format="semantics/1.0-literals" xmlns:sapi="http://schemas.microsoft.com/Speech/2002/06/SRGSExtensions" root="toplevel" xmlns="http://www.w3.org/2001/06/grammar">
+  <rule id="toplevel" scope="public">
+    <one-of>
+      <item>
+        <item>I am prophet</item>
+        <tag>0.22#VC_PROPHET</tag>
+      </item>
+    </one-of>
+  </rule>
+</grammar>

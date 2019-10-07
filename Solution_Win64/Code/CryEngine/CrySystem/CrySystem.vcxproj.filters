@@ -1,0 +1,1075 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\AutoDetectCPUTestSuit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\AutoDetectSpec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\AVI_Reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\BudgetingSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ClientHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CmdLine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CmdLineArg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CompressedFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ConsoleBatchFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ConsoleHelpGen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CPUDetect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CryArchive.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CryAsyncMemcpy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CryPak.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CrySizerImpl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CrySizerStats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\DebugCallStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\DllMain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\FileIOWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\GeneralMemoryHeap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\HandlerBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\HardwareMouse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\IDebugCallStack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\JiraClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\AsyncPakManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MemReplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\BootProfiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\NotificationNetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PhysRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ResourceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ServerHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ServerThrottle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SyncLock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\System.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemCFG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemEventDispatcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemInit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemScheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemWin32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Timer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\UnixConsole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\WindowsConsole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XConsole.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XConsoleVariable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\DefragAllocator.cpp">
+      <Filter>MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MemoryAddressRange.cpp">
+      <Filter>MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PageMappingHeap.cpp">
+      <Filter>MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CryMemoryManager.cpp">
+      <Filter>MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CustomMemoryHeap.cpp">
+      <Filter>MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MemoryManager.cpp">
+      <Filter>MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MTSafeAllocator.cpp">
+      <Filter>MemoryManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamAsyncFileRequest.cpp">
+      <Filter>StreamEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamAsyncFileRequest_Jobs.cpp">
+      <Filter>StreamEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamEngine.cpp">
+      <Filter>StreamEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamIOThread.cpp">
+      <Filter>StreamEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamReadStream.cpp">
+      <Filter>StreamEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\SerializeXMLReader.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\SerializeXMLWriter.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\xml.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryNode.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryReader.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryWriter.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLPatcher.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XmlUtils.cpp">
+      <Filter>XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\ReadXMLSink.cpp">
+      <Filter>XML\XMLSink</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\XML\WriteXMLSource.cpp">
+      <Filter>XML\XMLSink</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipEncrypt.cpp">
+      <Filter>ZipDir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCache.cpp">
+      <Filter>ZipDir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCacheFactory.cpp">
+      <Filter>ZipDir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCacheRW.cpp">
+      <Filter>ZipDir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirFind.cpp">
+      <Filter>ZipDir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirFindRW.cpp">
+      <Filter>ZipDir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirList.cpp">
+      <Filter>ZipDir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirStructures.cpp">
+      <Filter>ZipDir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirTree.cpp">
+      <Filter>ZipDir</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\DownloadManager.cpp">
+      <Filter>HTTPDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\HTTPDownloader.cpp">
+      <Filter>HTTPDownloader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\LocalizedStringManager.cpp">
+      <Filter>Localization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\DiskProfiler.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\FrameProfileRender.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\FrameProfileSystem.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\LoadingProfiler.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PerfHUD.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ProfileLogSystem.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Sampler.cpp">
+      <Filter>Profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\WindowsErrorReporting.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ImeManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ExcelExport.cpp">
+      <Filter>TestSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Statistics.cpp">
+      <Filter>TestSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\TestSystemLegacy.cpp">
+      <Filter>TestSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\UnitTestExcelReporter.cpp">
+      <Filter>TestSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\UnitTestSystem.cpp">
+      <Filter>TestSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\VisRegTest.cpp">
+      <Filter>TestSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\CryPluginManager.cpp">
+      <Filter>ExtensionSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\CryFactoryRegistryImpl.cpp">
+      <Filter>ExtensionSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\TestCases\TestExtensions.cpp">
+      <Filter>ExtensionSystem\TestCases</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\DrawContext.cpp">
+      <Filter>MiniGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniButton.cpp">
+      <Filter>MiniGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniGUI.cpp">
+      <Filter>MiniGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniInfoBox.cpp">
+      <Filter>MiniGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniMenu.cpp">
+      <Filter>MiniGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniTable.cpp">
+      <Filter>MiniGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NULLRenderAuxGeom.cpp">
+      <Filter>NullImplementation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadInfo.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadProfiler.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadSampler.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadConfigManager.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\SystemThreading.cpp">
+      <Filter>Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CodeCoverage\CodeCheckpointMgr.cpp">
+      <Filter>CodeCoverage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_CryPak.cpp">
+      <Filter>PlatformOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_Memory.cpp">
+      <Filter>PlatformOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Statistics\LocalMemoryUsage.cpp">
+      <Filter>Statistics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Statoscope.cpp">
+      <Filter>Statoscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StatoscopeStreamingIntervalGroup.cpp">
+      <Filter>Statoscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StatoscopeTextureStreamingIntervalGroup.cpp">
+      <Filter>Statoscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZLibCompressor.cpp">
+      <Filter>ZLibCompressor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Huffman.cpp">
+      <Filter>HuffmanEncoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\JobManager.cpp">
+      <Filter>JobManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\BlockingBackend\BlockingBackEnd.cpp">
+      <Filter>JobManager\BlockingBackend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\FallbackBackend\FallbackBackend.cpp">
+      <Filter>JobManager\FallbackBackend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\PCBackEnd\ThreadBackEnd.cpp">
+      <Filter>JobManager\ThreadBackEnd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\OverloadSceneManager\OverloadSceneManager.cpp">
+      <Filter>OverloadSceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\LZ4Decompressor.cpp">
+      <Filter>LZ4Decompressor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteConsole\RemoteConsole.cpp">
+      <Filter>RemoteConsole</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\ArchiveHost.cpp">
+      <Filter>Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\Test_ArchiveHost.cpp">
+      <Filter>Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\XmlIArchive.cpp">
+      <Filter>Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\XmlOArchive.cpp">
+      <Filter>Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ServiceNetwork.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommand.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommandHelpers.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommandServer.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommandClient.cpp">
+      <Filter>Services</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Stroboscope\Stroboscope.cpp">
+      <Filter>Stroboscope</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\HMDManager.cpp">
+      <Filter>VR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\HMDCVars.cpp">
+      <Filter>VR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusDevice.cpp">
+      <Filter>VR\Oculus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusResources.cpp">
+      <Filter>VR\Oculus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusTouchController.cpp">
+      <Filter>VR\Oculus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRDevice.cpp">
+      <Filter>VR\OpenVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRResources.cpp">
+      <Filter>VR\OpenVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRController.cpp">
+      <Filter>VR\OpenVR</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Osvr\OsvrDevice.cpp">
+      <Filter>VR\Osvr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\Osvr\OsvrResources.cpp">
+      <Filter>VR\Osvr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\ZLibDecompressor.cpp">
+      <Filter>ZLibDecompressor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CryDLMalloc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\PlatformOS_PC.cpp">
+      <Filter>PlatformOS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_Steam.cpp">
+      <Filter>PlatformOS</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryThreadUtil_win32.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryThreadUtil_posix.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SystemInit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Statistics\LocalMemoryUsage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MemoryFragmentationProfiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\ReadWriteXMLSink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\ArchiveHost.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\PatternMatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\BudgetingSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CmdLine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CmdLineArg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ConsoleBatchFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ConsoleHelpGen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CPUDetect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryPak.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryPakHandleCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CrySizerImpl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CrySizerStats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryWaterMark.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\DebugCallStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\GeneralMemoryHeap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HardwareMouse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HotUpdate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\IDebugCallStack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NotificationNetwork.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PakVars.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SimpleStringPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\System.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SystemCFG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SystemEventDispatcher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Timer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Validator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XConsole.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XConsoleVariable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\BootProfiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\AutoDetectCPUTestSuit.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\AutoDetectSpec.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\AVI_Reader.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ClientHandler.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CryArchive.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\DxDiag.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\FileIOWrapper.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HandlerBase.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JiraClient.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\AsyncPakManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PhysRenderer.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ResourceManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ServerHandler.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ServerThrottle.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SyncLock.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SystemScheduler.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\UnixConsole.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\WindowsConsole.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CustomMemoryHeap.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\DefragAllocator.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MemoryAddressRange.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PageMappingHeap.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MemoryManager.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MemReplay.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MTSafeAllocator.h">
+      <Filter>MemoryManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamAsyncFileRequest.h">
+      <Filter>StreamEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamEngine.h">
+      <Filter>StreamEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamIOThread.h">
+      <Filter>StreamEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StreamEngine\StreamReadStream.h">
+      <Filter>StreamEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\SerializeXMLReader.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\SerializeXMLWriter.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\xml.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLPatcher.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\xml_string.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryNode.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryReader.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XMLBinaryWriter.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\XML\XmlUtils.h">
+      <Filter>XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipEncrypt.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDir.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCache.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCacheFactory.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirCacheRW.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirFind.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirFindRW.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirList.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirStructures.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipDirTree.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipFileFormat.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZipFileFormat_info.h">
+      <Filter>ZipDir</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\DownloadManager.h">
+      <Filter>HTTPDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HTTPDownloader.h">
+      <Filter>HTTPDownloader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\LocalizedStringManager.h">
+      <Filter>Localization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\DiskProfiler.h">
+      <Filter>Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\FrameProfileSystem.h">
+      <Filter>Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\LoadingProfiler.h">
+      <Filter>Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PerfHUD.h">
+      <Filter>Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ProfileLogSystem.h">
+      <Filter>Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Sampler.h">
+      <Filter>Profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ImeManager.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ExcelExport.h">
+      <Filter>TestSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Statistics.h">
+      <Filter>TestSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\TestSystemLegacy.h">
+      <Filter>TestSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\UnitTestExcelReporter.h">
+      <Filter>TestSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\UnitTestSystem.h">
+      <Filter>TestSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\VisRegTest.h">
+      <Filter>TestSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\CryPluginManager.h">
+      <Filter>ExtensionSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\CryFactoryRegistryImpl.h">
+      <Filter>ExtensionSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ExtensionSystem\TestCases\TestExtensions.h">
+      <Filter>ExtensionSystem\TestCases</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\DrawContext.h">
+      <Filter>MiniGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniButton.h">
+      <Filter>MiniGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniGUI.h">
+      <Filter>MiniGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniInfoBox.h">
+      <Filter>MiniGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniMenu.h">
+      <Filter>MiniGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\MiniGUI\MiniTable.h">
+      <Filter>MiniGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NULLAudioSystems.h">
+      <Filter>NullImplementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NullLiveCreate.h">
+      <Filter>NullImplementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NullInput.h">
+      <Filter>NullImplementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NullResponseSystem.h">
+      <Filter>NullImplementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\NullImplementation\NULLRenderAuxGeom.h">
+      <Filter>NullImplementation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadInfo.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadSampler.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadProfiler.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ThreadConfigManager.h">
+      <Filter>Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\CodeCoverage\CodeCheckpointMgr.h">
+      <Filter>CodeCoverage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_CryPak.h">
+      <Filter>PlatformOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_Memory.h">
+      <Filter>PlatformOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StatoscopeStreamingIntervalGroup.h">
+      <Filter>Statoscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StatoscopeTextureStreamingIntervalGroup.h">
+      <Filter>Statoscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Statoscope.h">
+      <Filter>Statoscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZLibCompressor.h">
+      <Filter>ZLibCompressor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Huffman.h">
+      <Filter>HuffmanEncoding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\JobManager.h">
+      <Filter>JobManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\JobStructs.h">
+      <Filter>JobManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\BlockingBackend\BlockingBackEnd.h">
+      <Filter>JobManager\BlockingBackend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\FallbackBackend\FallBackBackend.h">
+      <Filter>JobManager\FallbackBackend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\JobManager\PCBackEnd\ThreadBackEnd.h">
+      <Filter>JobManager\ThreadBackEnd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\OverloadSceneManager\OverloadSceneManager.h">
+      <Filter>OverloadSceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\LZ4Decompressor.h">
+      <Filter>LZ4Decompressor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteConsole\RemoteConsole.h">
+      <Filter>RemoteConsole</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\Token.h">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\XmlIArchive.h">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Serialization\XmlOArchive.h">
+      <Filter>Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ServiceNetwork.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommand.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\RemoteCommandHelpers.h">
+      <Filter>Services</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Stroboscope\Stroboscope.h">
+      <Filter>Stroboscope</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HMDManager.h">
+      <Filter>VR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\HMDCVars.h">
+      <Filter>VR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusConfig.h">
+      <Filter>VR\Oculus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusDevice.h">
+      <Filter>VR\Oculus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusResources.h">
+      <Filter>VR\Oculus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Oculus\OculusTouchController.h">
+      <Filter>VR\Oculus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRConfig.h">
+      <Filter>VR\OpenVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRDevice.h">
+      <Filter>VR\OpenVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRResources.h">
+      <Filter>VR\OpenVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\OpenVR\OpenVRController.h">
+      <Filter>VR\OpenVR</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Osvr\OsvrDevice.h">
+      <Filter>VR\Osvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\Osvr\OsvrResources.h">
+      <Filter>VR\Osvr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\ZLibDecompressor.h">
+      <Filter>ZLibDecompressor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\SystemUtilsApple.h">
+      <Filter>Mac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\PlatformOS_PC.h">
+      <Filter>PlatformOS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CrySystem\PlatformOS\SaveReaderWriter_Steam.h">
+      <Filter>PlatformOS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Code\CryEngine\CrySystem\crash_face.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\Code\CryEngine\CrySystem\CrashHandler.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="JobManager\BlockingBackend">
+      <UniqueIdentifier>{8D046058-A7ED-3C66-9F8A-F925B0EBC262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JobManager\FallbackBackend">
+      <UniqueIdentifier>{299258C8-5733-33CC-9913-064446B7E6B1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JobManager\ThreadBackEnd">
+      <UniqueIdentifier>{B4ADCF7B-D1D2-3474-9A75-2FE4E6055E2B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VR\Oculus">
+      <UniqueIdentifier>{88D163FD-3E40-371D-B36F-2D751BB4A258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VR\OpenVR">
+      <UniqueIdentifier>{E66B5360-5F35-3CC8-8258-E7ADAE92AA83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VR\Osvr">
+      <UniqueIdentifier>{7674C6AD-DEE7-38F8-B808-69C0204F4C78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML\XMLSink">
+      <UniqueIdentifier>{E02C7351-44A7-3448-BC0B-4A57A8E8BAAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtensionSystem\TestCases">
+      <UniqueIdentifier>{D370FC19-984F-304C-AECF-88DA6D229822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MemoryManager">
+      <UniqueIdentifier>{F410F624-8958-3521-B7CC-840792E3B9A1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Threading">
+      <UniqueIdentifier>{9B9AE276-A593-3CA6-A0AA-8C737E2D27C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PlatformOS">
+      <UniqueIdentifier>{FBAD8397-8D84-323B-81D0-1DB646A30002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{3F5939DA-C0B1-3C14-8871-9D22E54156DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StreamEngine">
+      <UniqueIdentifier>{0ED82538-F944-3AB8-A45F-E46840A8086D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="XML">
+      <UniqueIdentifier>{B48D10A3-0B48-362E-AADD-D2E9D9D312EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZipDir">
+      <UniqueIdentifier>{867AA6F4-5F53-3F9A-A014-D57380AB1F61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HTTPDownloader">
+      <UniqueIdentifier>{E568DB9C-C318-35CC-BACC-3A2984F30F75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Localization">
+      <UniqueIdentifier>{3FF6CDBF-5F24-3910-B81D-E419F6664750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Profiler">
+      <UniqueIdentifier>{756DD2B7-F913-3881-A7AD-BECBD0464136}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{E263A640-BD12-3199-889C-AFAB81EDE51B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestSystem">
+      <UniqueIdentifier>{3877A545-E71E-3A33-86BC-3C0F32D482D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ExtensionSystem">
+      <UniqueIdentifier>{E5CBB9FA-C656-3578-A72A-4F5803926AD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MiniGUI">
+      <UniqueIdentifier>{2F3886D7-4A82-35A1-93D9-DC6DD2C15E20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NullImplementation">
+      <UniqueIdentifier>{6F4284A5-DF84-32C8-BC8D-34225F7D29FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeCoverage">
+      <UniqueIdentifier>{6E73750E-A438-3EF4-A585-7C0CD2DA0966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Statistics">
+      <UniqueIdentifier>{56C845AA-8B76-3F9C-99D6-E578DA84A05D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Statoscope">
+      <UniqueIdentifier>{3504A3A3-1F21-3404-90D9-D100290D237D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZLibCompressor">
+      <UniqueIdentifier>{80C07722-99BB-332E-BEFF-05B485DD2C68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HuffmanEncoding">
+      <UniqueIdentifier>{7C133B25-58FB-3E20-83BA-22E47A1C5C4A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JobManager">
+      <UniqueIdentifier>{8BCE43DF-1CBA-318A-A537-FE9C00A7342F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OverloadSceneManager">
+      <UniqueIdentifier>{D685333A-8531-3E67-8FDD-B9543BE8B48E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LZ4Decompressor">
+      <UniqueIdentifier>{2B5EB1DF-BAD7-3A87-95BD-DA410A1013B0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RemoteConsole">
+      <UniqueIdentifier>{0602786D-D273-38D1-957A-4E7973A608D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Serialization">
+      <UniqueIdentifier>{D1A9487A-F20A-3F9A-AF41-6AC20E5571D4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Services">
+      <UniqueIdentifier>{E25791D7-4D84-3A52-B5A6-F72040F8E041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stroboscope">
+      <UniqueIdentifier>{60EF8916-004D-3E28-BA91-A246E75707D1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VR">
+      <UniqueIdentifier>{C5AF64B4-6B21-300C-ADC8-F4D754D7797C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZLibDecompressor">
+      <UniqueIdentifier>{01840977-8244-3D5E-8C99-179E8AC35EF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mac">
+      <UniqueIdentifier>{E398AAEA-94BC-3085-B50F-52521D790707}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

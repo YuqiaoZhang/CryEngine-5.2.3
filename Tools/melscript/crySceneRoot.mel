@@ -1,0 +1,38 @@
+proc preparePyEnv()
+{
+    string $pycmd = 
+        "try:\n" +
+        "    import crySceneRoot\n" +
+        "except:\n" +
+        "    import os\n" +
+        "    import sys\n" +
+        "    print('Could not import crySceneRoot.py! Trying to setup environment...')\n" +
+        "    paths = [p for p in os.environ['MAYA_SCRIPT_PATH'].split(';') if p.lower().endswith('/tools/melscript')]\n" +
+        "    crypath = ''\n" +
+        "    for p in paths:\n" +
+        "        if os.path.exists('%s/%s' % (p, 'crySceneRoot.py')):\n" +
+        "            print('found \"/Tools/melScript\" path')\n" +
+        "            crypath = p\n" +
+        "            break\n" +
+        "    if crypath not in [p.replace('\\\\','/').lower() for p in sys.path]:\n" +
+        "        sys.path.append(crypath)\n" +
+        "        print('added \"/Tools/melScript\" path to py paths')\n";
+    python($pycmd);
+}
+
+global proc cryMakeSceneRoot(int $naturalOrientation)
+{
+    preparePyEnv();
+
+    string $value = "False";
+    if ($naturalOrientation)
+    {
+    	$value = "True";
+    }
+
+    string $pycmd = 
+        "import crySceneRoot\n" +
+        "crySceneRoot.cryMakeSceneRoot(" + $value + ")\n";
+
+    python($pycmd);
+}

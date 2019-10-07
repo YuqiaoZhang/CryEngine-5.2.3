@@ -1,0 +1,24 @@
+{
+  "content": {
+    "assets": [
+      "Assets"
+    ],
+    "code": [
+      "Code"
+    ],
+    "libs": [
+      {
+        "name": "Sidescroller",
+        "shared": {
+          "win_x64": "bin/win_x64/CryGameSidescroller.dll"
+        }
+      }
+    ]
+  },
+  "info": {
+    "name": "Sidescroller Game Template"
+  },
+  "require": {
+    "engine": "engine-5.2"
+  }
+}

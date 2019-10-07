@@ -1,0 +1,7 @@
+A change was made to Modules/posixmodule.c in order to make Python compile with VS2015
+The change can be found be seaching for the line:
+
+/* Crytek change to make VS2015 work */
+
+Otherwise, the contents of this folder are identical to the contents found in the official 2.7.10 Python release.
+https://www.python.org/downloads/release/python-2710/

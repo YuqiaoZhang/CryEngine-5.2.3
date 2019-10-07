@@ -1,0 +1,920 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\Libs\python\CheckValidConfiguration.c">
+      <Filter>Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\graminit.c">
+      <Filter>Grammar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\_iomodule.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\bufferedio.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\bytesio.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\fileio.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\iobase.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\stringio.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\textio.c">
+      <Filter>IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_bisectmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_codecsmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_collectionsmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_csv.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_elementtree.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_functoolsmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_heapqmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_hotshot.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_json.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_localemodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_lsprof.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_math.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_randommodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_sre.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_struct.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\_weakref.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\arraymodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\audioop.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\binascii.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cmathmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cPickle.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cStringIO.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\datetimemodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\errnomodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\future_builtins.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\gcmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\getbuildinfo.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\getpath.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\imageop.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\itertoolsmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\main.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\mathmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\md5.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\md5module.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\mmapmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\operator.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\parsermodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\posixmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\pyexpat.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\rotatingtree.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\sha256module.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\sha512module.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\shamodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\signalmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\stropmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\symtablemodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\threadmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\timemodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\unicodedata.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\xxmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\xxsubtype.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\yuvconvert.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\zipimport.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\zlibmodule.c">
+      <Filter>Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\abstract.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\boolobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\bufferobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\bytes_methods.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\bytearrayobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\capsule.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\cellobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\classobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\cobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\codeobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\complexobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\descrobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\enumobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\exceptions.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\genobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\fileobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\floatobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\frameobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\funcobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\intobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\iterobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\listobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\longobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\dictobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\memoryobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\methodobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\moduleobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\object.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\obmalloc.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\rangeobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\setobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\sliceobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\stringobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\structseq.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\tupleobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\typeobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\weakrefobject.c">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\_subprocess.c">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\_winreg.c">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\dl_nt.c">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\import_nt.c">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\msvcrtmodule.c">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\PC\config.c">
+      <Filter>PC</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\acceler.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\grammar1.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\listnode.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\node.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\parser.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\parsetok.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\bitset.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\metagrammar.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\firstsets.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\grammar.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\pgen.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\myreadline.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Parser\tokenizer.c">
+      <Filter>Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\_warnings.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\Python-ast.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\asdl.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\ast.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\bltinmodule.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\ceval.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\compile.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\codecs.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\errors.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\formatter_string.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\formatter_unicode.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\frozen.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\future.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getargs.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getcompiler.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getcopyright.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getplatform.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getversion.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\import.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\importdl.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\marshal.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\modsupport.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\mystrtoul.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\mysnprintf.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\peephole.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pyarena.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pyctype.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pyfpe.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pymath.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pystate.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pythonrun.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\random.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\structmember.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\symtable.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\sysmodule.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\traceback.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\getopt.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pystrcmp.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\pystrtod.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\dtoa.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\dynload_win.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Python\thread.c">
+      <Filter>Python</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\unicodectype.c">
+      <Filter>Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Objects\unicodeobject.c">
+      <Filter>Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_cn.c">
+      <Filter>Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_hk.c">
+      <Filter>Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_iso2022.c">
+      <Filter>Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_jp.c">
+      <Filter>Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_kr.c">
+      <Filter>Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\_codecs_tw.c">
+      <Filter>Unicode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\multibytecodec.c">
+      <Filter>Unicode</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\Libs\python\pyconfig.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\PC\pyconfig.h">
+      <Filter>Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\token.h">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\grammar.h">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\graminit.h">
+      <Filter>Grammar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\_io\_iomodule.h">
+      <Filter>IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\Python-ast.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\Python.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\abstract.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\asdl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\ast.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\bitset.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\boolobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\bytearrayobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\bytes_methods.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\bytesobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\bufferobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\cellobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\ceval.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\classobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\cobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\code.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\codecs.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\compile.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\complexobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\descrobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\dictobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\dtoa.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\enumobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\errcode.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\eval.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\fileobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\floatobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\frameobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\funcobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\genobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\import.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\intobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\intrcheck.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\iterobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\listobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\longintrepr.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\longobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\marshal.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\memoryobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\metagrammar.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\methodobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\modsupport.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\moduleobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\node.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\object.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\objimpl.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\opcode.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\osdefs.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\parsetok.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\patchlevel.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pgen.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pgenheaders.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pyarena.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pycapsule.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pyctype.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pydebug.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pyerrors.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pyfpe.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pymath.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pygetopt.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pymem.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pyport.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pystate.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pystrcmp.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pystrtod.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pythonrun.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\pythread.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\rangeobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\setobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\sliceobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\stringobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\structmember.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\structseq.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\symtable.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\sysmodule.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\traceback.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\tupleobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\ucnhash.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\unicodeobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\warnings.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Include\weakrefobject.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\_math.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\md5.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\rotatingtree.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\sre.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\sre_constants.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\unicodedata_db.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\unicodename_db.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\yuv.h">
+      <Filter>Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Libs\python\pythonnt_rc.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\Libs\python\pythonnt_rc_d.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\count.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\ctype.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\fastsearch.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\find.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\formatter.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\partition.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\split.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\stringdefs.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\string_format.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\transmogrify.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\localeutil.h">
+      <Filter>String</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\stringlib\unicodedefs.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Objects\unicodetype_db.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\alg_jisx0201.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\cjkcodecs.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\emu_jisx0213_2000.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_cn.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_hk.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_jisx0213_pair.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_jp.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_kr.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\mappings_tw.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\SDKs\Python27\Modules\cjkcodecs\multibytecodec.h">
+      <Filter>Unicode</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\..\Code\SDKs\Python27\PC\python_nt.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{777E8D6F-12F4-3A64-AAE6-F46A3DBF709E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Configuration">
+      <UniqueIdentifier>{48B271C7-536B-3F2F-807D-655D1C0C8AC9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Grammar">
+      <UniqueIdentifier>{0606A61B-4E68-3E96-92C3-962C313DBF4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="IO">
+      <UniqueIdentifier>{6040C850-5784-34AC-93D5-B801E55C6B80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{F704C71A-7C91-3D41-A770-8816B8A70314}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Module">
+      <UniqueIdentifier>{6DF69846-2DCA-3AC8-B3BA-D678D1BBD67A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{AC835476-FBBB-3BC8-A42B-78DB21B2EF64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PC">
+      <UniqueIdentifier>{C1FD5B10-F53C-32B7-A4C2-84F14624BD07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Parser">
+      <UniqueIdentifier>{3D607C51-61F6-3140-B95E-BD7B659E3ADF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python">
+      <UniqueIdentifier>{586D7058-459F-32B0-B37F-BD97D2A43815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="String">
+      <UniqueIdentifier>{3F27ACA3-D7F1-34A1-8F4F-2412AE641EBD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unicode">
+      <UniqueIdentifier>{1D75D4A7-1508-3504-BEB8-C5E8554D224C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,24 @@
+{
+    "content": {
+        "assets": [
+            "Assets"
+        ],
+        "code": [
+            "Code"
+        ],
+        "libs": [
+          {
+            "name": "RollingBall",
+            "shared": {
+              "win_x64": "bin/win_x64/CryGameRollingBall.dll"
+            }
+          }
+        ]
+    },
+    "info": {
+        "name": "Rolling Ball Game Template"
+    },
+    "require": {
+        "engine": "engine-5.2"
+    }
+}

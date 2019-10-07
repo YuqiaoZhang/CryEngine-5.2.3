@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{E3F30317-EED7-3EAA-A1AF-824110535545}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>CryNetwork</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CryNetwork</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">CryNetwork</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\bin\win_x64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\obj\CryEngine\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CryNetwork</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Debug\";CryNetwork_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <AdditionalDependencies>WS2_32.lib;Mswsock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";USE_BROFILER;CMAKE_INTDIR=\"Profile\";CryNetwork_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>Debug</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <AdditionalDependencies>WS2_32.lib;Mswsock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;_PROFILE;USE_BROFILER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CRY_FEATURE_SCALEFORM_HELPER;CODE_BASE_FOLDER=\"../../../../../Code/\";_PROFILE;USE_BROFILER;CMAKE_INTDIR=\"Release\";CryNetwork_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\CryEngine\CryNetwork;..\..\..\..\Code\SDKs\speex-1.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <Version>
+      </Version>
+      <MinimumRequiredVersion>5.02</MinimumRequiredVersion>
+      <AdditionalDependencies>WS2_32.lib;Mswsock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\..\..\..\Solution_Win64\lib\CryEngine\$(ProjectName)\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\BandwidthCalculator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NewMessageQueue.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\CTPEndpoint.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\ExponentialKeyExchange.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\FrameTypes.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\ICTPEndpointListener.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\INubMember.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\MessageMapper.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\MessageQueue.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NetChannel.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NetNub.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NullSendable.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\PacketRateCalculator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\PMTUDiscovery.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\Serialize.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\StatsCollector.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerLobbyIDAddr.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\CompositeDatagramSocket.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\IDatagramSocket.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\InternetSimulatorSocket.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\ISocketIOManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\IStreamSocket.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\LocalDatagramSocket.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\NetResolver.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketError.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerIOCP.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerNull.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerSelect.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\TCPStreamSocket.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\UDPDatagramSocket.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\WatchdogTimer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\RangedUnsignedIntPolicy.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StationaryUnsignedInteger.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveFloat.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveVelocity.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithAlphabet.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithModel.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithPrimitives.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\BoolCompress.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\BoolCompress2.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\CompressionManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ErrorDistributionEncoding.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\GaussianEncoding.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\GaussianEncoding_SlotData.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ICompressionPolicy.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ICompressionPolicy2.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\CompressionPolicyTime.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\IntegerValuePredictor.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\OwnChannelCompressionPolicy.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\PredictiveBase.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\PredictiveFloat.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\PredictiveFloatTracker.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\Quantizer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\RangedIntPolicy.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\SegmentedCompressionSpace.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\SerializationChunk.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StationaryInteger.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StringTable.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\TimePolicy.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\TimePolicyWithDistribution.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\resource.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\ArithStream.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\ByteStream.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\CommStream.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\CompressingStream.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\SimpleInputStream.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\SimpleOutputStream.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\SimpleStreamDefs.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\rijndael.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\StreamCipher.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\Whirlpool.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\INetworkPrivate.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\AutoFreeHandle.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Config.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DistributedLogger.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Errors.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\FixedSizeArena.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\INetworkMember.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\MementoMemoryManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetCVars.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetLog.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetTimer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Network.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\objcnt.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\objcnt_defs.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\PolymorphicQueue.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\STLMementoAllocator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Utils.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\WorkQueue.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\RemoteControl\Protocol.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\RemoteControl\RemoteControl.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\INetContextState.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\Authentication.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\BreakagePlayback.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\CET_Server.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ChangeList.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ClientContextView.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextEstablisher.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextView.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextViewStateManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\DemoDefinitions.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\DemoPlaybackListener.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\DemoRecordListener.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\IContextViewExtension.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\INetContextListener.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\NetContext.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\NetContextState.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\PerformBreakage.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\RMILogger.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ServerContextView.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SessionID.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncContext.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFile.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFilePak.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFileSet.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\UpdateAspectDataContext.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\UpdateMessage.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\AuthorityHistory.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\ConfigurationHistory.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\History.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\MementoHistory.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\ProfileHistory.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\RegularlySyncedItem.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\NetworkACL\NetProfileTokens.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\ServiceManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\CryLAN\LanQueryListener.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\DebugKit.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\DebugOutput.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\Encoding.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\NetVis.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\NetworkInspector.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\ServerProfiler.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\AutoConfigDownloader.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\SimpleHttpServer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\cry_sha1.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\IVoiceDecoder.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\IVoiceEncoder.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\IVoicePacketListener.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\VoiceContext.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\VoiceManager.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\VoicePacket.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugChannelViewer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugInfo.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugInternetSimulator.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugProfileViewer.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugServerInfo.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugTrafficBandwidth.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\NetProfile.h" />
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryNetwork\StdAfx.h" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\BandwidthCalculator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\CTPEndpoint.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\ExponentialKeyExchange.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\FrameTypes.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\MessageMapper.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\MessageQueue.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NetChannel.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NetNub.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NewMessageQueue.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\NullSendable.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\PacketRateCalculator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\PMTUDiscovery.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\Serialize.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Protocol\StatsCollector.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\CompositeDatagramSocket.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\IDatagramSocket.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\InternetSimulatorSocket.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\ISocketIOManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\IStreamSocket.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\LocalDatagramSocket.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\NetResolver.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketError.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerIOCP.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerLobbyIDAddr.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\SocketIOManagerSelect.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\TCPStreamSocket.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\UDPDatagramSocket.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Socket\WatchdogTimer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveBoolPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveBoolPolicy2.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveFloat.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveFloatPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveOrientationPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveUnitVec3Policy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveVec3Policy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveVelocity.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\AdaptiveVelocityPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithAlphabet.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithModel.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ArithPrimitives.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\BiggerOrSmallerPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\BoolCompress.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\BoolCompress2.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\CompressionManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\DefaultPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\EntityIdPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\ErrorDistributionEncoding.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\FloatAsIntPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\GaussianEncoding.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\Int64Policy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\IntegerValuePredictor.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\JumpyPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\NoSendPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\OwnChannelCompressionPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\PredictiveFloat.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\PredictiveFloatTracker.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\QuantizedVec3.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\Quantizer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\RangedIntPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\RangedUnsignedIntPolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\SegmentedCompressionSpace.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\SerializationChunk.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StationaryInteger.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StationaryUnsignedInteger.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StringTable.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\StringTablePolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\TimePolicy.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\TimePolicyWithDistribution.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Compression\Vec3TableCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\ByteStream.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\CompressingStream.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\SimpleInputStream.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Streams\SimpleOutputStream.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\rijndael.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\StreamCipher.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Cryptography\Whirlpool.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\CryNetwork.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DistributedLogger.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\MementoMemoryManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetCVars.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetLog.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetTimer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Network.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Utils.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\WorkQueue.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\RemoteControl\RemoteControl.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\Authentication.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\BreakagePlayback.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\CET_Server.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ClientContextView.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextEstablisher.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextView.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ContextViewStateManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\DemoPlaybackListener.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\DemoRecordListener.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\NetContext.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\NetContextState.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\PerformBreakage.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\ServerContextView.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SessionID.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFile.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFilePak.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\SyncedFileSet.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\UpdateAspectDataContext.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\UpdateMessage.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\AuthorityHistory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\ConfigurationHistory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\History.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\MementoHistory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\ProfileHistory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\History\RegularlySyncedItem.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\NetworkACL\NetProfileTokens.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\ServiceManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Services\CryLAN\LanQueryListener.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\DebugKit.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\DebugOutput.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\Encoding.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\NetVis.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\NetworkInspector.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\DebugKit\ServerProfiler.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\AutoConfigDownloader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\SimpleHttpServer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Http\cry_sha1.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\IVoiceDecoder.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\IVoiceEncoder.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\SpeexCodec.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\VoiceManager.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\VOIP\VoicePacket.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\Context\VoiceContext.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugChannelViewer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugInfo.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugInternetSimulator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugProfileViewer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugServerInfo.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetDebugTrafficBandwidth.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\NetProfile.cpp" />
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryNetwork\StdAfx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(SolutionDir)Code/Libs/bigdigits/bigdigits.vcxproj">
+      <Project>E93C0949-62D1-3EBB-8D51-45418241B4B7</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

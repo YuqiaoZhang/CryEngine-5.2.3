@@ -1,0 +1,6 @@
+global proc	cryCheckFaces() 
+{
+	string $exportNodes[];
+	$exportNodes = `ls "cryexportnode_*"`;
+	cryMayaCheckDegradedFaces($exportNodes[0]);
+}

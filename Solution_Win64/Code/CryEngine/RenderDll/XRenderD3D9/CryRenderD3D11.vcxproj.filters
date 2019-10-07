@@ -1,0 +1,1281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DMeshBaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\GpuComputeBackend.cpp">
+      <Filter>Source Files\Gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\GpuBitonicSort.cpp">
+      <Filter>Source Files\Gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\GpuMergeSort.cpp">
+      <Filter>Source Files\Gpu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleComponentRuntime.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleManager.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleContainer.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureFactory.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureColor.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureCollision.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureField.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureLifeTime.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureLocation.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureMotion.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureFluidDynamics.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureRender.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureSpawn.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureVelocity.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\CREGpuParticle.cpp">
+      <Filter>Source Files\Gpu\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Physics\GpuPhysicsParticleFluid.cpp">
+      <Filter>Source Files\Gpu\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ResFile.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ResFileLookupDataMan.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREBreakableGlass.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\CRELensOpticsD3D.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREBeam.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREClientPoly.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CRECloud.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREDeferredShading.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREFarTreeSprites.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREFogVolume.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREGameEffect.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREHDRProcess.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREImposter.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREMesh.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREOclusionQuery.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREGeomCache.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREParticle.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREPostProcess.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREPrismObject.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CRESky.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREVolumeObject.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREWaterOcean.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREWaterVolume.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\RendElement.cpp">
+      <Filter>Common\RendElements</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CameraOrbs.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\AbstractMeshElement.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\ChromaticRing.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Ghost.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Glow.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\IrisShafts.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\MeshUtil.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsElement.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsFactory.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\RootOpticsElement.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Streaks.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\FlareSoftOcclusionQuery.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\ImageSpaceShafts.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsGroup.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsProxy.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsReference.cpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Utils\PolygonMath2D.cpp">
+      <Filter>Common\RendElements\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\ITextureStreamer.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\PlanningTextureStreamer.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\PlanningTextureStreamer_Jobs.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\TextureCompiler.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\StatoscopeTextureStreaming.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\DynTexture.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\PowerOf2BlockPacker.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\Texture.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\TextureManager.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\TextureStreaming.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\TextureHelpers.cpp">
+      <Filter>Common\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\Image\CImage.cpp">
+      <Filter>Common\Textures\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\Image\DDSImage.cpp">
+      <Filter>Common\Textures\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\Image\JpgImage.cpp">
+      <Filter>Common\Textures\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\Image\TgaImage.cpp">
+      <Filter>Common\Textures\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DAmbientOcclusion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DColorGradingController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DDebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DDeferredPasses.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DDeferredRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DDeferredShading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DFont.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DFXPipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DHDRRender.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DHWShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DHWShaderCompiling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DMemReplayDevice.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DOcclQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DOculus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DOpenVR.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DREBreakableGlass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DREBreakableGlassBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3D_SVO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DRECloud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DOsvr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DREImposter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DRenderAuxGeom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DRenderRE.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DRenderThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DRendPipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DRendPipeline_Jobs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DShaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DShadows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DSprites.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DStereo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DTexturesStreaming.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DTextureStreamPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DTiledShading.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DVolumetricFog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DVolumetricClouds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\CompiledRenderObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\BenchmarkCustom\BenchmarkRendererSensor.cpp">
+      <Filter>Source Files\Benchmark Customization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DriverD3D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PipelineProfiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\SmartGlassContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\SmartGlassManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\StatoscopeRenderStats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DPostProcess.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessDOF.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessFilters.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessGame.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessHud3D.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessMisc.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessMotionBlur.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessRain.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessRenderModes.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessSunShafts.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessWater.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PostProcessSnow.cpp">
+      <Filter>Source Files\D3DPostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Renderer_Jobs.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\CommonRender.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\DeferredRenderUtils.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\IntroMovieRenderer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\MatrixStack.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\LightVolumeBuffer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ParticleBuffer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderAuxGeom.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Renderer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendererCVars.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderPipeline.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderThread.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ShadowUtils.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\TextMessages.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\WaterUtils.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderView.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderItemDrawer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shadow_Renderer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Scaleform\Scaleform.cpp">
+      <Filter>Scaleform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Scaleform\ScaleformRender.cpp">
+      <Filter>Scaleform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Scaleform\ScaleformPlayback.cpp">
+      <Filter>Scaleform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\PostProcess\PostEffects.cpp">
+      <Filter>Common\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\PostProcess\PostProcess.cpp">
+      <Filter>Common\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\PostProcess\PostProcessUtils.cpp">
+      <Filter>Common\PostProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderMesh_Render.cpp">
+      <Filter>Common\RenderMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderMesh_SetMesh.cpp">
+      <Filter>Common\RenderMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderMesh.cpp">
+      <Filter>Common\RenderMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\Parser.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ParserBin.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\RemoteCompiler.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderCache.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderComponents.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderCore.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderFXParseBin.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderParse.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderScript.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderSerialize.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderTemplate.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderResources.cpp">
+      <Filter>Common\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DevBuffer.cpp">
+      <Filter>DeviceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\DeviceManager.cpp">
+      <Filter>DeviceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\DeviceObjects.cpp">
+      <Filter>DeviceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\D3D11\DeviceObjects_D3D11.cpp">
+      <Filter>DeviceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\D3D12\DeviceObjects_D3D12.cpp">
+      <Filter>DeviceManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\AutoExposure.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Bloom.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ClipVolumes.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ColorGrading.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ComputeSkinning.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\GpuParticles.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\DepthOfField.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Fog.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\MotionBlur.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\HeightMapAO.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\PostAA.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\SceneCustom.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\SceneForward.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\SceneGBuffer.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ScreenSpaceObscurance.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ScreenSpaceReflections.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ScreenSpaceSSS.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ShadowMap.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ShadowMask.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\StandardGraphicsPipeline.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\SunShafts.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\TiledShading.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ToneMapping.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\VolumetricClouds.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\VolumetricFog.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\WaterRipples.cpp">
+      <Filter>GraphicsPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\ComputeRenderPass.cpp">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\FullscreenPass.cpp">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\GraphicsPipelineStateSet.cpp">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\PrimitiveRenderPass.cpp">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\SceneRenderPass.cpp">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\UtilityPasses.cpp">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\ResourceCompilerHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\GpuComputeBackend.h">
+      <Filter>Header Files\Gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\GpuBitonicSort.h">
+      <Filter>Header Files\Gpu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleComponentRuntime.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleManager.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleContainer.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureBase.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureFactory.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureColor.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureCollision.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureField.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureLifeTime.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureLocation.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureMotion.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureFluidDynamics.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureRender.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureSpawn.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\GpuParticleFeatureVelocity.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Particles\CREGpuParticle.h">
+      <Filter>Header Files\Gpu\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\Gpu\Physics\GpuPhysicsParticleFluid.h">
+      <Filter>Header Files\Gpu\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ResFile.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ResFile_info.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ResFileLookupDataMan.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\AbstractMeshElement.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\MeshUtil.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsFactory.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Streaks.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Timeline.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CameraOrbs.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\ChromaticRing.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Ghost.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Glow.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Interpolator.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\IrisShafts.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsElement.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsPredef.hpp">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\RootOpticsElement.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\FlareSoftOcclusionQuery.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\ImageSpaceShafts.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsGroup.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsProxy.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\OpticsReference.h">
+      <Filter>Common\RendElements\LensOptics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Utils\PolygonMath2D.h">
+      <Filter>Common\RendElements\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Utils\SpatialHashGrid.h">
+      <Filter>Common\RendElements\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CRELensOptics.h">
+      <Filter>Common\RendElements_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREBeam.h">
+      <Filter>Common\RendElements_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREClientPoly.h">
+      <Filter>Common\RendElements_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CRECloud.h">
+      <Filter>Common\RendElements_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREDeferredShading.h">
+      <Filter>Common\RendElements_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREHDRProcess.h">
+      <Filter>Common\RendElements_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\Stars.h">
+      <Filter>Common\RendElements_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendElements\CREMeshImpl.h">
+      <Filter>Common\RendElements_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\PlanningTextureStreamer.h">
+      <Filter>Common\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\StatoscopeTextureStreaming.h">
+      <Filter>Common\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\TextureArrayAlloc.h">
+      <Filter>Common\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\TextureCompiler.h">
+      <Filter>Common\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\TextureStreamPool.h">
+      <Filter>Common\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\PowerOf2BlockPacker.h">
+      <Filter>Common\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\Texture.h">
+      <Filter>Common\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\TextureManager.h">
+      <Filter>Common\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\TextureHelpers.h">
+      <Filter>Common\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\Image\CImage.h">
+      <Filter>Common\Textures\Image\Image_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\Image\DDSImage.h">
+      <Filter>Common\Textures\Image\Image_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DREBreakableGlassBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3D_SVO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DVolumetricFog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DVolumetricClouds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\BenchmarkCustom\BenchmarkRendererSensor.h">
+      <Filter>Source Files\Benchmark Customization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\SmartGlassManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\SmartGlassContext.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\IntroMovieRenderer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\TextMessages.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Include_HLSL_CPP_Shared.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\CommonRender.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderPipeline.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\DeferredRenderUtils.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderFrameProfiler.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\IColorGradingControllerInt.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\OcclQuery.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderAuxGeom.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Renderer.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RendererCVars.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderThread.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shadow_Renderer.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ShadowUtils.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\WaterUtils.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ReverseDepth.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderView.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderItemDrawer.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\LockFreeAddVector.h">
+      <Filter>Common_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\ShadowTextureGroupManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DTiledShading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DMemReplayDevice.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\DeviceManagerInline.h">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Textures\ITextureStreamer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderAllocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\CryNameR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\CryDeviceWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ISmartGlassContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\LightVolumeBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ParticleBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DColorGradingController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DDeferredShading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DHWShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DOculus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DOpenVR.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DPostProcess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DRenderAuxGeom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DStereo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Defs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DriverD3D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\NullD3D11Device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\PipelineProfiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\StatoscopeRenderStats.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceInfo.inl">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\D3DOsvr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\CompiledRenderObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Scaleform\ScaleformRender.h">
+      <Filter>Scaleform_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Scaleform\ScaleformPlayback.h">
+      <Filter>Scaleform_h</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\PostProcess\PostEffects.h">
+      <Filter>Common\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\PostProcess\PostProcess.h">
+      <Filter>Common\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\PostProcess\PostProcessUtils.h">
+      <Filter>Common\PostProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\RenderMesh.h">
+      <Filter>Common\RenderMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\ComputeSkinningStorage.h">
+      <Filter>Common\RenderMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\CShader.h">
+      <Filter>Common\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\CShaderBin.h">
+      <Filter>Common\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\Parser.h">
+      <Filter>Common\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ParserBin.h">
+      <Filter>Common\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\RemoteCompiler.h">
+      <Filter>Common\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\Shader.h">
+      <Filter>Common\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderCache.h">
+      <Filter>Common\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderComponents.h">
+      <Filter>Common\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderSerialize.h">
+      <Filter>Common\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\Shaders\ShaderResources.h">
+      <Filter>Common\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\Common\DevBuffer.h">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\DeviceManager.h">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\D3D11\DeviceManager_D3D11.inl">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\D3D11\DeviceManager_D3D11_NVAPI.h">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\D3D11\DeviceManager_D3D11_NVAPI.inl">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\D3D12\DeviceManager_D3D12.inl">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\TempDynBuffer.h">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\DeviceObjects.h">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\DeviceObjects.inl">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\D3D11\DeviceObjects_D3D11.inl">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\D3D12\DeviceObjects_D3D12.inl">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\DeviceCommandList.inl">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\D3D11\DeviceCommandList_D3D11.h">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\DeviceManager\D3D12\DeviceCommandList_D3D12.h">
+      <Filter>DeviceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\AutoExposure.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Bloom.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ClipVolumes.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ColorGrading.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ComputeSkinning.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\GpuParticles.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\DepthOfField.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Fog.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\MotionBlur.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\HeightMapAO.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\PostAA.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\SceneCustom.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\SceneForward.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\SceneGBuffer.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ScreenSpaceObscurance.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ScreenSpaceReflections.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ScreenSpaceSSS.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ShadowMap.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ShadowMask.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\StandardGraphicsPipeline.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\SunShafts.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\TiledShading.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\ToneMapping.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\VolumetricClouds.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\VolumetricFog.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\WaterRipples.h">
+      <Filter>GraphicsPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\ComputeRenderPass.h">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\FullscreenPass.h">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\GraphicsPipeline.h">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\GraphicsPipelineStage.h">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\GraphicsPipelineStateSet.h">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\PrimitiveRenderPass.h">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\SceneRenderPass.h">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\UtilityPasses.h">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\XRenderD3D9\GraphicsPipeline\Common\VolumeRenderPass.h">
+      <Filter>GraphicsPipeline\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\..\Code\CryEngine\RenderDll\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files\Gpu">
+      <UniqueIdentifier>{043B3089-8DD7-357D-8C76-DA2576A0CAEC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Benchmark Customization">
+      <UniqueIdentifier>{B1010D8B-BA9D-3588-A932-15985D12C26B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\D3DPostProcess">
+      <UniqueIdentifier>{1DB93D72-FA15-3671-8732-E6D8CD5AB442}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gpu\Particles">
+      <UniqueIdentifier>{2EE61041-AE1D-3292-95FF-4F6FE03A72D5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gpu\Physics">
+      <UniqueIdentifier>{859BCF23-EFE9-3896-B878-F3A16A34E3FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gpu\Particles">
+      <UniqueIdentifier>{3BA42CAC-A072-3D66-9BB5-6534C38F21FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gpu\Physics">
+      <UniqueIdentifier>{DAF57F2C-3804-35FF-A58B-69D2FE780A81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\RendElements\LensOptics">
+      <UniqueIdentifier>{C90351B0-11EB-3874-892B-B6379259D814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\RendElements\Utils">
+      <UniqueIdentifier>{CC2A3128-2517-3C1D-84C6-052CB70A9B88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Gpu">
+      <UniqueIdentifier>{56C2BF01-5BDE-339C-BE14-CEFB5C87CF58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Textures\Image">
+      <UniqueIdentifier>{9D1B5121-988F-3345-B9D9-915159F9932B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Textures\Image\Image_h">
+      <UniqueIdentifier>{51AF6624-AB8D-3217-9CAD-191D66FE593E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsPipeline\Common">
+      <UniqueIdentifier>{B15EBAA4-D5B1-3FDB-9EAB-67331691A9DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DeviceManager">
+      <UniqueIdentifier>{297F4F00-B799-3345-8E25-59D5CF179937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{F58EAFC1-F577-3387-8EE4-7D3245DD8712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common_h">
+      <UniqueIdentifier>{8C355E72-7C5B-3EAA-9599-82707B1BD2C5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scaleform">
+      <UniqueIdentifier>{D01C0BC9-4998-3D55-9A9B-BC5CB1546BD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scaleform_h">
+      <UniqueIdentifier>{A9823C00-6DCF-37AC-ABF4-585873E4BBAF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsPipeline">
+      <UniqueIdentifier>{3B69ADF9-79A3-3045-AA74-B43D217E6461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\RendElements">
+      <UniqueIdentifier>{F53D905E-2B42-3CCC-BAD0-77DB484B3AA1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\RendElements_h">
+      <UniqueIdentifier>{865D1DFC-035E-3E74-901E-18F00A091EAB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Textures">
+      <UniqueIdentifier>{EEC7E5B4-A58E-3ED4-865B-881886DB20CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\PostProcess">
+      <UniqueIdentifier>{C6937BB1-EDA2-3ED6-B6DE-48ACC572CE45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\RenderMesh">
+      <UniqueIdentifier>{A45DA215-13B6-33BD-BED8-1C56605A6756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Shaders">
+      <UniqueIdentifier>{8FA88185-BE0A-34A2-8E5A-AB5386377FA0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,928 @@
+global proc cryAnimZeroJointRotation()
+{
+	string $response = `confirmDialog -title "Cry Animation" -message ("This will try to remove any rotation and set the joint-orientation to\nzero on the selected joints by pushing it down to the joints children.") -button "OK" -button "Cancel"`;
+	if( $response != "OK" )
+	{
+		return;
+	}
+	
+	string $selected[] = `ls -sl`;
+	
+	if( size($selected) == 0 )
+	{
+		confirmDialog -title "Cry Animation" -message ("No nodes are selected.") -button "OK";
+		return;
+	}
+	
+	string $tempGroup = `group -empty -name "cryAnimTempGroup"`;
+	for( $node in $selected )
+	{
+		if( `objectType $node` == "joint" )
+		{
+			string $children[];
+			
+			// Unparent all children
+			$children = `listRelatives -children -fullPath $node`;
+			for ($child in $children) 
+			{
+				parent $child $tempGroup;
+			}
+			
+			// Make sure the attributes are unlocked and set the rotation and joint orientation to 0
+			setAttr -lock off ($node+".rotateX");
+			setAttr -lock off ($node+".rotateY");
+			setAttr -lock off ($node+".rotateZ");
+			setAttr -lock off ($node+".jointOrientX");
+			setAttr -lock off ($node+".jointOrientY");
+			setAttr -lock off ($node+".jointOrientZ");
+			setAttr ($node+".rotateX") 0;
+			setAttr ($node+".rotateY") 0;
+			setAttr ($node+".rotateZ") 0;
+			setAttr ($node+".jointOrientX") 0;
+			setAttr ($node+".jointOrientY") 0;
+			setAttr ($node+".jointOrientZ") 0;
+		
+			// Re-parent the children
+			$children = `listRelatives -children -fullPath $tempGroup`;
+			for ($child in $children) 
+			{
+				parent $child $node;
+			}
+		}
+		else
+		{
+			confirmDialog -title "Cry Animation" -message ("Node `"+$node+"` is not a joint.") -button "OK";		
+		}
+	}
+	
+	delete $tempGroup;
+	select $selected;
+}
+
+//////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
+
+// This function will move the animrange setting into the new .AnimRanges attribute from the generic exportsettings attribute.
+// It will only be need for a while and can be removed once all scenes have been converted.
+// Added in July 2011, should be removed by November 2011 if nothing changes
+// Update, Apirl 2012: Some of the examples are still using the old animation settings so this has to stay for a bit.
+global proc cryAnimManagerUpgradeSettingsString()
+{
+	string $exportSettingsNode = "CRYEXPORTSETTINGS";
+	if( `objExists $exportSettingsNode` )
+	{
+		if( `attributeExists "ExportSettings" $exportSettingsNode` )
+		{
+			string $settingsString = `getAttr ($exportSettingsNode+".ExportSettings")`;
+			string $newSettings = "";
+			string $animRangeSetting = "";
+			
+			// Extract and remove the ranges setting from the generic setting string
+			string $settings[];
+			$numSettings = `tokenize $settingsString ";" $settings`;
+			for( $setting in $settings )
+			{
+				string $tokens[];
+				$numTokens = `tokenize $setting "=," $tokens`;
+				if( $numTokens >= 2 )
+				{
+					if( `strcmp $tokens[0] "animRanges"` == 0 )
+					{
+						$animRangeSetting = $setting;
+					}
+					else
+					{
+						$newSettings += $setting;
+						$newSettings += ";";
+					}
+				}
+			}
+			setAttr ($exportSettingsNode+".ExportSettings") -type "string" $newSettings;
+			
+			// Create the new AnimRanges string and set it.
+			if( size($animRangeSetting) > 0 )
+			{
+				if( !`attributeExists "AnimRanges" $exportSettingsNode` )
+				{
+					addAttr -ln "AnimRanges" -dt "string" $exportSettingsNode;
+					string $rangeTokens[];
+					$rangeNumTokens = `tokenize $animRangeSetting "=" $rangeTokens`;
+					if( $rangeNumTokens == 2 && size($rangeTokens[1]) > 0 )
+					{
+						setAttr ($exportSettingsNode+".AnimRanges") -type "string" $rangeTokens[1];	
+						print("--- CryAnim Warning: Anim ranges setting has been upgraded. ---\n");		
+					}
+				}			
+			}
+		}
+	}
+}
+
+/////////////////////////////////////////////////////////////////////////
+// These save and load functions need to be merged into a setting system
+// of some sort thats sharded with the export window etc.
+/////////////////////////////////////////////////////////////////////////
+// Load from the AnimRanges field in the settings node
+global proc cryAnimManagerLoadSettings()
+{
+	if( `control -exists CRYANIMMANAGER_ANIMRANGES` )
+	{
+		textScrollList -e -removeAll CRYANIMMANAGER_ANIMRANGES;
+		string $rangesString = `cryAnimLoadRangesString`;
+		string $tokens[];
+		$numTokens = `tokenize $rangesString "," $tokens`;
+		if( $numTokens != 0 )
+		{
+			for( $i = 0;$i<$numTokens;$i++ )
+			{
+				if( size($tokens[$i]) > 0 )
+				{
+					textScrollList -e -append $tokens[$i] CRYANIMMANAGER_ANIMRANGES;	
+				}
+			}
+		}
+	}
+}
+
+// Save to the AnimRanges field in the settings node
+global proc cryAnimManagerSaveSettings()
+{
+	string $rangesString = "";
+	string $animRanges[];
+	$animRanges = `textScrollList -q -allItems CRYANIMMANAGER_ANIMRANGES`;
+	for( $i = 0;$i<size($animRanges);$i++ )
+	{
+		if( $i > 0 ) $rangesString += ",";
+		$rangesString += $animRanges[$i];
+	}
+		
+	cryAnimSaveRangesString $rangesString;
+}
+
+global proc animManagerAddAnimRangeCloseWindow()
+{
+    deleteUI -window CRYANIMMANAGER_ADDRANGEWINDOW;
+}
+
+proc int animManagerAnimRangeValidate( int $editEntry, string $name, int $start, int $end, string $rootNode )
+{
+	int $editIndex = $editEntry;
+	
+	int $rangeCount = `cryAnimGetNumRanges`;
+	string $animRanges[] = `cryAnimGetRanges`;
+
+	// Make sure there is not a range with the same name already in the list
+	for( $i = 0;$i<$rangeCount;$i++ )
+	{
+		string $decode[];
+		$decode = `cryExportDecodeRangeString $animRanges[$i]`;
+		if( size($decode) == 5 )
+		{
+			if( `strcmp $decode[2] $name` == 0 )
+			{
+				if( $i != $editIndex )
+				{
+					confirmDialog -title "Anim Range" -message "A range with that name already exists." -button "Ok";
+					return 0;
+				}
+			}
+		}
+	}
+	// Make sure there is not an identical range already in the list
+	for( $i = 0;$i<$rangeCount;$i++ )
+	{
+		string $decode[];
+		$decode = `cryExportDecodeRangeString $animRanges[$i]`;
+		if( size($decode) == 5 )
+		{
+			if( $start == $decode[0] && $end == $decode[1] && $rootNode == $decode[3] )
+			{
+				if( $i != $editIndex )
+				{
+					confirmDialog -title "Anim Range" -message "An identical range already exists." -button "Ok";
+					return 0;
+				}
+			}
+		}
+	}
+
+	// Make sure the root node is valid
+	if( `size($rootNode)` != 0 )
+	{
+		string $rootNodes[];
+		$numRoots = `tokenize $rootNode ";" $rootNodes`;
+
+		for( $root in $rootNodes )
+		{
+			$foundRoots = `ls $root`;
+			if( `size($foundRoots)` == 0 )
+			{
+				confirmDialog -title "Anim Range" -message "The root node could not be found." -button "Ok";
+				return 0;
+			}
+			else if( `size($foundRoots)` > 1 )
+			{
+				confirmDialog -title "Anim Range" -message "Root node name matches more than one node." -button "Ok";
+				return 0;
+			}
+			else
+			{
+				string $tokens[];
+				$numTokens = `tokenize $root "|" $tokens`;
+				string $nodeNameLC = `tolower $tokens[$numTokens-1]`;
+
+				if( `objectType -isType "joint" $root` == 0 && `startsWith $nodeNameLC "cryexportnode_"` == 0 )
+				{
+					confirmDialog -title "Anim Range" -message "The root node needs to be a joint or a `cryexportnode`." -button "Ok";
+					return 0;
+				}
+			}
+		}
+	}
+
+	return 1;
+}
+
+global proc addAnimRangeUseCurrent()
+{
+	setMinMaxPlayback ADDRANGE_START ADDRANGE_END;
+
+	string $cryExportNodes[];
+	$cryExportNodes = `cryMayaSupportPlugin gatherExportNodes selectedOnly`;
+
+	if ( size($cryExportNodes) == 1 )	
+	{
+		string $tokens[];
+		$numTokens = `tokenize $cryExportNodes[0] "_" $tokens`;
+		if ( $numTokens > 1 )
+		{
+			textField -e -text $tokens[1] ADDRANGE_NAME;
+		}
+	}
+}
+
+global proc selectAnimRangeRoot()
+{
+	string $selected[];
+	$selected = `ls -sl -l`;
+	if( `size($selected)` > 0 )
+	{
+		int $selectedCount = size($selected);
+
+		string $rootNodeString = "";
+		for( $i = 0;$i<$selectedCount;$i++ )
+		{
+			string $rootJoint = $selected[$i];
+	
+			string $tokens[];
+			$numTokens = `tokenize $rootJoint "|" $tokens`;
+			string $nodeNameLC = `tolower $tokens[$numTokens-1]`;
+
+			string $rootJointStrip = $rootJoint;
+			if( `startsWith $rootJoint "|"` ) // Remove the leading `|`
+			{
+				$length = size($rootJoint);
+				$rootJointStrip = `substring $rootJoint 2 $length`;
+			}
+
+			if( `objectType -isType "joint" $rootJoint` || `startsWith $nodeNameLC "cryexportnode_"`)
+			{
+				if( $i > 0 )
+					$rootNodeString += (";");
+				$rootNodeString += $rootJointStrip;
+			}
+		}
+
+		textField -e -text $rootNodeString ADDRANGE_ROOTNODE;
+	}
+}
+
+global proc animManagerAddAnimRangeAdd( int $editEntry )
+{
+	string $name = strip(`textField -q -text ADDRANGE_NAME`);
+	int $start = `floatField -q -value ADDRANGE_START`;
+	int $end = `floatField -q -value ADDRANGE_END`;
+	string $root = `textField -q -text ADDRANGE_ROOTNODE`;
+	string $path = `textField -q -text ADDRANGE_PATH`;
+	if( size($name) == 0 )
+		$name = "noName";
+
+	if( `animManagerAnimRangeValidate $editEntry $name $start $end $root` )
+	{
+		string $rangeString = `cryAnimFormatRangeString $start $end $name $root $path`;
+
+		if( $editEntry >= 0 )
+		{
+			cryAnimReplaceRange $editEntry $rangeString;
+		}
+		else
+		{
+			cryAnimAddRange $rangeString;
+		}
+		animManagerAddAnimRangeCloseWindow;
+		cryAnimManagerLoadSettings;
+		cryAnimPopulateRangeList;
+		cryExportUpdateExportLists;
+	}
+}
+
+global proc cryAnimManagerBrowseForFolder()
+{
+	string $currentPath = `file -q -sceneName`;
+	$currentPath = `dirname $currentPath`;
+
+	string $startingFolder = $currentPath;
+
+	int $numRanges = `cryAnimGetNumRanges`;
+	string $ranges[] = `cryAnimGetRanges`;
+	
+	if( $numRanges > 0 )
+	{
+		string $editText = $ranges[0];
+		string $decode[];
+		$decode = `cryExportDecodeRangeString $editText`;
+		if( size($decode) == 5 )
+		{
+			string $animPath = $decode[4];
+			$startingFolder = $animPath;
+		}
+	}
+
+	string $result[] = `fileDialog2 -fileMode 3 -startingDirectory $startingFolder -fileFilter ("Directories only (*)")`;
+	
+	if( size($result) == 1 )
+	{
+		string $folderPath = `cryExportFixupPath $result[0]`;
+		textField -e -text $folderPath ADDRANGE_PATH;
+	}
+}
+
+global proc cryAnimManagerEditAnimRangeWin( int $mode, int $editEntry )
+{
+	if( $mode == 0 || $mode == 1 )
+	{
+		if(!`window -ex CRYANIMMANAGER_ADDRANGEWINDOW`) 
+		{
+			if(`windowPref -exists CRYANIMMANAGER_ADDRANGEWINDOW`) 
+			{
+				windowPref -wh 350 210 -tlc `windowPref -q -topEdge CRYANIMMANAGER_ADDRANGEWINDOW` `windowPref -q -leftEdge CRYANIMMANAGER_ADDRANGEWINDOW` CRYANIMMANAGER_ADDRANGEWINDOW;
+			}
+			window -titleBar true -title "Add Anim Range" -widthHeight 350 210 -sizeable false -mnb false -mxb false CRYANIMMANAGER_ADDRANGEWINDOW;
+
+			$layout1 = `formLayout -numberOfDivisions 100`;
+			$collayout = `columnLayout -rowSpacing 5 -adjustableColumn true`;
+
+			button -label "Use Range From Time Slider" -command ("addAnimRangeUseCurrent");
+			$rcLayout = `rowColumnLayout -numberOfColumns 3 -columnAttach 1 "right" 0 -columnWidth 1 60 -columnWidth 2 200 -columnWidth 3 70
+					-columnSpacing 2 5 -columnSpacing 3 5`;
+			{
+				text -label "Name";
+				textField -text "New" ADDRANGE_NAME;
+				text -label "";
+
+				text -label "Start Frame";
+				floatField -precision 0 -step 1 ADDRANGE_START;
+				text -label "";
+
+				text -label "End Frame";
+				floatField -precision 0 -step 1 ADDRANGE_END;
+				text -label "";
+
+				text -label "Root";
+				textField -text "" ADDRANGE_ROOTNODE;
+				$rootButton = `button -label "Select" -command ("selectAnimRangeRoot")`;
+				
+				text -label "Path";
+				textField -text "" ADDRANGE_PATH;
+				button -label "Browse" -command ("cryAnimManagerBrowseForFolder");
+			}
+			setParent ..;
+
+			setParent ..;
+			string $addText = "Add";
+			if( $mode == 1 ) $addText = "Edit";
+			$addbutton = `button -label $addText -command ("animManagerAddAnimRangeAdd "+$editEntry)`;
+			$cancelbutton = `button -label "Cancel" -command ("animManagerAddAnimRangeCloseWindow")`;
+			setParent ..;
+		
+			formLayout -edit
+				-attachForm $collayout "top" 5
+				-attachForm $collayout "left" 5
+				-attachForm $collayout "right" 5
+				-attachNone $collayout "bottom"
+			    	    
+				-attachForm $addbutton "bottom" 5 
+				-attachForm $addbutton "left" 5
+				-attachPosition $addbutton "right" 5 50
+				-attachNone $addbutton "top"
+			    
+				-attachForm $cancelbutton "bottom" 5 
+				-attachPosition $cancelbutton "left" 5 50
+				-attachForm $cancelbutton "right" 5
+				-attachNone $cancelbutton "top"
+				$layout1;
+
+			if( $mode == 1 )
+			{
+				// Fill out the window with the selected entry
+				int $numRanges = `cryAnimGetNumRanges`;
+				string $ranges[] = `cryAnimGetRanges`;
+				if( $editEntry >= 0 && $editEntry < $numRanges )
+				{
+					string $editText = $ranges[$editEntry];
+					string $decode[];
+					$decode = `cryExportDecodeRangeString $editText`;
+					if( size($decode) == 5 )
+					{
+						int $animStart = $decode[0];
+						int $animEnd = $decode[1];
+						string $animName = $decode[2];
+						string $animRoot = $decode[3];
+						string $animPath = $decode[4];
+
+						textField -e -text $animName ADDRANGE_NAME;
+						floatField -e -value $animStart ADDRANGE_START;
+						floatField -e -value $animEnd ADDRANGE_END;
+						textField -e -text $animRoot ADDRANGE_ROOTNODE;
+						textField -e -text $animPath ADDRANGE_PATH;
+					}
+				}
+			}
+
+			showWindow CRYANIMMANAGER_ADDRANGEWINDOW;	
+		}
+	}
+	else if( $mode == 2 )
+	{	
+		// Remove indexed item
+		cryAnimRemoveAnimRange $editEntry;
+		cryAnimManagerLoadSettings;
+		cryAnimPopulateRangeList;
+		cryExportUpdateExportLists;
+	}
+	else if( $mode == 3 )
+	{
+		// Remove all items
+		string $response = `confirmDialog -title "Cry Animation" -message ("Delete all animations?") -button "Yes" -button "No"`;
+		if( $response == "Yes" )
+		{	
+			cryAnimRemoveAllAnimRanges;
+			cryAnimManagerLoadSettings;
+			cryAnimPopulateRangeList;
+			cryExportUpdateExportLists;
+		}
+	}
+}
+
+global proc cryAnimManagerSelectRoots( string $rootNodes )
+{
+	string $rootTokens[];
+	$numTokens = `tokenize $rootNodes ";" $rootTokens`;
+
+	select -clear;
+	for( $root in $rootTokens )
+	{
+		select -add $root;
+	}
+}
+
+global proc cryAnimManagerCopyRangeText( string $rangeText )
+{
+	cryMayaSupportPlugin copyToClipboard $rangeText;
+}
+
+global proc cryAnimManagerEditAnimRange( int $mode )
+{
+	int $editEntry = -1;
+	
+	if( $mode == 1 || $mode == 2 )
+	{
+		int $selectedArray[];
+		$selectedArray = `textScrollList -q -selectIndexedItem CRYANIMMANAGER_ANIMRANGES`;
+		if( size($selectedArray) == 1 )
+		{
+			// Subtract 1 as the list is 1 based but the array is 0 based
+			$editEntry = ($selectedArray[0] - 1);
+		}
+		else
+		{
+			confirmDialog -title "Error" -message "No anim range is selected." -button "Ok" -defaultButton "Ok";
+			return;
+		}
+	}
+	cryAnimManagerEditAnimRangeWin $mode $editEntry;
+}		
+
+global proc cryAnimManagerAnimRangesDClick( int $inIndex )
+{
+	int $index = $inIndex;
+	if( `control -q -exists CRYANIMMANAGER_ANIMRANGES` )
+	{
+		int $selectedArray[];
+		$selectedArray = `textScrollList -q -selectIndexedItem CRYANIMMANAGER_ANIMRANGES`;
+		if( size($selectedArray) == 1 )
+			$index = $selectedArray[0] - 1;
+	}
+
+	int $numRanges = `cryAnimGetNumRanges`;
+	string $ranges[] = `cryAnimGetRanges`;
+
+	if( $index >= 0 && $index < $numRanges )
+	{
+		string $decode[];
+		$decode = cryExportDecodeRangeString( $ranges[$index] );
+		string $animStart = $decode[0];
+		string $animEnd = $decode[1];
+
+		playbackOptions -min $animStart -max $animEnd;
+		currentTime $animStart;
+	}
+}
+
+global proc cryAnimManagerUICloseWindow()
+{
+	//cryAnimManagerSaveSettings; // Removed as we should only save when something changes.
+	deleteUI -window CRYANIMMANAGER_WINDOW;
+}
+
+proc string cryAnimCreateParentRowLayout()
+{
+	$rowname = `rowLayout -numberOfColumns 4 -columnWidth4 20 100 65 65 -adjustableColumn 2 
+				-columnAlign 2 "left" -columnAlign 3 "center" -columnAlign 4 "center"
+				-columnAttach 3 "both" 0 -columnAttach 4 "both" 0 -bgc .4 .4 .4`;
+
+	return $rowname;
+}
+
+proc string cryAnimCreateChildRowLoyout()
+{
+	$rowname = `rowLayout -numberOfColumns 5 -columnWidth5 35 35 250 250 65 -adjustableColumn 5 -bgc .4 .4 .4
+				-columnAlign 1 "center" -columnAttach 1 "both" 0
+				-columnAlign 2 "center" -columnAttach 2 "both" 0
+				-columnAlign 3 "center" -columnAttach 3 "both" 0
+				-columnAlign 4 "center" -columnAttach 4 "both" 0
+				-columnAlign 5 "center" -columnAttach 5 "both" 0`;
+
+	return $rowname;
+}
+
+proc cryAnimAddRangeToList( string $range, int $rangeNum )
+{
+	if( !`control -q -exists CRYANIM_COLUMNLAYOUT` )
+		return;
+
+	setParent CRYANIM_COLUMNLAYOUT;
+	$rowName = `cryAnimCreateParentRowLayout`;
+	{
+		button -label "#" -command ("cryAnimManagerAnimRangesDClick "+$rangeNum);
+
+		string $rootNodes = "";
+		cryAnimCreateChildRowLoyout;
+		{
+			string $decode[];
+			$decode = `cryExportDecodeRangeString $range`;
+			if( size($decode) == 5 )
+			{
+				text -h 22 -label ($decode[0]) -bgc .5 .55 .5;
+				text -h 22 -label ($decode[1]) -bgc .5 .5 .55;
+				text -h 22 -label ($decode[2]) -bgc .5 .55 .5;
+				text -h 22 -label ($decode[3]) -bgc .5 .5 .55;
+				text -h 22 -label ($decode[4]) -bgc .5 .55 .5;
+				$rootNodes = $decode[3];
+			}
+
+			//$messageText = `text -h 22 -label ("  "+$range)`;
+		}
+		setParent ..;
+
+		button -align "center" -label "Edit" -command ( "cryAnimManagerEditAnimRangeWin 1 "+$rangeNum );
+		button -align "center" -label "Delete" -command ( "cryAnimManagerEditAnimRangeWin 2 "+$rangeNum );
+				
+		popupMenu -parent $rowName -button 3;
+		{
+			menuItem -label "Select root nodes" -command ( "cryAnimManagerSelectRoots \""+$rootNodes+"\"" );
+			menuItem -divider true;
+			menuItem -label "Copy range text" -command ( "cryAnimManagerCopyRangeText \""+$range+"\"" );
+			menuItem -divider true;
+			menuItem -label "Show in Explorer" -command ( "cryExportAnimIndexShowInExplorer "+$rangeNum );
+			menuItem -divider true;
+			menuItem -label "Find Anims" -command ("cryAnimManagerFindAnims");
+		}
+	}
+	setParent ..;
+}
+
+global proc cryAnimPopulateRangeList()
+{
+	if( !`control -q -exists CRYANIM_COLUMNLAYOUT` )
+		return;
+		
+    setParent CRYANIM_COLUMNLAYOUT;
+    string $childControls[];
+    $childControls = `layout -q -childArray CRYANIM_COLUMNLAYOUT`;
+
+    for( $child in $childControls )
+    {
+		deleteUI $child;
+    }
+
+	int $numRanges = `cryAnimGetNumRanges`;
+	string $ranges[] = `cryAnimGetRanges`;
+
+	cryAnimCreateParentRowLayout;
+	{
+		text -h 10 -label "";
+		cryAnimCreateChildRowLoyout;
+		{
+			text -h 10 -label "Start";
+			text -h 10 -label "End";
+			text -h 10 -label "Name";
+			text -h 10 -label "Root Node";
+			text -h 10 -label "Export Path";
+		}
+		setParent ..;
+		text -h 10 -label "";
+		text -h 10 -label "";
+	}
+	setParent ..;
+	separator -height 2 -style "in";
+
+    if( $numRanges > 0 )
+    {
+		int $rangeNum = 0;
+		for( $range in $ranges )
+		{
+			cryAnimAddRangeToList $range $rangeNum;
+			$rangeNum++;
+		}
+    }
+}
+
+global proc cryAnimManagerFindAnims()
+{
+	string $namespaces[] = `namespaceInfo -listOnlyNamespaces`;
+
+	int $foundNode = 0;
+
+	for($namespace in $namespaces )
+	{
+		string $settingsName = ($namespace + ":CRYEXPORTSETTINGS");
+		if( `objExists $settingsName` )
+		{
+			if( `attributeExists "AnimRanges" $settingsName` )
+			{
+				string $rangesString = `getAttr ($settingsName+".AnimRanges")`;
+
+				print("Ranges String `"+$rangesString+"`\n");
+
+				string $rangeTokens[];
+				$numTokens = `tokenize $rangesString "," $rangeTokens`;
+
+				$foundNode = 1;
+				string $response = `confirmDialog -title "Cry Animation" -message ("Found "+$numTokens+" animations on node "+$settingsName+". Merge them with the animations from this scene?") -button "Yes" -button "No"`;
+				if( $response == "Yes" )
+				{
+					for( $range in $rangeTokens )
+					{
+						cryAnimAddRange $range;
+					}
+				}
+			}
+		}
+	}
+
+	if( $foundNode == 0 )
+	{
+		confirmDialog -title "Cry Animation" -message ("No referanced settings nodes were found that contain animation ranges.") -button "OK";
+	}
+	else
+	{
+		cryAnimPopulateRangeList;
+	}
+}
+
+proc createCryAnimManagerWindow()
+{
+	if(!`window -ex CRYANIMMANAGER_WINDOW`) 
+	{
+		if(`windowPref -exists CRYANIMMANAGER_WINDOW`) 
+		{
+			windowPref -wh 1100 600 -tlc `windowPref -q -topEdge CRYANIMMANAGER_WINDOW` `windowPref -q -leftEdge CRYANIMMANAGER_WINDOW` CRYANIMMANAGER_WINDOW;
+			//windowPref -remove CRYANIMMANAGER_WINDOW;
+		}
+		window -titleBar true -title "Cry Animation Manager" -widthHeight 1100 600 -sizeable true -mnb false -mxb false CRYANIMMANAGER_WINDOW;
+
+		formLayout -numberOfDivisions 100 -visible false CRYANIM_FORMLAYOUT;
+		{
+			scrollLayout -childResizable true -hst 0 -vst 15 -height 1 -bgc .4 .4 .4 CRYANIM_SCROLLLAYOUT;
+			{
+				popupMenu CRYANIMMANAGER_FORMIDMENU;
+				{
+					menuItem -label "Find Anims" -command ("cryAnimManagerFindAnims");
+				}
+				columnLayout -adjustableColumn true -columnOffset "both" 5 -rowSpacing 5 -bgc .4 .4 .4 CRYANIM_COLUMNLAYOUT;
+				{
+				}
+				setParent ..;
+			}
+			setParent ..;
+		
+			button -label "New" -command("cryAnimManagerEditAnimRangeWin 0 -1") CRYANIM_NEW;
+			button -label "Delete All" -command("cryAnimManagerEditAnimRangeWin 3 -1") CRYANIM_DELETEALL;
+			button -label "Close" -command ("cryAnimManagerUICloseWindow") CRYANIM_CLOSE;
+		}
+		formLayout -edit
+			-attachForm CRYANIM_NEW "top" 5
+			-attachForm CRYANIM_NEW "left" 5
+			-attachPosition CRYANIM_NEW "right" 5 50
+			-attachNone CRYANIM_NEW "bottom"
+
+			-attachForm CRYANIM_DELETEALL "top" 5
+			-attachPosition CRYANIM_DELETEALL "left" 5 50
+			-attachForm CRYANIM_DELETEALL "right" 5 
+			-attachNone CRYANIM_DELETEALL "bottom"
+					
+			-attachControl CRYANIM_SCROLLLAYOUT "top" 5 CRYANIM_NEW
+			-attachForm CRYANIM_SCROLLLAYOUT "left" 5
+			-attachForm CRYANIM_SCROLLLAYOUT "right" 5
+			-attachControl CRYANIM_SCROLLLAYOUT "bottom" 5 CRYANIM_CLOSE
+
+			-attachForm CRYANIM_CLOSE "bottom" 5 
+			-attachForm CRYANIM_CLOSE "left" 5
+			-attachForm CRYANIM_CLOSE "right" 5
+			-attachNone CRYANIM_CLOSE "top"
+			CRYANIM_FORMLAYOUT;
+    }
+
+	cryAnimPopulateRangeList;
+
+	formLayout -e -visible true CRYANIM_FORMLAYOUT;
+
+	scriptJob -event "NewSceneOpened" "cryAnimPopulateRangeList" -p "CRYANIMMANAGER_WINDOW";
+	scriptJob -event "PostSceneRead" "cryAnimPopulateRangeList" -p "CRYANIMMANAGER_WINDOW";
+
+	showWindow CRYANIMMANAGER_WINDOW;
+}
+
+proc cryAnimSourceDependencies()
+{
+	eval("source cryExport.mel");
+}
+
+global proc cryAnimManagerWin()
+{
+	cryAnimManagerUpgradeSettingsString;
+
+	cryAnimSourceDependencies;
+	createCryAnimManagerWindow;
+}
+
+/////////////////////////////////////////////////////////////////////////
+// Generic anim access functions
+/////////////////////////////////////////////////////////////////////////
+global proc string cryAnimLoadRangesString()
+{
+	string $rangesString = "";
+	string $exportSettingsNode = "CRYEXPORTSETTINGS";
+	if( `objExists $exportSettingsNode` )
+	{
+		if( `attributeExists "AnimRanges" $exportSettingsNode` )
+		{
+			$rangesString = `getAttr ($exportSettingsNode+".AnimRanges")`;
+		}
+	}
+	return $rangesString;
+}
+
+global proc cryAnimSaveRangesString( string $rangesString )
+{
+	string $exportSettingsNode = "CRYEXPORTSETTINGS";
+	// Create the node if it dosen't exist
+	if( !`objExists $exportSettingsNode` )
+	{
+		select -clear;
+		string $settingsNode = `group -empty`;
+		rename $settingsNode $exportSettingsNode;
+	}
+
+	if( `objExists $exportSettingsNode` )
+	{
+		if( !`attributeExists "AnimRanges" $exportSettingsNode` )
+		{
+			addAttr -ln "AnimRanges" -dt "string" $exportSettingsNode;
+		}
+		setAttr ($exportSettingsNode+".AnimRanges") -type "string" $rangesString;
+	}
+}
+
+global proc cryAnimSaveRangesStringArray( string $ranges[] )
+{
+	string $rangesString = "";
+	int $count = 0;
+	for( $range in $ranges )
+	{
+		if( $count > 0 ) $rangesString += ",";
+		$rangesString += $range;
+		$count++;
+	}
+	
+	cryAnimSaveRangesString $rangesString;
+}
+
+global proc int cryAnimGetNumRanges()
+{
+	string $rangesString = `cryAnimLoadRangesString`;
+	string $tokens[];
+	$numTokens = `tokenize $rangesString "," $tokens`;
+	
+	// We still get 1 token even if the string is empty, so test for that and make sure we return 0 as the range count
+	if( $numTokens == 1 && size($tokens[0]) == 0 )
+		$numTokens = 0;
+		
+	return $numTokens;
+}
+
+global proc string[] cryAnimGetRanges()
+{
+	string $rangesString = `cryAnimLoadRangesString`;
+	string $tokens[];
+	$numTokens = `tokenize $rangesString "," $tokens`;
+	return $tokens;
+}
+
+global proc string[] cryAnimGetRangeNames()
+{
+	string $animRanges[];
+	$animRanges = `cryAnimGetRanges`;
+	int $rangeCount = `cryAnimGetNumRanges`;
+	string $animNames[];
+
+	for( $i = 0;$i<$rangeCount;$i++ )
+	{
+		string $decode[];
+		$decode = `cryExportDecodeRangeString $animRanges[$i]`;
+		if( size($decode) == 5 )
+		{
+			$animNames[$i] = $decode[2];
+		}
+	}
+
+	return $animNames;
+}
+
+global proc cryAnimRemoveAnimRange( int $index )
+{
+	int $numRanges = `cryAnimGetNumRanges`;	
+	if( $index >= 0 && $index < $numRanges )
+	{	
+		string $ranges[] = `cryAnimGetRanges`;
+		stringArrayRemoveAtIndex $index $ranges;
+		cryAnimSaveRangesStringArray $ranges;
+	}
+}
+
+global proc cryAnimRemoveAllAnimRanges()
+{
+	int $numRanges = `cryAnimGetNumRanges`;	
+	if( $numRanges > 0 )
+	{	
+		cryAnimSaveRangesString "";
+	}
+}
+
+global proc cryAnimReplaceRange( int $index, string $rangeString )
+{
+	int $numRanges = `cryAnimGetNumRanges`;
+	if( $index >= 0 && $index < $numRanges )
+	{	
+		string $ranges[] = `cryAnimGetRanges`;
+		
+		$ranges[$index] = $rangeString;
+		
+		cryAnimSaveRangesStringArray $ranges;
+	}	
+}
+
+global proc string cryAnimFormatRangeString( string $start, string $end, string $name, string $root, string $path )
+{
+	string $rangeString = ("[" + $start + "-" + $end + "] - " + $name + " - " + $root + " - " + $path);
+	return $rangeString;
+}
+
+global proc cryAnimAddRange( string $rangeString )
+{
+	int $numRanges = `cryAnimGetNumRanges`;
+	string $ranges[] = `cryAnimGetRanges`;
+		
+	for( $range in $ranges )
+	{
+		if( `strcmp $range $rangeString` == 0 ) // An identical range is already in the ranges list.
+		{
+			return;
+		}
+	}
+
+	$ranges[$numRanges] = $rangeString;
+		
+	cryAnimSaveRangesStringArray $ranges;
+}

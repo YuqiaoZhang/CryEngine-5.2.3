@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionCancelSignal.cpp">
+      <Filter>Response Actions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionExecuteResponse.cpp">
+      <Filter>Response Actions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionResetTimer.cpp">
+      <Filter>Response Actions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionSendSignal.cpp">
+      <Filter>Response Actions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionSetActor.cpp">
+      <Filter>Response Actions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionSetGameToken.cpp">
+      <Filter>Response Actions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionSetVariable.cpp">
+      <Filter>Response Actions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionSpeakLine.cpp">
+      <Filter>Response Actions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionWait.cpp">
+      <Filter>Response Actions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\DelayActionAction.cpp">
+      <Filter>Response Actions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ConditionsCollection.cpp">
+      <Filter>Response Conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ConditionImpl.cpp">
+      <Filter>Response Conditions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\SpecialConditionsImpl.cpp">
+      <Filter>Response Conditions\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\Variable.cpp">
+      <Filter>Response Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\VariableCollection.cpp">
+      <Filter>Response Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\VariableValue.cpp">
+      <Filter>Response Variables</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\Response.cpp">
+      <Filter>Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseManager.cpp">
+      <Filter>Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseSegment.cpp">
+      <Filter>Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseInstance.cpp">
+      <Filter>Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseSystemDataImportHelper.cpp">
+      <Filter>Responses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\CryDynamicResponseSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseSystemDebugDataProvider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\SpeakerManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\DialogLineDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionCancelSignal.h">
+      <Filter>Response Actions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionExecuteResponse.h">
+      <Filter>Response Actions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionResetTimer.h">
+      <Filter>Response Actions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionSendSignal.h">
+      <Filter>Response Actions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionSetActor.h">
+      <Filter>Response Actions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionSetGameToken.h">
+      <Filter>Response Actions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionSetVariable.h">
+      <Filter>Response Actions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionSpeakLine.h">
+      <Filter>Response Actions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ActionWait.h">
+      <Filter>Response Actions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\DelayActionAction.h">
+      <Filter>Response Actions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ConditionsCollection.h">
+      <Filter>Response Conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ConditionImpl.h">
+      <Filter>Response Conditions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\SpecialConditionsImpl.h">
+      <Filter>Response Conditions\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\Variable.h">
+      <Filter>Response Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\VariableCollection.h">
+      <Filter>Response Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\VariableValue.h">
+      <Filter>Response Variables</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\Response.h">
+      <Filter>Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseManager.h">
+      <Filter>Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseSegment.h">
+      <Filter>Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseInstance.h">
+      <Filter>Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseSystemDataImportHelper.h">
+      <Filter>Responses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\ResponseSystemDebugDataProvider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\SpeakerManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\DialogLineDatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\CryEngine\CryDynamicResponseSystem\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Response Actions\Impl">
+      <UniqueIdentifier>{A30AD157-A814-34CA-8615-F4EC9C2B71D0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Response Conditions\Impl">
+      <UniqueIdentifier>{BC4DA6B9-1AB5-3CBC-9FF8-CB315DDA5FD5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{546E5977-2042-399E-B9CB-C2707F518F6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4694E014-B4B5-37D5-A358-537E33B14B3E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Response Actions">
+      <UniqueIdentifier>{C5AB93F3-C239-32CC-97BD-681F8D7EDB1E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Response Conditions">
+      <UniqueIdentifier>{ED119863-F9F4-390F-9EE2-4CE703648905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Response Variables">
+      <UniqueIdentifier>{3434C198-12A8-3E4C-96B6-7EE77BD43E3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Responses">
+      <UniqueIdentifier>{EDA7142E-0FFE-35A5-82B3-2484EC7E427E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

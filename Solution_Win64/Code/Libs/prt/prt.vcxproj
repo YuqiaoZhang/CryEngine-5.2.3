@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|x64">
+      <Configuration>Profile</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C4056675-BCEA-372E-9AA0-8677870D1287}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>prt</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\lib\Libs\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\..\..\Solution_Win64\obj\Libs\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">prt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\lib\Libs\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">..\..\..\..\Solution_Win64\obj\Libs\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">prt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\lib\Libs\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\..\..\Solution_Win64\obj\Libs\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">prt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\prt;..\..\..\..\Code\Tools;..\..\..\..\Code\Tools\SphericalHarmonics;..\..\..\..\Code\Tools\PRT;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\Libs\tiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CODE_BASE_FOLDER="../../../../Code/";PRT_COMPILE;OFFLINE_COMPUTATION;USE_BROFILER;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CODE_BASE_FOLDER=\"../../../../Code/\";PRT_COMPILE;OFFLINE_COMPUTATION;USE_BROFILER;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\prt;..\..\..\..\Code\Tools;..\..\..\..\Code\Tools\SphericalHarmonics;..\..\..\..\Code\Tools\PRT;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\Libs\tiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\prt;..\..\..\..\Code\Tools;..\..\..\..\Code\Tools\SphericalHarmonics;..\..\..\..\Code\Tools\PRT;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\Libs\tiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\prt;..\..\..\..\Code\Tools;..\..\..\..\Code\Tools\SphericalHarmonics;..\..\..\..\Code\Tools\PRT;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\Libs\tiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Profile/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CODE_BASE_FOLDER="../../../../Code/";PRT_COMPILE;OFFLINE_COMPUTATION;USE_BROFILER;CMAKE_INTDIR="Profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CODE_BASE_FOLDER=\"../../../../Code/\";PRT_COMPILE;OFFLINE_COMPUTATION;USE_BROFILER;CMAKE_INTDIR=\"Profile\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\prt;..\..\..\..\Code\Tools;..\..\..\..\Code\Tools\SphericalHarmonics;..\..\..\..\Code\Tools\PRT;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\Libs\tiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\prt;..\..\..\..\Code\Tools;..\..\..\..\Code\Tools\SphericalHarmonics;..\..\..\..\Code\Tools\PRT;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\Libs\tiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /Zm250 /utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\prt;..\..\..\..\Code\Tools;..\..\..\..\Code\Tools\SphericalHarmonics;..\..\..\..\Code\Tools\PRT;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\Libs\tiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4251;4275</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <WarningLevel>Level3</WarningLevel>
+      <WarningVersion>18</WarningVersion>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CODE_BASE_FOLDER="../../../../Code/";PRT_COMPILE;OFFLINE_COMPUTATION;_PROFILE;USE_BROFILER;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CODE_BASE_FOLDER=\"../../../../Code/\";PRT_COMPILE;OFFLINE_COMPUTATION;_PROFILE;USE_BROFILER;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\prt;..\..\..\..\Code\Tools;..\..\..\..\Code\Tools\SphericalHarmonics;..\..\..\..\Code\Tools\PRT;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\Libs\tiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>..\..\..\..\Code\SDKs;..\..\..\..\Code\CryEngine\CryCommon;..\..\..\..\Code\SDKs\boost;..\..\..\..\Code\Libs\yasli;..\..\..\..\Code\SDKs\yasli;..\..\..\..\Code\SDKs\Brofiler;..\..\..\..\Code\Libs\prt;..\..\..\..\Code\Tools;..\..\..\..\Code\Tools\SphericalHarmonics;..\..\..\..\Code\Tools\PRT;..\..\..\..\Code\SDKs\tiff-4.0.4\libtiff;..\..\..\..\Code\Libs\tiff;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\CompressedLookupTable.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\IObserver.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\ISHLog.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\ISHMaterial.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\ITransferConfigurator.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\Legendre.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\MaterialFactory.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\MeshCoefficientStreams.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\PRTTypes.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\QuantizedSamplesHolder.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHAllocator.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHCompressor.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHFramework.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHFrameworkBasis.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHMath.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SHRotate.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SimpleIndexedMesh.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\SmartPtrAllocator.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\PRT\TransferParameters.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\AlphaTextureMaterial.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\BacklightingAlphaTextureMaterial.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\BaseTextureMaterial.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\BasicUtils.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\CommonImageReader.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultAlphaMaterial.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultBacklightingMaterial.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultMaterial.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultTransferConfigurator.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\FullVisCache.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\HDRImageReader.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\Icosahedron.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\IImageReader.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\ImageFactory.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\ISampleGenerator.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\ITransfer.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\PrintTransferObserver.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RandomSampleGen.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RasterCube.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RasterTable.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RayCache.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RayCaster.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SampleGenerator.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SampleRetrieval.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SHLog.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SimpleTriangleRasterizer.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\stdafx.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SubTriManager.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TangentSpaceCalculation.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TIFImageReader.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\Transfer.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TransferConfiguratorFactory.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\VegetationTransferConfigurator.h" />
+    <ClInclude Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\VertexInterface.h" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\AlphaTextureMaterial.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\BacklightingAlphaTextureMaterial.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\BaseTextureMaterial.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\CommonImageReader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultAlphaMaterial.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultBacklightingMaterial.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\DefaultMaterial.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\FullVisCache.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\HDRImageReader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\ImageFactory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\ITransferConfigurator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\MaterialFactory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\PrintTransferObserver.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\RayCaster.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SampleGenerator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SHAllocator.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SHFramework.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SHLog.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SimpleIndexedMesh.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\SimpleTriangleRasterizer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\stdafx.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TIFImageReader.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\Transfer.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TransferConfiguratorFactory.cpp" />
+    <ClCompile Include="..\..\..\..\Code\Tools\SphericalHarmonics\PRT\TransferParameters.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../../../Solution_Win64/Code/Libs/tiff/tiff.vcxproj">
+      <Project>82D22322-BBB8-3F22-8E2C-781BB1B753E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="../../../../Solution_Win64/Code/Libs/zlib/zlib.vcxproj">
+      <Project>20A4944F-A785-35D8-9CF9-FB527E04AC4C</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
