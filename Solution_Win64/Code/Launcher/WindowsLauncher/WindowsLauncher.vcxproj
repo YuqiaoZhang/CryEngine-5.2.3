@@ -26,19 +26,19 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Profile|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -95,7 +95,7 @@
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
       <WarningVersion>18</WarningVersion>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CODE_BASE_FOLDER="../../../../Code/";JSMN_STRICT;JSMN_PARENT_LINKS;USE_BROFILER;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NO_WARN_MBCS_MFC_DEPRECATION;_DEBUG;CODE_BASE_FOLDER="../../../../Code/";JSMN_STRICT;JSMN_PARENT_LINKS;USE_BROFILER;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
@@ -145,7 +145,7 @@
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
       <WarningVersion>18</WarningVersion>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CODE_BASE_FOLDER="../../../../Code/";JSMN_STRICT;JSMN_PARENT_LINKS;USE_BROFILER;CMAKE_INTDIR="Profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_PROFILE;CODE_BASE_FOLDER="../../../../Code/";JSMN_STRICT;JSMN_PARENT_LINKS;USE_BROFILER;CMAKE_INTDIR="Profile";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
@@ -198,7 +198,7 @@
       <StringPooling>true</StringPooling>
       <WarningLevel>Level3</WarningLevel>
       <WarningVersion>18</WarningVersion>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CODE_BASE_FOLDER="../../../../Code/";JSMN_STRICT;JSMN_PARENT_LINKS;_PROFILE;USE_BROFILER;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_ENABLE_EXTENDED_ALIGNED_STORAGE;NO_WARN_MBCS_MFC_DEPRECATION;NDEBUG;_RELEASE;PURE_CLIENT;CODE_BASE_FOLDER="../../../../Code/";JSMN_STRICT;JSMN_PARENT_LINKS;_PROFILE;USE_BROFILER;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
