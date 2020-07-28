@@ -23,23 +23,14 @@ struct SEntityScriptProperties
 class CGameFactory
 {
 public:
-	static void Init();
-	static void RegisterEntityFlowNodes();
+	static void Init(IGameFramework* pGameFramework);
 
 private:
 	enum eGameObjectRegistrationFlags
 	{
-		eGORF_None               = 0x0,
-		eGORF_HiddenInEditor     = 0x1,
-		eGORF_NoEntityClass      = 0x2,
+		eGORF_None = 0x0,
 		eGORF_InstanceProperties = 0x4,
 	};
 
-	template<class T>
-	static void RegisterGameObject(const string& name, const string& script, uint32 flags = 0);
-	template<class T>
-	static void RegisterNoScriptGameObject(const string& name, const string& path, uint32 flags = 0);
 	static void CreateScriptTables(SEntityScriptProperties& out, uint32 flags);
-
-	static std::map<string, CGameEntityNodeFactory*> s_flowNodeFactories;
 };

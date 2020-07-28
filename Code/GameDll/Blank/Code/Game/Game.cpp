@@ -4,12 +4,12 @@
 #include "StdAfx.h"
 #include "Game.h"
 #include "GameFactory.h"
-#include "flownodes/FlowBaseNode.h"
+#include "FlowNodes/FlowBaseNode.h"
 
-
-CAutoRegFlowNodeBaseZero* CAutoRegFlowNodeBaseZero::m_pFirst = nullptr;
-CAutoRegFlowNodeBaseZero* CAutoRegFlowNodeBaseZero::m_pLast = nullptr;
-
+#ifndef _LIB
+CAutoRegFlowNodeBase* CAutoRegFlowNodeBase::m_pFirst = NULL;
+CAutoRegFlowNodeBase* CAutoRegFlowNodeBase::m_pLast = NULL;
+#endif
 
 CGame::CGame()
 	: m_pGameFramework(nullptr)
@@ -30,7 +30,12 @@ CGame::~CGame()
 bool CGame::Init(IGameFramework* pFramework)
 {
 	m_pGameFramework = pFramework;
-	CGameFactory::Init();
+	assert(m_pGameFramework);
+
+	// Register all the games factory classes e.g. maps "Player" to CPlayer
+	CGameFactory::Init(m_pGameFramework);
+
+	// set game GUID
 	m_pGameFramework->SetGameGUID(GAME_GUID);
 
 	return true;
@@ -38,18 +43,15 @@ bool CGame::Init(IGameFramework* pFramework)
 
 void CGame::RegisterGameFlowNodes()
 {
-	IFlowSystem* pFlowSystem = m_pGameFramework->GetIFlowSystem();
-	if (pFlowSystem)
+	if (IFlowSystem* pFlow = m_pGameFramework->GetIFlowSystem())
 	{
-		CAutoRegFlowNodeBaseZero* pFactory = CAutoRegFlowNodeBaseZero::m_pFirst;
+		CAutoRegFlowNodeBase* pFactory = CAutoRegFlowNodeBase::m_pFirst;
 
 		while (pFactory)
 		{
-			pFlowSystem->RegisterType(pFactory->m_sClassName, pFactory);
+			pFlow->RegisterType(pFactory->m_sClassName, pFactory);
 			pFactory = pFactory->m_pNext;
 		}
-
-		CGameFactory::RegisterEntityFlowNodes();
 	}
 }
 

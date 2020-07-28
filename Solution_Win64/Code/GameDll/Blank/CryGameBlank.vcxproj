@@ -233,8 +233,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\editor\EditorGame.cpp" />
-    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\entities\GeomEntity.cpp" />
-    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\flownodes\FlowGameEntityNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\Entities\AnimObject.cpp" />
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\entities\GameGeomEntity.cpp" />
     <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\game\Game.cpp" />
     <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\game\GameFactory.cpp" />
     <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\game\GameRules.cpp" />
@@ -248,9 +248,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\editor\EditorGame.h" />
-    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\entities\GeomEntity.h" />
-    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\flownodes\FlowBaseNode.h" />
-    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\flownodes\FlowGameEntityNode.h" />
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\Entities\AnimObject.h" />
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\entities\GameGeomEntity.h" />
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\FlowNodes\FlowBaseNode.h" />
     <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\game\Game.h" />
     <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\game\GameFactory.h" />
     <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\game\GameRules.h" />

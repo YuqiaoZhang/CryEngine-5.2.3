@@ -1,2 +1,0 @@
-D:\CryEngine\Code\GameDll\TopDownShooter\Editor\ResourceCache\animations\motusanims\idle_3p.caf
-D:\CryEngine\Code\GameDll\TopDownShooter\Editor\ResourceCache\animations\motusanims\idle_3p.caf

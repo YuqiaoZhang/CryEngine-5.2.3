@@ -10,9 +10,6 @@
     <Filter Include="Entities">
       <UniqueIdentifier>{add28e09-a0fe-4eff-94f3-c72265bc9a06}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Flownodes">
-      <UniqueIdentifier>{73444db6-770e-468d-937a-3ed4c0220836}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Game">
       <UniqueIdentifier>{d6b40629-a96d-4c6e-bcfa-13289ddc8610}</UniqueIdentifier>
     </Filter>
@@ -25,6 +22,9 @@
     <Filter Include="Startup">
       <UniqueIdentifier>{62fecc96-d435-4fa4-9ebc-3d2914d2e6bd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="FlowNodes">
+      <UniqueIdentifier>{0804cb57-370c-4b6f-bed3-21b20bea770c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\Main.cpp">
@@ -35,12 +35,6 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\editor\EditorGame.cpp">
       <Filter>Editor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\entities\GeomEntity.cpp">
-      <Filter>Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\flownodes\FlowGameEntityNode.cpp">
-      <Filter>Flownodes</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\game\Game.cpp">
       <Filter>Game</Filter>
@@ -66,6 +60,12 @@
     <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\startup\GameStartup.cpp">
       <Filter>Startup</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\entities\GameGeomEntity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameDll\Blank\Code\Entities\AnimObject.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\StdAfx.h">
@@ -73,15 +73,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\editor\EditorGame.h">
       <Filter>Editor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\entities\GeomEntity.h">
-      <Filter>Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\flownodes\FlowBaseNode.h">
-      <Filter>Flownodes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\flownodes\FlowGameEntityNode.h">
-      <Filter>Flownodes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\game\Game.h">
       <Filter>Game</Filter>
@@ -109,6 +100,15 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\startup\GameStartup.h">
       <Filter>Startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\FlowNodes\FlowBaseNode.h">
+      <Filter>FlowNodes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\entities\GameGeomEntity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameDll\Blank\Code\Entities\AnimObject.h">
+      <Filter>Entities</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

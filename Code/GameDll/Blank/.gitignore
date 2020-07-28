@@ -2,3 +2,4 @@
 bin
 logbackups
 user
+user(*)

@@ -4,12 +4,6 @@
     <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\editor\EditorGame.cpp">
       <Filter>Editor</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\entities\GeomEntity.cpp">
-      <Filter>Entities</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\flownodes\FlowGameEntityNode.cpp">
-      <Filter>Flownodes</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\game\GameRules.cpp">
       <Filter>Game</Filter>
     </ClCompile>
@@ -40,16 +34,16 @@
     <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\GameZero.cpp">
       <Filter>DLL</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\entities\AnimObject.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\entities\GameGeomEntity.cpp">
+      <Filter>Entities</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\editor\EditorGame.h">
       <Filter>Editor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\entities\GeomEntity.h">
-      <Filter>Entities</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\flownodes\FlowGameEntityNode.h">
-      <Filter>Flownodes</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\game\GameRules.h">
       <Filter>Game</Filter>
@@ -80,6 +74,15 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\StdAfx.h">
       <Filter>DLL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\entities\AnimObject.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\entities\GameGeomEntity.h">
+      <Filter>Entities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\flownodes\FlowBaseNode.h">
+      <Filter>Flownodes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -4,11 +4,11 @@
 #include "Game.h"
 #include "GameFactory.h"
 
-#include <CryFlowGraph/IFlowBaseNode.h>
+#include "FlowNodes/FlowBaseNode.h"
 
 #ifndef _LIB
-CAutoRegFlowNodeBase* CAutoRegFlowNodeBase::m_pFirst = nullptr;
-CAutoRegFlowNodeBase* CAutoRegFlowNodeBase::m_pLast = nullptr;
+CAutoRegFlowNodeBase* CAutoRegFlowNodeBase::m_pFirst = NULL;
+CAutoRegFlowNodeBase* CAutoRegFlowNodeBase::m_pLast = NULL;
 #endif
 
 CGame::CGame()
@@ -30,7 +30,12 @@ CGame::~CGame()
 bool CGame::Init(IGameFramework* pFramework)
 {
 	m_pGameFramework = pFramework;
-	CGameFactory::Init();
+	assert(m_pGameFramework);
+
+	// Register all the games factory classes e.g. maps "Player" to CPlayer
+	CGameFactory::Init(m_pGameFramework);
+
+	// set game GUID
 	m_pGameFramework->SetGameGUID(GAME_GUID);
 
 	return true;
@@ -48,8 +53,6 @@ void CGame::RegisterGameFlowNodes()
 			pFlowSystem->RegisterType(pFactory->m_sClassName, pFactory);
 			pFactory = pFactory->m_pNext;
 		}
-
-		CGameFactory::RegisterEntityFlowNodes();
 	}
 }
 

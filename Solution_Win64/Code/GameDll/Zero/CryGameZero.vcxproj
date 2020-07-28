@@ -228,8 +228,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\editor\EditorGame.h" />
-    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\entities\GeomEntity.h" />
-    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\flownodes\FlowGameEntityNode.h" />
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\entities\AnimObject.h" />
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\entities\GameGeomEntity.h" />
+    <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\flownodes\FlowBaseNode.h" />
     <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\game\GameRules.h" />
     <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\game\Game.h" />
     <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\game\GameFactory.h" />
@@ -241,8 +242,8 @@
     <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\player\extensions\MovementExtension.h" />
     <ClInclude Include="..\..\..\..\Code\GameZero\GameDll\StdAfx.h" />
     <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\editor\EditorGame.cpp" />
-    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\entities\GeomEntity.cpp" />
-    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\flownodes\FlowGameEntityNode.cpp" />
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\entities\AnimObject.cpp" />
+    <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\entities\GameGeomEntity.cpp" />
     <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\game\GameRules.cpp" />
     <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\game\Game.cpp" />
     <ClCompile Include="..\..\..\..\Code\GameZero\GameDll\game\GameFactory.cpp" />

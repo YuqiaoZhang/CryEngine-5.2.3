@@ -1,266 +1,19 @@
 <ObjectLayer>
- <Layer Name="Main" GUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
+ <Layer Name="Main" FullName="Main" GUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Hidden="0" Frozen="0" Expanded="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
   <LayerObjects>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{2D1FAF1E-8128-486F-A2EF-961ACD2A484F}" Name="GameGeomEntity40" Pos="252.99451,264.15118,24.833097" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
+   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{EA69105D-84E9-446B-94E6-0357D92C74EC}" Name="AnimObject1" Pos="243.57857,263.57364,9.192173" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AnimObject" HasEntity="1">
+    <Properties object_Model="objects/tutorialcga.cga"/>
     <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
+      <Node Id="1" Class="Animations:PlayAnimation" pos="120,-150,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" anim_Animation="forward_backward" BlendInTime="0.2" Layer="0" Loop="1" StayOnLastFrame="0" ForceUpdate="0" PauseAnimGraph="0" ControlMovement="0"/>
       </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-410,-30,0" flags="0">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
+      <Node Id="2" Class="Game:Start" pos="-120,-140,0" flags="1">
+       <Inputs InGame="1" InEditor="1"/>
       </Node>
      </Nodes>
      <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{8680AA36-1288-4AC7-ADE2-1FA61DD4DA7B}" Name="GameGeomEntity38" Pos="252.99451,264.15118,16.833097" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
-    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-440,-40,0" flags="1">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{289E8741-4CF4-4521-9686-91162D9D8F47}" Name="GameGeomEntity35" Pos="268.99451,264.15118,32.833099" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
-    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-380,-30,0" flags="0">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{A0B31156-9760-4285-BE0F-849CF3B7AB30}" Name="GameGeomEntity36" Pos="268.99451,264.15118,24.833097" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
-    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-410,-30,0" flags="0">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{FEBD9261-7530-4F4E-822C-698226318554}" Name="GameGeomEntity7" Pos="260.99451,264.15118,8.8330975" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
-    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-400,-30,0" flags="1">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{8CD2C470-2F89-4537-BC8A-91CA6F8436F6}" Name="GameGeomEntity34" Pos="268.99451,264.15118,16.833097" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
-    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-380,-30,0" flags="1">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{0020457F-1EDC-4301-890D-414B65189B95}" Name="GameGeomEntity33" Pos="268.99451,264.15118,8.8330975" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
-    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-410,-30,0" flags="1">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{792B0880-E6C2-4E80-9898-0F5B22772F5C}" Name="GameGeomEntity39" Pos="252.99451,264.15118,32.833099" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
-    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-420,-30,0" flags="1">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{FF94C884-8D49-41C2-9AD4-777FFF41FDFA}" Name="GameGeomEntity30" Pos="260.99451,264.15118,16.833097" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
-    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-390,-30,0" flags="0">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{A9C5A893-B448-48CF-8887-21EEA08B3BF9}" Name="GameGeomEntity32" Pos="260.99451,264.15118,32.833099" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
-    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-420,-30,0" flags="1">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
-     <GraphTokens />
-    </FlowGraph>
-   </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{881B28B9-DED7-4297-BCAF-309B92BA4A50}" Name="GameGeomEntity31" Pos="260.99451,264.15118,24.833097" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
-    <Properties object_Model="editor/objects/sphere.cgf"/>
-    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
-     <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
-      <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
-      </Node>
-      <Node Id="14" Class="Debug:InputKey" pos="-380,-30,0" flags="0">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
-     </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="14" portIn="Set" portOut="Pressed" enabled="1"/>
+      <Edge nodeIn="1" nodeOut="2" portIn="Start" portOut="output" enabled="1"/>
      </Edges>
      <GraphTokens />
     </FlowGraph>
@@ -277,23 +30,11 @@
     <Properties object_Model="editor/objects/sphere.cgf"/>
     <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
-      <Node Id="4" Class="String:SetString" pos="-140,-10,0" flags="0">
-       <Inputs In="editor/objects/border.cgf"/>
-      </Node>
-      <Node Id="6" Class="entity:GameGeomEntity" pos="180,-30,0" flags="0" GraphEntity="0">
-       <Inputs entityId="0" LoadGeometry=""/>
-      </Node>
       <Node Id="8" Class="Movement:RotateEntity" pos="180,40,0" flags="0" GraphEntity="0">
        <Inputs entityId="0" Speed="0,0,50" Paused="0" Ref="0"/>
       </Node>
-      <Node Id="10" Class="Debug:InputKey" pos="-430,-30,0" flags="1">
-       <Inputs entityId="0" Key="t" NonDevMode="0"/>
-      </Node>
      </Nodes>
-     <Edges>
-      <Edge nodeIn="6" nodeOut="4" portIn="LoadGeometry" portOut="Out" enabled="1"/>
-      <Edge nodeIn="4" nodeOut="10" portIn="Set" portOut="Pressed" enabled="1"/>
-     </Edges>
+     <Edges />
      <GraphTokens />
     </FlowGraph>
    </Object>
