@@ -1,7 +1,24 @@
 <ObjectLayer>
  <Layer Name="Main" FullName="Main" GUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Hidden="0" Frozen="0" Expanded="0" Exportable="1" ExportLayerPak="1" DefaultLoaded="0" HavePhysics="1" IsDefaultColor="1">
   <LayerObjects>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{EA69105D-84E9-446B-94E6-0357D92C74EC}" Name="AnimObject1" Pos="243.57857,263.57364,9.192173" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AnimObject" HasEntity="1">
+   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{6757DA2E-14BB-4D6A-835F-987A6E68D688}" Name="Helicopter" Pos="241.81894,254.98503,6.6987801" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AnimObject" HasEntity="1">
+    <Properties object_Model="objects/vehicles/mh60_blackhawk/mh60.cga"/>
+    <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
+     <Nodes>
+      <Node Id="1" Class="Game:Start" pos="-108,-54,0" flags="0">
+       <Inputs InGame="1" InEditor="1"/>
+      </Node>
+      <Node Id="2" Class="Animations:PlayAnimation" pos="168,-66,0" flags="0" GraphEntity="0">
+       <Inputs entityId="0" anim_Animation="rotate" BlendInTime="0.2" Layer="0" Loop="1" StayOnLastFrame="0" ForceUpdate="0" PauseAnimGraph="0" ControlMovement="0"/>
+      </Node>
+     </Nodes>
+     <Edges>
+      <Edge nodeIn="2" nodeOut="1" portIn="Start" portOut="output" enabled="1"/>
+     </Edges>
+     <GraphTokens />
+    </FlowGraph>
+   </Object>
+   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{EA69105D-84E9-446B-94E6-0357D92C74EC}" Name="AnimatedSphere" Pos="243.57857,263.57364,9.192173" FloorNumber="-1" Rotate="1,0,0,0" ColorRGB="65535" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="AnimObject" HasEntity="1">
     <Properties object_Model="objects/tutorialcga.cga"/>
     <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
      <Nodes>
@@ -26,7 +43,7 @@
      <Projection fBoxHeight="10" fBoxLength="10" bBoxProject="0" fBoxWidth="10"/>
     </Properties>
    </Object>
-   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{18C163CE-5522-4BA3-9E78-4088E29ED1CC}" Name="GameGeomEntity37" Pos="252.99451,264.15118,8.8330975" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
+   <Object Type="Entity" Layer="Main" LayerGUID="{7DC816F2-D365-4BAE-9111-912CED6E8F6A}" Id="{18C163CE-5522-4BA3-9E78-4088E29ED1CC}" Name="Sphere" Pos="252.99451,264.15118,8.8330975" FloorNumber="-1" Rotate="1,0,0,0" Scale="2.743,2.743,2.743" ColorRGB="65535" Material="engineassets/texturemsg/defaultsolids" MatLayersMask="0" OutdoorOnly="0" CastShadow="1" CastShadowMinspec="1" DynamicDistanceShadows="0" LodRatio="100" ViewDistRatio="100" HiddenInGame="0" RecvWind="0" RenderNearest="0" NoStaticDecals="0" EntityClass="GameGeomEntity" HasEntity="1">
     <Properties object_Model="editor/objects/sphere.cgf"/>
     <FlowGraph Description="" Group="" enabled="1" MultiPlayer="ClientServer">
      <Nodes>

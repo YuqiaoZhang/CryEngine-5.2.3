@@ -1,0 +1,98 @@
+<Material MtlFlags="524544">
+ <SubMaterials>
+  <Material Name="proxy" MtlFlags="525440" Shader="NoDraw" GenMask="0" StringGenMask="" SurfaceType="mat_metal" MatTemplate="" Diffuse="0.72305524,0,0" Specular="0,0,0" Emissive="0,0,0" Opacity="1" LayerAct="1">
+   <Textures />
+  </Material>
+  <Material Name="exterior" MtlFlags="524416" Shader="Illum" GenMask="20C0000080" StringGenMask="%BUMP_MAP%SPEC_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_metal" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_exterior_a_diff.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/mh60_blackhawk/textures/mh60_exterior_a_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/mh60_blackhawk/textures/mh60_exterior_a_ddna.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="tire" MtlFlags="524416" Shader="Illum" GenMask="80000080" StringGenMask="%BUMP_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_rubber" MatTemplate="" Diffuse="1,1,1" Specular="0.010960096,0.010960096,0.010960096" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_tire_a_diff.tif"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/mh60_blackhawk/textures/mh60_tire_a_ddna.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="glass_out" MtlFlags="2623648" Shader="Glass" GenMask="10040018050" StringGenMask="%BILINEAR_FP16%BLUR_REFRACTION%DIRT_MAP%ENVIRONMENT_MAP%SPEC_MAP%TINT_MAP" SurfaceType="mat_glass_unbreakable" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_glass_a_diff.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/mh60_blackhawk/textures/mh60_glass_a_tint.tif"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/mh60_blackhawk/textures/mh60_glass_a_ddn.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+   </Textures>
+   <PublicParams BumpMapTile="1" TintColor="0.70110202,0.18116426,0.006512091" BlurAmount="0.2" FresnelScale="16" FresnelBias="1" CloudinessReducesGloss="0.5" CloudinessMasksBlur="0.18000001" TintCloudiness="0.1" BackLightScale="0.5" BumpScale="0.2" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="glass_in" MtlFlags="2623648" Shader="Glass" GenMask="10040018050" StringGenMask="%BILINEAR_FP16%BLUR_REFRACTION%DIRT_MAP%ENVIRONMENT_MAP%SPEC_MAP%TINT_MAP" SurfaceType="mat_glass_unbreakable" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="0.82999998" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_glass_a_diff.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/mh60_blackhawk/textures/mh60_glass_a_tint.tif"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/mh60_blackhawk/textures/mh60_glass_a_ddn.tif"/>
+    <Texture Map="Environment" File="nearest_cubemap" TexType="7"/>
+   </Textures>
+   <PublicParams BumpMapTile="1" TintColor="0.70110202,0.18116426,0.006512091" BlurAmount="0.2" FresnelScale="16" FresnelBias="1" CloudinessReducesGloss="0.5" CloudinessMasksBlur="0.18000001" TintCloudiness="0.1" BackLightScale="0.5" BumpScale="0.2" IndirectColor="0.24620135,0.24620135,0.24620135"/>
+  </Material>
+  <Material Name="interior_a" MtlFlags="524416" Shader="Illum" GenMask="20C0000080" StringGenMask="%BUMP_MAP%SPEC_MAP%SUBSURFACE_SCATTERING%VERTCOLORS" SurfaceType="mat_rubber" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_interior_a_diff.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/mh60_blackhawk/textures/mh60_interior_a_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/mh60_blackhawk/textures/mh60_interior_a_ddna.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="interior_b" MtlFlags="524416" Shader="Illum" GenMask="C0000080" StringGenMask="%BUMP_MAP%SPEC_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_interior_b_diff.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/mh60_blackhawk/textures/mh60_interior_b_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/mh60_blackhawk/textures/mh60_interior_b_ddna.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="interior_c" MtlFlags="524416" Shader="Illum" GenMask="C8000080" StringGenMask="%BUMP_MAP%PARALLAX_OCCLUSION_MAPPING%SPEC_MAP%SUBSURFACE_SCATTERING" SurfaceType="mat_plastic" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="1,1,1" Shininess="255" Opacity="1" GlowAmount="2" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_interior_c_diff.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/mh60_blackhawk/textures/mh60_interior_c_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/mh60_blackhawk/textures/mh60_interior_c_ddna.tif"/>
+    <Texture Map="Heightmap" File="objects/vehicles/mh60_blackhawk/textures/mh60_interior_c_height.tif"/>
+   </Textures>
+   <PublicParams PomDisplacement="0.025" SSSIndex="0" SelfShadowStrength="3" HeightBias="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="rotor_main_blending" MtlFlags="524450" Shader="Illum" GenMask="80000000" StringGenMask="%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="0.49693301,0.49693301,0.49693301" Specular="0,0,0" Emissive="0,0,0" Shininess="10" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_motion.tif">
+     <TexMod TileU="5.2012081e-036" OffsetV="1.9554885e-037" RotateU="81.166992" RotateV="243.2373" RotateW="81.166992" TexMod_URotateRate="110.01709" TexMod_URotatePhase="323.69568" TexMod_VRotateRate="7.2180176" TexMod_VRotatePhase="81.057129" TexMod_VRotateAmplitude="0.076904297" TexMod_WRotateRate="0.076904297" TexMod_WRotatePhase="324.17908" TexMod_VRotateCenter="4.3983513e+021" TexMod_UOscillatorRate="2.7945453e+020" TexMod_UOscillatorPhase="-1.2197928e-012" TexMod_VOscillatorPhase="-1.5883997e+038" TexMod_UOscillatorAmplitude="-4.2201683e+037" TexMod_VOscillatorAmplitude="-1.2197928e-012"/>
+    </Texture>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="decal" MtlFlags="524448" Shader="Illum" GenMask="80000800" StringGenMask="%DECAL%SUBSURFACE_SCATTERING" SurfaceType="mat_metal" MatTemplate="" Diffuse="1,1,1" Specular="0.0024282159,0.0024282159,0.0024282159" Emissive="0,0,0" Shininess="90" Opacity="1" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_decal_a_diff.tif">
+     <TexMod TexMod_URotateRate="31.025391" TexMod_URotatePhase="0.049438477" TexMod_URotateAmplitude="357.16553" TexMod_VRotateRate="3.5375977" TexMod_VRotatePhase="0.0054931641" TexMod_VRotateAmplitude="288.27576" TexMod_VRotateCenter="4.1597489e-012" TexMod_UOscillatorRate="4.1681519e-012"/>
+    </Texture>
+   </Textures>
+   <PublicParams DecalDiffuseOpacity="1" DecalFalloff="1" DecalAlphaMult="1" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="lod1" MtlFlags="524416" Shader="Illum" GenMask="C0000080" StringGenMask="%BUMP_MAP%SPEC_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" CloakAmount="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_a_lod1_diff.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/mh60_blackhawk/textures/mh60_a_lod1_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/mh60_blackhawk/textures/mh60_a_lod1_ddna.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+  <Material Name="lod2" MtlFlags="524416" Shader="Illum" GenMask="C0000080" StringGenMask="%BUMP_MAP%SPEC_MAP%SUBSURFACE_SCATTERING" SurfaceType="" MatTemplate="" Diffuse="1,1,1" Specular="1,1,1" Emissive="0,0,0" Shininess="255" Opacity="1" CloakAmount="0" LayerAct="1">
+   <Textures>
+    <Texture Map="Diffuse" File="objects/vehicles/mh60_blackhawk/textures/mh60_a_lod2_diff.tif"/>
+    <Texture Map="Specular" File="objects/vehicles/mh60_blackhawk/textures/mh60_a_lod2_spec.tif"/>
+    <Texture Map="Bumpmap" File="objects/vehicles/mh60_blackhawk/textures/mh60_a_lod2_ddna.tif"/>
+   </Textures>
+   <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+  </Material>
+ </SubMaterials>
+ <PublicParams SSSIndex="0" IndirectColor="0.25,0.25,0.25"/>
+</Material>
